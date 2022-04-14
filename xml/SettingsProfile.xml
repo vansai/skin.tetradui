@@ -63,8 +63,8 @@
 					<textcolor>white2</textcolor>
 					<focusedcolor>black</focusedcolor>
 					<shadowcolor>-</shadowcolor>
-					<texturefocus>special://skin/button_icons/icon-xbmc.png</texturefocus>
-					<texturenofocus>special://skin/button_icons/icon-xbmc.png</texturenofocus>
+					<texturefocus>button_icons/icon-xbmc.png</texturefocus>
+					<texturenofocus>button_icons/icon-xbmc.png</texturenofocus>
 					<radioposx>265</radioposx>
 					<font>font16</font>
 					<label>20096</label>

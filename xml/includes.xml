@@ -629,7 +629,7 @@
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
-						<texture>special://skin/button_icons/icon-videos.png</texture>
+						<texture>button_icons/icon-videos.png</texture>
 					</control>
 					<control type="fadelabel">
 						<description>Now Playing title</description>
@@ -702,7 +702,7 @@
 						<posy>2</posy>
 						<width>35</width>
 						<height>35</height>
-						<texture>special://skin/button_icons/icon-videos.png</texture>
+						<texture>button_icons/icon-videos.png</texture>
 					</control>
 					<control type="fadelabel">
 						<description>Now Playing title</description>
@@ -786,7 +786,7 @@
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
-						<texture>special://skin/button_icons/icon-music.png</texture>
+						<texture>button_icons/icon-music.png</texture>
 					</control>
 					<control type="fadelabel">
 						<description>Now Playing Artist Album</description>

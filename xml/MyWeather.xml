@@ -125,7 +125,7 @@
 					<posy>4</posy>
 					<width>43</width>
 					<height>43</height>
-					<texture>special://skin/button_icons/icon-xbmc.png</texture>
+					<texture>button_icons/icon-xbmc.png</texture>
 					<animation effect="slide" end="ButtonSlideBackDistance,0" time="ButtonSlideBackTime" reversible="false" condition="Control.HasFocus(3)">Conditional</animation>
 				</control>
 				<control type="label">
@@ -186,8 +186,8 @@
 					<posy>52</posy>
 					<label>31022</label>
 					<altlabel>31026</altlabel>
-					<texturefocus>special://skin/button_icons/icon-weather.png</texturefocus>
-					<texturenofocus>special://skin/button_icons/icon-weather.png</texturenofocus>
+					<texturefocus>button_icons/icon-weather.png</texturefocus>
+					<texturenofocus>button_icons/icon-weather.png</texturenofocus>
 					<selected>Skin.HasSetting(WeatherUseForecast)</selected>
 					<onclick>Skin.ToggleSetting(WeatherUseForecast)</onclick>
 					<radioposx>265</radioposx>
@@ -212,8 +212,8 @@
 					<description>Refresh Push Button</description>
 					<posy>100</posy>
 					<label>-</label>
-					<texturefocus>special://skin/button_icons/icon-refresh.png</texturefocus>
-					<texturenofocus>special://skin/button_icons/icon-refresh.png</texturenofocus>
+					<texturefocus>button_icons/icon-refresh.png</texturefocus>
+					<texturenofocus>button_icons/icon-refresh.png</texturenofocus>
 					<onup>99</onup>
 					<ondown>4</ondown>
 					<include>WeatherButtonCommonValues</include>
@@ -235,8 +235,8 @@
 					<description>Settings Push Button</description>
 					<posy>148</posy>
 					<label>5</label>
-					<texturefocus>special://skin/button_icons/icon-xbmc.png</texturefocus>
-					<texturenofocus>special://skin/button_icons/icon-xbmc.png</texturenofocus>
+					<texturefocus>button_icons/icon-xbmc.png</texturefocus>
+					<texturenofocus>button_icons/icon-xbmc.png</texturenofocus>
 					<onclick>ActivateWindow(MyWeatherSettings)</onclick>
 					<onup>2</onup>
 					<ondown>3</ondown>
