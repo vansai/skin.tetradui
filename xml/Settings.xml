@@ -1,4 +1,5 @@
-<window id="4">
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>	
 	<previouswindow>Settings</previouswindow>
@@ -223,7 +224,7 @@
 						<item>
 							<label>705</label>
 							<label2>31403</label2>
-							<onclick>ActivateWindow(NetworkSettings)</onclick>
+							<onclick>ActivateWindow(ServiceSettings)</onclick>
 							<icon>button_icons/icon-network.png</icon>
 						</item>
 						<item>
@@ -241,7 +242,7 @@
 						<item>
 							<label>20077</label>
 							<label2>31406</label2>
-							<onclick>ActivateWindow(1200)</onclick>
+							<onclick>ActivateWindow(SkinSettings)</onclick>
 							<icon>button_icons/icon-skin.png</icon>
 						</item>
 						<item>

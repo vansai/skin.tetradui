@@ -1,4 +1,5 @@
-<window id="136">
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
 	<include>dialogeffect</include>
 	<coordinates>
 		<system>0</system>
@@ -40,6 +41,11 @@
 					<aligny>center</aligny>
 					<label>31302</label>
 					<textcolor>orange</textcolor>
+				</control>
+				<control type="progress" id="10">
+					<description>Progressbar</description>
+					<!-- ADDED BY GADE! -->
+					<height>12</height>
 				</control>
 			</control>
 		</control>

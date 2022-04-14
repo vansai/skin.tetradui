@@ -1,8 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include file="defaults.xml" />
-	<include file="Views_Common.xml" />
-	<include file="Common_WindowBuilding.xml" />
 	<include file="IncludesCodecFlagging.xml" />
+	<include file="IncludesCommonWindowBuilding.xml" />
+	<include file="IncludesVariables.xml" />
+	<include file="Views_Common.xml" />
 
 	<constant name="HomeBladeAnimationSpeed">150</constant>
 	<constant name="HomeVisibleFadeAnimationSpeed">100</constant>

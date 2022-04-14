@@ -1,4 +1,5 @@
-<window id="112">
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
 	<defaultcontrol>402</defaultcontrol>
 	<include>dialogeffect</include>
 	<coordinates>
@@ -28,7 +29,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 			</control>
-			<control type="label" id="402">
+			<control type="label" id="405">
 				<description>Current Title Label</description>
 				<left>25</left>
 				<top>33</top>
@@ -38,7 +39,7 @@
 				<haspath>yes</haspath>
 				<font>font10</font>
 			</control>
-			<control type="progress" id="403">
+			<control type="progress" id="404">
 				<description>progress control</description>
 				<left>25</left>
 				<top>55</top>

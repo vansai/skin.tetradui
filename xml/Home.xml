@@ -1,4 +1,5 @@
-<window id="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<previouswindow>home</previouswindow>
 	<allowoverlay>no</allowoverlay>	

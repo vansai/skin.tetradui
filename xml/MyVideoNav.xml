@@ -1,4 +1,5 @@
-<window id="25">
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
@@ -144,7 +145,8 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>14</onup>
-					<ondown>19</ondown>
+					<ondown condition="Control.IsVisible(19)">19</ondown>
+					<ondown condition="!Control.IsVisible(19)">20</ondown>
 				</control>
 				<control type="radiobutton" id="19">
 					<description>Filter</description>
@@ -156,6 +158,23 @@
 					<onright>50</onright>
 					<onup>8</onup>
 					<ondown>16</ondown>
+					<selected>Container.Filtered</selected>
+					<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+				</control>
+				<control type="radiobutton" id="20">
+					<description>Filter Advanced</description>
+					<!-- ADDED BY GADE! -->
+					<left>8</left>
+					<top>160</top>
+					<include>ButtonCommonValues</include>
+					<label>587</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>8</onup>
+					<ondown>16</ondown>
+					<onclick>Filter</onclick>
+					<selected>Container.Filtered</selected>
+					<visible>Container.CanFilterAdvanced</visible>
 				</control>
 				<control type="radiobutton" id="16">
 					<description>PartyMode</description>
@@ -165,7 +184,8 @@
 					<label>589</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>19</onup>
+					<onup condition="Control.IsVisible(19)">19</onup>
+					<onup condition="!Control.IsVisible(19)">20</onup>
 					<ondown>17</ondown>
 				</control>
 				<control type="radiobutton" id="17">

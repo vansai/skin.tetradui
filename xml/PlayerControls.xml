@@ -1,4 +1,5 @@
-<window type="dialog" id="114">
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
 	<defaultcontrol always="true">603</defaultcontrol>
 	<include>dialogeffect</include>
 	<visible>Player.HasMedia + Window.IsActive(PlayerControls) + !Window.IsActive(FullscreenVideo) + !Window.IsActive(Visualisation)</visible>
