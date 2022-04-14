@@ -5,8 +5,8 @@
 		<include>CommonMediaBackground</include>
 		<control type="image">
 			<description>Background</description>
-			<posx>25</posx>
-			<posy>0</posy>
+			<left>25</left>
+			<top>0</top>
 			<width>50</width>
 			<height>720</height>
 			<aspectratio>stretch</aspectratio>
@@ -14,8 +14,8 @@
 		</control>
 		<control type="image">
 			<description>Background</description>
-			<posx>65r</posx>
-			<posy>0</posy>
+			<left>65r</left>
+			<top>0</top>
 			<width>50</width>
 			<height>720</height>
 			<aspectratio>stretch</aspectratio>
@@ -23,8 +23,8 @@
 		</control>
 		<control type="image">
 			<description>Background</description>
-			<posx>75</posx>
-			<posy>0</posy>
+			<left>75</left>
+			<top>0</top>
 			<width>1140</width>
 			<height>720</height>
 			<aspectratio>stretch</aspectratio>
@@ -33,24 +33,24 @@
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
 			<control type="group">
-				<posx>80</posx>
+				<left>80</left>
 				<animation effect="fade" delay="500" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>
 				<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
 				<control type="label">
 					<description>Header label</description>
-					<posx>0</posx>
+					<left>0</left>
 					<label>$LOCALIZE[20096]</label>
 					<include>HeaderTextCommons</include>
 				</control>
 				<control type="label">
 					<description>Time label</description>
-					<posx>1130</posx>
+					<left>1130</left>
 					<include>ClockTextCommons</include>
 				</control>
 				<control type="label">
 					<description>heading label</description>
-					<posx>110</posx>
-					<posy>100</posy>
+					<left>110</left>
+					<top>100</top>
 					<width>900</width>
 					<height>80</height>
 					<align>center</align>
@@ -60,8 +60,8 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="fixedlist" id="52">
-					<posx>-203</posx>
-					<posy>220</posy>
+					<left>-203</left>
+					<top>220</top>
 					<width>1280</width>
 					<height>260</height>
 					<onleft>52</onleft>
@@ -76,16 +76,16 @@
 					<preloaditems>4</preloaditems>
 					<itemlayout height="260" width="218">
 						<control type="image">
-							<posx>2</posx>
-							<posy>0</posy>
+							<left>2</left>
+							<top>0</top>
 							<width>214</width>
 							<height>250</height>
 							<aspectratio>stretch</aspectratio>
 							<texture border="10">thumb-nofocus.png</texture>
 						</control>
 						<control type="image">
-							<posx>12</posx>
-							<posy>10</posy>
+							<left>12</left>
+							<top>10</top>
 							<width>194</width>
 							<height>194</height>
 							<aspectratio>keep</aspectratio>
@@ -96,8 +96,8 @@
 					</itemlayout>
 					<focusedlayout height="260" width="218">
 						<control type="image">
-							<posx>2</posx>
-							<posy>0</posy>
+							<left>2</left>
+							<top>0</top>
 							<width>214</width>
 							<height>250</height>
 							<aspectratio>stretch</aspectratio>
@@ -105,8 +105,8 @@
 							<visible>Control.HasFocus(52)</visible>
 						</control>
 						<control type="image">
-							<posx>2</posx>
-							<posy>0</posy>
+							<left>2</left>
+							<top>0</top>
 							<width>214</width>
 							<height>250</height>
 							<aspectratio>stretch</aspectratio>
@@ -114,8 +114,8 @@
 							<visible>!Control.HasFocus(52)</visible>
 						</control>
 						<control type="image">
-							<posx>12</posx>
-							<posy>10</posy>
+							<left>12</left>
+							<top>10</top>
 							<width>194</width>
 							<height>194</height>
 							<aspectratio>keep</aspectratio>
@@ -125,8 +125,8 @@
 						</control>
 						<control type="label">
 							<description>Last Login label</description>
-							<posx>106</posx>
-							<posy>210</posy>
+							<left>106</left>
+							<top>210</top>
 							<width>214</width>
 							<height>30</height>
 							<align>center</align>
@@ -139,8 +139,8 @@
 				</control>
 				<control type="label">
 					<description>Last Login label</description>
-					<posx>110</posx>
-					<posy>500</posy>
+					<left>110</left>
+					<top>500</top>
 					<width>900</width>
 					<height>40</height>
 					<align>center</align>
@@ -152,16 +152,16 @@
 			</control>
 		</control>
 		<control type="image">
-			<posx>-110</posx>
-			<posy>-40</posy>
+			<left>-110</left>
+			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-left1.png</texture>
 		</control>
 		<control type="image">
-			<posx>65r</posx>
-			<posy>-40</posy>
+			<left>65r</left>
+			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>

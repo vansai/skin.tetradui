@@ -165,8 +165,8 @@
 			<visible>!IsEmpty(ListItem.Year)</visible>
 			<control type="image">
 				<description>Runtime back</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>90</width>
 				<height>35</height>
 				<aspectratio align="left">stretch</aspectratio>
@@ -174,8 +174,8 @@
 			</control>
 			<control type="label">
 				<description>Runtime</description>
-				<posx>10</posx>
-				<posy>8</posy>
+				<left>10</left>
+				<top>8</top>
 				<width>70</width>
 				<height>19</height>
 				<align>center</align>
@@ -192,8 +192,8 @@
 			<visible>!IsEmpty(ListItem.StarRating)</visible>
 			<control type="image">
 				<description>Rating back</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>110</width>
 				<height>35</height>
 				<aspectratio align="left">stretch</aspectratio>
@@ -201,8 +201,8 @@
 			</control>
 			<control type="image">
 				<description>Rating</description>
-				<posx>5</posx>
-				<posy>5</posy>
+				<left>5</left>
+				<top>5</top>
 				<width>100</width>
 				<height>25</height>
 				<aspectratio>keep</aspectratio>
@@ -219,8 +219,8 @@
 			<visible>!IsEmpty(ListItem.Date)</visible>
 			<control type="image">
 				<description>Date back</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>150</width>
 				<height>40</height>
 				<aspectratio align="left">stretch</aspectratio>
@@ -228,8 +228,8 @@
 			</control>
 			<control type="label">
 				<description>Runtime</description>
-				<posx>10</posx>
-				<posy>8</posy>
+				<left>10</left>
+				<top>8</top>
 				<width>130</width>
 				<height>22</height>
 				<align>center</align>
@@ -246,8 +246,8 @@
 			<visible>!IsEmpty(ListItem.PictureResolution)</visible>
 			<control type="image">
 				<description>Rating back</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>150</width>
 				<height>40</height>
 				<aspectratio align="left">stretch</aspectratio>
@@ -255,8 +255,8 @@
 			</control>
 			<control type="label">
 				<description>Runtime</description>
-				<posx>10</posx>
-				<posy>8</posy>
+				<left>10</left>
+				<top>8</top>
 				<width>130</width>
 				<height>22</height>
 				<align>center</align>

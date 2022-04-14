@@ -3,24 +3,24 @@
 	<include>dialogeffect</include>
 	<coordinates>
 		<system>1</system>
-		<posx>90</posx>
-		<posy>-3</posy>
+		<left>90</left>
+		<top>-3</top>
 	</coordinates>
 	<controls>
 		<control type="group">
 		<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)">conditional</animation>
 			<control type="image">
 				<description>Dialog Back</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>520</width>
 				<height>85</height>
 				<texture border="20,20,20,30">Dialog2.png</texture>
 			</control>
 			<control type="label" id="401">
 				<description>Caption Label</description>
-				<posx>25</posx>
-				<posy>15</posy>
+				<left>25</left>
+				<top>15</top>
 				<width>470</width>
 				<height>15</height>
 				<font>font10</font>
@@ -30,8 +30,8 @@
 			</control>
 			<control type="label" id="405">
 				<description>Current Title Label</description>
-				<posx>25</posx>
-				<posy>33</posy>
+				<left>25</left>
+				<top>33</top>
 				<width>470</width>
 				<height>15</height>
 				<aligny>center</aligny>
@@ -40,8 +40,8 @@
 			</control>
 			<control type="progress" id="404">
 				<description>progress control</description>
-				<posx>25</posx>
-				<posy>55</posy>
+				<left>25</left>
+				<top>55</top>
 				<width>470</width>
 				<height>4</height>
 			</control>
