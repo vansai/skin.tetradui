@@ -13,16 +13,16 @@
 				<effect type="fade" start="100" end="0" delay="800" time="100" />
 			</animation>
 			<control type="image">
-				<posx>130</posx>
-				<posy>-40</posy>
+				<left>130</left>
+				<top>-40</top>
 				<width>180</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>blades-runner-right.png</texture>
 			</control>
 			<control type="image">
-				<posx>310</posx>
-				<posy>-40</posy>
+				<left>310</left>
+				<top>-40</top>
 				<width>970</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -34,35 +34,35 @@
 				<animation effect="fade" delay="100" time="DialogVisibleFadeAnimationSpeed">WindowClose</animation>
 				<control type="label">
 					<description>Title label Normal</description>
-					<posx>200</posx>
+					<left>200</left>
 					<label>20159</label>
 					<include>DialogHeaderTextCommons</include>
 					<visible>!container.content(movies) + !container.content(tvshows) + !container.content(episodes) + !container.content(musicvideos)</visible>
 				</control>
 				<control type="label">
 					<description>Title label Movies</description>
-					<posx>200</posx>
+					<left>200</left>
 					<label>13346</label>
 					<include>DialogHeaderTextCommons</include>
 					<visible>container.content(movies)</visible>
 				</control>
 				<control type="label">
 					<description>Title label TV Shows</description>
-					<posx>200</posx>
+					<left>200</left>
 					<label>20351</label>
 					<include>DialogHeaderTextCommons</include>
 					<visible>container.content(tvshows)</visible>
 				</control>
 				<control type="label">
 					<description>Title label Episode</description>
-					<posx>200</posx>
+					<left>200</left>
 					<label>20352</label>
 					<include>DialogHeaderTextCommons</include>
 					<visible>container.content(episodes)</visible>
 				</control>
 				<control type="label">
 					<description>Title label Music Videos</description>
-					<posx>200</posx>
+					<left>200</left>
 					<label>20393</label>
 					<include>DialogHeaderTextCommons</include>
 					<visible>container.content(musicvideos)</visible>
@@ -72,8 +72,8 @@
 					<include>VisibleFadeEffect</include>
 					<control type="largeimage">
 						<description>Fanart image</description>
-						<posx>200</posx>
-						<posy>110</posy>
+						<left>200</left>
+						<top>110</top>
 						<width>1050</width>
 						<height>500</height>
 						<texture background="true">$INFO[Listitem.Property(fanart_image)]</texture>
@@ -84,8 +84,8 @@
 				</control>
 				<control type="label">
 					<description>Video Title value</description>
-					<posx>200</posx>
-					<posy>70</posy>
+					<left>200</left>
+					<top>70</top>
 					<width>1000</width>
 					<height>25</height>
 					<align>center</align>
@@ -99,13 +99,13 @@
 					<visible>!Control.HasFocus(12) + !Control.IsVisible(50)</visible>
 					<include>VisibleFadeEffect</include>
 					<control type="group">
-						<posx>200</posx>
-						<posy>120</posy>
+						<left>200</left>
+						<top>120</top>
 						<visible>!container.content(tvshows) + !container.content(episodes) + !container.content(musicvideos)</visible>
 						<control type="image">
 							<description>Cover image</description>
-							<posx>-15</posx>
-							<posy>0</posy>
+							<left>-15</left>
+							<top>0</top>
 							<width>300</width>
 							<height>435</height>
 							<texture background="true">$INFO[Listitem.Icon]</texture>
@@ -114,20 +114,20 @@
 							<bordersize>18,2,18,2</bordersize>
 						</control>
 						<control type="panel" id="49">
-							<posx>310</posx>
-							<posy>0</posy>
+							<left>310</left>
+							<top>0</top>
 							<width>750</width>
 							<height>300</height>
 							<onleft>9000</onleft>
 							<onright>9000</onright>
 							<onup>9000</onup>
 							<ondown>9000</ondown>
-							<pagecontrol>-</pagecontrol>
+							
 							<scrolltime>200</scrolltime>
 							<itemlayout height="30" width="750">
 								<control type="label">
-									<posx>160</posx>
-									<posy>0</posy>
+									<left>160</left>
+									<top>0</top>
 									<width>160</width>
 									<height>30</height>
 									<font>font12</font>
@@ -138,8 +138,8 @@
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
-									<posx>175</posx>
-									<posy>0</posy>
+									<left>175</left>
+									<top>0</top>
 									<width>565</width>
 									<height>30</height>
 									<font>font12</font>
@@ -152,16 +152,16 @@
 							</itemlayout>
 							<focusedlayout height="30" width="750">
 								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
+									<left>0</left>
+									<top>0</top>
 									<width>750</width>
 									<height>33</height>
 									<visible>Control.HasFocus(49)</visible>
 									<texture border="10">list-focus.png</texture>
 								</control>
 								<control type="label">
-									<posx>160</posx>
-									<posy>0</posy>
+									<left>160</left>
+									<top>0</top>
 									<width>160</width>
 									<height>30</height>
 									<font>font12</font>
@@ -172,8 +172,8 @@
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
-									<posx>175</posx>
-									<posy>0</posy>
+									<left>175</left>
+									<top>0</top>
 									<width>565</width>
 									<height>30</height>
 									<font>font12</font>
@@ -188,74 +188,74 @@
 								<item>
 									<label>$LOCALIZE[20339]:</label>
 									<label2>$INFO[ListItem.Director]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Director)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[20417]:</label>
 									<label2>$INFO[ListItem.Writer]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Writer)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[572]:</label>
 									<label2>$INFO[ListItem.Studio]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Studio)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[515]:</label>
 									<label2>$INFO[ListItem.Genre]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Genre)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[562]:</label>
 									<label2>$INFO[ListItem.Year]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Year)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[2050]:</label>
 									<label2>$INFO[ListItem.Duration]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Duration)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[563]:</label>
 									<label2>$INFO[ListItem.Rating]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Rating)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[202]:</label>
 									<label2>$INFO[ListItem.TagLine]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.TagLine)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[203]:</label>
 									<label2>$INFO[ListItem.PlotOutline]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.PlotOutline)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[20074]:</label>
 									<label2>$INFO[ListItem.mpaa]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.mpaa)</visible>
 								</item>
 							</content>
 						</control>
 					</control>
 					<control type="group">
-						<posx>200</posx>
-						<posy>120</posy>
+						<left>200</left>
+						<top>120</top>
 						<visible>Container.Content(TVShows)</visible>
 						<control type="image">
 							<description>Cover image</description>
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1050</width>
 							<height>150</height>
 							<texture background="true">$INFO[Listitem.Icon]</texture>
@@ -264,20 +264,19 @@
 							<bordersize>18,2,18,2</bordersize>
 						</control>
 						<control type="panel" id="49">
-							<posx>50</posx>
-							<posy>160</posy>
+							<left>50</left>
+							<top>160</top>
 							<width>940</width>
 							<height>153</height>
 							<onleft>9000</onleft>
 							<onright>50</onright>
 							<onup>49</onup>
 							<ondown>49</ondown>
-							<pagecontrol>-</pagecontrol>
 							<scrolltime>200</scrolltime>
 							<itemlayout height="30" width="940">
 								<control type="label">
-									<posx>160</posx>
-									<posy>0</posy>
+									<left>160</left>
+									<top>0</top>
 									<width>160</width>
 									<height>30</height>
 									<font>font12</font>
@@ -288,8 +287,8 @@
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
-									<posx>175</posx>
-									<posy>0</posy>
+									<left>175</left>
+									<top>0</top>
 									<width>565</width>
 									<height>30</height>
 									<font>font12</font>
@@ -302,16 +301,16 @@
 							</itemlayout>
 							<focusedlayout height="30" width="940">
 								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
+									<left>0</left>
+									<top>0</top>
 									<width>940</width>
 									<height>33</height>
 									<visible>Control.HasFocus(49)</visible>
 									<texture border="10">list-focus.png</texture>
 								</control>
 								<control type="label">
-									<posx>160</posx>
-									<posy>0</posy>
+									<left>160</left>
+									<top>0</top>
 									<width>160</width>
 									<height>30</height>
 									<font>font12</font>
@@ -322,8 +321,8 @@
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
-									<posx>175</posx>
-									<posy>0</posy>
+									<left>175</left>
+									<top>0</top>
 									<width>565</width>
 									<height>30</height>
 									<font>font12</font>
@@ -338,44 +337,44 @@
 								<item>
 									<label>$LOCALIZE[20360]:</label>
 									<label2>$INFO[ListItem.Episode]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Episode)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[20416]:</label>
 									<label2>$INFO[ListItem.Premiered]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Premiered)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[515]:</label>
 									<label2>$INFO[ListItem.Genre]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Genre)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[562]:</label>
 									<label2>$INFO[ListItem.Year]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Year)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[563]:</label>
 									<label2>$INFO[ListItem.Rating]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Rating)</visible>
 								</item>
 							</content>
 						</control>
 					</control>
 					<control type="group">
-						<posx>200</posx>
-						<posy>120</posy>
+						<left>200</left>
+						<top>120</top>
 						<visible>Container.Content(Episodes)</visible>
 						<control type="image">
 							<description>Cover image</description>
-							<posx>-25</posx>
-							<posy>0</posy>
+							<left>-25</left>
+							<top>0</top>
 							<width>440</width>
 							<height>300</height>
 							<texture background="true">$INFO[Listitem.Icon]</texture>
@@ -384,20 +383,19 @@
 							<bordersize>18,2,18,2</bordersize>
 						</control>
 						<control type="panel" id="49">
-							<posx>410</posx>
-							<posy>0</posy>
+							<left>410</left>
+							<top>0</top>
 							<width>650</width>
 							<height>300</height>
 							<onleft>9000</onleft>
 							<onright>9000</onright>
 							<onup>9000</onup>
 							<ondown>9000</ondown>
-							<pagecontrol>-</pagecontrol>
 							<scrolltime>200</scrolltime>
 							<itemlayout height="30" width="650">
 								<control type="label">
-									<posx>160</posx>
-									<posy>0</posy>
+									<left>160</left>
+									<top>0</top>
 									<width>160</width>
 									<height>30</height>
 									<font>font12</font>
@@ -408,8 +406,8 @@
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
-									<posx>175</posx>
-									<posy>0</posy>
+									<left>175</left>
+									<top>0</top>
 									<width>465</width>
 									<height>30</height>
 									<font>font12</font>
@@ -422,16 +420,16 @@
 							</itemlayout>
 							<focusedlayout height="30" width="650">
 								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
+									<left>0</left>
+									<top>0</top>
 									<width>650</width>
 									<height>33</height>
 									<visible>Control.HasFocus(49)</visible>
 									<texture border="10">list-focus.png</texture>
 								</control>
 								<control type="label">
-									<posx>160</posx>
-									<posy>0</posy>
+									<left>160</left>
+									<top>0</top>
 									<width>160</width>
 									<height>30</height>
 									<font>font12</font>
@@ -442,8 +440,8 @@
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
-									<posx>175</posx>
-									<posy>0</posy>
+									<left>175</left>
+									<top>0</top>
 									<width>465</width>
 									<height>30</height>
 									<font>font12</font>
@@ -458,74 +456,74 @@
 								<item>
 									<label>$LOCALIZE[20364]:</label>
 									<label2>$INFO[ListItem.TVShowTitle]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.TVShowTitle)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[20373]:</label>
 									<label2>$INFO[ListItem.Season]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Season)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[20359]:</label>
 									<label2>$INFO[ListItem.Episode]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Episode)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[20416]:</label>
 									<label2>$INFO[ListItem.Premiered]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Premiered)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[515]:</label>
 									<label2>$INFO[ListItem.Genre]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Genre)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[20339]:</label>
 									<label2>$INFO[ListItem.Director]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Director)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[20417]:</label>
 									<label2>$INFO[ListItem.Writer]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Writer)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[562]:</label>
 									<label2>$INFO[ListItem.Year]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Year)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[2050]:</label>
 									<label2>$INFO[ListItem.Duration]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Duration)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[563]:</label>
 									<label2>$INFO[ListItem.Rating]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Rating)</visible>
 								</item>
 							</content>
 						</control>
 					</control>
 					<control type="group">
-						<posx>200</posx>
-						<posy>120</posy>
+						<left>200</left>
+						<top>120</top>
 						<visible>Container.Content(MusicVideos)</visible>
 						<control type="image">
 							<description>Cover image</description>
-							<posx>-25</posx>
-							<posy>0</posy>
+							<left>-25</left>
+							<top>0</top>
 							<width>440</width>
 							<height>300</height>
 							<texture background="true">$INFO[Listitem.Icon]</texture>
@@ -534,20 +532,19 @@
 							<bordersize>18,2,18,2</bordersize>
 						</control>
 						<control type="panel" id="49">
-							<posx>410</posx>
-							<posy>0</posy>
+							<left>410</left>
+							<top>0</top>
 							<width>650</width>
 							<height>300</height>
 							<onleft>9000</onleft>
 							<onright>9000</onright>
 							<onup>9000</onup>
 							<ondown>9000</ondown>
-							<pagecontrol>-</pagecontrol>
 							<scrolltime>200</scrolltime>
 							<itemlayout height="30" width="650">
 								<control type="label">
-									<posx>160</posx>
-									<posy>0</posy>
+									<left>160</left>
+									<top>0</top>
 									<width>160</width>
 									<height>30</height>
 									<font>font12</font>
@@ -558,8 +555,8 @@
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
-									<posx>175</posx>
-									<posy>0</posy>
+									<left>175</left>
+									<top>0</top>
 									<width>465</width>
 									<height>30</height>
 									<font>font12</font>
@@ -572,16 +569,16 @@
 							</itemlayout>
 							<focusedlayout height="30" width="650">
 								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
+									<left>0</left>
+									<top>0</top>
 									<width>650</width>
 									<height>33</height>
 									<visible>Control.HasFocus(49)</visible>
 									<texture border="10">list-focus.png</texture>
 								</control>
 								<control type="label">
-									<posx>160</posx>
-									<posy>0</posy>
+									<left>160</left>
+									<top>0</top>
 									<width>160</width>
 									<height>30</height>
 									<font>font12</font>
@@ -592,8 +589,8 @@
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
-									<posx>175</posx>
-									<posy>0</posy>
+									<left>175</left>
+									<top>0</top>
 									<width>465</width>
 									<height>30</height>
 									<font>font12</font>
@@ -608,43 +605,43 @@
 								<item>
 									<label>$LOCALIZE[557]:</label>
 									<label2>$INFO[ListItem.Artist]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Artist)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[558]:</label>
 									<label2>$INFO[ListItem.Album]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Album)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[515]:</label>
 									<label2>$INFO[ListItem.Genre]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Genre)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[572]:</label>
 									<label2>$INFO[ListItem.Studio]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Studio)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[20417]:</label>
 									<label2>$INFO[ListItem.Writer]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Writer)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[562]:</label>
 									<label2>$INFO[ListItem.Year]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Year)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[2050]:</label>
 									<label2>$INFO[ListItem.Duration]</label2>
-									<onclick>-</onclick>
+									<onclick>noop</onclick>
 									<visible>!IsEmpty(ListItem.Duration)</visible>
 								</item>
 							</content>
@@ -656,8 +653,8 @@
 					<include>VisibleFadeEffect</include>
 					<control type="textbox" id="400">
 						<description>textarea</description>
-						<posx>520</posx>
-						<posy>450</posy>
+						<left>520</left>
+						<top>450</top>
 						<width>730</width>
 						<height>150</height>
 						<font>font12</font>
@@ -668,8 +665,8 @@
 					</control>
 					<control type="textbox" id="400">
 						<description>textarea</description>
-						<posx>220</posx>
-						<posy>450</posy>
+						<left>220</left>
+						<top>450</top>
 						<width>1000</width>
 						<height>150</height>
 						<font>font12</font>
@@ -679,8 +676,8 @@
 						<pagecontrol>61</pagecontrol>
 					</control>
 					<control type="panel" id="50">
-						<posx>220</posx>
-						<posy>150</posy>
+						<left>220</left>
+						<top>150</top>
 						<width>1000</width>
 						<height>400</height>
 						<onleft>9000</onleft>
@@ -693,15 +690,15 @@
 						<orientation>vertical</orientation>
 						<itemlayout height="100" width="500">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>500</width>
 								<height>95</height>
 								<texture>wide-thumb-nofocus.png</texture>
 							</control>
 							<control type="image">
-								<posx>0</posx>
-								<posy>5</posy>
+								<left>0</left>
+								<top>5</top>
 								<width>100</width>
 								<height>85</height>
 								<texture fallback="DefaultActor.png">$INFO[ListItem.Icon]</texture>
@@ -709,8 +706,8 @@
 								<bordersize>17,1,17,1</bordersize>
 							</control>
 							<control type="textbox">
-								<posx>110</posx>
-								<posy>10</posy>
+								<left>110</left>
+								<top>10</top>
 								<width>380</width>
 								<height>75</height>
 								<font>font13</font>
@@ -720,15 +717,15 @@
 						</itemlayout>
 						<focusedlayout height="100" width="500">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>500</width>
 								<height>95</height>
 								<texture>wide-thumb-focus.png</texture>
 							</control>
 							<control type="image">
-								<posx>0</posx>
-								<posy>5</posy>
+								<left>0</left>
+								<top>5</top>
 								<width>100</width>
 								<height>85</height>
 								<texture fallback="DefaultActor.png">$INFO[ListItem.Icon]</texture>
@@ -736,8 +733,8 @@
 								<bordersize>17,1,17,1</bordersize>
 							</control>
 							<control type="textbox">
-								<posx>110</posx>
-								<posy>10</posy>
+								<left>110</left>
+								<top>10</top>
 								<width>380</width>
 								<height>75</height>
 								<font>font13</font>
@@ -749,8 +746,8 @@
 					</control>
 					<control type="spincontrol" id="61">
 						<description>Next page button</description>
-						<posx>100r</posx>
-						<posy>120r</posy>
+						<left>100r</left>
+						<top>120r</top>
 						<subtype>page</subtype>
 						<font>font12</font>
 						<onleft>61</onleft>
@@ -763,8 +760,8 @@
 				</control>
 				<control type="grouplist">
 					<description>Media Codec Flagging Images</description>
-					<posx>640r</posx>
-					<posy>20</posy>
+					<left>640r</left>
+					<top>20</top>
 					<width>620</width>
 					<itemgap>5</itemgap>
 					<align>right</align>
@@ -775,8 +772,8 @@
 					<include>AspectCodecFlagging</include>
 				</control>
 				<control type="grouplist" id="9000">
-					<posx>200</posx>
-					<posy>70r</posy>
+					<left>200</left>
+					<top>70r</top>
 					<width>1040</width>
 					<height>50</height>
 					<onleft>9000</onleft>

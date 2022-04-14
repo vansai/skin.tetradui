@@ -2,23 +2,23 @@
 <!-- Backgrounds -->
 	<include name="CommonVideoVizBackground">
 		<control type="videowindow">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<visible>Player.HasVideo + !Skin.HasSetting(Back_Video)</visible>
 		</control>
 		<control type="visualisation">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<visible>Player.HasAudio + !Skin.HasSetting(Back_Vis)</visible>
 		</control>
 		<control type="image">
 			<description>Background Fanart</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
@@ -35,8 +35,8 @@
 			<include>VisibleFadeEffect</include>
 			<control type="image">
 				<description>Raindrop 5 animation</description>
-				<posx>200</posx>
-				<posy>150</posy>
+				<left>200</left>
+				<top>150</top>
 				<width>128</width>
 				<height>128</height>
 				<texture background="true">rain-drop.png</texture>
@@ -50,8 +50,8 @@
 			</control>
 			<control type="image">
 				<description>Raindrop 1 animation</description>
-				<posx>550</posx>
-				<posy>200</posy>
+				<left>550</left>
+				<top>200</top>
 				<width>128</width>
 				<height>128</height>
 				<texture background="true">rain-drop.png</texture>
@@ -65,8 +65,8 @@
 			</control>
 			<control type="image">
 				<description>Raindrop 2 animation</description>
-				<posx>900</posx>
-				<posy>130</posy>
+				<left>900</left>
+				<top>130</top>
 				<width>128</width>
 				<height>128</height>
 				<texture background="true">rain-drop.png</texture>
@@ -79,8 +79,8 @@
 			</control>
 			<control type="image">
 				<description>Raindrop 3 animation</description>
-				<posx>800</posx>
-				<posy>500</posy>
+				<left>800</left>
+				<top>500</top>
 				<width>128</width>
 				<height>128</height>
 				<texture background="true">rain-drop.png</texture>
@@ -94,8 +94,8 @@
 			</control>
 			<control type="image">
 				<description>Raindrop 4 animation</description>
-				<posx>200</posx>
-				<posy>450</posy>
+				<left>200</left>
+				<top>450</top>
 				<width>128</width>
 				<height>128</height>
 				<texture background="true">rain-drop.png</texture>
@@ -112,8 +112,8 @@
 	<include name="CommonWeatherBackground">
 		<control type="image">
 			<description>Background Weather</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true" fallback="special://skin/backgrounds/weather.png">$INFO[Skin.String(Background_Weather)]</texture>
@@ -124,8 +124,8 @@
 	<include name="CommonAppsBackground">
 		<control type="image">
 			<description>Background Apps</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true" fallback="backgrounds/apps.png">$INFO[Skin.String(Background_Apps)]</texture>
@@ -136,8 +136,8 @@
 	<include name="CommonMediaBackground">
 		<control type="image">
 			<description>Background Media</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true" fallback="backgrounds/media.png">$INFO[Skin.String(Background_Media)]</texture>
@@ -148,8 +148,8 @@
 	<include name="CommonSystemBackground">
 		<control type="image">
 			<description>Background System</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true" fallback="backgrounds/system.png">$INFO[Skin.String(Background_System)]</texture>
@@ -162,8 +162,8 @@
 	<include name="CommonWeatherBlackwash">
 		<control type="image">
 			<description>Background</description>
-			<posx>55</posx>
-			<posy>0</posy>
+			<left>55</left>
+			<top>0</top>
 			<width>50</width>
 			<height>720</height>
 			<aspectratio>stretch</aspectratio>
@@ -171,8 +171,8 @@
 		</control>
 		<control type="image">
 			<description>Background</description>
-			<posx>55r</posx>
-			<posy>0</posy>
+			<left>55r</left>
+			<top>0</top>
 			<width>50</width>
 			<height>720</height>
 			<aspectratio>stretch</aspectratio>
@@ -182,8 +182,8 @@
 		</control>
 		<control type="image">
 			<description>Background</description>
-			<posx>105</posx>
-			<posy>0</posy>
+			<left>105</left>
+			<top>0</top>
 			<width>1120</width>
 			<height>720</height>
 			<aspectratio>stretch</aspectratio>
@@ -195,8 +195,8 @@
 	<include name="CommonAppsBlackwash">
 		<control type="image">
 			<description>Background</description>
-			<posx>55</posx>
-			<posy>0</posy>
+			<left>55</left>
+			<top>0</top>
 			<width>50</width>
 			<height>720</height>
 			<aspectratio>stretch</aspectratio>
@@ -206,8 +206,8 @@
 		</control>
 		<control type="image">
 			<description>Background</description>
-			<posx>55r</posx>
-			<posy>0</posy>
+			<left>55r</left>
+			<top>0</top>
 			<width>50</width>
 			<height>720</height>
 			<aspectratio>stretch</aspectratio>
@@ -217,8 +217,8 @@
 		</control>
 		<control type="image">
 			<description>Background</description>
-			<posx>105</posx>
-			<posy>0</posy>
+			<left>105</left>
+			<top>0</top>
 			<width>1120</width>
 			<height>720</height>
 			<aspectratio>stretch</aspectratio>
@@ -230,8 +230,8 @@
 	<include name="CommonMediaBlackwash">
 		<control type="image">
 			<description>Background</description>
-			<posx>55</posx>
-			<posy>0</posy>
+			<left>55</left>
+			<top>0</top>
 			<width>50</width>
 			<height>720</height>
 			<aspectratio>stretch</aspectratio>
@@ -241,8 +241,8 @@
 		</control>
 		<control type="image">
 			<description>Background</description>
-			<posx>55r</posx>
-			<posy>0</posy>
+			<left>55r</left>
+			<top>0</top>
 			<width>50</width>
 			<height>720</height>
 			<aspectratio>stretch</aspectratio>
@@ -252,8 +252,8 @@
 		</control>
 		<control type="image">
 			<description>Background</description>
-			<posx>105</posx>
-			<posy>0</posy>
+			<left>105</left>
+			<top>0</top>
 			<width>1120</width>
 			<height>720</height>
 			<aspectratio>stretch</aspectratio>
@@ -265,8 +265,8 @@
 	<include name="CommonSystemBlackwash">
 		<control type="image">
 			<description>Background</description>
-			<posx>55</posx>
-			<posy>0</posy>
+			<left>55</left>
+			<top>0</top>
 			<width>50</width>
 			<height>720</height>
 			<aspectratio>stretch</aspectratio>
@@ -276,8 +276,8 @@
 		</control>
 		<control type="image">
 			<description>Background</description>
-			<posx>55r</posx>
-			<posy>0</posy>
+			<left>55r</left>
+			<top>0</top>
 			<width>50</width>
 			<height>720</height>
 			<aspectratio>stretch</aspectratio>
@@ -285,8 +285,8 @@
 		</control>
 		<control type="image">
 			<description>Background</description>
-			<posx>105</posx>
-			<posy>0</posy>
+			<left>105</left>
+			<top>0</top>
 			<width>1120</width>
 			<height>720</height>
 			<aspectratio>stretch</aspectratio>
@@ -300,16 +300,16 @@
 	<include name="WeatherToSubBlades">
 		<!-- Left side -->
 		<control type="image">
-			<posx>-120</posx>
-			<posy>-40</posy>
+			<left>-120</left>
+			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-left1.png</texture>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>-40</posy>
+			<left>0</left>
+			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -318,26 +318,26 @@
 		<control type="label">
 			<description>Weather Label</description>
 			<label>31004</label>
-			<posx>90</posx>
-			<posy>170</posy>
+			<left>90</left>
+			<top>170</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
-			<aligny>middle</aligny>
+			<aligny>center</aligny>
 			<angle>270</angle>
 		</control>
 		<!-- Right side -->
 		<control type="image">
-			<posx>55r</posx>
-			<posy>-40</posy>
+			<left>55r</left>
+			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-right.png</texture>
 		</control>
 		<control type="image">
-			<posx>-35r</posx>
-			<posy>-40</posy>
+			<left>-35r</left>
+			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -354,12 +354,12 @@
 		<control type="label">
 			<description>System Label</description>
 			<label>31003</label>
-			<posx>-100r</posx>
-			<posy>210</posy>
+			<left>-100r</left>
+			<top>210</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
-			<aligny>middle</aligny>
+			<aligny>center</aligny>
 			<angle>270</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Weather)">
 				<effect type="slide" start="-150,0" end="-160,0" time="100" />
@@ -371,8 +371,8 @@
 			</animation>
 		</control>
 		<control type="image">
-			<posx>15r</posx>
-			<posy>-40</posy>
+			<left>15r</left>
+			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -389,12 +389,12 @@
 		<control type="label">
 			<description>Media Label</description>
 			<label>31001</label>
-			<posx>-50r</posx>
-			<posy>200</posy>
+			<left>-50r</left>
+			<top>200</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
-			<aligny>middle</aligny>
+			<aligny>center</aligny>
 			<angle>270</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Weather)">
 				<effect type="slide" start="-150,0" end="-160,0" time="100" />
@@ -406,8 +406,8 @@
 			</animation>
 		</control>
 		<control type="image">
-			<posx>65r</posx>
-			<posy>-40</posy>
+			<left>65r</left>
+			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -424,12 +424,12 @@
 		<control type="label">
 			<description>Apps Label</description>
 			<label>31002</label>
-			<posx>0r</posx>
-			<posy>190</posy>
+			<left>0r</left>
+			<top>190</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
-			<aligny>middle</aligny>
+			<aligny>center</aligny>
 			<angle>270</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Weather)">
 				<effect type="slide" start="-150,0" end="-160,0" time="100" />
@@ -441,8 +441,8 @@
 			</animation>
 		</control>
 		<control type="image">
-			<posx>55r</posx>
-			<posy>-40</posy>
+			<left>55r</left>
+			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -454,16 +454,16 @@
 	<include name="AppsToSubBlades">
 		<!-- Left side -->
 		<control type="image">
-			<posx>-110</posx>
-			<posy>-40</posy>
+			<left>-110</left>
+			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-left.png</texture>
 		</control>
 		<control type="image">
-			<posx>-50</posx>
-			<posy>-40</posy>
+			<left>-50</left>
+			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -480,12 +480,12 @@
 		<control type="label">
 			<description>weather Label</description>
 			<label>31004</label>
-			<posx>40</posx>
-			<posy>190</posy>
+			<left>40</left>
+			<top>190</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
-			<aligny>middle</aligny>
+			<aligny>center</aligny>
 			<angle>270</angle>
 			<animation type="WindowOpen" condition="Window.Previous(1111)">
 				<effect type="slide" start="50,0" end="60,0" time="100" />
@@ -497,8 +497,8 @@
 			</animation>
 		</control>
 		<control type="image">
-			<posx>-120</posx>
-			<posy>-40</posy>
+			<left>-120</left>
+			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -506,8 +506,8 @@
 			<animation effect="fade" start="100" end="0" time="100" delay="HomeBladeAnimationSpeed" condition="Window.Next(1111)">WindowClose</animation>
 		</control>
 		<control type="image">
-			<posx>-0</posx>
-			<posy>-40</posy>
+			<left>-0</left>
+			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -524,12 +524,12 @@
 		<control type="label">
 			<description>Applications Label</description>
 			<label>31002</label>
-			<posx>90</posx>
-			<posy>170</posy>
+			<left>90</left>
+			<top>170</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
-			<aligny>middle</aligny>
+			<aligny>center</aligny>
 			<angle>270</angle>
 			<animation type="WindowOpen" condition="Window.Previous(1111)">
 				<effect type="slide" start="50,0" end="60,0" time="100" />
@@ -542,16 +542,16 @@
 		</control>
 		<!-- Right side -->
 		<control type="image">
-			<posx>55r</posx>
-			<posy>-40</posy>
+			<left>55r</left>
+			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-right.png</texture>
 		</control>
 		<control type="image">
-			<posx>15r</posx>
-			<posy>-40</posy>
+			<left>15r</left>
+			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -568,12 +568,12 @@
 		<control type="label">
 			<description>System Label</description>
 			<label>31003</label>
-			<posx>-50r</posx>
-			<posy>200</posy>
+			<left>-50r</left>
+			<top>200</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
-			<aligny>middle</aligny>
+			<aligny>center</aligny>
 			<angle>270</angle>
 			<animation type="WindowOpen" condition="Window.Previous(1111)">
 				<effect type="slide" start="-100,0" end="-110,0" time="100" />
@@ -585,8 +585,8 @@
 			</animation>
 		</control>
 		<control type="image">
-			<posx>65r</posx>
-			<posy>-40</posy>
+			<left>65r</left>
+			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -603,12 +603,12 @@
 		<control type="label">
 			<description>Media Label</description>
 			<label>31001</label>
-			<posx>0r</posx>
-			<posy>190</posy>
+			<left>0r</left>
+			<top>190</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
-			<aligny>middle</aligny>
+			<aligny>center</aligny>
 			<angle>270</angle>
 			<animation type="WindowOpen" condition="Window.Previous(1111)">
 				<effect type="slide" start="-100,0" end="-110,0" time="100" />
@@ -620,8 +620,8 @@
 			</animation>
 		</control>
 		<control type="image">
-			<posx>55r</posx>
-			<posy>-40</posy>
+			<left>55r</left>
+			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -633,16 +633,16 @@
 	<include name="MediaToSubBlades">
 		<!-- Left side -->
 		<control type="image">
-			<posx>-110</posx>
-			<posy>-40</posy>
+			<left>-110</left>
+			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-left.png</texture>
 		</control>
 		<control type="image">
-			<posx>-100</posx>
-			<posy>-40</posy>
+			<left>-100</left>
+			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -659,12 +659,12 @@
 		<control type="label">
 			<description>weather Label</description>
 			<label>31004</label>
-			<posx>-10</posx>
-			<posy>200</posy>
+			<left>-10</left>
+			<top>200</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
-			<aligny>middle</aligny>
+			<aligny>center</aligny>
 			<angle>270</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Home)">
 				<effect type="slide" start="100,0" end="110,0" time="100" />
@@ -676,8 +676,8 @@
 			</animation>
 		</control>
 		<control type="image">
-			<posx>-50</posx>
-			<posy>-40</posy>
+			<left>-50</left>
+			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -694,12 +694,12 @@
 		<control type="label">
 			<description>Applications Label</description>
 			<label>31002</label>
-			<posx>40</posx>
-			<posy>190</posy>
+			<left>40</left>
+			<top>190</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
-			<aligny>middle</aligny>
+			<aligny>center</aligny>
 			<angle>270</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Home)">
 				<effect type="slide" start="100,0" end="110,0" time="100" />
@@ -711,8 +711,8 @@
 			</animation>
 		</control>
 		<control type="image">
-			<posx>-120</posx>
-			<posy>-40</posy>
+			<left>-120</left>
+			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -720,8 +720,8 @@
 			<animation effect="fade" start="100" end="0" time="100" delay="HomeBladeAnimationSpeed" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>-40</posy>
+			<left>0</left>
+			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -738,12 +738,12 @@
 		<control type="label">
 			<description>Media Label</description>
 			<label>31001</label>
-			<posx>90</posx>
-			<posy>170</posy>
+			<left>90</left>
+			<top>170</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
-			<aligny>middle</aligny>
+			<aligny>center</aligny>
 			<angle>270</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Home)">
 				<effect type="slide" start="100,0" end="110,0" time="100" />
@@ -756,16 +756,16 @@
 		</control>
 		<!-- Right side -->
 		<control type="image">
-			<posx>55r</posx>
-			<posy>-40</posy>
+			<left>55r</left>
+			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-right.png</texture>
 		</control>
 		<control type="image">
-			<posx>65r</posx>
-			<posy>-40</posy>
+			<left>65r</left>
+			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -782,12 +782,12 @@
 		<control type="label">
 			<description>System Label</description>
 			<label>31003</label>
-			<posx>0r</posx>
-			<posy>190</posy>
+			<left>0r</left>
+			<top>190</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
-			<aligny>middle</aligny>
+			<aligny>center</aligny>
 			<angle>270</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Home)">
 				<effect type="slide" start="-50,0" end="-60,0" time="100" />
@@ -799,8 +799,8 @@
 			</animation>
 		</control>
 		<control type="image">
-			<posx>55r</posx>
-			<posy>-40</posy>
+			<left>55r</left>
+			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -812,8 +812,8 @@
 	<include name="SettingsToSubBlades">
 		<!-- Left side -->
 		<control type="image">
-			<posx>-120</posx>
-			<posy>-40</posy>
+			<left>-120</left>
+			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -821,8 +821,8 @@
 			<animation effect="fade" start="0" end="100" time="0" delay="HomeBladeAnimationSpeed" condition="Window.Next(Settings)">WindowClose</animation>
 		</control>
 		<control type="image">
-			<posx>-150</posx>
-			<posy>-40</posy>
+			<left>-150</left>
+			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -839,12 +839,12 @@
 		<control type="label">
 			<description>weather Label</description>
 			<label>31004</label>
-			<posx>-60</posx>
-			<posy>210</posy>
+			<left>-60</left>
+			<top>210</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
-			<aligny>middle</aligny>
+			<aligny>center</aligny>
 			<angle>270</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Settings)">
 				<effect type="slide" start="150,0" end="160,0" time="100" />
@@ -856,8 +856,8 @@
 			</animation>
 		</control>
 		<control type="image">
-			<posx>-100</posx>
-			<posy>-40</posy>
+			<left>-100</left>
+			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -874,12 +874,12 @@
 		<control type="label">
 			<description>Apps Label</description>
 			<label>31002</label>
-			<posx>-10</posx>
-			<posy>200</posy>
+			<left>-10</left>
+			<top>200</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
-			<aligny>middle</aligny>
+			<aligny>center</aligny>
 			<angle>270</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Settings)">
 				<effect type="slide" start="150,0" end="160,0" time="100" />
@@ -891,8 +891,8 @@
 			</animation>
 		</control>
 		<control type="image">
-			<posx>-50</posx>
-			<posy>-40</posy>
+			<left>-50</left>
+			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -909,12 +909,12 @@
 		<control type="label">
 			<description>Media Label</description>
 			<label>31001</label>
-			<posx>40</posx>
-			<posy>190</posy>
+			<left>40</left>
+			<top>190</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
-			<aligny>middle</aligny>
+			<aligny>center</aligny>
 			<angle>270</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Settings)">
 				<effect type="slide" start="150,0" end="160,0" time="100" />
@@ -926,8 +926,8 @@
 			</animation>
 		</control>
 		<control type="image">
-			<posx>-120</posx>
-			<posy>-40</posy>
+			<left>-120</left>
+			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -935,8 +935,8 @@
 			<animation effect="fade" start="100" end="0" time="100" delay="HomeBladeAnimationSpeed" condition="Window.Next(Settings)">WindowClose</animation>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>-40</posy>
+			<left>0</left>
+			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>
@@ -953,12 +953,12 @@
 		<control type="label">
 			<description>System Label</description>
 			<label>31003</label>
-			<posx>90</posx>
-			<posy>170</posy>
+			<left>90</left>
+			<top>170</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
-			<aligny>middle</aligny>
+			<aligny>center</aligny>
 			<angle>270</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Settings)">
 				<effect type="slide" start="150,0" end="160,0" time="100" />
@@ -971,12 +971,12 @@
 		</control>
 		<!-- Right side -->
 		<control type="group">
-			<posx>15r</posx>
-			<posy>232</posy>
+			<left>15r</left>
+			<top>232</top>
 			<animation effect="slide" start="-100,0" end="0,0" time="HomeBladeAnimationSpeed" condition="!Window.Previous(AppearanceSettings)">WindowOpen</animation>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>74</width>
 				<height>256</height>
 				<aspectratio>stretch</aspectratio>
@@ -984,8 +984,8 @@
 			</control>
 			<control type="image">
 				<description>Icon</description>
-				<posx>18</posx>
-				<posy>50</posy>
+				<left>18</left>
+				<top>50</top>
 				<width>40</width>
 				<height>40</height>
 				<aspectratio>keep</aspectratio>
@@ -993,8 +993,8 @@
 			</control>
 			<control type="image">
 				<description>Icon</description>
-				<posx>18</posx>
-				<posy>165</posy>
+				<left>18</left>
+				<top>165</top>
 				<width>40</width>
 				<height>40</height>
 				<aspectratio>keep</aspectratio>
@@ -1002,8 +1002,8 @@
 			</control>
 		</control>
 		<control type="image">
-			<posx>55r</posx>
-			<posy>-40</posy>
+			<left>55r</left>
+			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
 			<aspectratio>stretch</aspectratio>

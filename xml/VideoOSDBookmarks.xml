@@ -2,14 +2,14 @@
 	<defaultcontrol>2</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<posx>240</posx>
-		<posy>25</posy>
+		<left>240</left>
+		<top>25</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>800</width>
 			<height>670</height>
 			<colordiffuse>EEFFFFFF</colordiffuse>
@@ -17,8 +17,8 @@
 		</control>
 		<control type="label">
 			<description>heading label</description>
-			<posx>50</posx>
-			<posy>50</posy>
+			<left>50</left>
+			<top>50</top>
 			<width>700</width>
 			<height>30</height>
 			<label>31014</label>
@@ -28,14 +28,12 @@
 			<textcolor>orange</textcolor>
 		</control>
 		<control type="group">
-			<posx>65</posx>
-			<posy>570</posy>
+			<left>65</left>
+			<top>570</top>
 			<control type="button" id="2">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<description>Create Bookmark button</description>
-				<posx>0</posx>
-				<posy>0</posy>
 				<width>220</width>
 				<height>45</height>
 				<label>294</label>
@@ -50,8 +48,8 @@
 			</control>
 			<control type="button" id="3">
 				<description>Clear Bookmarks button</description>
-				<posx>225</posx>
-				<posy>0</posy>
+				<left>225</left>
+				<top>0</top>
 				<width>220</width>
 				<height>45</height>
 				<label>296</label>
@@ -66,8 +64,8 @@
 			</control>
 			<control type="button" id="4">
 				<description>Episode Bookmarks button</description>
-				<posx>450</posx>
-				<posy>0</posy>
+				<left>450</left>
+				<top>0</top>
 				<width>220</width>
 				<height>45</height>
 				<label>20406</label>
@@ -82,8 +80,8 @@
 			</control>
 		</control>
 		<control type="image">
-			<posx>40</posx>
-			<posy>300</posy>
+			<left>40</left>
+			<top>300</top>
 			<width>50</width>
 			<height>50</height>
 			<aspectratio>keep</aspectratio>
@@ -92,8 +90,8 @@
 			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="image">
-			<posx>710</posx>
-			<posy>300</posy>
+			<left>710</left>
+			<top>300</top>
 			<width>50</width>
 			<height>50</height>
 			<aspectratio>keep</aspectratio>
@@ -102,8 +100,8 @@
 			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="panel" id="11">
-			<posx>90</posx>
-			<posy>100</posy>
+			<left>90</left>
+			<top>100</top>
 			<width>620</width>
 			<height>450</height>
 			<onleft>11</onleft>
@@ -116,23 +114,23 @@
 			<orientation>horizontal</orientation>
 			<itemlayout height="225" width="310">
 				<control type="image">
-					<posx>1</posx>
-					<posy>1</posy>
+					<left>1</left>
+					<top>1</top>
 					<width>308</width>
 					<height>223</height>
 					<texture border="10">thumb-nofocus.png</texture>
 				</control>
 				<control type="image">
-					<posx>10</posx>
-					<posy>10</posy>
+					<left>10</left>
+					<top>10</top>
 					<width>290</width>
 					<height>175</height>
 					<aspectratio>scale</aspectratio>
 					<info>ListItem.Icon</info>
 				</control>
 				<control type="label">
-					<posx>155</posx>
-					<posy>190</posy>
+					<left>155</left>
+					<top>190</top>
 					<width>300</width>
 					<height>25</height>
 					<font>font12</font>
@@ -145,23 +143,23 @@
 			</itemlayout>
 			<focusedlayout height="225" width="310">
 				<control type="image">
-					<posx>1</posx>
-					<posy>1</posy>
+					<left>1</left>
+					<top>1</top>
 					<width>308</width>
 					<height>223</height>
 					<texture border="10">thumb-focus.png</texture>
 				</control>
 				<control type="image">
-					<posx>10</posx>
-					<posy>10</posy>
+					<left>10</left>
+					<top>10</top>
 					<width>290</width>
 					<height>175</height>
 					<aspectratio>scale</aspectratio>
 					<info>ListItem.Icon</info>
 				</control>
 				<control type="label">
-					<posx>155</posx>
-					<posy>190</posy>
+					<left>155</left>
+					<top>190</top>
 					<width>300</width>
 					<height>25</height>
 					<font>font12</font>

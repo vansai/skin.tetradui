@@ -11,26 +11,26 @@
 			<include>CommonMediaBlackwash</include>
 		</control>
 		<control type="group">
-			<posx>130</posx>
+			<left>130</left>
 			<animation effect="fade" delay="500" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>
 			<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
 			<control type="label">
 				<description>Header label</description>
-				<posx>0</posx>
+				<left>0</left>
 				<label>$LOCALIZE[31101]</label>
 				<include>HeaderTextCommons</include>
 			</control>
 			<control type="group">
-				<posx>0</posx>
-				<posy>110</posy>
+				<left>0</left>
+				<top>110</top>
 				<include>ListViewCommons</include> <!-- View ID 51 -->
 				<include>ThumbnailView</include> <!-- View ID 52 -->
 				<include>ThumbnailInfoView</include> <!-- View ID 55 -->
 			</control>
 			<control type="grouplist">
 				<description>Media Codec Flagging Images</description>
-				<posx>-20</posx>
-				<posy>120r</posy>
+				<left>-20</left>
+				<top>120r</top>
 				<width>620</width>
 				<itemgap>5</itemgap>
 				<orientation>horizontal</orientation>
@@ -41,11 +41,11 @@
 			<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
 			<animation effect="slide" time="SideMenuSlideOutTime" start="0,0" end="300,0">Focus</animation>
 			<animation effect="slide" delay="SideMenuSlideOutTime" time="SideMenuSlideOutTime" start="300,0" end="0,0">UnFocus</animation>
-			<posx>-300</posx>
-			<posy>0</posy>
+			<left>-300</left>
+			<top>0</top>
 			<control type="image">
-				<posx>0</posx>
-				<posy>-40</posy>
+				<left>0</left>
+				<top>-40</top>
 				<width>160</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -53,8 +53,8 @@
 				<texture>blades-runner-right-edge.png</texture>
 			</control>
 			<control type="image">
-				<posx>160</posx>
-				<posy>-40</posy>
+				<left>160</left>
+				<top>-40</top>
 				<width>180</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -62,15 +62,15 @@
 				<texture>blades-runner-left1.png</texture>
 			</control>
 			<control type="group">
-				<posx>100</posx>
-				<posy>140</posy>
+				<left>100</left>
+				<top>140</top>
 				<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus</visible>
 				<animation effect="fade" start="0" end="100" delay="SideMenuSlideOutTime" time="200">Visible</animation>
 				<animation effect="fade" start="100" end="0" delay="0" time="SideMenuSlideOutTime">Hidden</animation>
 				<control type="label">
 					<description>Header Label</description>
-					<posx>0</posx>
-					<posy>-40</posy>
+					<left>0</left>
+					<top>-40</top>
 					<width>220</width>
 					<height>20</height>
 					<font>font12</font>
@@ -78,12 +78,12 @@
 					<textcolor>orange</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
-					<aligny>middle</aligny>
+					<aligny>center</aligny>
 				</control>
 				<control type="button" id="2">
 					<description>View As button</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<include>ButtonCommonValues</include>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -92,8 +92,8 @@
 				</control>
 				<control type="togglebutton" id="3">
 					<description>Sort by button</description>
-					<posx>2</posx>
-					<posy>40</posy>
+					<left>2</left>
+					<top>40</top>
 					<include>ButtonCommonValues</include>
 					<alttexturefocus border="4,6,4,8">button-focus.png</alttexturefocus>
 					<alttexturenofocus border="4,6,4,8">button-focus.png</alttexturenofocus>
@@ -106,8 +106,8 @@
 				</control>
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
-					<posx>171</posx>
-					<posy>40</posy>
+					<left>171</left>
+					<top>40</top>
 					<width>40</width>
 					<height>40</height>
 					<texturefocus>sortup2-focus.png</texturefocus>
@@ -121,8 +121,8 @@
 				</control>
 				<control type="radiobutton" id="99">
 					<description>Library button</description>
-					<posx>4</posx>
-					<posy>80</posy>
+					<left>4</left>
+					<top>80</top>
 					<label>$LOCALIZE[29800]</label>
 					<onclick>ReplaceWindow(MusicLibrary)</onclick>
 					<selected>Window.IsVisible(MusicLibrary)</selected>

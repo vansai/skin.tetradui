@@ -1,8 +1,8 @@
 <includes>
 	<include name="ListViewCommons">
 		<control type="panel" id="50">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>615</width>
 			<height>480</height>
 			<onleft>9000</onleft>
@@ -14,8 +14,8 @@
 			<scrolltime>200</scrolltime>
 			<itemlayout height="40" width="615">
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>520</width>
 					<height>36</height>
 					<font>font13</font>
@@ -26,8 +26,8 @@
 					<info>ListItem.Label</info>
 				</control>
 				<control type="label">
-					<posx>605</posx>
-					<posy>0</posy>
+					<left>605</left>
+					<top>0</top>
 					<width>400</width>
 					<height>36</height>
 					<font>font13</font>
@@ -41,15 +41,15 @@
 			</itemlayout>
 			<focusedlayout height="40" width="615">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>615</width>
 					<height>40</height>
 					<texture border="10">list-focus.png</texture>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>520</width>
 					<height>36</height>
 					<font>font13</font>
@@ -60,8 +60,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>605</posx>
-					<posy>0</posy>
+					<left>605</left>
+					<top>0</top>
 					<width>400</width>
 					<height>36</height>
 					<font>font13</font>
@@ -74,12 +74,12 @@
 			</focusedlayout>
 		</control>
 		<control type="group">
-			<posx>640</posx>
-			<posy>20</posy>
+			<left>640</left>
+			<top>20</top>
 			<visible>Control.IsVisible(50)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>420</width>
 				<height>440</height>
 				<aspectratio>keep</aspectratio>
@@ -89,8 +89,8 @@
 				<fadetime>IconCrossfadeTime</fadetime>
 			</control>
 			<control type="image">
-				<posx>480</posx>
-				<posy>465</posy>
+				<left>480</left>
+				<top>465</top>
 				<width>64</width>
 				<height>64</height>
 				<colordiffuse>FFFFFFFF</colordiffuse>
@@ -102,8 +102,8 @@
 	<include name="ThumbnailView">
 		<control type="panel" id="52">
 			<visible>![Window.IsVisible(Videos) + Container.Content(TVShows)]</visible>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1080</width>
 			<height>480</height>
 			<onleft>9000</onleft>
@@ -116,15 +116,15 @@
 			<preloaditems>2</preloaditems>
 			<itemlayout condition="!Container.Content(Movies) + !Container.Content(Seasons)" height="160" width="180">
 				<control type="image">
-					<posx>1</posx>
-					<posy>1</posy>
+					<left>1</left>
+					<top>1</top>
 					<width>178</width>
 					<height>158</height>
 					<texture border="10">thumb-nofocus.png</texture>
 				</control>
 				<control type="image">
-					<posx>6</posx>
-					<posy>6</posy>
+					<left>6</left>
+					<top>6</top>
 					<width>168</width>
 					<height>128</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
@@ -132,8 +132,8 @@
 					<bordersize>1</bordersize>
 				</control>
 				<control type="label">
-					<posx>90</posx>
-					<posy>130</posy>
+					<left>90</left>
+					<top>130</top>
 					<width>168</width>
 					<height>25</height>
 					<font>font10</font>
@@ -144,8 +144,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>150</posx>
-					<posy>100</posy>
+					<left>150</left>
+					<top>100</top>
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>
@@ -154,15 +154,15 @@
 			</itemlayout>
 			<focusedlayout condition="!Container.Content(Movies) + !Container.Content(Seasons)" height="160" width="180">
 				<control type="image">
-					<posx>1</posx>
-					<posy>1</posy>
+					<left>1</left>
+					<top>1</top>
 					<width>178</width>
 					<height>158</height>
 					<texture border="10">thumb-focus.png</texture>
 				</control>
 				<control type="image">
-					<posx>6</posx>
-					<posy>6</posy>
+					<left>6</left>
+					<top>6</top>
 					<width>168</width>
 					<height>128</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
@@ -170,8 +170,8 @@
 					<bordersize>1</bordersize>
 				</control>
 				<control type="label">
-					<posx>90</posx>
-					<posy>130</posy>
+					<left>90</left>
+					<top>130</top>
 					<width>168</width>
 					<height>25</height>
 					<font>font10</font>
@@ -182,8 +182,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>150</posx>
-					<posy>100</posy>
+					<left>150</left>
+					<top>100</top>
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>
@@ -192,16 +192,16 @@
 			</focusedlayout>
 			<itemlayout condition="Container.Content(Movies) | Container.Content(Seasons)" height="240" width="154">
 				<control type="image">
-					<posx>1</posx>
-					<posy>1</posy>
+					<left>1</left>
+					<top>1</top>
 					<width>152</width>
 					<height>238</height>
 					<aspectratio>stretch</aspectratio>
 					<texture border="10">thumb-nofocus.png</texture>
 				</control>
 				<control type="image">
-					<posx>6</posx>
-					<posy>6</posy>
+					<left>6</left>
+					<top>6</top>
 					<width>142</width>
 					<height>200</height>
 					<aspectratio>keep</aspectratio>
@@ -210,8 +210,8 @@
 					<bordersize>1</bordersize>
 				</control>
 				<control type="label">
-					<posx>77</posx>
-					<posy>206</posy>
+					<left>77</left>
+					<top>206</top>
 					<width>142</width>
 					<height>25</height>
 					<font>font10</font>
@@ -222,8 +222,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>125</posx>
-					<posy>180</posy>
+					<left>125</left>
+					<top>180</top>
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>
@@ -232,16 +232,16 @@
 			</itemlayout>
 			<focusedlayout  condition="Container.Content(Movies) | Container.Content(Seasons)" height="240" width="154">
 				<control type="image">
-					<posx>1</posx>
-					<posy>1</posy>
+					<left>1</left>
+					<top>1</top>
 					<width>152</width>
 					<height>238</height>
 					<aspectratio>stretch</aspectratio>
 					<texture border="10">thumb-focus.png</texture>
 				</control>
 				<control type="image">
-					<posx>6</posx>
-					<posy>6</posy>
+					<left>6</left>
+					<top>6</top>
 					<width>142</width>
 					<height>200</height>
 					<aspectratio>keep</aspectratio>
@@ -250,8 +250,8 @@
 					<bordersize>1</bordersize>
 				</control>
 				<control type="label">
-					<posx>77</posx>
-					<posy>206</posy>
+					<left>77</left>
+					<top>206</top>
 					<width>142</width>
 					<height>25</height>
 					<font>font10</font>
@@ -262,8 +262,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>125</posx>
-					<posy>180</posy>
+					<left>125</left>
+					<top>180</top>
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>
@@ -275,8 +275,8 @@
 	<include name="WideIconView">
 		<control type="panel" id="53">
 			<visible>!Container.Content(Addons)</visible>
-			<posx>10</posx>
-			<posy>-20</posy>
+			<left>10</left>
+			<top>-20</top>
 			<width>1040</width>
 			<height>508</height>
 			<onleft>9000</onleft>
@@ -289,15 +289,15 @@
 			<preloaditems>2</preloaditems>
 			<itemlayout height="127" width="520">
 				<control type="image">
-					<posx>1</posx>
-					<posy>1</posy>
+					<left>1</left>
+					<top>1</top>
 					<width>518</width>
 					<height>125</height>
 					<texture border="10">wide-thumb-nofocus.png</texture>
 				</control>
 				<control type="image">
-					<posx>10</posx>
-					<posy>7</posy>
+					<left>10</left>
+					<top>7</top>
 					<width>500</width>
 					<height>95</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
@@ -305,8 +305,8 @@
 					<bordersize>1</bordersize>
 				</control>
 				<control type="label">
-					<posx>20</posx>
-					<posy>98</posy>
+					<left>20</left>
+					<top>98</top>
 					<width>480</width>
 					<height>20</height>
 					<font>font10</font>
@@ -317,8 +317,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>500</posx>
-					<posy>98</posy>
+					<left>500</left>
+					<top>98</top>
 					<width>480</width>
 					<height>20</height>
 					<font>font10</font>
@@ -329,8 +329,8 @@
 					<label>$INFO[ListItem.Label2]</label>
 				</control>
 				<control type="image">
-					<posx>485</posx>
-					<posy>75</posy>
+					<left>485</left>
+					<top>75</top>
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>
@@ -339,15 +339,15 @@
 			</itemlayout>
 			<focusedlayout height="140" width="520">
 				<control type="image">
-					<posx>1</posx>
-					<posy>1</posy>
+					<left>1</left>
+					<top>1</top>
 					<width>518</width>
 					<height>125</height>
 					<texture border="10">wide-thumb-focus.png</texture>
 				</control>
 				<control type="image">
-					<posx>10</posx>
-					<posy>7</posy>
+					<left>10</left>
+					<top>7</top>
 					<width>500</width>
 					<height>95</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
@@ -355,8 +355,8 @@
 					<bordersize>1</bordersize>
 				</control>
 				<control type="label">
-					<posx>20</posx>
-					<posy>98</posy>
+					<left>20</left>
+					<top>98</top>
 					<width>480</width>
 					<height>20</height>
 					<font>font10</font>
@@ -367,8 +367,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>500</posx>
-					<posy>98</posy>
+					<left>500</left>
+					<top>98</top>
 					<width>480</width>
 					<height>20</height>
 					<font>font10</font>
@@ -379,8 +379,8 @@
 					<label>$INFO[ListItem.Label2]</label>
 				</control>
 				<control type="image">
-					<posx>485</posx>
-					<posy>75</posy>
+					<left>485</left>
+					<top>75</top>
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>
@@ -391,12 +391,12 @@
 	</include>
 	<include name="PosterWrapView">
 		<control type="group">
-			<posx>0</posx>
-			<posy>-35</posy>
+			<left>0</left>
+			<top>-35</top>
 			<visible>Control.IsVisible(54)</visible>
 			<control type="label">
-				<posx>0</posx>
-				<posy>10</posy>
+				<left>0</left>
+				<top>10</top>
 				<width>1060</width>
 				<height>20</height>
 				<font>font16</font>
@@ -407,21 +407,20 @@
 			</control>
 			<control type="textbox" id="400">
 				<description>textarea</description>
-				<posx>0</posx>
-				<posy>420</posy>
+				<left>0</left>
+				<top>420</top>
 				<width>1060</width>
 				<height>90</height>
 				<font>font12</font>
 				<label>$INFO[ListItem.Plot]</label>
 				<textcolor>grey</textcolor>
 				<align>justify</align>
-				<pagecontrol>-</pagecontrol>
 			</control>
 		</control>
 		<control type="fixedlist" id="54">
 			<visible>!Container.Content(Addons)</visible>
-			<posx>-35</posx>
-			<posy>40</posy>
+			<left>-35</left>
+			<top>40</top>
 			<width>1160</width>
 			<height>400</height>
 			<onleft>54</onleft>
@@ -436,8 +435,8 @@
 			<preloaditems>4</preloaditems>
 			<itemlayout height="310" width="218">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>218</width>
 					<height>310</height>
 					<aspectratio>stretch</aspectratio>
@@ -446,8 +445,8 @@
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>170</posx>
-					<posy>265</posy>
+					<left>170</left>
+					<top>265</top>
 					<width>35</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
@@ -456,8 +455,8 @@
 			</itemlayout>
 			<focusedlayout height="310" width="218">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>218</width>
 					<height>310</height>
 					<aspectratio>stretch</aspectratio>
@@ -468,8 +467,8 @@
 					<animation reversible="false" effect="zoom" end="0,0,218,310" start="-30,-30,278,370" time="200">unfocus</animation>
 				</control>
 				<control type="image">
-					<posx>170</posx>
-					<posy>265</posy>
+					<left>170</left>
+					<top>265</top>
 					<width>35</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
@@ -483,8 +482,8 @@
 	<include name="ThumbnailInfoView">
 		<control type="panel" id="55">
 			<visible>![Window.IsVisible(Videos) + Container.Content(TVShows)]</visible>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>720</width>
 			<height>480</height>
 			<onleft>9000</onleft>
@@ -497,15 +496,15 @@
 			<preloaditems>2</preloaditems>
 			<itemlayout condition="!Container.Content(Movies) + !Container.Content(Seasons)" height="160" width="180">
 				<control type="image">
-					<posx>1</posx>
-					<posy>1</posy>
+					<left>1</left>
+					<top>1</top>
 					<width>178</width>
 					<height>158</height>
 					<texture border="10">thumb-nofocus.png</texture>
 				</control>
 				<control type="image">
-					<posx>6</posx>
-					<posy>6</posy>
+					<left>6</left>
+					<top>6</top>
 					<width>168</width>
 					<height>128</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
@@ -513,8 +512,8 @@
 					<bordersize>1</bordersize>
 				</control>
 				<control type="label">
-					<posx>90</posx>
-					<posy>130</posy>
+					<left>90</left>
+					<top>130</top>
 					<width>168</width>
 					<height>25</height>
 					<font>font10</font>
@@ -525,8 +524,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>150</posx>
-					<posy>100</posy>
+					<left>150</left>
+					<top>100</top>
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>
@@ -535,15 +534,15 @@
 			</itemlayout>
 			<focusedlayout condition="!Container.Content(Movies) + !Container.Content(Seasons)" height="160" width="180">
 				<control type="image">
-					<posx>1</posx>
-					<posy>1</posy>
+					<left>1</left>
+					<top>1</top>
 					<width>178</width>
 					<height>158</height>
 					<texture border="10">thumb-focus.png</texture>
 				</control>
 				<control type="image">
-					<posx>6</posx>
-					<posy>6</posy>
+					<left>6</left>
+					<top>6</top>
 					<width>168</width>
 					<height>128</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
@@ -551,8 +550,8 @@
 					<bordersize>1</bordersize>
 				</control>
 				<control type="label">
-					<posx>90</posx>
-					<posy>130</posy>
+					<left>90</left>
+					<top>130</top>
 					<width>168</width>
 					<height>25</height>
 					<font>font10</font>
@@ -563,8 +562,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>150</posx>
-					<posy>100</posy>
+					<left>150</left>
+					<top>100</top>
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>
@@ -573,16 +572,16 @@
 			</focusedlayout>
 			<itemlayout condition="Container.Content(Movies) | Container.Content(Seasons)" height="240" width="154">
 				<control type="image">
-					<posx>1</posx>
-					<posy>1</posy>
+					<left>1</left>
+					<top>1</top>
 					<width>152</width>
 					<height>238</height>
 					<aspectratio>stretch</aspectratio>
 					<texture border="10">thumb-nofocus.png</texture>
 				</control>
 				<control type="image">
-					<posx>6</posx>
-					<posy>6</posy>
+					<left>6</left>
+					<top>6</top>
 					<width>142</width>
 					<height>200</height>
 					<aspectratio>keep</aspectratio>
@@ -591,8 +590,8 @@
 					<bordersize>1</bordersize>
 				</control>
 				<control type="label">
-					<posx>77</posx>
-					<posy>206</posy>
+					<left>77</left>
+					<top>206</top>
 					<width>142</width>
 					<height>25</height>
 					<font>font10</font>
@@ -603,8 +602,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>125</posx>
-					<posy>180</posy>
+					<left>125</left>
+					<top>180</top>
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>
@@ -613,16 +612,16 @@
 			</itemlayout>
 			<focusedlayout  condition="Container.Content(Movies) | Container.Content(Seasons)" height="240" width="154">
 				<control type="image">
-					<posx>1</posx>
-					<posy>1</posy>
+					<left>1</left>
+					<top>1</top>
 					<width>152</width>
 					<height>238</height>
 					<aspectratio>stretch</aspectratio>
 					<texture border="10">thumb-focus.png</texture>
 				</control>
 				<control type="image">
-					<posx>6</posx>
-					<posy>6</posy>
+					<left>6</left>
+					<top>6</top>
 					<width>142</width>
 					<height>200</height>
 					<aspectratio>keep</aspectratio>
@@ -631,8 +630,8 @@
 					<bordersize>1</bordersize>
 				</control>
 				<control type="label">
-					<posx>77</posx>
-					<posy>206</posy>
+					<left>77</left>
+					<top>206</top>
 					<width>142</width>
 					<height>25</height>
 					<font>font10</font>
@@ -643,8 +642,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>125</posx>
-					<posy>180</posy>
+					<left>125</left>
+					<top>180</top>
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>
@@ -653,12 +652,12 @@
 			</focusedlayout>
 		</control>
 		<control type="group">
-			<posx>730</posx>
-			<posy>10</posy>
+			<left>730</left>
+			<top>10</top>
 			<visible>Control.IsVisible(55) + ![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(Albums) | Container.Content(Artists) | Container.Content(Addons) | Container.Content(LiveTV)]</visible>
 			<control type="fadelabel">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>350</width>
 				<height>20</height>
 				<font>font16</font>
@@ -672,8 +671,8 @@
 			</control>
 			<control type="textbox" id="400">
 				<description>textarea</description>
-				<posx>0</posx>
-				<posy>40</posy>
+				<left>0</left>
+				<top>40</top>
 				<width>350</width>
 				<height>410</height>
 				<font>font12</font>
@@ -681,16 +680,15 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<align>justify</align>
-				<pagecontrol>-</pagecontrol>
 			</control>
 		</control>
 		<control type="group">
-			<posx>645</posx>
-			<posy>10</posy>
+			<left>645</left>
+			<top>10</top>
 			<visible>Control.IsVisible(55) + Container.Content(Movies)</visible>
 			<control type="fadelabel">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>420</width>
 				<height>20</height>
 				<font>font16</font>
@@ -704,8 +702,8 @@
 			</control>
 			<control type="textbox" id="400">
 				<description>textarea</description>
-				<posx>0</posx>
-				<posy>40</posy>
+				<left>0</left>
+				<top>40</top>
 				<width>420</width>
 				<height>410</height>
 				<font>font12</font>
@@ -713,16 +711,15 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<align>justify</align>
-				<pagecontrol>-</pagecontrol>
 			</control>
 		</control>
 		<control type="group">
-			<posx>730</posx>
-			<posy>10</posy>
+			<left>730</left>
+			<top>10</top>
 			<visible>Control.IsVisible(55) + Container.Content(Episodes)</visible>
 			<control type="fadelabel">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>350</width>
 				<height>20</height>
 				<font>font13</font>
@@ -735,8 +732,8 @@
 				<pauseatend>2000</pauseatend>
 			</control>
 			<control type="fadelabel">
-				<posx>0</posx>
-				<posy>35</posy>
+				<left>0</left>
+				<top>35</top>
 				<width>350</width>
 				<height>20</height>
 				<font>font16</font>
@@ -750,8 +747,8 @@
 			</control>
 			<control type="textbox" id="400">
 				<description>textarea</description>
-				<posx>0</posx>
-				<posy>70</posy>
+				<left>0</left>
+				<top>70</top>
 				<width>350</width>
 				<height>380</height>
 				<font>font12</font>
@@ -759,16 +756,15 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<align>justify</align>
-				<pagecontrol>-</pagecontrol>
 			</control>
 		</control>
 		<control type="group">
-			<posx>730</posx>
-			<posy>10</posy>
+			<left>730</left>
+			<top>10</top>
 			<visible>Control.IsVisible(55) + Container.Content(Addons)</visible>
 			<control type="fadelabel">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>350</width>
 				<height>20</height>
 				<font>font16</font>
@@ -782,8 +778,8 @@
 			</control>
 			<control type="textbox" id="400">
 				<description>textarea</description>
-				<posx>0</posx>
-				<posy>40</posy>
+				<left>0</left>
+				<top>40</top>
 				<width>350</width>
 				<height>410</height>
 				<font>font12</font>
@@ -791,16 +787,15 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<align>justify</align>
-				<pagecontrol>-</pagecontrol>
 			</control>
 		</control>
 		<control type="group">
-			<posx>730</posx>
-			<posy>10</posy>
+			<left>730</left>
+			<top>10</top>
 			<visible>Control.IsVisible(55) + Container.Content(Albums)</visible>
 			<control type="fadelabel">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>350</width>
 				<height>20</height>
 				<font>font16</font>
@@ -814,8 +809,8 @@
 			</control>
 			<control type="textbox" id="400">
 				<description>textarea</description>
-				<posx>0</posx>
-				<posy>40</posy>
+				<left>0</left>
+				<top>40</top>
 				<width>350</width>
 				<height>410</height>
 				<font>font12</font>
@@ -823,16 +818,15 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<align>justify</align>
-				<pagecontrol>-</pagecontrol>
 			</control>
 		</control>
 		<control type="group">
-			<posx>730</posx>
-			<posy>10</posy>
+			<left>730</left>
+			<top>10</top>
 			<visible>Control.IsVisible(55) + Container.Content(Artists)</visible>
 			<control type="fadelabel">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>350</width>
 				<height>20</height>
 				<font>font16</font>
@@ -846,8 +840,8 @@
 			</control>
 			<control type="textbox" id="400">
 				<description>textarea</description>
-				<posx>0</posx>
-				<posy>40</posy>
+				<left>0</left>
+				<top>40</top>
 				<width>350</width>
 				<height>410</height>
 				<font>font12</font>
@@ -855,16 +849,15 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<align>justify</align>
-				<pagecontrol>-</pagecontrol>
 			</control>
 		</control>
 		<control type="group">
-			<posx>730</posx>
-			<posy>10</posy>
+			<left>730</left>
+			<top>10</top>
 			<visible>Control.IsVisible(55) + Container.Content(LiveTV)</visible>
 			<control type="fadelabel">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>350</width>
 				<height>20</height>
 				<font>font13</font>
@@ -877,8 +870,8 @@
 				<pauseatend>2000</pauseatend>
 			</control>
 			<control type="fadelabel">
-				<posx>0</posx>
-				<posy>35</posy>
+				<left>0</left>
+				<top>35</top>
 				<width>350</width>
 				<height>20</height>
 				<font>font16</font>
@@ -892,8 +885,8 @@
 			</control>
 			<control type="textbox" id="400">
 				<description>textarea</description>
-				<posx>0</posx>
-				<posy>70</posy>
+				<left>0</left>
+				<top>70</top>
 				<width>350</width>
 				<height>380</height>
 				<font>font12</font>
@@ -901,7 +894,6 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<align>justify</align>
-				<pagecontrol>-</pagecontrol>
 			</control>
 		</control>
 	</include>

@@ -2,8 +2,8 @@
 	<defaultcontrol always="true">20</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<posx>315</posx>
-		<posy>35</posy>
+		<left>315</left>
+		<top>35</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
@@ -12,8 +12,8 @@
 			<include>VisibleFadeEffect</include>
 			<control type="image">
 				<description>background image</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>650</width>
 				<height>650</height>
 				<texture border="50,100,50,50">Dialog.png</texture>
@@ -21,8 +21,8 @@
 			</control>
 			<control type="label" id="1">
 				<description>heading label</description>
-				<posx>50</posx>
-				<posy>50</posy>
+				<left>50</left>
+				<top>50</top>
 				<width>550</width>
 				<height>30</height>
 				<align>center</align>
@@ -32,8 +32,8 @@
 				<textcolor>orange</textcolor>
 			</control>
 			<control type="panel" id="20">
-				<posx>50</posx>
-				<posy>100</posy>
+				<left>50</left>
+				<top>100</top>
 				<width>550</width>
 				<height>450</height>
 				<onup>20</onup>
@@ -44,16 +44,16 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="85" width="550">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>550</width>
 						<height>80</height>
 						<texture border="10">list-nofocus.png</texture>
 					</control>
 					<control type="label">
 						<description>Name</description>
-						<posx>10</posx>
-						<posy>5</posy>
+						<left>10</left>
+						<top>5</top>
 						<width>520</width>
 						<height>20</height>
 						<label>$INFO[ListItem.Label]</label>
@@ -64,8 +64,8 @@
 					</control>
 					<control type="label">
 						<description>Product ID Vendor ID</description>
-						<posx>10</posx>
-						<posy>30</posy>
+						<left>10</left>
+						<top>30</top>
 						<width>520</width>
 						<height>20</height>
 						<label>$LOCALIZE[35504]:  [COLOR=grey2]$INFO[ListItem.Property(Product)][/COLOR]    $LOCALIZE[35503]:  [COLOR=grey2]$INFO[ListItem.Property(Vendor)][/COLOR]</label>
@@ -76,8 +76,8 @@
 					</control>
 					<control type="label">
 						<description>class</description>
-						<posx>10</posx>
-						<posy>50</posy>
+						<left>10</left>
+						<top>50</top>
 						<width>520</width>
 						<height>20</height>
 						<label>$LOCALIZE[35501]:  [COLOR=grey2]$INFO[ListItem.Property(Class)][/COLOR]</label>
@@ -89,8 +89,8 @@
 				</itemlayout>
 				<focusedlayout height="85" width="550">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>550</width>
 						<height>80</height>
 						<texture border="10">list-focus.png</texture>
@@ -99,8 +99,8 @@
 					</control>
 					<control type="label">
 						<description>Name</description>
-						<posx>10</posx>
-						<posy>5</posy>
+						<left>10</left>
+						<top>5</top>
 						<width>520</width>
 						<height>20</height>
 						<label>$INFO[ListItem.Label]</label>
@@ -111,8 +111,8 @@
 					</control>
 					<control type="label">
 						<description>Product ID Vendor ID</description>
-						<posx>10</posx>
-						<posy>30</posy>
+						<left>10</left>
+						<top>30</top>
 						<width>520</width>
 						<height>20</height>
 						<label>$LOCALIZE[35504]:  [COLOR=black]$INFO[ListItem.Property(Product)][/COLOR]    $LOCALIZE[35503]:  [COLOR=black]$INFO[ListItem.Property(Vendor)][/COLOR]</label>
@@ -123,8 +123,8 @@
 					</control>
 					<control type="label">
 						<description>class</description>
-						<posx>10</posx>
-						<posy>50</posy>
+						<left>10</left>
+						<top>50</top>
 						<width>520</width>
 						<height>20</height>
 						<label>$LOCALIZE[35501]:  [COLOR=black]$INFO[ListItem.Property(Class)][/COLOR]</label>
@@ -138,10 +138,10 @@
 
 			<control type="spincontrol" id="61">
 				<description>Next page Spinner</description>
-				<posx>540</posx>
-				<posy>567</posy>
+				<left>540</left>
+				<top>567</top>
 				<subtype>page</subtype>
-				<font>-</font>
+				<font />
 				<onleft>20</onleft>
 				<onright>20</onright>
 				<ondown>61</ondown>
@@ -151,8 +151,8 @@
 			</control>
 			<control type="label">
 				<description>number of files/pages in list text label</description>
-				<posx>535</posx>
-				<posy>565</posy>
+				<left>535</left>
+				<top>565</top>
 				<width>320</width>
 				<height>35</height>
 				<font>font12</font>
@@ -164,8 +164,8 @@
 			</control>
 			<control type="button" id="10">
 				<description>OK button</description>
-				<posx>50</posx>
-				<posy>560</posy>
+				<left>50</left>
+				<top>560</top>
 				<width>200</width>
 				<height>45</height>
 				<label>186</label>

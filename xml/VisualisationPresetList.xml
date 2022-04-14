@@ -2,15 +2,15 @@
 	<defaultcontrol>2</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<posx>290</posx>
-		<posy>40</posy>
+		<left>290</left>
+		<top>40</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
 		<control type="image">
 			<description>background image</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>700</width>
 			<height>640</height>
 			<colordiffuse>EEFFFFFF</colordiffuse>
@@ -19,8 +19,8 @@
 		</control>
 		<control type="label" id="3">
 			<description>heading label</description>
-			<posx>50</posx>
-			<posy>50</posy>
+			<left>50</left>
+			<top>50</top>
 			<width>600</width>
 			<height>30</height>
 			<align>center</align>
@@ -30,8 +30,8 @@
 		</control>
 		<control type="label" id="4">
 			<description>No Presets label</description>
-			<posx>50</posx>
-			<posy>100</posy>
+			<left>50</left>
+			<top>100</top>
 			<width>600</width>
 			<height>200</height>
 			<label>13389</label>
@@ -41,8 +41,8 @@
 			<textcolor>white</textcolor>
 		</control>
 		<control type="list" id="2">
-			<posx>50</posx>
-			<posy>100</posy>
+			<left>50</left>
+			<top>100</top>
 			<width>600</width>
 			<height>450</height>
 			<onleft>60</onleft>
@@ -53,15 +53,15 @@
 			<scrolltime>200</scrolltime>
 			<itemlayout height="45">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>600</width>
 					<height>45</height>
 					<texture border="10">list-nofocus.png</texture>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>580</width>
 					<height>45</height>
 					<font>font12</font>
@@ -73,24 +73,24 @@
 			</itemlayout>
 			<focusedlayout height="45">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>600</width>
 					<height>45</height>
 					<visible>!Control.HasFocus(2)</visible>
 					<texture border="10">list-nofocus.png</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>600</width>
 					<height>45</height>
 					<visible>Control.HasFocus(2)</visible>
 					<texture border="10">list-focus.png</texture>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>580</width>
 					<height>45</height>
 					<font>font12</font>
@@ -102,8 +102,8 @@
 					<visible>Control.HasFocus(2)</visible>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>580</width>
 					<height>45</height>
 					<font>font12</font>
@@ -118,10 +118,10 @@
 		</control>
 		<control type="spincontrol" id="60">
 			<description>Next page Spinner</description>
-			<posx>580</posx>
-			<posy>557</posy>
+			<left>580</left>
+			<top>557</top>
 			<subtype>page</subtype>
-			<font>-</font>
+			<font />
 			<onleft>2</onleft>
 			<onright>2</onright>
 			<ondown>2</ondown>
@@ -131,8 +131,8 @@
 		</control>
 		<control type="label">
 			<description>number of files/pages in list text label</description>
-			<posx>575</posx>
-			<posy>555</posy>
+			<left>575</left>
+			<top>555</top>
 			<width>320</width>
 			<height>35</height>
 			<font>font12</font>

@@ -14,16 +14,16 @@
 			<animation effect="fade" time="DialogVisibleFadeAnimationSpeed" condition="Window.IsVisible(AddonInformation)">WindowOpen</animation>
 			<animation effect="fade" time="DialogVisibleFadeAnimationSpeed" condition="Window.IsVisible(AddonInformation)">WindowClose</animation>
 			<control type="image">
-				<posx>130</posx>
-				<posy>-40</posy>
+				<left>130</left>
+				<top>-40</top>
 				<width>180</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>blades-runner-right.png</texture>
 			</control>
 			<control type="image">
-				<posx>310</posx>
-				<posy>-40</posy>
+				<left>310</left>
+				<top>-40</top>
 				<width>970</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -35,14 +35,14 @@
 				<animation effect="fade" delay="100" time="DialogVisibleFadeAnimationSpeed">WindowClose</animation>
 				<control type="label" id="1">
 					<description>Title label Normal</description>
-					<posx>200</posx>
+					<left>200</left>
 					<textcolor>orange</textcolor>
 					<include>DialogHeaderTextCommons</include>
 				</control>
 				<control type="textbox" id="5">
 					<description>textarea</description>
-					<posx>200</posx>
-					<posy>100</posy>
+					<left>200</left>
+					<top>100</top>
 					<width>1040</width>
 					<height>560</height>
 					<font>font13</font>
@@ -50,8 +50,8 @@
 				</control>
 				<control type="label">
 					<description>Description Page Count</description>
-					<posx>120r</posx>
-					<posy>50r</posy>
+					<left>120r</left>
+					<top>50r</top>
 					<width>300</width>
 					<height>25</height>
 					<label>$INFO[Container(5).CurrentPage, $LOCALIZE[31201] (]$INFO[Container(5).NumPages,/,)]</label>
@@ -62,10 +62,10 @@
 				</control>
 				<control type="spincontrol" id="60">
 					<description>Next page button</description>
-					<posx>100r</posx>
-					<posy>50r</posy>
+					<left>100r</left>
+					<top>50r</top>
 					<subtype>page</subtype>
-					<font>-</font>
+					<font />
 					<onleft>60</onleft>
 					<onright>60</onright>
 					<ondown>60</ondown>

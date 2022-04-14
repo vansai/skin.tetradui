@@ -1,11 +1,10 @@
-﻿<window id="2006">
-	<defaultcontrol>-</defaultcontrol>
+<window id="2006">
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<control type="visualisation">
 			<description>visualisation</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 		</control>
@@ -14,16 +13,16 @@
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<visible>[Player.ShowInfo | Window.IsActive(MusicOSD)] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>-150</posy>
+				<left>0</left>
+				<top>-150</top>
 				<width>1280</width>
 				<height>256</height>
 				<texture flipy="true">FullscreenNowPlayingBack.png</texture>
 			</control>
 			<control type="label">
 				<description>Partymode Header label</description>
-				<posx>30</posx>
-				<posy>5</posy>
+				<left>30</left>
+				<top>5</top>
 				<width>800</width>
 				<height>25</height>
 				<align>left</align>
@@ -36,8 +35,8 @@
 			</control>
 			<control type="label">
 				<description>Normal Header label</description>
-				<posx>30</posx>
-				<posy>5</posy>
+				<left>30</left>
+				<top>5</top>
 				<width>800</width>
 				<height>25</height>
 				<align>left</align>
@@ -50,8 +49,8 @@
 			</control>
 			<control type="label">
 				<description>Clock label</description>
-				<posx>1250</posx>
-				<posy>5</posy>
+				<left>1250</left>
+				<top>5</top>
 				<width>800</width>
 				<height>25</height>
 				<align>right</align>
@@ -62,16 +61,16 @@
 				<label>$INFO[System.Time]</label>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>230r</posy>
+				<left>0</left>
+				<top>230r</top>
 				<width>1280</width>
 				<height>230</height>
 				<texture>FullscreenNowPlayingBack.png</texture>
 			</control>
 			<control type="image">
 				<description>cover image</description>
-				<posx>20</posx>
-				<posy>250r</posy>
+				<left>20</left>
+				<top>250r</top>
 				<width>300</width>
 				<height>230</height>
 				<info>MusicPlayer.Cover</info>
@@ -80,12 +79,12 @@
 				<bordersize>17,1,17,1</bordersize>
 			</control>
 			<control type="group">
-				<posx>330</posx>
-				<posy>175r</posy>
+				<left>330</left>
+				<top>175r</top>
 				<control type="label" id="1">
 					<description>Heading label</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>910</width>
 					<height>25</height>
 					<align>left</align>
@@ -96,8 +95,8 @@
 				</control>
 				<control type="label" id="1">
 					<description>Artist label</description>
-					<posx>20</posx>
-					<posy>30</posy>
+					<left>20</left>
+					<top>30</top>
 					<width>910</width>
 					<height>25</height>
 					<align>left</align>
@@ -107,8 +106,8 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="grouplist">
-					<posx>20</posx>
-					<posy>60</posy>
+					<left>20</left>
+					<top>60</top>
 					<width>910</width>
 					<height>35</height>
 					<itemgap>5</itemgap>
@@ -136,8 +135,8 @@
 						<height>35</height>
 						<control type="image">
 							<description>Rating back</description>
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>110</width>
 							<height>35</height>
 							<aspectratio align="left">stretch</aspectratio>
@@ -145,8 +144,8 @@
 						</control>
 						<control type="image">
 							<description>Rating</description>
-							<posx>5</posx>
-							<posy>5</posy>
+							<left>5</left>
+							<top>5</top>
 							<width>100</width>
 							<height>25</height>
 							<aspectratio align="center">keep</aspectratio>
@@ -155,8 +154,8 @@
 					</control>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>120</posy>
+					<left>0</left>
+					<top>120</top>
 					<width>910</width>
 					<height>25</height>
 					<label>$LOCALIZE[209]: $INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).Title]</label>
@@ -170,11 +169,11 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>330</posx>
-				<posy>85r</posy>
+				<left>330</left>
+				<top>85r</top>
 				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>100</width>
 					<height>40</height>
 					<font>font13</font>
@@ -184,16 +183,16 @@
 				</control>
 				<control type="progress">
 					<description>Progressbar</description>
-					<posx>100</posx>
-					<posy>17</posy>
+					<left>100</left>
+					<top>17</top>
 					<width>720</width>
 					<height>12</height>
 					<info>Player.Progress</info>
 					<texturebg border="6,0,6,0">progress_back_2.png</texturebg>
 				</control>
 				<control type="label">
-					<posx>920</posx>
-					<posy>0</posy>
+					<left>920</left>
+					<top>0</top>
 					<width>100</width>
 					<height>40</height>
 					<font>font13</font>
@@ -205,14 +204,14 @@
 		</control>
 		<!-- codec & viz infos -->
 		<control type="group" id="0">
-			<posx>0</posx>
-			<posy>50</posy>
+			<left>0</left>
+			<top>50</top>
 			<visible>Player.ShowCodec + ![Window.IsVisible(script-XBMC_Lyrics-main.xml) | Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList)]</visible>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<control type="image">
 				<description>media info background image</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>105</height>
 				<colordiffuse>AAFFFFFF</colordiffuse>
@@ -220,18 +219,18 @@
 			</control>
 			<control type="label">
 				<description>row 1 label</description>
-				<posx>50</posx>
-				<posy>10</posy>
-				<label>-</label>
+				<left>50</left>
+				<top>10</top>
+				<label />
 				<align>left</align>
 				<label>$INFO[musicplayer.Codec,$LOCALIZE[21446]: ,]$INFO[musicplayer.Bitrate, · $LOCALIZE[623]: ,kbps]$INFO[musicplayer.bitspersample, · $LOCALIZE[612]: ,bit]$INFO[musicplayer.Samplerate, · $LOCALIZE[613]: ,kHz]$INFO[musicplayer.Channels, · $LOCALIZE[21444]: ]</label>
 				<font>font12</font>
 			</control>
 			<control type="label">
 				<description>row 2 label</description>
-				<posx>50</posx>
-				<posy>40</posy>
-				<label>-</label>
+				<left>50</left>
+				<top>40</top>
+				<label />
 				<align>left</align>
 				<label>$INFO[Visualisation.Name] [I][COLOR=orange]($LOCALIZE[20166])[/COLOR][/I] · fps: $INFO[System.FPS]</label>
 				<font>font12</font>
@@ -239,9 +238,9 @@
 			</control>
 			<control type="label">
 				<description>Unlocked row 2 label</description>
-				<posx>50</posx>
-				<posy>40</posy>
-				<label>-</label>
+				<left>50</left>
+				<top>40</top>
+				<label />
 				<align>left</align>
 				<label>$INFO[Visualisation.Name] · fps: $INFO[System.FPS]</label>
 				<font>font12</font>
@@ -249,9 +248,9 @@
 			</control>
 			<control type="label">
 				<description>row 3 label</description>
-				<posx>50</posx>
-				<posy>70</posy>
-				<label>-</label>
+				<left>50</left>
+				<top>70</top>
+				<label />
 				<align>left</align>
 				<label>$LOCALIZE[13388]: $INFO[Visualisation.Preset]</label>
 				<font>font12</font>

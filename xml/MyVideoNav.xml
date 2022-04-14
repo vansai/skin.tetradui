@@ -11,18 +11,18 @@
 			<include>CommonMediaBlackwash</include>
 		</control>
 		<control type="group">
-			<posx>130</posx>
+			<left>130</left>
 			<animation effect="fade" delay="500" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>
 			<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
 			<control type="label">
 				<description>Header label</description>
-				<posx>0</posx>
+				<left>0</left>
 				<label>$LOCALIZE[20314]</label>
 				<include>HeaderTextCommons</include>
 			</control>
 			<control type="group">
-				<posx>0</posx>
-				<posy>110</posy>
+				<left>0</left>
+				<top>110</top>
 				<include>ListViewCommons</include> <!-- View ID 51 -->
 				<include>ThumbnailView</include> <!-- View ID 52 -->
 				<include>WideIconView</include> <!-- View ID  53 -->
@@ -31,8 +31,8 @@
 			</control>
 			<control type="grouplist">
 				<description>Media Codec Flagging Images</description>
-				<posx>-20</posx>
-				<posy>120r</posy>
+				<left>-20</left>
+				<top>120r</top>
 				<width>620</width>
 				<itemgap>5</itemgap>
 				<orientation>horizontal</orientation>
@@ -46,11 +46,11 @@
 			<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
 			<animation effect="slide" time="SideMenuSlideOutTime" start="0,0" end="300,0">Focus</animation>
 			<animation effect="slide" delay="SideMenuSlideOutTime" time="SideMenuSlideOutTime" start="300,0" end="0,0">UnFocus</animation>
-			<posx>-300</posx>
-			<posy>0</posy>
+			<left>-300</left>
+			<top>0</top>
 			<control type="image">
-				<posx>0</posx>
-				<posy>-40</posy>
+				<left>0</left>
+				<top>-40</top>
 				<width>160</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -58,8 +58,8 @@
 				<texture>blades-runner-right-edge.png</texture>
 			</control>
 			<control type="image">
-				<posx>160</posx>
-				<posy>-40</posy>
+				<left>160</left>
+				<top>-40</top>
 				<width>180</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -67,15 +67,15 @@
 				<texture>blades-runner-left1.png</texture>
 			</control>
 			<control type="group">
-				<posx>100</posx>
-				<posy>140</posy>
+				<left>100</left>
+				<top>140</top>
 				<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus</visible>
 				<animation effect="fade" start="0" end="100" delay="SideMenuSlideOutTime" time="200">Visible</animation>
 				<animation effect="fade" start="100" end="0" delay="0" time="SideMenuSlideOutTime">Hidden</animation>
 				<control type="label">
 					<description>Header Label</description>
-					<posx>0</posx>
-					<posy>-40</posy>
+					<left>0</left>
+					<top>-40</top>
 					<width>220</width>
 					<height>20</height>
 					<font>font12</font>
@@ -83,12 +83,12 @@
 					<textcolor>orange</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
-					<aligny>middle</aligny>
+					<aligny>center</aligny>
 				</control>
 				<control type="button" id="2">
 					<description>View As button</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<include>ButtonCommonValues</include>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -97,8 +97,8 @@
 				</control>
 				<control type="togglebutton" id="3">
 					<description>Sort by button</description>
-					<posx>2</posx>
-					<posy>40</posy>
+					<left>2</left>
+					<top>40</top>
 					<include>ButtonCommonValues</include>
 					<alttexturefocus border="4,6,4,8">button-focus.png</alttexturefocus>
 					<alttexturenofocus border="4,6,4,8">button-focus.png</alttexturenofocus>
@@ -111,8 +111,8 @@
 				</control>
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
-					<posx>171</posx>
-					<posy>40</posy>
+					<left>171</left>
+					<top>40</top>
 					<width>40</width>
 					<height>40</height>
 					<texturefocus>sortup2-focus.png</texturefocus>
@@ -126,8 +126,8 @@
 				</control>
 				<control type="radiobutton" id="14">
 					<description>Watched Toggle</description>
-					<posx>4</posx>
-					<posy>80</posy>
+					<left>4</left>
+					<top>80</top>
 					<include>ButtonCommonValues</include>
 					<label>20367</label>
 					<onleft>50</onleft>
@@ -137,8 +137,8 @@
 				</control>
 				<control type="button" id="8">
 					<description>Search</description>
-					<posx>6</posx>
-					<posy>120</posy>
+					<left>6</left>
+					<top>120</top>
 					<include>ButtonCommonValues</include>
 					<label>137</label>
 					<onleft>50</onleft>
@@ -148,8 +148,8 @@
 				</control>
 				<control type="radiobutton" id="19">
 					<description>Filter</description>
-					<posx>8</posx>
-					<posy>160</posy>
+					<left>8</left>
+					<top>160</top>
 					<include>ButtonCommonValues</include>
 					<label>587</label>
 					<onleft>50</onleft>
@@ -159,8 +159,8 @@
 				</control>
 				<control type="radiobutton" id="16">
 					<description>PartyMode</description>
-					<posx>10</posx>
-					<posy>200</posy>
+					<left>10</left>
+					<top>200</top>
 					<include>ButtonCommonValues</include>
 					<label>589</label>
 					<onleft>50</onleft>
@@ -170,8 +170,8 @@
 				</control>
 				<control type="radiobutton" id="17">
 					<description>Flatten</description>
-					<posx>8</posx>
-					<posy>240</posy>
+					<left>8</left>
+					<top>240</top>
 					<include>ButtonCommonValues</include>
 					<label>20411</label>
 					<onleft>50</onleft>
@@ -181,8 +181,8 @@
 				</control>
 				<control type="radiobutton" id="7">
 					<description>Stack toggle</description>
-					<posx>6</posx>
-					<posy>280</posy>
+					<left>6</left>
+					<top>280</top>
 					<include>ButtonCommonValues</include>
 					<label>346</label>
 					<onleft>50</onleft>
@@ -192,8 +192,8 @@
 				</control>
 				<control type="radiobutton" id="11">
 					<description>Unlock Shares</description>
-					<posx>4</posx>
-					<posy>320</posy>
+					<left>4</left>
+					<top>320</top>
 					<include>ButtonCommonValues</include>
 					<label>20336</label>
 					<onclick>xbmc.mastermode</onclick>

@@ -10,30 +10,30 @@
 			<include>CommonSystemBlackwash</include>
 		</control>
 		<control type="group">
-			<posx>130</posx>
+			<left>130</left>
 			<animation effect="fade" delay="500" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>
 			<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
 			<control type="label">
 				<description>Header label</description>
-				<posx>0</posx>
+				<left>0</left>
 				<label>$LOCALIZE[10034]</label>
 				<include>HeaderTextCommons</include>
 			</control>
 			<control type="group" id="9000">
-				<posx>-30</posx>
-				<posy>110</posy>
+				<left>-30</left>
+				<top>110</top>
 				<control type="image">
 					<description>Button Seperator</description>
-					<posx>30</posx>
-					<posy>1</posy>
+					<left>30</left>
+					<top>1</top>
 					<width>310</width>
 					<height>2</height>
 					<texture>divider.png</texture>
 				</control>
 				<control type="image">
 					<description>Button Seperator</description>
-					<posx>30</posx>
-					<posy>49</posy>
+					<left>30</left>
+					<top>49</top>
 					<width>310</width>
 					<height>2</height>
 					<texture>divider.png</texture>
@@ -53,8 +53,8 @@
 				</control>
 				<control type="radiobutton" id="4">
 					<description>enable login screen</description>
-					<posx>40</posx>
-					<posy>4</posy>
+					<left>40</left>
+					<top>4</top>
 					<width>43</width>
 					<height>43</height>
 					<aligny>center</aligny>
@@ -62,7 +62,7 @@
 					<textwidth>300</textwidth>
 					<textcolor>white2</textcolor>
 					<focusedcolor>black</focusedcolor>
-					<shadowcolor>-</shadowcolor>
+					<shadowcolor />
 					<texturefocus>button_icons/icon-xbmc.png</texturefocus>
 					<texturenofocus>button_icons/icon-xbmc.png</texturenofocus>
 					<radioposx>265</radioposx>
@@ -76,8 +76,8 @@
 				</control>
 			</control>
 			<control type="panel" id="2">
-				<posx>340</posx>
-				<posy>110</posy>
+				<left>340</left>
+				<top>110</top>
 				<width>740</width>
 				<height>455</height>
 				<onleft>9000</onleft>
@@ -90,22 +90,22 @@
 				<orientation>vertical</orientation>
 				<itemlayout height="92" width="370">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>370</width>
 						<height>90</height>
 						<texture>wide-thumb-nofocus.png</texture>
 					</control>
 					<control type="image">
-						<posx>15</posx>
-						<posy>10</posy>
+						<left>15</left>
+						<top>10</top>
 						<width>70</width>
 						<height>70</height>
 						<texture fallback="unknown-user.png">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-						<posx>100</posx>
-						<posy>5</posy>
+						<left>100</left>
+						<top>5</top>
 						<width>260</width>
 						<height>25</height>
 						<font>font13</font>
@@ -115,8 +115,8 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<posx>100</posx>
-						<posy>30</posy>
+						<left>100</left>
+						<top>30</top>
 						<width>260</width>
 						<height>25</height>
 						<font>font10</font>
@@ -128,8 +128,8 @@
 						<visible>!IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
-						<posx>100</posx>
-						<posy>55</posy>
+						<left>100</left>
+						<top>55</top>
 						<width>260</width>
 						<height>25</height>
 						<font>font12</font>
@@ -142,22 +142,22 @@
 				</itemlayout>
 				<focusedlayout height="92" width="370">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>370</width>
 						<height>90</height>
 						<texture>wide-thumb-focus.png</texture>
 					</control>
 					<control type="image">
-						<posx>15</posx>
-						<posy>10</posy>
+						<left>15</left>
+						<top>10</top>
 						<width>70</width>
 						<height>70</height>
 						<texture fallback="unknown-user.png">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-						<posx>100</posx>
-						<posy>5</posy>
+						<left>100</left>
+						<top>5</top>
 						<width>260</width>
 						<height>25</height>
 						<font>font13</font>
@@ -168,8 +168,8 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<posx>100</posx>
-						<posy>30</posy>
+						<left>100</left>
+						<top>30</top>
 						<width>260</width>
 						<height>25</height>
 						<font>font10</font>
@@ -181,8 +181,8 @@
 						<visible>!IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
-						<posx>100</posx>
-						<posy>55</posy>
+						<left>100</left>
+						<top>55</top>
 						<width>260</width>
 						<height>25</height>
 						<font>font12</font>
@@ -196,8 +196,8 @@
 			</control>
 		</control>
 		<control type="group">
-			<posx>130r</posx>
-			<posy>115r</posy>
+			<left>130r</left>
+			<top>115r</top>
 			<animation effect="fade" delay="500" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>
 			<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
 			<animation effect="slide" start="0,0" end="-100,0" time="200" condition="Player.HasAudio">Conditional</animation>
@@ -205,8 +205,8 @@
 			<animation effect="slide" start="0,0" end="-160,0" time="200" condition="Player.HasVideo + !VideoPlayer.Content(Movies)">Conditional</animation>
 			<control type="label">
 				<description>Page Count Label NoFocus</description>
-				<posx>-10</posx>
-				<posy>5</posy>
+				<left>-10</left>
+				<top>5</top>
 				<width>500</width>
 				<height>20</height>
 				<font>font12</font>
@@ -219,8 +219,8 @@
 			</control>
 			<control type="label">
 				<description>Page Count Label Focus</description>
-				<posx>-10</posx>
-				<posy>5</posy>
+				<left>-10</left>
+				<top>5</top>
 				<width>500</width>
 				<height>20</height>
 				<font>font12</font>
@@ -233,10 +233,10 @@
 			</control>
 			<control type="spincontrol" id="60">
 				<description>Next page button</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<subtype>page</subtype>
-				<font>-</font>
+				<font />
 				<onleft>2</onleft>
 				<onright>9000</onright>
 				<ondown>60</ondown>

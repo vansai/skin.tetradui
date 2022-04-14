@@ -38,18 +38,18 @@
 			<include>CommonMediaBlackwash</include>
 		</control>
 		<control type="group">
-			<posx>130</posx>
+			<left>130</left>
 			<animation effect="fade" delay="500" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>
 			<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
 			<control type="label" id="40">
 				<description>Header label</description>
-				<posx>0</posx>
-				<label>-</label>
+				<left>0</left>
+				<label />
 				<include>HeaderTextCommons</include>
 			</control>
 			<control type="grouplist" id="9000">
-				<posx>0</posx>
-				<posy>120</posy>
+				<left>0</left>
+				<top>120</top>
 				<itemgap>-2</itemgap>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
@@ -105,99 +105,99 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>220</posx>
-				<posy>120</posy>
+				<left>220</left>
+				<top>120</top>
 				<control type="label" id="2">
 					<description>Label 2</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>840</width>
-					<label>-</label>
+					<label />
 					<font>font13</font>
 				</control>
 				<control type="label" id="3">
 					<description>Label 3</description>
-					<posx>0</posx>
-					<posy>40</posy>
+					<left>0</left>
+					<top>40</top>
 					<width>840</width>
-					<label>-</label>
+					<label />
 					<font>font13</font>
 				</control>
 				<control type="label" id="4">
 					<description>Label 4</description>
-					<posx>0</posx>
-					<posy>80</posy>
+					<left>0</left>
+					<top>80</top>
 					<width>840</width>
-					<label>-</label>
+					<label />
 					<font>font13</font>
 				</control>
 				<control type="label" id="5">
 					<description>Label 5</description>
-					<posx>0</posx>
-					<posy>120</posy>
+					<left>0</left>
+					<top>120</top>
 					<width>840</width>
-					<label>-</label>
+					<label />
 					<font>font13</font>
 				</control>
 				<control type="label" id="6">
 					<description>Label 6</description>
-					<posx>0</posx>
-					<posy>160</posy>
+					<left>0</left>
+					<top>160</top>
 					<width>840</width>
-					<label>-</label>
+					<label />
 					<font>font13</font>
 				</control>
 				<control type="label" id="7">
 					<description>Label 7</description>
-					<posx>0</posx>
-					<posy>200</posy>
+					<left>0</left>
+					<top>200</top>
 					<width>840</width>
-					<label>-</label>
+					<label />
 					<font>font13</font>
 				</control>
 				<control type="label" id="8">
 					<description>Label 8</description>
-					<posx>0</posx>
-					<posy>240</posy>
+					<left>0</left>
+					<top>240</top>
 					<width>840</width>
-					<label>-</label>
+					<label />
 					<font>font13</font>
 				</control>
 				<control type="label" id="9">
 					<description>Label 9</description>
-					<posx>0</posx>
-					<posy>280</posy>
+					<left>0</left>
+					<top>280</top>
 					<width>840</width>
-					<label>-</label>
+					<label />
 					<font>font13</font>
 				</control>
 				<control type="label" id="10">
 					<description>Label 10</description>
-					<posx>0</posx>
-					<posy>320</posy>
+					<left>0</left>
+					<top>320</top>
 					<width>840</width>
-					<label>-</label>
+					<label />
 					<font>font13</font>
 				</control>
 				<control type="label" id="11">
 					<description>Label 11</description>
-					<posx>0</posx>
-					<posy>360</posy>
+					<left>0</left>
+					<top>360</top>
 					<width>840</width>
-					<label>-</label>
+					<label />
 					<font>font13</font>
 				</control>
 			</control>
 			<control type="group">
-				<posx>130</posx>
-				<posy>540</posy>
+				<left>130</left>
+				<top>540</top>
 				<animation effect="slide" start="0,0" end="-100,0" time="200" condition="Player.HasAudio">Conditional</animation>
 				<animation effect="slide" start="0,0" end="-100,0" time="200" condition="Player.HasVideo + VideoPlayer.Content(Movies)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="-160,0" time="200" condition="Player.HasVideo + !VideoPlayer.Content(Movies)">Conditional</animation>
 				<control type="label" id="52">
 					<description>XBMC XBE BUILD Version</description>
-					<posx>930</posx>
-					<posy>0</posy>
+					<left>930</left>
+					<top>0</top>
 					<width>910</width>
 					<label>144</label>
 					<textcolor>orange</textcolor>
@@ -206,12 +206,12 @@
 					<font>font12</font>
 				</control>
 				<control type="group">
-					<posx>600</posx>
-					<posy>30</posy>
+					<left>600</left>
+					<top>30</top>
 					<control type="label">
 						<description>CPU Text</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>600</width>
 						<height>25</height>
 						<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
@@ -223,16 +223,16 @@
 					</control>
 					<control type="progress">
 						<description>CPU BAR</description>
-						<posx>10</posx>
-						<posy>7</posy>
+						<left>10</left>
+						<top>7</top>
 						<width>320</width>
 						<height>12</height>
 						<info>System.CPUUsage</info>
 					</control>
 					<control type="label">
 						<description>Memory Text</description>
-						<posx>0</posx>
-						<posy>30</posy>
+						<left>0</left>
+						<top>30</top>
 						<width>600</width>
 						<height>25</height>
 						<label>$LOCALIZE[31304]: $INFO[system.memory(used.percent)]</label>
@@ -244,8 +244,8 @@
 					</control>
 					<control type="progress">
 						<description>Memory BAR</description>
-						<posx>10</posx>
-						<posy>37</posy>
+						<left>10</left>
+						<top>37</top>
 						<width>320</width>
 						<height>12</height>
 						<info>system.memory(used)</info>

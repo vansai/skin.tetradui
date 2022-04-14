@@ -28,8 +28,8 @@
 			<animation effect="slide" end="50,0" time="0" condition="Control.HasFocus(2)">Conditional</animation>
 			<control type="image">
 				<description>Background</description>
-				<posx>105</posx>
-				<posy>0</posy>
+				<left>105</left>
+				<top>0</top>
 				<width>50</width>
 				<height>720</height>
 				<aspectratio>stretch</aspectratio>
@@ -37,8 +37,8 @@
 			</control>
 			<control type="image">
 				<description>Background</description>
-				<posx>155r</posx>
-				<posy>0</posy>
+				<left>155r</left>
+				<top>0</top>
 				<width>50</width>
 				<height>720</height>
 				<aspectratio>stretch</aspectratio>
@@ -46,8 +46,8 @@
 			</control>
 			<control type="image">
 				<description>Background</description>
-				<posx>155</posx>
-				<posy>0</posy>
+				<left>155</left>
+				<top>0</top>
 				<width>970</width>
 				<height>720</height>
 				<aspectratio>stretch</aspectratio>
@@ -56,32 +56,32 @@
 		</control>
 <!-- Blackwash Background End-->
 		<control type="group">
-			<posx>180</posx>
+			<left>180</left>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			<animation effect="fade" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>
 			<control type="label">
 				<description>Header label</description>
-				<posx>0</posx>
+				<left>0</left>
 				<label>31011</label>
 				<include>HeaderTextCommons</include>
 			</control>
 			<control type="label">
 				<description>Time label</description>
-				<posx>930</posx>
+				<left>930</left>
 				<include>ClockTextCommons</include>
 			</control>
 			<control type="group">
-				<posx>20</posx>
-				<posy>75</posy>
+				<left>20</left>
+				<top>75</top>
 				<include>SystemCard</include>
 			</control>
 			<control type="group">
-				<posx>510</posx>
-				<posy>100</posy>
+				<left>510</left>
+				<top>100</top>
 				<control type="label">
 					<description>date label</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>380</width>
 					<height>30</height>
 					<align>center</align>
@@ -92,8 +92,8 @@
 				</control>
 				<control type="image">
 					<description>Logo</description>
-					<posx>0</posx>
-					<posy>30</posy>
+					<left>0</left>
+					<top>30</top>
 					<width>380</width>
 					<height>70</height>
 					<aspectratio>keep</aspectratio>
@@ -101,8 +101,8 @@
 				</control>
 				<control type="image">
 					<description>Logo Mirror</description>
-					<posx>0</posx>
-					<posy>90</posy>
+					<left>0</left>
+					<top>90</top>
 					<width>380</width>
 					<height>70</height>
 					<aspectratio>keep</aspectratio>
@@ -110,15 +110,15 @@
 				</control>
 				<control type="image">
 					<description>Logo Shadow</description>
-					<posx>0</posx>
-					<posy>100</posy>
+					<left>0</left>
+					<top>100</top>
 					<width>380</width>
 					<height>16</height>
 					<texture>home_logoshadow.png</texture>
 				</control>
 			</control>
 			<control type="group">
-				<posy>225</posy>
+				<top>225</top>
 				<control type="image">
 					<description>Button Highlight</description>
 					<texture>homebutton-$INFO[Container(9000).Position].png</texture>
@@ -134,15 +134,15 @@
 				</control>
 				<control type="image">
 					<description>Button Seperator</description>
-					<posx>35</posx>
-					<posy>0</posy>
+					<left>35</left>
+					<top>0</top>
 					<width>380</width>
 					<height>2</height>
 					<texture>divider.png</texture>
 				</control>
 				<control type="list" id="9000">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>450</width>
 					<height>314</height>
 					<onleft>1</onleft>
@@ -155,23 +155,23 @@
 					<itemlayout height="52" width="450">
 						<control type="image">
 							<description>Button Seperator</description>
-							<posx>35</posx>
-							<posy>52</posy>
+							<left>35</left>
+							<top>52</top>
 							<width>380</width>
 							<height>2</height>
 							<texture>divider.png</texture>
 						</control>
 						<control type="image">
 							<description>Icon</description>
-							<posx>50</posx>
-							<posy>6</posy>
+							<left>50</left>
+							<top>6</top>
 							<width>43</width>
 							<height>43</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
-							<posx>120</posx>
-							<posy>0</posy>
+							<left>120</left>
+							<top>0</top>
 							<width>330</width>
 							<height>52</height>
 							<font>font30</font>
@@ -185,24 +185,24 @@
 					<focusedlayout height="52" width="450">
 						<control type="image">
 							<description>Button Seperator</description>
-							<posx>35</posx>
-							<posy>52</posy>
+							<left>35</left>
+							<top>52</top>
 							<width>380</width>
 							<height>2</height>
 							<texture>divider.png</texture>
 						</control>
 						<control type="image">
 							<description>Icon</description>
-							<posx>50</posx>
-							<posy>6</posy>
+							<left>50</left>
+							<top>6</top>
 							<width>43</width>
 							<height>43</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 							<animation effect="slide" end="ButtonSlideBackDistance,0" time="ButtonSlideBackTime" reversible="false">focus</animation>
 						</control>
 						<control type="label">
-							<posx>120</posx>
-							<posy>0</posy>
+							<left>120</left>
+							<top>0</top>
 							<width>330</width>
 							<height>50</height>
 							<font>font30</font>
@@ -215,8 +215,8 @@
 							<visible>Control.HasFocus(9000)</visible>
 						</control>
 						<control type="label">
-							<posx>120</posx>
-							<posy>0</posy>
+							<left>120</left>
+							<top>0</top>
 							<width>330</width>
 							<height>50</height>
 							<font>font30</font>
@@ -229,8 +229,8 @@
 						</control>
 						<control type="image">
 							<description>Button shine animation</description>
-							<posx>20</posx>
-							<posy>3</posy>
+							<left>20</left>
+							<top>3</top>
 							<width>80</width>
 							<height>50</height>
 							<texture>shine-animation.png</texture>
@@ -247,14 +247,12 @@
 							<label>0</label>
 							<onclick>ActivateWindow(Programs,addons,return)</onclick>
 							<icon>button_icons/icon-apps.png</icon>
-							<thumb>-</thumb>
 							<visible>!Skin.HasSetting(AppsBlade_HidePrograms)</visible>
 						</item>
 						<item>
 							<label>31025</label>
 							<onclick>ActivateWindow(AddonBrowser)</onclick>
 							<icon>button_icons/icon-addon.png</icon>
-							<thumb>-</thumb>
 							<visible>!Skin.HasSetting(AppsBlade_HideAddons)</visible>
 						</item>
 						<item>
@@ -262,14 +260,12 @@
 							<onclick>ActivateWindow(Filemanager)</onclick>
 							<icon>button_icons/icon-xbmc.png</icon>
 							<visible>!Skin.HasSetting(AppsBlade_HideFilemanager)</visible>
-							<thumb>-</thumb>
 						</item>
 						<item>
 							<label>1036</label>
 							<onclick>ActivateWindow(Favourites)</onclick>
 							<icon>button_icons/icon-favourites.png</icon>
 							<visible>!Skin.HasSetting(AppsBlade_HideFavourites)</visible>
-							<thumb>-</thumb>
 						</item>
 					</content>
 				</control>
@@ -279,8 +275,8 @@
 
 		<control type="button" id="1">
 			<description>Blank Blade Slide Right</description>
-			<posx>-80</posx>
-			<posy>0</posy>
+			<left>-80</left>
+			<top>0</top>
 			<width>160</width>
 			<height>720</height>
 			<texturefocus>blades-blank-left.png</texturefocus>
@@ -290,8 +286,8 @@
 		</control>
 		<control type="button" id="2">
 			<description>Blank Blade Slide Left</description>
-			<posx>80r</posx>
-			<posy>0</posy>
+			<left>80r</left>
+			<top>0</top>
 			<width>160</width>
 			<height>720</height>
 			<texturefocus>blades-blank-right.png</texturefocus>
@@ -304,16 +300,16 @@
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			<!-- Left side -->
 			<control type="image">
-				<posx>-110</posx>
-				<posy>-40</posy>
+				<left>-110</left>
+				<top>-40</top>
 				<width>180</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>blades-runner-left.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>-40</posy>
+				<left>0</left>
+				<top>-40</top>
 				<width>115</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -322,17 +318,17 @@
 			<control type="label">
 				<description>weather Label</description>
 				<label>31004</label>
-				<posx>90</posx>
-				<posy>190</posy>
+				<left>90</left>
+				<top>190</top>
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>middle</aligny>
+				<aligny>center</aligny>
 				<angle>270</angle>
 			</control>
 			<control type="image">
-				<posx>50</posx>
-				<posy>-40</posy>
+				<left>50</left>
+				<top>-40</top>
 				<width>115</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -341,26 +337,26 @@
 			<control type="label">
 				<description>Applications Label</description>
 				<label>31002</label>
-				<posx>140</posx>
-				<posy>170</posy>
+				<left>140</left>
+				<top>170</top>
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>middle</aligny>
+				<aligny>center</aligny>
 				<angle>270</angle>
 			</control>
 			<!-- Right side -->
 			<control type="image">
-				<posx>65r</posx>
-				<posy>-40</posy>
+				<left>65r</left>
+				<top>-40</top>
 				<width>180</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>blades-runner-right.png</texture>
 			</control>
 			<control type="image">
-				<posx>115r</posx>
-				<posy>-40</posy>
+				<left>115r</left>
+				<top>-40</top>
 				<width>115</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -369,17 +365,17 @@
 			<control type="label">
 				<description>System Label</description>
 				<label>31003</label>
-				<posx>50r</posx>
-				<posy>200</posy>
+				<left>50r</left>
+				<top>200</top>
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>middle</aligny>
+				<aligny>center</aligny>
 				<angle>270</angle>
 			</control>
 			<control type="image">
-				<posx>165r</posx>
-				<posy>-40</posy>
+				<left>165r</left>
+				<top>-40</top>
 				<width>115</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -388,12 +384,12 @@
 			<control type="label">
 				<description>Media Label</description>
 				<label>31001</label>
-				<posx>100r</posx>
-				<posy>190</posy>
+				<left>100r</left>
+				<top>190</top>
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>middle</aligny>
+				<aligny>center</aligny>
 				<angle>270</angle>
 			</control>
 		</control>
@@ -403,16 +399,16 @@
 			<visible>Control.HasFocus(2)</visible>
 			<!-- Left side -->
 			<control type="image">
-				<posx>-110</posx>
-				<posy>-40</posy>
+				<left>-110</left>
+				<top>-40</top>
 				<width>180</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>blades-runner-left.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>-40</posy>
+				<left>0</left>
+				<top>-40</top>
 				<width>115</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -421,17 +417,17 @@
 			<control type="label">
 				<description>weather Label</description>
 				<label>31004</label>
-				<posx>90</posx>
-				<posy>200</posy>
+				<left>90</left>
+				<top>200</top>
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>middle</aligny>
+				<aligny>center</aligny>
 				<angle>270</angle>
 			</control>
 			<control type="image">
-				<posx>50</posx>
-				<posy>-40</posy>
+				<left>50</left>
+				<top>-40</top>
 				<width>115</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -440,17 +436,17 @@
 			<control type="label">
 				<description>Applications Label</description>
 				<label>31002</label>
-				<posx>140</posx>
-				<posy>190</posy>
+				<left>140</left>
+				<top>190</top>
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>middle</aligny>
+				<aligny>center</aligny>
 				<angle>270</angle>
 			</control>
 			<control type="image">
-				<posx>100</posx>
-				<posy>-40</posy>
+				<left>100</left>
+				<top>-40</top>
 				<width>115</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -461,28 +457,28 @@
 			<control type="label">
 				<description>Media Label</description>
 				<label>31001</label>
-				<posx>190</posx>
-				<posy>170</posy>
+				<left>190</left>
+				<top>170</top>
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>middle</aligny>
+				<aligny>center</aligny>
 				<angle>270</angle>
 				<visible>Control.HasFocus(2)</visible>
 				<animation effect="fade" time="HomeBladeAnimationSpeed">visible</animation>
 			</control>
 			<!-- Right side -->
 			<control type="image">
-				<posx>65r</posx>
-				<posy>-40</posy>
+				<left>65r</left>
+				<top>-40</top>
 				<width>180</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>blades-runner-right.png</texture>
 			</control>
 			<control type="image">
-				<posx>115r</posx>
-				<posy>-40</posy>
+				<left>115r</left>
+				<top>-40</top>
 				<width>115</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -491,12 +487,12 @@
 			<control type="label">
 				<description>System Label</description>
 				<label>31003</label>
-				<posx>50r</posx>
-				<posy>190</posy>
+				<left>50r</left>
+				<top>190</top>
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>middle</aligny>
+				<aligny>center</aligny>
 				<angle>270</angle>
 			</control>
 		</control>
@@ -506,16 +502,16 @@
 			<visible>Control.HasFocus(1)</visible>
 			<!-- Left side -->
 			<control type="image">
-				<posx>-110</posx>
-				<posy>-40</posy>
+				<left>-110</left>
+				<top>-40</top>
 				<width>180</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>blades-runner-left.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>-40</posy>
+				<left>0</left>
+				<top>-40</top>
 				<width>115</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -524,26 +520,26 @@
 			<control type="label">
 				<description>Weather Label</description>
 				<label>31004</label>
-				<posx>90</posx>
-				<posy>170</posy>
+				<left>90</left>
+				<top>170</top>
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>middle</aligny>
+				<aligny>center</aligny>
 				<angle>270</angle>
 			</control>
 			<!-- Right side -->
 			<control type="image">
-				<posx>65r</posx>
-				<posy>-40</posy>
+				<left>65r</left>
+				<top>-40</top>
 				<width>180</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>blades-runner-right.png</texture>
 			</control>
 			<control type="image">
-				<posx>115r</posx>
-				<posy>-40</posy>
+				<left>115r</left>
+				<top>-40</top>
 				<width>115</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -552,17 +548,17 @@
 			<control type="label">
 				<description>System Label</description>
 				<label>31003</label>
-				<posx>50r</posx>
-				<posy>210</posy>
+				<left>50r</left>
+				<top>210</top>
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>middle</aligny>
+				<aligny>center</aligny>
 				<angle>270</angle>
 			</control>
 			<control type="image">
-				<posx>165r</posx>
-				<posy>-40</posy>
+				<left>165r</left>
+				<top>-40</top>
 				<width>115</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -571,17 +567,17 @@
 			<control type="label">
 				<description>Media Label</description>
 				<label>31001</label>
-				<posx>100r</posx>
-				<posy>200</posy>
+				<left>100r</left>
+				<top>200</top>
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>middle</aligny>
+				<aligny>center</aligny>
 				<angle>270</angle>
 			</control>
 			<control type="image">
-				<posx>215r</posx>
-				<posy>-40</posy>
+				<left>215r</left>
+				<top>-40</top>
 				<width>115</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -592,12 +588,12 @@
 			<control type="label">
 				<description>Apps Label</description>
 				<label>31002</label>
-				<posx>150r</posx>
-				<posy>190</posy>
+				<left>150r</left>
+				<top>190</top>
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>middle</aligny>
+				<aligny>center</aligny>
 				<angle>270</angle>
 				<visible>Control.HasFocus(1)</visible>
 				<animation effect="fade" time="HomeBladeAnimationSpeed">visible</animation>

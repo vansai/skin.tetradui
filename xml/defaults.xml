@@ -1,26 +1,26 @@
 <includes>
 	<default type="image">
-		<posx>0</posx>
-		<posy>0</posy>
-		<texture>-</texture>
+		<left>0</left>
+		<top>0</top>
+		<texture />
 		<colorkey>0</colorkey>
 	</default>
 	<default type="label">
-		<posx>80</posx>
-		<posy>60</posy>
-		<label>-</label>
+		<left>80</left>
+		<top>60</top>
+		<label />
 		<font>font13</font>
 		<textcolor>white</textcolor>
 	</default>
 	<default type="fadelabel">
-		<posx>80</posx>
-		<posy>60</posy>
+		<left>80</left>
+		<top>60</top>
 		<font>font13</font>
 		<textcolor>white</textcolor>
 	</default>
 	<default type="button">
-		<posx>300</posx>
-		<posy>200</posy>
+		<left>300</left>
+		<top>200</top>
 		<width>340</width>
 		<height>42</height>
 		<texturefocus>button-focus.png</texturefocus>
@@ -33,8 +33,8 @@
 		<pulseonselect>no</pulseonselect>
 	</default>
 	<default type="togglebutton">
-		<posx>140</posx>
-		<posy>167</posy>
+		<left>140</left>
+		<top>167</top>
 		<width>30</width>
 		<height>30</height>
 		<texturefocus>sortup-focus.png</texturefocus>
@@ -48,8 +48,8 @@
 		<pulseonselect>no</pulseonselect>
 	</default>
 	<default type="textbox">
-		<posx>220</posx>
-		<posy>220</posy>
+		<left>220</left>
+		<top>220</top>
 		<width>410</width>
 		<height>215</height>
 		<textcolor>white</textcolor>
@@ -60,17 +60,17 @@
 		<font>font13</font>
 	</default>
 	<default type="progress">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<texturebg border="6,0,6,0">progress_back.png</texturebg>
-		<lefttexture>-</lefttexture>
+		<lefttexture />
 		<midtexture border="6,0,6,0">progress_front.png</midtexture>
-		<righttexture>-</righttexture>
-		<overlaytexture>-</overlaytexture>
+		<righttexture />
+		<overlaytexture />
 	</default>
 	<default type="spincontrol">
-		<posx>330</posx>
-		<posy>126</posy>
+		<left>330</left>
+		<top>126</top>
 		<textureup>sortup-nofocus.png</textureup>
 		<texturedown>sortdown-nofocus.png</texturedown>
 		<textureupfocus>sortup-focus.png</textureupfocus>
@@ -85,18 +85,17 @@
 		<subtype>text</subtype>
 		<textoffsetx>15</textoffsetx>
 		<textoffsety>0</textoffsety>
-		<aligny>-</aligny>
 		<pulseonselect>no</pulseonselect>
 	</default>
 	<default type="spincontrolex">
-		<posx>530</posx>
-		<posy>160</posy>
+		<left>530</left>
+		<top>160</top>
 		<width>300</width>
 		<height>42</height>
 		<spinwidth>30</spinwidth>
 		<spinheight>30</spinheight>
 		<texturefocus>button-focus.png</texturefocus>
-		<texturenofocus>-</texturenofocus>
+		<texturenofocus />
 		<textureup>sortup-nofocus.png</textureup>
 		<texturedown>sortdown-nofocus.png</texturedown>
 		<textureupfocus>sortup-focus.png</textureupfocus>
@@ -110,8 +109,8 @@
 		<pulseonselect>no</pulseonselect>
 	</default>
 	<default type="radiobutton">
-		<posx>300</posx>
-		<posy>200</posy>
+		<left>300</left>
+		<top>200</top>
 		<width>340</width>
 		<height>42</height>
 		<radiowidth>24</radiowidth>
@@ -130,12 +129,12 @@
 	</default>
 	<default type="edit">
 		<description>Name Button</description>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>300</width>
 		<height>45</height>
 		<textoffsetx>15</textoffsetx>
-		<label>-</label>
+		<label />
 		<textcolor>white</textcolor>
 		<disabledcolor>disabled</disabledcolor>
 		<font>font12</font>
@@ -156,14 +155,14 @@
 		<textureslidernibfocus>slider_nibFO.png</textureslidernibfocus>
 	</default>
 	<default type="mover">
-		<posx>60</posx>
-		<posy>192</posy>
+		<left>60</left>
+		<top>192</top>
 		<texturefocus>button-focus.png</texturefocus>
 		<texturenofocus>button-nofocus.png</texturenofocus>
 	</default>
 	<default type="resize">
-		<posx>60</posx>
-		<posy>192</posy>
+		<left>60</left>
+		<top>192</top>
 		<texturefocus>button-focus.png</texturefocus>
 		<texturenofocus>button-nofocus.png</texturenofocus>
 	</default>

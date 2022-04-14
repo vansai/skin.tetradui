@@ -2,25 +2,25 @@
 	<include>dialogeffect</include>
 	<coordinates>
 		<system>0</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 		<control type="group">
-			<posx>440</posx>
-			<posy>100r</posy>
+			<left>440</left>
+			<top>100r</top>
 			<control type="image">
 				<description>background</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>400</width>
 				<height>90</height>
 				<texture border="20,20,20,30">Dialog2.png</texture>
 			</control>
 			<control type="image" id="400">
 				<description>Icon</description>
-				<posx>15</posx>
-				<posy>15</posy>
+				<left>15</left>
+				<top>15</top>
 				<width>55</width>
 				<height>50</height>
 				<aspectratio>keep</aspectratio>
@@ -28,11 +28,11 @@
 			</control>
 			<control type="fadelabel" id="401">
 				<description>Label 1</description>
-				<posx>80</posx>
-				<posy>15</posy>
+				<left>80</left>
+				<top>15</top>
 				<width>300</width>
 				<height>20</height>
-				<label>-</label>
+				<label />
 				<font>font12</font>
 				<textcolor>orange</textcolor>
 				<align>left</align>
@@ -40,11 +40,11 @@
 			</control>
 			<control type="fadelabel" id="402">
 				<description>Label 2</description>
-				<posx>80</posx>
-				<posy>40</posy>
+				<left>80</left>
+				<top>40</top>
 				<width>300</width>
 				<height>20</height>
-				<label>-</label>
+				<label />
 				<font>font12</font>
 				<align>left</align>
 				<aligny>center</aligny>

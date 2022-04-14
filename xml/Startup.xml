@@ -14,8 +14,8 @@
 		<control type="button" id="10">
 			<description>trigger</description>
 			<onfocus>ReplaceWindow(Home)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
+			<texturenofocus />
+			<texturefocus />
 			<animation effect="fade" start="0" end="0">Focus</animation>
 		</control>
 	</controls>

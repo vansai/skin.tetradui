@@ -15,16 +15,16 @@
 				<effect type="fade" start="100" end="0" delay="800" time="100" />
 			</animation>
 			<control type="image">
-				<posx>130</posx>
-				<posy>-40</posy>
+				<left>130</left>
+				<top>-40</top>
 				<width>180</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>blades-runner-right.png</texture>
 			</control>
 			<control type="image">
-				<posx>310</posx>
-				<posy>-40</posy>
+				<left>310</left>
+				<top>-40</top>
 				<width>970</width>
 				<height>800</height>
 				<aspectratio>stretch</aspectratio>
@@ -36,14 +36,14 @@
 				<animation effect="fade" delay="100" time="DialogVisibleFadeAnimationSpeed">WindowClose</animation>
 				<control type="label">
 					<description>Title label Normal</description>
-					<posx>200</posx>
+					<left>200</left>
 					<label>24003</label>
 					<include>DialogHeaderTextCommons</include>
 				</control>
 				<control type="label">
 					<description>Addon Title value</description>
-					<posx>200</posx>
-					<posy>70</posy>
+					<left>200</left>
+					<top>70</top>
 					<width>1000</width>
 					<height>25</height>
 					<align>center</align>
@@ -55,8 +55,8 @@
 				</control>
 				<control type="image">
 					<description>Cover image</description>
-					<posx>200</posx>
-					<posy>120</posy>
+					<left>200</left>
+					<top>120</top>
 					<width>300</width>
 					<height>380</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
@@ -66,12 +66,12 @@
 				</control>
 
 				<control type="group">
-					<posx>540</posx>
-					<posy>120</posy>
+					<left>540</left>
+					<top>120</top>
 					<control type="label">
 						<description>Type txt</description>
-						<posx>140</posx>
-						<posy>0</posy>
+						<left>140</left>
+						<top>0</top>
 						<width>140</width>
 						<height>25</height>
 						<label>$LOCALIZE[146]</label>
@@ -82,8 +82,8 @@
 					</control>
 					<control type="label">
 						<description>Type Value</description>
-						<posx>160</posx>
-						<posy>0</posy>
+						<left>160</left>
+						<top>0</top>
 						<width>540</width>
 						<height>25</height>
 						<label fallback="416">$INFO[ListItem.Property(Addon.Type)]</label>
@@ -94,8 +94,8 @@
 					</control>
 					<control type="label">
 						<description>Author txt</description>
-						<posx>140</posx>
-						<posy>30</posy>
+						<left>140</left>
+						<top>30</top>
 						<width>140</width>
 						<height>25</height>
 						<label>$LOCALIZE[21863]:</label>
@@ -106,8 +106,8 @@
 					</control>
 					<control type="label">
 						<description>Author Value</description>
-						<posx>160</posx>
-						<posy>30</posy>
+						<left>160</left>
+						<top>30</top>
 						<width>540</width>
 						<height>25</height>
 						<label fallback="416">$INFO[ListItem.Property(Addon.Creator)]</label>
@@ -118,8 +118,8 @@
 					</control>
 					<control type="label">
 						<description>Version txt</description>
-						<posx>140</posx>
-						<posy>60</posy>
+						<left>140</left>
+						<top>60</top>
 						<width>140</width>
 						<height>25</height>
 						<label>$LOCALIZE[24051]</label>
@@ -130,8 +130,8 @@
 					</control>
 					<control type="label">
 						<description>Version Value</description>
-						<posx>160</posx>
-						<posy>60</posy>
+						<left>160</left>
+						<top>60</top>
 						<width>540</width>
 						<height>25</height>
 						<label fallback="416">$INFO[ListItem.Property(Addon.Version)]</label>
@@ -142,8 +142,8 @@
 					</control>
 					<control type="label">
 						<description>Rating txt</description>
-						<posx>140</posx>
-						<posy>90</posy>
+						<left>140</left>
+						<top>90</top>
 						<width>140</width>
 						<height>25</height>
 						<label>$LOCALIZE[563]:</label>
@@ -154,8 +154,8 @@
 					</control>
 					<control type="image">
 						<description>Rating value</description>
-						<posx>155</posx>
-						<posy>90</posy>
+						<left>155</left>
+						<top>90</top>
 						<width>150</width>
 						<height>30</height>
 						<aspectratio align="left">keep</aspectratio>
@@ -163,8 +163,8 @@
 					</control>
 					<control type="label">
 						<description>Summary txt</description>
-						<posx>140</posx>
-						<posy>120</posy>
+						<left>140</left>
+						<top>120</top>
 						<width>140</width>
 						<height>25</height>
 						<label>$LOCALIZE[20037]:</label>
@@ -175,8 +175,8 @@
 					</control>
 					<control type="fadelabel">
 						<description>Summary Value</description>
-						<posx>160</posx>
-						<posy>120</posy>
+						<left>160</left>
+						<top>120</top>
 						<width>540</width>
 						<height>25</height>
 						<label fallback="416">$INFO[ListItem.Property(Addon.Summary)]</label>
@@ -191,8 +191,8 @@
 					<visible>!IsEmpty(ListItem.Property(Addon.Disclaimer)) | !IsEmpty(ListItem.Property(Addon.Broken))</visible>
 					<control type="label">
 						<description>Description Page Count</description>
-						<posx>120r</posx>
-						<posy>120r</posy>
+						<left>120r</left>
+						<top>120r</top>
 						<width>300</width>
 						<height>25</height>
 						<label>$INFO[Container(400).CurrentPage, $LOCALIZE[31201] (]$INFO[Container(400).NumPages,/,)]</label>
@@ -203,21 +203,21 @@
 					</control>
 					<control type="spincontrol" id="60">
 						<description>Next page button</description>
-						<posx>100r</posx>
-						<posy>120r</posy>
+						<left>100r</left>
+						<top>120r</top>
 						<subtype>page</subtype>
-						<font>-</font>
+						<font />
 						<onleft>61</onleft>
 						<onright>9000</onright>
-						<ondown>-</ondown>
-						<onup>-</onup>
+						<ondown>noop</ondown>
+						<onup>noop</onup>
 						<textcolor>white</textcolor>
 						<showonepage>true</showonepage>
 					</control>
 					<control type="textbox" id="400">
 						<description>Description</description>
-						<posx>540</posx>
-						<posy>320</posy>
+						<left>540</left>
+						<top>320</top>
 						<width>700</width>
 						<height>210</height>
 						<font>font12</font>
@@ -230,8 +230,8 @@
 						<visible>IsEmpty(ListItem.Property(Addon.Broken))</visible>
 						<control type="label">
 							<description>Disclaimer txt</description>
-							<posx>200</posx>
-							<posy>540</posy>
+							<left>200</left>
+							<top>540</top>
 							<width>1040</width>
 							<height>25</height>
 							<label>$LOCALIZE[24052]</label>
@@ -242,8 +242,8 @@
 						</control>
 						<control type="fadelabel">
 							<description>Disclaimer Value</description>
-							<posx>200</posx>
-							<posy>565</posy>
+							<left>200</left>
+							<top>565</top>
 							<width>1040</width>
 							<height>25</height>
 							<label>$INFO[ListItem.Property(Addon.Disclaimer)]</label>
@@ -258,8 +258,8 @@
 						<visible>!IsEmpty(ListItem.Property(Addon.Broken))</visible>
 						<control type="label">
 							<description>Broken txt</description>
-							<posx>200</posx>
-							<posy>540</posy>
+							<left>200</left>
+							<top>540</top>
 							<width>1040</width>
 							<height>25</height>
 							<label>$LOCALIZE[24096]</label>
@@ -270,8 +270,8 @@
 						</control>
 						<control type="fadelabel">
 							<description>Boken Value</description>
-							<posx>200</posx>
-							<posy>565</posy>
+							<left>200</left>
+							<top>565</top>
 							<width>1040</width>
 							<height>25</height>
 							<label>$INFO[ListItem.Property(Addon.Broken)]</label>
@@ -287,8 +287,8 @@
 					<visible>IsEmpty(ListItem.Property(Addon.Disclaimer)) + IsEmpty(ListItem.Property(Addon.Broken))</visible>
 					<control type="label">
 						<description>Description Page Count</description>
-						<posx>120r</posx>
-						<posy>120r</posy>
+						<left>120r</left>
+						<top>120r</top>
 						<width>300</width>
 						<height>25</height>
 						<label>$INFO[Container(401).CurrentPage, $LOCALIZE[31201] (]$INFO[Container(401).NumPages,/,)]</label>
@@ -299,21 +299,21 @@
 					</control>
 					<control type="spincontrol" id="61">
 						<description>Next page button</description>
-						<posx>100r</posx>
-						<posy>120r</posy>
+						<left>100r</left>
+						<top>120r</top>
 						<subtype>page</subtype>
-						<font>-</font>
+						<font />
 						<onleft>9000</onleft>
 						<onright>60</onright>
-						<ondown>-</ondown>
-						<onup>-</onup>
+						<ondown>noop</ondown>
+						<onup>noop</onup>
 						<textcolor>white</textcolor>
 						<showonepage>true</showonepage>
 					</control>
 					<control type="textbox" id="401">
 						<description>Description</description>
-						<posx>540</posx>
-						<posy>320</posy>
+						<left>540</left>
+						<top>320</top>
 						<width>700</width>
 						<height>260</height>
 						<font>font12</font>
@@ -324,8 +324,8 @@
 					</control>
 				</control>
 				<control type="grouplist" id="9000">
-					<posx>200</posx>
-					<posy>70r</posy>
+					<left>200</left>
+					<top>70r</top>
 					<width>1040</width>
 					<height>50</height>
 					<onleft>9000</onleft>

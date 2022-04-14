@@ -15,7 +15,7 @@
 	<constant name="SideMenuSlideOutTime">200</constant>
 
 	<include name="HomeButtonCommonValues">
-		<posx>50</posx>
+		<left>50</left>
 		<width>43</width>
 		<height>43</height>
 		<aligny>center</aligny>
@@ -23,7 +23,7 @@
 		<textwidth>330</textwidth>
 		<textcolor>white2</textcolor>
 		<focusedcolor>black</focusedcolor>
-		<shadowcolor>-</shadowcolor>
+		<shadowcolor />
 		<font>font30</font>
 		<pulseonselect>no</pulseonselect>
 		<onleft>1</onleft>
@@ -31,14 +31,14 @@
 		<animation effect="slide" end="ButtonSlideBackDistance,0" time="ButtonSlideBackTime" reversible="false">focus</animation>
 	</include>
 	<include name="HomeButtonHighlightCommonValues">
-		<posx>0</posx>
-		<posy>-17</posy>
+		<left>0</left>
+		<top>-17</top>
 		<width>450</width>
 		<height>350</height>
 		<aspectratio>stretch</aspectratio>
 	</include>
 	<include name="WeatherButtonCommonValues">
-		<posx>40</posx>
+		<left>40</left>
 		<width>43</width>
 		<height>43</height>
 		<aligny>center</aligny>
@@ -46,22 +46,22 @@
 		<textwidth>300</textwidth>
 		<textcolor>white2</textcolor>
 		<focusedcolor>black</focusedcolor>
-		<shadowcolor>-</shadowcolor>
+		<shadowcolor />
 		<font>font30</font>
 		<pulseonselect>no</pulseonselect>
-		<onleft>-</onleft>
+		<onleft>noop</onleft>
 		<onright>1</onright>
 		<animation effect="slide" end="ButtonSlideBackDistance,0" time="ButtonSlideBackTime" reversible="false">focus</animation>
 	</include>
 	<include name="WeatherButtonHighlightCommonValues">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>350</width>
 		<height>505</height>
 		<aspectratio>stretch</aspectratio>
 	</include>
 	<include name="SystemButtonCommonValues">
-		<posx>50</posx>
+		<left>50</left>
 		<width>40</width>
 		<height>40</height>
 		<aligny>center</aligny>
@@ -69,7 +69,7 @@
 		<textwidth>330</textwidth>
 		<textcolor>white2</textcolor>
 		<focusedcolor>black</focusedcolor>
-		<shadowcolor>-</shadowcolor>
+		<shadowcolor />
 		<font>font30</font>
 		<pulseonselect>no</pulseonselect>
 		<onleft>1</onleft>
@@ -77,14 +77,14 @@
 		<animation effect="slide" end="ButtonSlideBackDistance,0" time="ButtonSlideBackTime" reversible="false">focus</animation>
 	</include>
 	<include name="SystemButtonHighlightCommonValues">
-		<posx>0</posx>
-		<posy>-1</posy>
+		<left>0</left>
+		<top>-1</top>
 		<width>440</width>
 		<height>472</height>
 		<aspectratio>stretch</aspectratio>
 	</include>
 	<include name="HeaderTextCommons">
-		<posy>40</posy>
+		<top>40</top>
 		<width>800</width>
 		<height>20</height>
 		<align>left</align>
@@ -96,7 +96,7 @@
 		<include>VisibleFadeEffect</include>
 	</include>
 	<include name="DialogHeaderTextCommons">
-		<posy>20</posy>
+		<top>20</top>
 		<width>370</width>
 		<height>30</height>
 		<align>left</align>
@@ -106,7 +106,7 @@
 		<shadowcolor>black</shadowcolor>
 	</include>
 	<include name="ClockTextCommons">
-		<posy>40</posy>
+		<top>40</top>
 		<width>380</width>
 		<height>20</height>
 		<align>right</align>
@@ -128,7 +128,7 @@
 		<textcolor>white</textcolor>
 		<shadowcolor>black</shadowcolor>
 		<texturefocus border="4,6,4,8">button-focus.png</texturefocus>
-		<texturenofocus>-</texturenofocus>
+		<texturenofocus />
 	</include>
 	<include name="InfoDialogButtonCommonValues">
 		<height>50</height>
@@ -146,8 +146,8 @@
 	<include name="CommonPlayerControls">
 		<control type="label">
 			<description>Player Controls Label</description>
-			<posx>6</posx>
-			<posy>365</posy>
+			<left>6</left>
+			<top>365</top>
 			<width>220</width>
 			<height>20</height>
 			<font>font12</font>
@@ -155,94 +155,94 @@
 			<textcolor>orange</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<align>left</align>
-			<aligny>middle</aligny>
+			<aligny>center</aligny>
 			<visible>Player.HasMedia</visible>
 			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="group" id="">
-			<posx>8</posx>
-			<posy>405</posy>
+			<left>8</left>
+			<top>405</top>
 			<visible>Player.HasMedia</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="button" id="600">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>mediacontrol-skipback-focus.png</texturefocus>
 				<texturenofocus>mediacontrol-skipback.png</texturenofocus>
 				<onclick>XBMC.PlayerControl(Previous)</onclick>
-				<label>-</label>
+				<label />
 				<onleft>50</onleft>
 				<onright>601</onright>
 				<onup>610</onup>
 				<ondown>606</ondown>
 			</control>
 			<control type="button" id="601">
-				<posx>34</posx>
-				<posy>0</posy>
+				<left>34</left>
+				<top>0</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>mediacontrol-rewind-focus.png</texturefocus>
 				<texturenofocus>mediacontrol-rewind.png</texturenofocus>
 				<onclick>XBMC.PlayerControl(Rewind)</onclick>
-				<label>-</label>
+				<label />
 				<onleft>600</onleft>
 				<onright>602</onright>
 				<onup>610</onup>
 				<ondown>606</ondown>
 			</control>
 			<control type="button" id="602">
-				<posx>68</posx>
-				<posy>0</posy>
+				<left>68</left>
+				<top>0</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>mediacontrol-stop-focus.png</texturefocus>
 				<texturenofocus>mediacontrol-stop.png</texturenofocus>
 				<onclick>XBMC.PlayerControl(Stop)</onclick>
-				<label>-</label>
+				<label />
 				<onleft>601</onleft>
 				<onright>603</onright>
 				<onup>610</onup>
 				<ondown>606</ondown>
 			</control>
 			<control type="button" id="603">
-				<posx>102</posx>
-				<posy>0</posy>
+				<left>102</left>
+				<top>0</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>mediacontrol-play-focus.png</texturefocus>
 				<texturenofocus>mediacontrol-play.png</texturenofocus>
 				<onclick>XBMC.PlayerControl(Play)</onclick>
-				<label>-</label>
+				<label />
 				<onleft>602</onleft>
 				<onright>604</onright>
 				<onup>610</onup>
 				<ondown>606</ondown>
 			</control>
 			<control type="button" id="604">
-				<posx>136</posx>
-				<posy>0</posy>
+				<left>136</left>
+				<top>0</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>mediacontrol-fastforward-focus.png</texturefocus>
 				<texturenofocus>mediacontrol-fastforward.png</texturenofocus>
 				<onclick>XBMC.PlayerControl(FastForward)</onclick>
-				<label>-</label>
+				<label />
 				<onleft>603</onleft>
 				<onright>605</onright>
 				<onup>610</onup>
 				<ondown>606</ondown>
 			</control>
 			<control type="button" id="605">
-				<posx>170</posx>
-				<posy>0</posy>
+				<left>170</left>
+				<top>0</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>mediacontrol-skipforward-focus.png</texturefocus>
 				<texturenofocus>mediacontrol-skipforward.png</texturenofocus>
 				<onclick>XBMC.PlayerControl(Next)</onclick>
-				<label>-</label>
+				<label />
 				<onleft>604</onleft>
 				<onright>50</onright>
 				<onup>610</onup>
@@ -250,8 +250,8 @@
 			</control>
 			<control type="radiobutton" id="606">
 				<description>Random</description>
-				<posx>-14</posx>
-				<posy>25</posy>
+				<left>-14</left>
+				<top>25</top>
 				<include>ButtonCommonValues</include>
 				<label>590</label>
 				<onclick>XBMC.PlayerControl(Random)</onclick>
@@ -267,8 +267,8 @@
 	<include name="WeatherCard">
 		<control type="image">
 			<description>GamerCard Background</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>430</width>
 			<height>160</height>
 			<aspectratio>stretch</aspectratio>
@@ -276,8 +276,8 @@
 		</control>
 		<control type="image">
 			<description>Button shine animation</description>
-			<posx>0</posx>
-			<posy>12</posy>
+			<left>0</left>
+			<top>12</top>
 			<width>60</width>
 			<height>32</height>
 			<texture>shine-animation.png</texture>
@@ -289,8 +289,8 @@
 		</control>
 		<control type="label">
 			<description>Weather label</description>
-			<posx>30</posx>
-			<posy>13</posy>
+			<left>30</left>
+			<top>13</top>
 			<width>370</width>
 			<height>30</height>
 			<align>left</align>
@@ -301,8 +301,8 @@
 		</control>
 		<control type="textbox" id="400">
 			<description>No weather warning</description>
-			<posx>30</posx>
-			<posy>50</posy>
+			<left>30</left>
+			<top>50</top>
 			<width>370</width>
 			<height>80</height>
 			<font>font10</font>
@@ -310,15 +310,14 @@
 			<textcolor>grey</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<align>center</align>
-			<pagecontrol>-</pagecontrol>
 			<visible>IsEmpty(Weather.Plugin)</visible>
 		</control>
 		<control type="group">
 			<visible>!IsEmpty(Weather.Plugin)</visible>
 			<control type="image">
 				<description>Weather image</description>
-				<posx>30</posx>
-				<posy>50</posy>
+				<left>30</left>
+				<top>50</top>
 				<width>80</width>
 				<height>80</height>
 				<aspectratio>keep</aspectratio>
@@ -326,8 +325,8 @@
 			</control>
 			<control type="label">
 				<description>Temp Label</description>
-				<posx>120</posx>
-				<posy>50</posy>
+				<left>120</left>
+				<top>50</top>
 				<height>30</height>
 				<width>150</width>
 				<label>$LOCALIZE[31021]</label>
@@ -339,8 +338,8 @@
 			</control>
 			<control type="label">
 				<description>Temp Value</description>
-				<posx>380</posx>
-				<posy>55</posy>
+				<left>380</left>
+				<top>55</top>
 				<height>30</height>
 				<width>110</width>
 				<label>$INFO[Weather.Temperature]</label>
@@ -352,8 +351,8 @@
 			</control>
 			<control type="label">
 				<description>Conditions Label</description>
-				<posx>120</posx>
-				<posy>85</posy>
+				<left>120</left>
+				<top>85</top>
 				<height>30</height>
 				<width>290</width>
 				<label>$INFO[Window(Weather).Property(Current.Condition)]</label>
@@ -368,8 +367,8 @@
 	<include name="SystemCard">
 		<control type="image">
 			<description>GamerCard Background</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>430</width>
 			<height>160</height>
 			<aspectratio>stretch</aspectratio>
@@ -377,8 +376,8 @@
 		</control>
 		<control type="image">
 			<description>Button shine animation</description>
-			<posx>0</posx>
-			<posy>12</posy>
+			<left>0</left>
+			<top>12</top>
 			<width>60</width>
 			<height>32</height>
 			<texture>shine-animation.png</texture>
@@ -390,8 +389,8 @@
 		</control>
 		<control type="label">
 			<description>System Info label</description>
-			<posx>30</posx>
-			<posy>13</posy>
+			<left>30</left>
+			<top>13</top>
 			<width>370</width>
 			<height>30</height>
 			<align>left</align>
@@ -402,8 +401,8 @@
 		</control>
 		<control type="image">
 			<description>Icon</description>
-			<posx>30</posx>
-			<posy>50</posy>
+			<left>30</left>
+			<top>50</top>
 			<width>80</width>
 			<height>80</height>
 			<aspectratio>keep</aspectratio>
@@ -411,8 +410,8 @@
 		</control>
 		<control type="label">
 			<description>IP Address Label</description>
-			<posx>120</posx>
-			<posy>50</posy>
+			<left>120</left>
+			<top>50</top>
 			<height>30</height>
 			<width>290</width>
 			<label>$LOCALIZE[31308] $INFO[Network.IPAddress]</label>
@@ -424,8 +423,8 @@
 		</control>
 		<control type="label">
 			<description>CPU Label</description>
-			<posx>120</posx>
-			<posy>75</posy>
+			<left>120</left>
+			<top>75</top>
 			<height>30</height>
 			<width>290</width>
 			<label>$LOCALIZE[158]: $INFO[System.FreeMemory]</label>
@@ -437,8 +436,8 @@
 		</control>
 		<control type="label">
 			<description>CPU Label</description>
-			<posx>120</posx>
-			<posy>100</posy>
+			<left>120</left>
+			<top>100</top>
 			<height>30</height>
 			<width>290</width>
 			<label>XBMC: $INFO[System.BuildVersion]</label>
@@ -453,8 +452,8 @@
 	<include name="CommonDVDTray">
 		<control type="image">
 			<description>DVDTray Circle</description>
-			<posx>0</posx>
-			<posy>540</posy>
+			<left>0</left>
+			<top>540</top>
 			<width>100</width>
 			<height>100</height>
 			<aspectratio>keep</aspectratio>
@@ -462,11 +461,11 @@
 		</control>
 		<control type="togglebutton" id="15">
 			<description>DVD Tray and Rss Background</description>
-			<posx>25</posx>
-			<posy>565</posy>
+			<left>25</left>
+			<top>565</top>
 			<width>870</width>
 			<height>50</height>
-			<label>-</label>
+			<label />
 			<usealttexture>System.HasMediaDVD</usealttexture>
 			<texturenofocus>dvdtray-nofocus.png</texturenofocus>
 			<texturefocus>dvdtray-focus.png</texturefocus>
@@ -481,8 +480,8 @@
 		</control>
 		<control type="rss">
 			<description>rss feed</description>
-			<posx>97</posx>
-			<posy>575</posy>
+			<left>97</left>
+			<top>575</top>
 			<width>790</width>
 			<font>font13</font>
 			<urlset>1</urlset>
@@ -494,8 +493,8 @@
 		</control>
 		<control type="label">
 			<description>Tray Empty Label</description>
-			<posx>120</posx>
-			<posy>575</posy>
+			<left>120</left>
+			<top>575</top>
 			<width>760</width>
 			<font>font13</font>
 			<textcolor>black</textcolor>
@@ -506,8 +505,8 @@
 		</control>
 		<control type="label">
 			<description>Play Whats in Tray Label</description>
-			<posx>120</posx>
-			<posy>575</posy>
+			<left>120</left>
+			<top>575</top>
 			<width>760</width>
 			<font>font13</font>
 			<textcolor>black</textcolor>
@@ -520,8 +519,8 @@
 
 	<include name="AllViewCommonPageControls">
 		<control type="group">
-			<posx>130r</posx>
-			<posy>115r</posy>
+			<left>130r</left>
+			<top>115r</top>
 			<animation effect="fade" delay="500" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>
 			<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
 			<animation effect="slide" start="0,0" end="-100,0" time="200" condition="Player.HasAudio">Conditional</animation>
@@ -529,8 +528,8 @@
 			<animation effect="slide" start="0,0" end="-160,0" time="200" condition="Player.HasVideo + !VideoPlayer.Content(Movies)">Conditional</animation>
 			<control type="label">
 				<description>Page Count Label NoFocus</description>
-				<posx>-10</posx>
-				<posy>5</posy>
+				<left>-10</left>
+				<top>5</top>
 				<width>500</width>
 				<height>20</height>
 				<font>font12</font>
@@ -543,8 +542,8 @@
 			</control>
 			<control type="label">
 				<description>Page Count Label Focus</description>
-				<posx>-10</posx>
-				<posy>5</posy>
+				<left>-10</left>
+				<top>5</top>
 				<width>500</width>
 				<height>20</height>
 				<font>font12</font>
@@ -557,10 +556,10 @@
 			</control>
 			<control type="spincontrol" id="60">
 				<description>Next page button</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<subtype>page</subtype>
-				<font>-</font>
+				<font />
 				<onleft>50</onleft>
 				<onright>9000</onright>
 				<ondown>60</ondown>
@@ -590,16 +589,16 @@
 				<include>VisibleFadeEffect</include>
 				<control type="image">
 					<description>Background for Cover</description>
-					<posx>300r</posx>
-					<posy>300r</posy>
+					<left>300r</left>
+					<top>300r</top>
 					<width>300</width>
 					<height>300</height>
 					<texture flipy="true">shadowtopcorner.png</texture>
 				</control>
 				<control type="image">
 					<description>DVD Cover</description>
-					<posx>160r</posx>
-					<posy>190r</posy>
+					<left>160r</left>
+					<top>190r</top>
 					<width>157</width>
 					<height>175</height>
 					<texture>$INFO[VideoPlayer.Cover]</texture>
@@ -607,8 +606,8 @@
 					<bordersize>17,1,17,1</bordersize>
 				</control>
 				<control type="group">
-					<posx>680</posx>
-					<posy>72r</posy>
+					<left>680</left>
+					<top>72r</top>
 					<animation effect="slide" start="0,0" end="-50,0" time="0" condition="Window.IsVisible(Weather)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-50,0" time="HomeBladeAnimationSpeed" condition="Window.IsVisible(1111) + Control.HasFocus(1)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="50,0" time="HomeBladeAnimationSpeed" condition="Window.IsVisible(Weather) + Control.HasFocus(1)">Conditional</animation>
@@ -616,16 +615,16 @@
 					<animation effect="slide" start="0,0" end="-50,0" time="SubBladeFadeInDelay" condition="!Window.IsVisible(1111) + Window.Next(Weather)">WindowClose</animation>
 					<control type="image">
 						<description>Background Image for Menu</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>440</width>
 						<height>70</height>
 						<texture border="35,0,35,0">top_menu_back2.png</texture>
 					</control>
 					<control type="image">
 						<description>Background Image for Menu</description>
-						<posx>20</posx>
-						<posy>5</posy>
+						<left>20</left>
+						<top>5</top>
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
@@ -633,8 +632,8 @@
 					</control>
 					<control type="fadelabel">
 						<description>Now Playing title</description>
-						<posx>60</posx>
-						<posy>0</posy>
+						<left>60</left>
+						<top>0</top>
 						<width>355</width>
 						<height>20</height>
 						<align>right</align>
@@ -648,8 +647,8 @@
 					</control>
 					<control type="fadelabel">
 						<description>Now Playing Studio</description>
-						<posx>60</posx>
-						<posy>20</posy>
+						<left>60</left>
+						<top>20</top>
 						<width>345</width>
 						<height>20</height>
 						<align>right</align>
@@ -668,16 +667,16 @@
 				<include>VisibleFadeEffect</include>
 				<control type="image">
 					<description>Background for Cover</description>
-					<posx>300r</posx>
-					<posy>300r</posy>
+					<left>300r</left>
+					<top>300r</top>
 					<width>300</width>
 					<height>300</height>
 					<texture flipy="true">shadowtopcorner.png</texture>
 				</control>
 				<control type="image">
 					<description>Video Cover</description>
-					<posx>230r</posx>
-					<posy>145r</posy>
+					<left>230r</left>
+					<top>145r</top>
 					<width>230</width>
 					<height>135</height>
 					<aspectratio>keep</aspectratio>
@@ -686,28 +685,28 @@
 					<bordersize>17,1,17,1</bordersize>
 				</control>
 				<control type="group">
-					<posx>620</posx>
-					<posy>72r</posy>
+					<left>620</left>
+					<top>72r</top>
 					<control type="image">
 						<description>Background Image for Menu</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>440</width>
 						<height>70</height>
 						<texture border="35,0,35,0">top_menu_back2.png</texture>
 					</control>
 					<control type="image">
 						<description>Background Image for Menu</description>
-						<posx>20</posx>
-						<posy>2</posy>
+						<left>20</left>
+						<top>2</top>
 						<width>35</width>
 						<height>35</height>
 						<texture>button_icons/icon-videos.png</texture>
 					</control>
 					<control type="fadelabel">
 						<description>Now Playing title</description>
-						<posx>60</posx>
-						<posy>0</posy>
+						<left>60</left>
+						<top>0</top>
 						<width>355</width>
 						<height>20</height>
 						<align>right</align>
@@ -721,8 +720,8 @@
 					</control>
 					<control type="fadelabel">
 						<description>Now Playing TVShow</description>
-						<posx>60</posx>
-						<posy>20</posy>
+						<left>60</left>
+						<top>20</top>
 						<width>345</width>
 						<height>20</height>
 						<align>right</align>
@@ -741,31 +740,31 @@
 				<include>VisibleFadeEffect</include>
 				<control type="image">
 					<description>Background for Cover</description>
-					<posx>300r</posx>
-					<posy>300r</posy>
+					<left>300r</left>
+					<top>300r</top>
 					<width>300</width>
 					<height>300</height>
 					<texture flipy="true">shadowtopcorner.png</texture>
 				</control>
 				<control type="image">
 					<description>Music Cover</description>
-					<posx>137r</posx>
-					<posy>135r</posy>
+					<left>137r</left>
+					<top>135r</top>
 					<width>112</width>
 					<height>120</height>
 					<texture>$INFO[MusicPlayer.Cover]</texture>
 				</control>
 				<control type="image">
 					<description>Music Cover Case Overlay</description>
-					<posx>160r</posx>
-					<posy>143r</posy>
+					<left>160r</left>
+					<top>143r</top>
 					<width>145</width>
 					<height>140</height>
 					<texture>music-overlay-cdcase.png</texture>
 				</control>
 				<control type="group">
-					<posx>680</posx>
-					<posy>72r</posy>
+					<left>680</left>
+					<top>72r</top>
 					<animation effect="slide" start="0,0" end="-50,0" time="0" condition="Window.IsVisible(Weather)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-50,0" time="HomeBladeAnimationSpeed" condition="Window.IsVisible(1111) + Control.HasFocus(1)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="50,0" time="HomeBladeAnimationSpeed" condition="Window.IsVisible(Weather) + Control.HasFocus(1)">Conditional</animation>
@@ -773,16 +772,16 @@
 					<animation effect="slide" start="0,0" end="-50,0" time="SubBladeFadeInDelay" condition="!Window.IsVisible(1111) + Window.Next(Weather)">WindowClose</animation>
 					<control type="image">
 						<description>Background Image for Menu</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>440</width>
 						<height>70</height>
 						<texture border="35,0,35,0">top_menu_back2.png</texture>
 					</control>
 					<control type="image">
 						<description>Background Image for Menu</description>
-						<posx>20</posx>
-						<posy>5</posy>
+						<left>20</left>
+						<top>5</top>
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
@@ -790,8 +789,8 @@
 					</control>
 					<control type="fadelabel">
 						<description>Now Playing Artist Album</description>
-						<posx>60</posx>
-						<posy>0</posy>
+						<left>60</left>
+						<top>0</top>
 						<width>355</width>
 						<height>20</height>
 						<align>right</align>
@@ -805,8 +804,8 @@
 					</control>
 					<control type="fadelabel">
 						<description>Now Playing title</description>
-						<posx>60</posx>
-						<posy>20</posy>
+						<left>60</left>
+						<top>20</top>
 						<width>345</width>
 						<height>20</height>
 						<align>right</align>

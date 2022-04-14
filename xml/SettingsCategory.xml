@@ -31,19 +31,19 @@
 		</control>
 
 		<control type="group">
-			<posx>130</posx>
+			<left>130</left>
 			<animation effect="fade" delay="500" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>
 			<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
 			<control type="label">
 				<description>Header label</description>
-				<posx>0</posx>
+				<left>0</left>
 				<label>$LOCALIZE[5] - $INFO[Control.GetLabel(2)]</label>
 				<include>HeaderTextCommons</include>
 			</control>
 			<control type="grouplist" id="3">
 				<description>button area</description>
-				<posx>0</posx>
-				<posy>115</posy>
+				<left>0</left>
+				<top>115</top>
 				<width>250</width>
 				<height>500</height>
 				<itemgap>-2</itemgap>
@@ -54,8 +54,8 @@
 			</control>
 			<control type="grouplist" id="5">
 				<description>control area</description>
-				<posx>270</posx>
-				<posy>115</posy>
+				<left>270</left>
+				<top>115</top>
 				<width>790</width>
 				<height>500</height>
 				<itemgap>-2</itemgap>
@@ -67,8 +67,8 @@
 			</control>
 			<control type="spincontrol" id="90">
 				<description>Next page button</description>
-				<posx>1000</posx>
-				<posy>120r</posy>
+				<left>1000</left>
+				<top>120r</top>
 				<subtype>page</subtype>
 				<font>font13</font>
 				<onleft>5</onleft>
@@ -85,8 +85,8 @@
 
 		<control type="label" id="2">
 			<description>Title label2</description>
-			<textcolor>-</textcolor>
-			<font>-</font>
+			<textcolor />
+			<font />
 		</control>
 
 
@@ -109,50 +109,50 @@
 
 		<control type="button" id="10">
 			<description>Default Category Button</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>50</height>
 			<width>250</width>
 			<textcolor>white</textcolor>
 			<texturefocus border="10">button-focus.png</texturefocus>
 			<texturenofocus border="10">button-nofocus.png</texturenofocus>
-			<label>-</label>
+			<label />
 			<align>left</align>
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>45</height>
 			<font>font13</font>
 			<textcolor>white</textcolor>
 			<focusedcolor>black</focusedcolor>
 			<textoffsetx>10</textoffsetx>
 			<texturefocus border="10">list-focus.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
+			<texturenofocus />
 			<pulseonselect>no</pulseonselect>
 		</control>
 		<control type="radiobutton" id="8">
 			<description>Default RadioButton</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>45</height>
 			<font>font13</font>
 			<textcolor>white</textcolor>
 			<focusedcolor>black</focusedcolor>
 			<texturefocus border="10">list-focus.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
+			<texturenofocus />
 			<textoffsetx>10</textoffsetx>
 			<radioposx>750</radioposx>
 			<pulseonselect>no</pulseonselect>
 		</control>
 		<control type="spincontrolex" id="9">
 			<description>Default SpinControlex</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>45</height>
 			<texturefocus border="10">list-focus.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
+			<texturenofocus />
 			<font>font13</font>
 			<textcolor>white</textcolor>
 			<focusedcolor>black</focusedcolor>
