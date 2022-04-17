@@ -801,7 +801,6 @@
 					</control>
 					<control type="button" id="10">
 						<description>Get Art</description>
-						<!-- ADDED BY GADE! -->
 						<include>InfoDialogButtonCommonValues</include>
 						<label>13511</label>
 					</control>

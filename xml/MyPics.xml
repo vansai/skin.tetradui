@@ -160,7 +160,6 @@
 				</control>
 				<control type="radiobutton" id="20">
 					<description>Filter Advanced</description>
-					<!-- ADDED BY GADE! -->
 					<left>8</left>
 					<top>200</top>
 					<include>ButtonCommonValues</include>
