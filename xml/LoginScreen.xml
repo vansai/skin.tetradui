@@ -126,9 +126,9 @@
 						</control>
 						<control type="label">
 							<description>Last Login label</description>
-							<left>106</left>
+							<left>18</left>
 							<top>210</top>
-							<width>214</width>
+							<width>182</width>
 							<height>30</height>
 							<align>center</align>
 							<aligny>center</aligny>

@@ -46,7 +46,7 @@
 				<left>0</left>
 				<top>115</top>
 				<width>250</width>
-				<height>500</height>
+				<height>400</height>
 				<itemgap>-2</itemgap>
 				<onleft>5</onleft>
 				<onright>5</onright>
@@ -65,6 +65,27 @@
 				<onright>90</onright>
 				<onup>5</onup>
 				<ondown>5</ondown>
+			</control>
+			<control type="label">
+				<top>515</top>
+				<left>15</left>
+				<width>250</width>
+				<height>50</height>
+				<aligny>center</aligny>
+				<label>31553</label>
+			</control>
+			<control type="button" id="20">
+				<description>Settings Level Button</description>
+				<left>0</left>
+				<top>565</top>
+				<height>50</height>
+				<width>250</width>
+				<textcolor>white</textcolor>
+				<texturefocus border="10">button-focus.png</texturefocus>
+				<texturenofocus border="10">button-nofocus.png</texturenofocus>
+				<label>10037</label>
+				<onclick>SettingsLevelChange</onclick>
+				<align>left</align>
 			</control>
 			<control type="spincontrol" id="90">
 				<description>Next page button</description>
@@ -107,7 +128,7 @@
 			<visible>Window.Previous(Videos) | Window.Previous(MusicFiles) | Window.Previous(MusicLibrary) | Window.Previous(Pictures)</visible>
 			<include>MediaToSubBlades</include>
 		</control>
-
+		
 		<control type="button" id="10">
 			<description>Default Category Button</description>
 			<left>0</left>

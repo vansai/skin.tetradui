@@ -324,7 +324,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 			</control>
 			<control type="image">
@@ -343,7 +343,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 			</control>
 			<!-- Right side -->
@@ -371,7 +371,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 			</control>
 			<control type="image">
@@ -390,7 +390,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 			</control>
 		</control>
@@ -423,7 +423,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 			</control>
 			<control type="image">
@@ -442,7 +442,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 			</control>
 			<control type="image">
@@ -463,7 +463,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 				<visible>Control.HasFocus(2)</visible>
 				<animation effect="fade" time="HomeBladeAnimationSpeed">visible</animation>
@@ -493,7 +493,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 			</control>
 		</control>
@@ -526,7 +526,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 			</control>
 			<!-- Right side -->
@@ -554,7 +554,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 			</control>
 			<control type="image">
@@ -573,7 +573,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 			</control>
 			<control type="image">
@@ -594,7 +594,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 				<visible>Control.HasFocus(1)</visible>
 				<animation effect="fade" time="HomeBladeAnimationSpeed">visible</animation>

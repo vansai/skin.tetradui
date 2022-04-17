@@ -192,37 +192,25 @@
 					</focusedlayout>
 					<content>
 						<item>
-							<label>480</label>
+							<label>14206</label>
 							<label2>31400</label2>
-							<onclick>ActivateWindow(AppearanceSettings)</onclick>
+							<onclick>ActivateWindow(InterfaceSettings)</onclick>
 							<icon>button_icons/icon-appearance.png</icon>
 						</item>
 						<item>
-							<label>1212</label>
+							<label>14200</label>
 							<label2>31408</label2>
-							<onclick>ActivateWindow(VideosSettings)</onclick>
+							<onclick>ActivateWindow(PlayerSettings)</onclick>
 							<icon>button_icons/icon-videos.png</icon>
 						</item>
 						<item>
-							<label>1211</label>
+							<label>14211</label>
 							<label2>31409</label2>
-							<onclick>ActivateWindow(MusicSettings)</onclick>
+							<onclick>ActivateWindow(MediaSettings)</onclick>
 							<icon>button_icons/icon-music.png</icon>
 						</item>
 						<item>
-							<label>1213</label>
-							<label2>31410</label2>
-							<onclick>ActivateWindow(PicturesSettings)</onclick>
-							<icon>button_icons/icon-pictures.png</icon>
-						</item>
-						<item>
-							<label>8</label>
-							<label2>31402</label2>
-							<onclick>ActivateWindow(WeatherSettings)</onclick>
-							<icon>button_icons/icon-weather.png</icon>
-						</item>
-						<item>
-							<label>705</label>
+							<label>14036</label>
 							<label2>31403</label2>
 							<onclick>ActivateWindow(ServiceSettings)</onclick>
 							<icon>button_icons/icon-network.png</icon>
@@ -366,7 +354,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 			</control>
 			<control type="image">
@@ -385,7 +373,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 			</control>
 			<control type="image">
@@ -404,7 +392,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 			</control>
 			<control type="image">
@@ -423,7 +411,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 			</control>
 			<!-- Right side -->
@@ -464,7 +452,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 			</control>
 			<control type="image">
@@ -483,7 +471,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 			</control>
 			<control type="image">
@@ -504,7 +492,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 				<visible>Control.HasFocus(1)</visible>
 				<animation effect="fade" time="HomeBladeAnimationSpeed">visible</animation>
@@ -534,7 +522,7 @@
 				<font>font16</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<angle>270</angle>
 			</control>
 		</control>

@@ -160,7 +160,7 @@
 						<width>150</width>
 						<height>30</height>
 						<aspectratio align="left">keep</aspectratio>
-						<texture>rating/$INFO[ListItem.Property(Addon.StarRating)]</texture>
+						<texture>flagging/starrating/$INFO[ListItem.Property(Addon.StarRating)]</texture>
 					</control>
 					<control type="label">
 						<description>Summary txt</description>
@@ -189,7 +189,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>!IsEmpty(ListItem.Property(Addon.Disclaimer)) | !IsEmpty(ListItem.Property(Addon.Broken))</visible>
+					<visible>!String.IsEmpty(ListItem.Property(Addon.Disclaimer)) | !String.IsEmpty(ListItem.Property(Addon.Broken))</visible>
 					<control type="label">
 						<description>Description Page Count</description>
 						<left>120r</left>
@@ -228,7 +228,7 @@
 						<pagecontrol>60</pagecontrol>
 					</control>
 					<control type="group">
-						<visible>IsEmpty(ListItem.Property(Addon.Broken))</visible>
+						<visible>String.IsEmpty(ListItem.Property(Addon.Broken))</visible>
 						<control type="label">
 							<description>Disclaimer txt</description>
 							<left>200</left>
@@ -256,7 +256,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>!IsEmpty(ListItem.Property(Addon.Broken))</visible>
+						<visible>!String.IsEmpty(ListItem.Property(Addon.Broken))</visible>
 						<control type="label">
 							<description>Broken txt</description>
 							<left>200</left>
@@ -285,7 +285,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>IsEmpty(ListItem.Property(Addon.Disclaimer)) + IsEmpty(ListItem.Property(Addon.Broken))</visible>
+					<visible>String.IsEmpty(ListItem.Property(Addon.Disclaimer)) + String.IsEmpty(ListItem.Property(Addon.Broken))</visible>
 					<control type="label">
 						<description>Description Page Count</description>
 						<left>120r</left>

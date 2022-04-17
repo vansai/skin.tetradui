@@ -129,11 +129,11 @@
 				<onup>701</onup>
 				<ondown>701</ondown>
 				<onclick>Close</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</onclick>
+				<onclick>RunScript($INFO[Skin.String(SubtitleScript_Path)])</onclick>
 				<altclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</altclick>
 				<altclick>Close</altclick>
-				<altclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</altclick>
-				<usealttexture>IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture>
+				<altclick>RunScript($INFO[Skin.String(SubtitleScript_Path)])</altclick>
+				<usealttexture>String.IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture>
 			</control>
 			<control type="button" id="702">
 				<left>45</left>
