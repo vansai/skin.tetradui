@@ -181,7 +181,7 @@ msgid "Power off"
 msgstr ""
 
 msgctxt "#31307"
-msgid "Quit XBMC"
+msgid "Quit Kodi"
 msgstr ""
 
 msgctxt "#31308"
@@ -261,7 +261,7 @@ msgid "Arrange Pictures settings, Including:[CR][CR]* Slideshows[CR]* Thumbnails
 msgstr ""
 
 msgctxt "#31460"
-msgid "Welcome to XBMC[CR]Please choose your profile and log in"
+msgid "Welcome to Kodi[CR]Please choose your profile and log in"
 msgstr ""
 
 msgctxt "#31480"
@@ -324,3 +324,10 @@ msgctxt "#31552"
 msgid "Window custom add-on shortcuts"
 msgstr ""
 
+msgctxt "#31553"
+msgid "Settings level"
+msgstr ""
+
+msgctxt "#31554"
+msgid "Autologin"
+msgstr ""
