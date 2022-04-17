@@ -98,16 +98,7 @@
 					<width>380</width>
 					<height>70</height>
 					<aspectratio>keep</aspectratio>
-					<texture>xbmc_logo.png</texture>
-				</control>
-				<control type="image">
-					<description>Logo Mirror</description>
-					<left>0</left>
-					<top>90</top>
-					<width>380</width>
-					<height>70</height>
-					<aspectratio>keep</aspectratio>
-					<texture diffuse="diffuse_mirror2.png" flipy="true">xbmc_logo.png</texture>
+					<texture>kodi_logo.png</texture>
 				</control>
 				<control type="image">
 					<description>Logo Shadow</description>
