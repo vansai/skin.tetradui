@@ -513,9 +513,9 @@
 					<bordersize>1</bordersize>
 				</control>
 				<control type="label">
-					<left>90</left>
+					<left>8</left>
 					<top>130</top>
-					<width>168</width>
+					<width>164</width>
 					<height>25</height>
 					<font>font10</font>
 					<textcolor>grey2</textcolor>
@@ -551,9 +551,9 @@
 					<bordersize>1</bordersize>
 				</control>
 				<control type="label">
-					<left>90</left>
+					<left>8</left>
 					<top>130</top>
-					<width>168</width>
+					<width>164</width>
 					<height>25</height>
 					<font>font10</font>
 					<textcolor>black</textcolor>
@@ -591,9 +591,9 @@
 					<bordersize>1</bordersize>
 				</control>
 				<control type="label">
-					<left>77</left>
+					<left>8</left>
 					<top>206</top>
-					<width>142</width>
+					<width>138</width>
 					<height>25</height>
 					<font>font10</font>
 					<textcolor>grey2</textcolor>
@@ -631,9 +631,9 @@
 					<bordersize>1</bordersize>
 				</control>
 				<control type="label">
-					<left>77</left>
+					<left>8</left>
 					<top>206</top>
-					<width>142</width>
+					<width>138</width>
 					<height>25</height>
 					<font>font10</font>
 					<textcolor>black</textcolor>
