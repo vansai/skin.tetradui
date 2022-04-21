@@ -108,17 +108,33 @@
 		<shadowcolor>black</shadowcolor>
 	</include>
 	<include name="ClockTextCommons">
-		<top>40</top>
-		<width>380</width>
-		<height>20</height>
-		<align>right</align>
-		<aligny>center</aligny>
-		<font>font16</font>
-		<textcolor>white</textcolor>
-		<shadowcolor>black</shadowcolor>
-		<label>$INFO[System.Time]</label>
-		<visible>!Window.IsVisible(Seekbar)</visible>
-		<include>VisibleFadeEffect</include>
+		<control type="label">
+			<top>11</top>
+			<left>$PARAM[left]</left>
+			<width>380</width>
+			<height>20</height>
+			<align>right</align>
+			<aligny>center</aligny>
+			<font>font16</font>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<label>$INFO[System.Time]</label>
+			<visible>!Window.IsVisible(Seekbar)</visible>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="label">
+			<description>date label</description>
+			<left>$PARAM[left]</left>
+			<top>39</top>
+			<width>380</width>
+			<height>30</height>
+			<align>right</align>
+			<aligny>top</aligny>
+			<font>font10</font>
+			<textcolor>white2</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<label>$INFO[System.Date]</label>
+		</control>
 	</include>
 	<include name="ButtonCommonValues">
 		<height>40</height>
@@ -451,30 +467,24 @@
 		</control>
 	</include>
 
-	<include name="CommonDVDTray">
+	<include name="CommonRSSFeed">
 		<control type="image">
-			<description>DVDTray Circle</description>
-			<left>0</left>
-			<top>540</top>
-			<width>100</width>
-			<height>100</height>
-			<aspectratio>keep</aspectratio>
-			<texture>dvdtray-circle.png</texture>
-		</control>
-		<control type="togglebutton" id="15">
-			<description>DVD Tray and Rss Background</description>
 			<left>25</left>
-			<top>565</top>
+			<top>540</top>
 			<width>870</width>
-			<height>50</height>
+			<height>100</height>
+			<texture>rss_bar.png</texture>
+		</control>
+		<control type="button" id="15">
+			<description>Power button</description>
+			<left>24</left>
+			<top>562</top>
+			<width>56</width>
+			<height>56</height>
 			<label />
-			<usealttexture>System.HasMediaDVD</usealttexture>
-			<texturenofocus>dvdtray-nofocus.png</texturenofocus>
-			<texturefocus>dvdtray-focus.png</texturefocus>
-			<alttexturenofocus>dvdtray-nofocus.png</alttexturenofocus>
-			<alttexturefocus>dvdtray-focus.png</alttexturefocus>
-			<onclick>EjectTray()</onclick>
-			<altclick>PlayDVD()</altclick>
+			<texturenofocus>power_nofocus.png</texturenofocus>
+			<texturefocus>power_focus.png</texturefocus>
+			<onclick>ActivateWindow(ShutdownMenu)</onclick>
 			<onup>Control.SetFocus(9000,5)</onup>
 			<ondown>Control.SetFocus(9000,0)</ondown>
 			<onleft>1</onleft>
@@ -482,40 +492,15 @@
 		</control>
 		<control type="rss">
 			<description>rss feed</description>
-			<left>97</left>
+			<left>80</left>
 			<top>575</top>
-			<width>790</width>
+			<width>807</width>
 			<font>font13</font>
 			<urlset>1</urlset>
 			<textcolor>grey</textcolor>
 			<titlecolor>grey</titlecolor>
 			<headlinecolor>white</headlinecolor>
 			<shadowcolor>black</shadowcolor>
-			<animation effect="fade" start="100" end="0" time="200" condition="Control.HasFocus(15)">Conditional</animation>
-		</control>
-		<control type="label">
-			<description>Tray Empty Label</description>
-			<left>120</left>
-			<top>575</top>
-			<width>760</width>
-			<font>font13</font>
-			<textcolor>black</textcolor>
-			<shadowcolor>white</shadowcolor>
-			<label>31300</label>
-			<visible>Control.HasFocus(15) + !System.HasMediaDVD</visible>
-			<include>VisibleFadeEffect</include>
-		</control>
-		<control type="label">
-			<description>Play Whats in Tray Label</description>
-			<left>120</left>
-			<top>575</top>
-			<width>760</width>
-			<font>font13</font>
-			<textcolor>black</textcolor>
-			<shadowcolor>white</shadowcolor>
-			<label>$LOCALIZE[31301]$INFO[System.DVDLabel]</label>
-			<visible>Control.HasFocus(15) + System.HasMediaDVD</visible>
-			<include>VisibleFadeEffect</include>
 		</control>
 	</include>
 
