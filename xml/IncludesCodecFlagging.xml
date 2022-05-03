@@ -89,7 +89,6 @@
 			<visible>ListItem.IsStereoscopic</visible>
 		</control>
 	</include>
-
 	<include name="AudioTypeHackFlaggingConditions">
 		<control type="image">
 			<description>WAV Image</description>
@@ -141,12 +140,12 @@
 			<visible>String.EndsWith(ListItem.Filename,.ogg)</visible>
 		</control>
 		<control type="group">
-			<description>Rating</description>
+			<description>Year</description>
 			<width>90</width>
 			<height>35</height>
 			<visible>!String.IsEmpty(ListItem.Year)</visible>
 			<control type="image">
-				<description>Runtime back</description>
+				<description>Year back</description>
 				<left>0</left>
 				<top>0</top>
 				<width>90</width>
@@ -154,7 +153,7 @@
 				<texture border="5">flagging/blank.png</texture>
 			</control>
 			<control type="label">
-				<description>Runtime</description>
+				<description>Year</description>
 				<left>10</left>
 				<top>8</top>
 				<width>70</width>
@@ -188,6 +187,95 @@
 				<aspectratio>keep</aspectratio>
 				<texture fallback="flagging/starrating/rating0.png">$INFO[ListItem.StarRating,flagging/starrating/]</texture>
 			</control>
+		</control>
+	</include>
+	<include name="VideoPlayerVideoCodecFlagging">
+		<control type="image" id="1">
+			<description>Video rez Image</description>
+			<width>80</width>
+			<height>35</height>
+			<texture>$INFO[VideoPlayer.VideoResolution,flagging/videoresolution/,.png]</texture>
+		</control>
+		<control type="image" id="1">
+			<description>Common Codec Image</description>
+			<width>80</width>
+			<height>35</height>
+			<texture>$INFO[VideoPlayer.VideoCodec,flagging/videocodec/,.png]</texture>
+			<!-- Don't show if its one of the 500 divx codecs -->
+			<visible>![String.StartsWith(VideoPlayer.VideoCodec,div) | String.IsEqual(VideoPlayer.VideoCodec,dx50)]</visible>
+		</control>
+		<control type="image" id="1">
+			<description>Divx Codec Image</description>
+			<width>80</width>
+			<height>35</height>
+			<texture>flagging/videocodec/divx.png</texture>
+			<visible>[String.StartsWith(VideoPlayer.VideoCodec,div) | String.IsEqual(VideoPlayer.VideoCodec,dx50)]</visible>
+		</control>
+	</include>
+	<include name="VideoPlayerAudioCodecFlagging">
+		<control type="image" id="1">
+			<description>Audio Codec Image</description>
+			<width>80</width>
+			<height>35</height>
+			<texture>$INFO[VideoPlayer.AudioCodec,flagging/audiocodec/,.png]</texture>
+		</control>
+		<control type="image" id="1">
+			<description>Audio Channels Image</description>
+			<width>80</width>
+			<height>35</height>
+			<texture>$INFO[VideoPlayer.AudioChannels,flagging/audiochannel/,.png]</texture>
+		</control>
+	</include>
+	<include name="VideoPlayerAspectCodecFlagging">
+		<control type="image" id="1">
+			<description>Aspectratio Image</description>
+			<width>80</width>
+			<height>35</height>
+			<texture>$INFO[VideoPlayer.VideoAspect,flagging/aspectratio/,.png]</texture>
+		</control>
+	</include>
+	<include name="VideoPlayerVideoTypeHackFlaggingConditions">
+		<control type="image" id="1">
+			<description>Bluray Image</description>
+			<width>80</width>
+			<height>35</height>
+			<texture>flagging/videocodec/bluray.png</texture>
+			<visible>[String.Contains(Player.FilenameAndPath,bluray) | String.Contains(Player.FilenameAndPath,bdrip) | String.Contains(Player.FilenameAndPath,brrip)] + !Skin.HasSetting(HideFilenameFlagging)</visible>
+		</control>
+		<control type="image" id="1">
+			<description>HDDVD Image</description>
+			<width>80</width>
+			<height>35</height>
+			<texture>flagging/videocodec/hddvd.png</texture>
+			<visible>String.Contains(Player.FilenameAndPath,hddvd) + !Skin.HasSetting(HideFilenameFlagging)</visible>
+		</control>
+		<control type="image" id="1">
+			<description>DVD Image</description>
+			<width>80</width>
+			<height>35</height>
+			<texture>flagging/videocodec/dvd.png</texture>
+			<visible>[String.Contains(Player.FilenameAndPath,dvd) + ![String.Contains(Player.FilenameAndPath,hddvd) | String.Contains(Player.FilenameAndPath,bluray) | String.Contains(Player.FilenameAndPath,bdrip)]] + !Skin.HasSetting(HideFilenameFlagging)</visible>
+		</control>
+		<control type="image" id="1">
+			<description>TV Types Image</description>
+			<width>80</width>
+			<height>35</height>
+			<texture>flagging/videocodec/tv.png</texture>
+			<visible>[String.Contains(Player.FilenameAndPath,pdtv) | String.Contains(Player.FilenameAndPath,hdtv) | String.Contains(Player.FilenameAndPath,dsr)] + !Skin.HasSetting(HideFilenameFlagging)</visible>
+		</control>
+		<control type="image" id="1">
+			<description>VHS Image</description>
+			<width>80</width>
+			<height>35</height>
+			<texture>flagging/videocodec/vhs.png</texture>
+			<visible>String.Contains(Player.FilenameAndPath,vhs) + !Skin.HasSetting(HideFilenameFlagging)</visible>
+		</control>
+		<control type="image" id="1">
+			<description>3D</description>
+			<width>80</width>
+			<height>35</height>
+			<texture>flagging/videoresolution/3D.png</texture>
+			<visible>VideoPlayer.IsStereoscopic</visible>
 		</control>
 	</include>
 

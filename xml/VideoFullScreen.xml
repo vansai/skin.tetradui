@@ -142,27 +142,10 @@
 						<textcolor>orange</textcolor>
 						<scroll>true</scroll>
 					</control>
-					<control type="image" id="1">
-						<description>Video Resolution Image</description>
-						<width>50</width>
-						<height>35</height>
-						<aspectratio align="center">keep</aspectratio>
-						<texture>$INFO[VideoPlayer.VideoResolution,flagging/videoresolution/,.png]</texture>
-					</control>
-					<control type="image" id="1">
-						<description>Audio Codec Image</description>
-						<width>75</width>
-						<height>35</height>
-						<aspectratio align="center">keep</aspectratio>
-						<texture>$INFO[VideoPlayer.AudioCodec,flagging/audiocodec/,.png]</texture>
-					</control>
-					<control type="image" id="1">
-						<description>Audio Channels Image</description>
-						<width>50</width>
-						<height>35</height>
-						<aspectratio align="center">keep</aspectratio>
-						<texture>$INFO[VideoPlayer.AudioChannels,flagging/audiochannel/,.png]</texture>
-					</control>
+					<include>VideoPlayerVideoCodecFlagging</include>
+					<include>VideoPlayerAudioCodecFlagging</include>
+					<include>VideoPlayerVideoTypeHackFlaggingConditions</include>
+					<include>VideoPlayerAspectCodecFlagging</include>
 				</control>
 				<control type="label" id="1">
 					<left>0</left>
@@ -202,7 +185,7 @@
 					<texturebg border="6,0,6,0">progress_back_2.png</texturebg>
 				</control>
 				<control type="label" id="1">
-					<left>920</left>
+					<left>820</left>
 					<top>0</top>
 					<width>100</width>
 					<height>40</height>
