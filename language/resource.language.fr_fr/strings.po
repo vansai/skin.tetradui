@@ -1,7 +1,7 @@
 # Kodi Media Center language file
-# Addon Name: JX 720
-# Addon id: skin.jx720
-# Addon Provider: Jezz_X, Gade
+# Addon Name: TetradUI
+# Addon id: skin.tetradui
+# Addon Provider: Jezz_X, TeamUI
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Addons\n"
