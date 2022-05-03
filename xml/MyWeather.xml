@@ -895,6 +895,7 @@
 					</control>
 				</control>
 			</control>
+			<include>TetradUILogo</include>
 		</control>
 
 

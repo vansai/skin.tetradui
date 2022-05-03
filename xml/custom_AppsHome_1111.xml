@@ -89,14 +89,6 @@
 					<visible>Control.HasFocus(9000) + !Container(9000).OnNext + !Container(9000).OnPrevious</visible>
 					<include>HomeButtonHighlightCommonValues</include>
 				</control>
-				<control type="image">
-					<description>Button Seperator</description>
-					<left>35</left>
-					<top>0</top>
-					<width>380</width>
-					<height>2</height>
-					<texture>divider.png</texture>
-				</control>
 				<control type="list" id="9000">
 					<left>0</left>
 					<top>0</top>
@@ -112,14 +104,6 @@
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout height="52" width="450">
-						<control type="image">
-							<description>Button Seperator</description>
-							<left>35</left>
-							<top>52</top>
-							<width>380</width>
-							<height>2</height>
-							<texture>divider.png</texture>
-						</control>
 						<control type="image">
 							<description>Icon</description>
 							<left>50</left>
@@ -142,14 +126,6 @@
 						</control>
 					</itemlayout>
 					<focusedlayout height="52" width="450">
-						<control type="image">
-							<description>Button Seperator</description>
-							<left>35</left>
-							<top>52</top>
-							<width>380</width>
-							<height>2</height>
-							<texture>divider.png</texture>
-						</control>
 						<control type="image">
 							<description>Icon</description>
 							<left>50</left>
@@ -230,6 +206,7 @@
 				</control>
 			</control>
 			<include condition="System.GetBool(LookAndFeel.EnableRSSFeeds)">CommonRSSFeed</include>
+			<include>TetradUILogo</include>
 		</control>
 
 		<control type="button" id="1">

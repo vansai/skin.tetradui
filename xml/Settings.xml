@@ -65,27 +65,6 @@
 			</include>
 			<control type="group">
 				<top>130</top>
-				<control type="image">
-					<description>Button Highlight</description>
-					<texture>systemhomebutton-$INFO[Container(9000).Position].png</texture>
-					<visible>Control.HasFocus(9000)</visible>
-					<include>SystemButtonHighlightCommonValues</include>
-				</control>
-				<control type="image">
-					<description>Button Shadow</description>
-					<texture>systemhomebutton-$INFO[Container(9000).Position]-shadow.png</texture>
-					<animation effect="fade" delay="100" time="175">visible</animation>
-					<visible>Control.HasFocus(9000) + !Container(9000).OnNext + !Container(9000).OnPrevious</visible>
-					<include>SystemButtonHighlightCommonValues</include>
-				</control>
-				<control type="image">
-					<description>Button Seperator</description>
-					<left>45</left>
-					<top>0</top>
-					<width>380</width>
-					<height>2</height>
-					<texture>divider.png</texture>
-				</control>
 				<control type="list" id="9000">
 					<left>0</left>
 					<top>0</top>
@@ -99,14 +78,6 @@
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout height="45" width="450">
-						<control type="image">
-							<description>Button Seperator</description>
-							<left>45</left>
-							<top>45</top>
-							<width>380</width>
-							<height>2</height>
-							<texture>divider.png</texture>
-						</control>
 						<control type="image">
 							<description>Icon</description>
 							<left>50</left>
@@ -130,12 +101,15 @@
 					</itemlayout>
 					<focusedlayout height="45" width="450">
 						<control type="image">
-							<description>Button Seperator</description>
-							<left>45</left>
-							<top>45</top>
-							<width>380</width>
-							<height>2</height>
-							<texture>divider.png</texture>
+							<description>Button focus</description>
+							<left>30</left>
+							<top>1</top>
+							<width>397</width>
+							<height>45</height>
+							<texture>button.png</texture>
+							<animation effect="slide" start="0,-45" time="200" tween="sine" easing="out" condition="Container(9000).OnNext" reversible="false">Focus</animation>
+							<animation effect="slide" start="0,45" time="200" tween="sine" easing="out" condition="Container(9000).OnPrevious" reversible="false">Focus</animation>
+							<animation effect="fade" start="100" end="70" time="200" condition="!Control.HasFocus(9000)">Conditional</animation>
 						</control>
 						<control type="image">
 							<description>Icon</description>
@@ -153,7 +127,7 @@
 							<height>42</height>
 							<font>font30</font>
 							<aligny>center</aligny>
-							<textcolor>black</textcolor>
+							<textcolor>white</textcolor>
 							<selectedcolor>orange</selectedcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.Label]</label>
@@ -252,6 +226,7 @@
 					<include>VisibleFadeEffect</include>
 				</control>
 			</control>
+			<include>TetradUILogo</include>
 		</control>
 		<control type="group">
 			<left>115r</left>
