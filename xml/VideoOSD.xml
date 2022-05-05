@@ -8,167 +8,165 @@
 		<top>0</top>
 	</coordinates>
 	<controls>
-		<control type="grouplist" id="100">
-			<left>325</left>
-			<top>670</top>
-			<itemgap>0</itemgap>
-			<orientation>horizontal</orientation>
-			<onleft>705</onleft>
-			<onright>706</onright>
-			<animation effect="fade" time="200">VisibleChange</animation>
-			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
-			<control type="button" id="600">
-				<left>0</left>
-				<top>0</top>
-				<width>45</width>
-				<height>45</height>
-				<label>210</label>
-				<font />
-				<texturefocus>OSDPrevTrackFO.png</texturefocus>
-				<texturenofocus>OSDPrevTrackNF.png</texturenofocus>
-				<onclick>PlayerControl(Previous)</onclick>
+		<control type="group">
+			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(DialogSettings.xml) | Window.IsVisible(VideoBookmarks)">Conditional</animation>
+			<control type="grouplist" id="100">
+				<left>325</left>
+				<top>670</top>
+				<itemgap>0</itemgap>
+				<orientation>horizontal</orientation>
+				<onleft>705</onleft>
+				<onright>706</onright>
+				<control type="button" id="600">
+					<left>0</left>
+					<top>0</top>
+					<width>45</width>
+					<height>45</height>
+					<label>210</label>
+					<font />
+					<texturefocus>OSDPrevTrackFO.png</texturefocus>
+					<texturenofocus>OSDPrevTrackNF.png</texturenofocus>
+					<onclick>PlayerControl(Previous)</onclick>
+				</control>
+				<control type="button" id="601">
+					<left>45</left>
+					<top>0</top>
+					<width>45</width>
+					<height>45</height>
+					<label>31354</label>
+					<font />
+					<texturefocus>OSDRewindFO.png</texturefocus>
+					<texturenofocus>OSDRewindNF.png</texturenofocus>
+					<onclick>PlayerControl(Rewind)</onclick>
+				</control>
+				<control type="togglebutton" id="602">
+					<left>90</left>
+					<top>0</top>
+					<width>45</width>
+					<height>45</height>
+					<label>31351</label>
+					<altlabel>208</altlabel>
+					<font />
+					<texturefocus>OSDPauseFO.png</texturefocus>
+					<texturenofocus>OSDPauseNF.png</texturenofocus>
+					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+					<alttexturefocus>OSDPlayFO.png</alttexturefocus>
+					<alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
+					<onclick>PlayerControl(Play)</onclick>
+				</control>
+				<control type="button" id="603">
+					<left>135</left>
+					<top>0</top>
+					<width>45</width>
+					<height>45</height>
+					<label>31352</label>
+					<font />
+					<texturefocus>OSDStopFO.png</texturefocus>
+					<texturenofocus>OSDStopNF.png</texturenofocus>
+					<onclick>PlayerControl(Stop)</onclick>
+				</control>
+				<control type="button" id="604">
+					<left>180</left>
+					<top>0</top>
+					<width>45</width>
+					<height>45</height>
+					<label>31353</label>
+					<font />
+					<texturefocus>OSDForwardFO.png</texturefocus>
+					<texturenofocus>OSDForwardNF.png</texturenofocus>
+					<onclick>PlayerControl(Forward)</onclick>
+				</control>
+				<control type="button" id="605">
+					<left>225</left>
+					<top>0</top>
+					<width>45</width>
+					<height>45</height>
+					<label>209</label>
+					<font />
+					<texturefocus>OSDNextTrackFO.png</texturefocus>
+					<texturenofocus>OSDNextTrackNF.png</texturenofocus>
+					<onclick>PlayerControl(Next)</onclick>
+				</control>
 			</control>
-			<control type="button" id="601">
-				<left>45</left>
-				<top>0</top>
-				<width>45</width>
-				<height>45</height>
-				<label>31354</label>
-				<font />
-				<texturefocus>OSDRewindFO.png</texturefocus>
-				<texturenofocus>OSDRewindNF.png</texturenofocus>
-				<onclick>PlayerControl(Rewind)</onclick>
-			</control>
-			<control type="togglebutton" id="602">
-				<left>90</left>
-				<top>0</top>
-				<width>45</width>
-				<height>45</height>
-				<label>31351</label>
-				<altlabel>208</altlabel>
-				<font />
-				<texturefocus>OSDPauseFO.png</texturefocus>
-				<texturenofocus>OSDPauseNF.png</texturenofocus>
-				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-				<alttexturefocus>OSDPlayFO.png</alttexturefocus>
-				<alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
-				<onclick>PlayerControl(Play)</onclick>
-			</control>
-			<control type="button" id="603">
-				<left>135</left>
-				<top>0</top>
-				<width>45</width>
-				<height>45</height>
-				<label>31352</label>
-				<font />
-				<texturefocus>OSDStopFO.png</texturefocus>
-				<texturenofocus>OSDStopNF.png</texturenofocus>
-				<onclick>PlayerControl(Stop)</onclick>
-			</control>
-			<control type="button" id="604">
-				<left>180</left>
-				<top>0</top>
-				<width>45</width>
-				<height>45</height>
-				<label>31353</label>
-				<font />
-				<texturefocus>OSDForwardFO.png</texturefocus>
-				<texturenofocus>OSDForwardNF.png</texturenofocus>
-				<onclick>PlayerControl(Forward)</onclick>
-			</control>
-			<control type="button" id="605">
-				<left>225</left>
-				<top>0</top>
-				<width>45</width>
-				<height>45</height>
-				<label>209</label>
-				<font />
-				<texturefocus>OSDNextTrackFO.png</texturefocus>
-				<texturenofocus>OSDNextTrackNF.png</texturenofocus>
-				<onclick>PlayerControl(Next)</onclick>
-			</control>
-		</control>
-		<control type="grouplist">
-			<left>985</left>
-			<top>670</top>
-			<width>270</width>
-			<align>right</align>
-			<itemgap>0</itemgap>
-			<orientation>horizontal</orientation>
-			<onleft>605</onleft>
-			<onright>600</onright>
-			<animation effect="fade" time="200">VisibleChange</animation>
-			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
-			<control type="button" id="706">
-				<left>0</left>
-				<top>0</top>
-				<width>45</width>
-				<height>45</height>
-				<label>31356</label>
-				<font />
-				<texturefocus>OSDStereoscopicFO.png</texturefocus>
-				<texturenofocus>OSDStereoscopicNF.png</texturenofocus>
-				<onclick>ActivateWindow(1101)</onclick>
-				<enable>VideoPlayer.IsStereoscopic</enable>
-				<animation effect="fade" start="100" end="0" time="75" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>
-			</control>
-			<control type="button" id="701">
-				<left>0</left>
-				<top>0</top>
-				<width>45</width>
-				<height>45</height>
-				<label>31356</label>
-				<font />
-				<texturefocus>OSDSubtitlesFO.png</texturefocus>
-				<texturenofocus>OSDSubtitlesNF.png</texturenofocus>
-				<onclick>Close</onclick>
-				<onclick>ActivateWindow(OSDSubtitleSettings)</onclick>
-			</control>
-			<control type="button" id="702">
-				<left>45</left>
-				<top>0</top>
-				<width>45</width>
-				<height>45</height>
-				<label>13395</label>
-				<font />
-				<texturefocus>OSDVideoFO.png</texturefocus>
-				<texturenofocus>OSDVideoNF.png</texturenofocus>
-				<onclick>ActivateWindow(OSDVideoSettings)</onclick>
-			</control>
-			<control type="button" id="703">
-				<left>90</left>
-				<top>0</top>
-				<width>45</width>
-				<height>45</height>
-				<label>13396</label>
-				<font />
-				<texturefocus>OSDAudioFO.png</texturefocus>
-				<texturenofocus>OSDAudioNF.png</texturenofocus>
-				<onclick>ActivateWindow(OSDAudioSettings)</onclick>
-			</control>
-			<control type="button" id="704">
-				<left>135</left>
-				<top>0</top>
-				<width>45</width>
-				<height>45</height>
-				<label>31355</label>
-				<font />
-				<texturefocus>OSDBookmarksFO.png</texturefocus>
-				<texturenofocus>OSDBookmarksNF.png</texturenofocus>
-				<onclick>ActivateWindow(VideoBookmarks)</onclick>
-			</control>
-			<control type="button" id="705">
-				<left>180</left>
-				<top>0</top>
-				<width>45</width>
-				<height>45</height>
-				<label>31355</label>
-				<font />
-				<texturefocus>OSDDvdFO.png</texturefocus>
-				<texturenofocus>OSDDvdNF.png</texturenofocus>
-				<onclick>PlayerControl(ShowVideoMenu)</onclick>
-				<enable>VideoPlayer.HasMenu</enable>
-				<animation effect="fade" start="100" end="50" time="100" condition="!VideoPlayer.HasMenu">Conditional</animation>
+			<control type="grouplist">
+				<left>985</left>
+				<top>670</top>
+				<width>270</width>
+				<align>right</align>
+				<itemgap>0</itemgap>
+				<orientation>horizontal</orientation>
+				<onleft>605</onleft>
+				<onright>600</onright>
+				<control type="button" id="706">
+					<left>0</left>
+					<top>0</top>
+					<width>45</width>
+					<height>45</height>
+					<label>31356</label>
+					<font />
+					<texturefocus>OSDStereoscopicFO.png</texturefocus>
+					<texturenofocus>OSDStereoscopicNF.png</texturenofocus>
+					<onclick>ActivateWindow(1101)</onclick>
+					<enable>VideoPlayer.IsStereoscopic</enable>
+					<animation effect="fade" start="100" end="0" time="75" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>
+				</control>
+				<control type="button" id="701">
+					<left>0</left>
+					<top>0</top>
+					<width>45</width>
+					<height>45</height>
+					<label>31356</label>
+					<font />
+					<texturefocus>OSDSubtitlesFO.png</texturefocus>
+					<texturenofocus>OSDSubtitlesNF.png</texturenofocus>
+					<onclick>ActivateWindow(OSDSubtitleSettings)</onclick>
+				</control>
+				<control type="button" id="702">
+					<left>45</left>
+					<top>0</top>
+					<width>45</width>
+					<height>45</height>
+					<label>13395</label>
+					<font />
+					<texturefocus>OSDVideoFO.png</texturefocus>
+					<texturenofocus>OSDVideoNF.png</texturenofocus>
+					<onclick>ActivateWindow(OSDVideoSettings)</onclick>
+				</control>
+				<control type="button" id="703">
+					<left>90</left>
+					<top>0</top>
+					<width>45</width>
+					<height>45</height>
+					<label>13396</label>
+					<font />
+					<texturefocus>OSDAudioFO.png</texturefocus>
+					<texturenofocus>OSDAudioNF.png</texturenofocus>
+					<onclick>ActivateWindow(OSDAudioSettings)</onclick>
+				</control>
+				<control type="button" id="704">
+					<left>135</left>
+					<top>0</top>
+					<width>45</width>
+					<height>45</height>
+					<label>31355</label>
+					<font />
+					<texturefocus>OSDBookmarksFO.png</texturefocus>
+					<texturenofocus>OSDBookmarksNF.png</texturenofocus>
+					<onclick>ActivateWindow(VideoBookmarks)</onclick>
+				</control>
+				<control type="button" id="705">
+					<left>180</left>
+					<top>0</top>
+					<width>45</width>
+					<height>45</height>
+					<label>31355</label>
+					<font />
+					<texturefocus>OSDDvdFO.png</texturefocus>
+					<texturenofocus>OSDDvdNF.png</texturenofocus>
+					<onclick>PlayerControl(ShowVideoMenu)</onclick>
+					<enable>VideoPlayer.HasMenu</enable>
+					<animation effect="fade" start="100" end="50" time="100" condition="!VideoPlayer.HasMenu">Conditional</animation>
+				</control>
 			</control>
 		</control>
 	</controls>
