@@ -161,6 +161,23 @@
 		<texturefocus border="4,6,4,8">button-focus.png</texturefocus>
 		<texturenofocus border="4,6,4,8">button-nofocus.png</texturenofocus>
 	</include>
+	<include name="DialogButtonCommonValues">
+		<height>45</height>
+		<font>font12</font>
+		<focusedcolor>black</focusedcolor>
+		<texturefocus border="10">list-focus.png</texturefocus>
+		<texturenofocus border="10">list-nofocus.png</texturenofocus>
+	</include>
+	<include name="DialogButton2CommonValues">
+		<width>200</width>
+		<height>45</height>
+		<font>font12</font>
+		<align>center</align>
+		<aligny>center</aligny>
+		<texturefocus border="10">button-focus.png</texturefocus>
+		<texturenofocus border="10">button-nofocus.png</texturenofocus>
+		<label />
+	</include>
 	<include name="CommonPlayerControls">
 		<control type="label">
 			<description>Player Controls Label</description>
