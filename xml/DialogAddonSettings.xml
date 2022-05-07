@@ -101,7 +101,7 @@
 		</control>
 
 		<control type="button" id="10">
-			<description>Default Catagory Button</description>
+			<description>Default Category Button</description>
 			<width>200</width>
 			<height>45</height>
 			<align>center</align>
