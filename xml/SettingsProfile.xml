@@ -158,7 +158,6 @@
 						<height>25</height>
 						<font>font13</font>
 						<aligny>center</aligny>
-						<selectedcolor>orange</selectedcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -169,7 +168,6 @@
 						<height>25</height>
 						<font>font10</font>
 						<aligny>center</aligny>
-						<selectedcolor>orange</selectedcolor>
 						<textcolor>grey2</textcolor>
 						<align>left</align>
 						<label>$LOCALIZE[31303]</label>
@@ -182,7 +180,6 @@
 						<height>25</height>
 						<font>font12</font>
 						<aligny>center</aligny>
-						<selectedcolor>orange</selectedcolor>
 						<textcolor>grey2</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Label2]</label>
@@ -211,7 +208,6 @@
 						<font>font13</font>
 						<aligny>center</aligny>
 						<textcolor>black</textcolor>
-						<selectedcolor>orange</selectedcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -222,7 +218,6 @@
 						<height>25</height>
 						<font>font10</font>
 						<aligny>center</aligny>
-						<selectedcolor>orange</selectedcolor>
 						<textcolor>black</textcolor>
 						<align>left</align>
 						<label>$LOCALIZE[31303]</label>
@@ -235,7 +230,6 @@
 						<height>25</height>
 						<font>font12</font>
 						<aligny>center</aligny>
-						<selectedcolor>orange</selectedcolor>
 						<textcolor>black</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Label2]</label>

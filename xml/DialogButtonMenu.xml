@@ -62,7 +62,6 @@
 							<font>font16</font>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
-							<selectedcolor>orange</selectedcolor>
 							<align>left</align>
 							<info>ListItem.Label</info>
 						</control>
@@ -85,7 +84,6 @@
 							<font>font16</font>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
-							<selectedcolor>orange</selectedcolor>
 							<align>left</align>
 							<info>ListItem.Label</info>
 							<animation effect="slide" end="ButtonSlideBackDistance,0" time="ButtonSlideBackTime" reversible="false">focus</animation>

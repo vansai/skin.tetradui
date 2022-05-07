@@ -226,7 +226,7 @@
 					<include>VisibleFadeEffect</include>
 				</control>
 			</control>
-			<include>TetradUILogo</include>
+			<!--<include>TetradUILogo</include>-->
 		</control>
 		<control type="group">
 			<left>115r</left>

@@ -308,7 +308,11 @@ msgctxt "#31505"
 msgid "Watch as 2D"
 msgstr ""
 
-# empty strings from id 31506 to 31519
+msgctxt "#31506"
+msgid "Local subtitle available"
+msgstr ""
+
+# empty strings from id 31507 to 31519
 
 msgctxt "#31520"
 msgid "Show now playing video in the background"

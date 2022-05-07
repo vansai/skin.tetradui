@@ -10,6 +10,7 @@
 		<label />
 		<font>font13</font>
 		<textcolor>white</textcolor>
+		<selectedcolor>orange</selectedcolor>
 	</default>
 	<default type="fadelabel">
 		<left>80</left>

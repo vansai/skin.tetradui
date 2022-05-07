@@ -91,7 +91,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>grey2</textcolor>
-						<selectedcolor>orange</selectedcolor>
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
@@ -128,7 +127,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
-						<selectedcolor>orange</selectedcolor>
 						<info>ListItem.Label</info>
 						<visible>!Control.HasFocus(4)</visible>
 					</control>
@@ -141,7 +139,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>black</textcolor>
-						<selectedcolor>orange</selectedcolor>
 						<info>ListItem.Label</info>
 						<visible>Control.HasFocus(4)</visible>
 					</control>

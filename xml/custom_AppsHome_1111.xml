@@ -120,7 +120,6 @@
 							<font>font30</font>
 							<aligny>center</aligny>
 							<textcolor>white2</textcolor>
-							<selectedcolor>orange</selectedcolor>
 							<align>left</align>
 							<info>ListItem.Label</info>
 						</control>
@@ -143,7 +142,6 @@
 							<font>font30</font>
 							<aligny>center</aligny>
 							<textcolor>black</textcolor>
-							<selectedcolor>orange</selectedcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="slide" end="ButtonSlideBackDistance,0" time="ButtonSlideBackTime" reversible="false">focus</animation>
@@ -157,7 +155,6 @@
 							<font>font30</font>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
-							<selectedcolor>orange</selectedcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!Control.HasFocus(9000)</visible>
@@ -206,7 +203,7 @@
 				</control>
 			</control>
 			<include condition="System.GetBool(LookAndFeel.EnableRSSFeeds)">CommonRSSFeed</include>
-			<include>TetradUILogo</include>
+			<!--<include>TetradUILogo</include>-->
 		</control>
 
 		<control type="button" id="1">

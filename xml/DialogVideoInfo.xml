@@ -135,7 +135,6 @@
 									<align>right</align>
 									<aligny>center</aligny>
 									<textcolor>grey2</textcolor>
-									<selectedcolor>orange</selectedcolor>
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
@@ -147,7 +146,6 @@
 									<align>left</align>
 									<aligny>center</aligny>
 									<scroll>true</scroll>
-									<selectedcolor>orange</selectedcolor>
 									<info>ListItem.Label2</info>
 								</control>
 							</itemlayout>
@@ -169,7 +167,6 @@
 									<align>right</align>
 									<aligny>center</aligny>
 									<textcolor>black</textcolor>
-									<selectedcolor>orange</selectedcolor>
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
@@ -181,7 +178,6 @@
 									<align>left</align>
 									<aligny>center</aligny>
 									<textcolor>black</textcolor>
-									<selectedcolor>orange</selectedcolor>
 									<info>ListItem.Label2</info>
 								</control>
 							</focusedlayout>
@@ -284,7 +280,6 @@
 									<align>right</align>
 									<aligny>center</aligny>
 									<textcolor>grey2</textcolor>
-									<selectedcolor>orange</selectedcolor>
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
@@ -296,7 +291,6 @@
 									<align>left</align>
 									<aligny>center</aligny>
 									<scroll>true</scroll>
-									<selectedcolor>orange</selectedcolor>
 									<info>ListItem.Label2</info>
 								</control>
 							</itemlayout>
@@ -318,7 +312,6 @@
 									<align>right</align>
 									<aligny>center</aligny>
 									<textcolor>black</textcolor>
-									<selectedcolor>orange</selectedcolor>
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
@@ -330,7 +323,6 @@
 									<align>left</align>
 									<aligny>center</aligny>
 									<textcolor>black</textcolor>
-									<selectedcolor>orange</selectedcolor>
 									<info>ListItem.Label2</info>
 								</control>
 							</focusedlayout>
@@ -403,7 +395,6 @@
 									<align>right</align>
 									<aligny>center</aligny>
 									<textcolor>grey2</textcolor>
-									<selectedcolor>orange</selectedcolor>
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
@@ -415,7 +406,6 @@
 									<align>left</align>
 									<aligny>center</aligny>
 									<scroll>true</scroll>
-									<selectedcolor>orange</selectedcolor>
 									<info>ListItem.Label2</info>
 								</control>
 							</itemlayout>
@@ -437,7 +427,6 @@
 									<align>right</align>
 									<aligny>center</aligny>
 									<textcolor>black</textcolor>
-									<selectedcolor>orange</selectedcolor>
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
@@ -449,7 +438,6 @@
 									<align>left</align>
 									<aligny>center</aligny>
 									<textcolor>black</textcolor>
-									<selectedcolor>orange</selectedcolor>
 									<info>ListItem.Label2</info>
 								</control>
 							</focusedlayout>
@@ -552,7 +540,6 @@
 									<align>right</align>
 									<aligny>center</aligny>
 									<textcolor>grey2</textcolor>
-									<selectedcolor>orange</selectedcolor>
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
@@ -564,7 +551,6 @@
 									<align>left</align>
 									<aligny>center</aligny>
 									<scroll>true</scroll>
-									<selectedcolor>orange</selectedcolor>
 									<info>ListItem.Label2</info>
 								</control>
 							</itemlayout>
@@ -586,7 +572,6 @@
 									<align>right</align>
 									<aligny>center</aligny>
 									<textcolor>black</textcolor>
-									<selectedcolor>orange</selectedcolor>
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
@@ -598,7 +583,6 @@
 									<align>left</align>
 									<aligny>center</aligny>
 									<textcolor>black</textcolor>
-									<selectedcolor>orange</selectedcolor>
 									<info>ListItem.Label2</info>
 								</control>
 							</focusedlayout>
