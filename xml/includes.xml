@@ -598,6 +598,7 @@
 		</control>
 	</include>
 	
+	<!--
 	<include name="TetradUILogo">
 		<control type="image">
 			<description>Logo</description>
@@ -608,6 +609,7 @@
 			<texture>tetradui_logo.png</texture>
 		</control>
 	</include>
+	-->
 
 	<include name="AllViewCommonPageControls">
 		<control type="grouplist">
@@ -687,12 +689,12 @@
 					<texture flipy="true">shadowtopcorner.png</texture>
 				</control>
 				<control type="image">
-					<description>DVD Cover</description>
+					<description>Poster Cover</description>
 					<left>160r</left>
 					<top>190r</top>
 					<width>157</width>
 					<height>175</height>
-					<texture>$INFO[VideoPlayer.Cover]</texture>
+					<texture>$VAR[PlayerPosterVar]</texture>
 					<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
 					<bordersize>17,1,17,1</bordersize>
 				</control>
@@ -771,7 +773,7 @@
 					<width>230</width>
 					<height>135</height>
 					<aspectratio>keep</aspectratio>
-					<texture>$INFO[VideoPlayer.Cover]</texture>
+					<texture>$VAR[PlayerPosterVar]</texture>
 					<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
 					<bordersize>17,1,17,1</bordersize>
 				</control>
