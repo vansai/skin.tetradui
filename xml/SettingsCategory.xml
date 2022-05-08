@@ -198,6 +198,20 @@
 			<reverse>yes</reverse>
 			<pulseonselect>no</pulseonselect>
 		</control>
+		<control type="sliderex" id="13">
+			<description>Default SpinControlex</description>
+			<left>0</left>
+			<top>0</top>
+			<height>45</height>
+			<texturefocus border="10">list-focus.png</texturefocus>
+			<texturenofocus />
+			<font>font13</font>
+			<focusedcolor>black</focusedcolor>
+			<disabledcolor>disabled</disabledcolor>
+			<textoffsetx>10</textoffsetx>
+			<aligny>center</aligny>
+			<pulseonselect>no</pulseonselect>
+		</control>
 		<include>Common_Now_Playing</include>
 	</controls>
 </window>
