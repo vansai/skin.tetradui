@@ -124,7 +124,7 @@
 					<onup>2</onup>
 					<ondown>5</ondown>
 				</control>
-				<control type="radiobutton" id="5">
+				<control type="button" id="5">
 					<description>AutoUpdate Button</description>
 					<left>4</left>
 					<top>80</top>
