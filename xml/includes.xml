@@ -475,7 +475,7 @@
 			<top>100</top>
 			<height>30</height>
 			<width>290</width>
-			<label>XBMC: $INFO[System.BuildVersion]</label>
+			<label>Kodi: $INFO[System.BuildVersion]</label>
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font10</font>
@@ -913,5 +913,26 @@
 				</control>
 			</control>
 		</control>
+	</include>
+	
+	<include name="KeyboardButton">
+		<width>50</width>
+		<height>50</height>
+		<texturenofocus border="12">keyboard-nofocus.png</texturenofocus>
+		<texturefocus border="12">keyboard-focus.png</texturefocus>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>font12</font>
+		<focusedcolor>black</focusedcolor>
+	</include>
+	<include name="KeyboardButtonBig">
+		<width>60</width>
+		<height>60</height>
+		<texturenofocus border="12">keyboard-nofocus.png</texturenofocus>
+		<texturefocus border="12">keyboard-focus.png</texturefocus>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>font12</font>
+		<focusedcolor>black</focusedcolor>
 	</include>
 </includes>
