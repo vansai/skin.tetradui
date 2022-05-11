@@ -107,7 +107,7 @@
 					<onleft>50</onleft>
 					<onright>4</onright>
 					<onup>2</onup>
-					<ondown>5</ondown>
+					<ondown>9</ondown>
 				</control>
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
@@ -122,14 +122,14 @@
 					<onleft>3</onleft>
 					<onright>50</onright>
 					<onup>2</onup>
-					<ondown>5</ondown>
+					<ondown>9</ondown>
 				</control>
-				<control type="button" id="5">
-					<description>AutoUpdate Button</description>
+				<control type="button" id="9">
+					<description>Check for Updates Button</description>
 					<left>4</left>
 					<top>80</top>
 					<include>ButtonCommonValues</include>
-					<label>24063</label>
+					<label>24034</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>3</onup>
@@ -143,7 +143,7 @@
 					<label>25000</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>5</onup>
+					<onup>9</onup>
 					<ondown>7</ondown>
 				</control>
 				<control type="radiobutton" id="7">
@@ -166,6 +166,17 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>7</onup>
+					<ondown>5</ondown>
+				</control>
+				<control type="button" id="5">
+					<description>Settings Button</description>
+					<left>4</left>
+					<top>240</top>
+					<include>ButtonCommonValues</include>
+					<label>10004</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>8</onup>
 					<ondown>610</ondown>
 				</control>
 				<control type="button" id="610">
