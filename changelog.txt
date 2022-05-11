@@ -1,3 +1,6 @@
+[B]Version 0.0.4[/B]
+- Helix version
+
 [B]Version 0.0.3[/B]
 - Gotham version
 
