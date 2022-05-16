@@ -191,7 +191,7 @@
 					<texturebg border="6,0,6,0">progress_back_2.png</texturebg>
 				</control>
 				<control type="label">
-					<left>920</left>
+					<left>820</left>
 					<top>0</top>
 					<width>100</width>
 					<height>40</height>
