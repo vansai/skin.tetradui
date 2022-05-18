@@ -124,7 +124,31 @@ msgctxt "#31203"
 msgid "PLAYER OPTIONS"
 msgstr ""
 
-# empty strings from id 31204 to 31227
+# empty strings from id 31204 to 31221
+
+msgctxt "#31222"
+msgid "Play speed"
+msgstr ""
+
+msgctxt "#31223"
+msgid "Select Resolution"
+msgstr ""
+
+msgctxt "#31224"
+msgid "Select Program"
+msgstr ""
+
+msgctxt "#31225"
+msgid "Toggle subtitle"
+msgstr ""
+
+msgctxt "#31226"
+msgid "Toggle audio stream"
+msgstr ""
+
+msgctxt "#31227"
+msgid "available"
+msgstr ""
 
 msgctxt "#31228"
 msgid "Order"
