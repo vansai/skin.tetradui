@@ -186,6 +186,24 @@
 		<texturefocus border="10">list-focus.png</texturefocus>
 		<texturenofocus />
 	</include>
+	<include name="InfoDialogLabelTextCommons">
+		<left>0</left>
+		<width>140</width>
+		<height>25</height>
+		<align>right</align>
+		<aligny>center</aligny>
+		<font>font12</font>
+		<textcolor>grey2</textcolor>
+	</include>
+	<include name="InfoDialogLabelValueCommons">
+		<left>160</left>
+		<width>540</width>
+		<height>25</height>
+		<align>left</align>
+		<aligny>center</aligny>
+		<font>font12</font>
+		<scroll>true</scroll>
+	</include>
 	<include name="CommonPlayerControls">
 		<control type="label">
 			<description>Player Controls Label</description>
