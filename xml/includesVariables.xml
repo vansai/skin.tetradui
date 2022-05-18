@@ -49,6 +49,10 @@
 		<value condition="Container.Content(MusicVideos)">$LOCALIZE[20393]</value>
 		<value>$LOCALIZE[20159]</value>
 	</variable>
+	<variable name="ActiveVideoPlayerSubtitleLanguage">
+		<value condition="VideoPlayer.SubtitlesEnabled">[B]$INFO[VideoPlayer.SubtitlesLanguage][/B]</value>
+		<value>[B]$LOCALIZE[1223][/B]</value>
+	</variable>
 	<variable name="StarRating">
 		<value condition="Integer.IsLess(ListItem.Rating,1)">flagging/starrating/0.png</value>
 		<value condition="Integer.IsLess(ListItem.Rating,2)">flagging/starrating/1.png</value>
@@ -61,5 +65,29 @@
 		<value condition="Integer.IsLess(ListItem.Rating,9)">flagging/starrating/8.png</value>
 		<value condition="Integer.IsLess(ListItem.Rating,10)">flagging/starrating/9.png</value>
 		<value>flagging/starrating/10.png</value>
+	</variable>
+	<variable name="PlayerStarRating">
+		<value condition="Player.HasVideo + Integer.IsLess(VideoPlayer.Rating,1)">flagging/starrating/0.png</value>
+		<value condition="Player.HasVideo + Integer.IsLess(VideoPlayer.Rating,2)">flagging/starrating/1.png</value>
+		<value condition="Player.HasVideo + Integer.IsLess(VideoPlayer.Rating,3)">flagging/starrating/2.png</value>
+		<value condition="Player.HasVideo + Integer.IsLess(VideoPlayer.Rating,4)">flagging/starrating/3.png</value>
+		<value condition="Player.HasVideo + Integer.IsLess(VideoPlayer.Rating,5)">flagging/starrating/4.png</value>
+		<value condition="Player.HasVideo + Integer.IsLess(VideoPlayer.Rating,6)">flagging/starrating/5.png</value>
+		<value condition="Player.HasVideo + Integer.IsLess(VideoPlayer.Rating,7)">flagging/starrating/6.png</value>
+		<value condition="Player.HasVideo + Integer.IsLess(VideoPlayer.Rating,8)">flagging/starrating/7.png</value>
+		<value condition="Player.HasVideo + Integer.IsLess(VideoPlayer.Rating,9)">flagging/starrating/8.png</value>
+		<value condition="Player.HasVideo + Integer.IsLess(VideoPlayer.Rating,10)">flagging/starrating/9.png</value>
+		<value condition="Player.HasVideo">flagging/starrating/10.png</value>
+		<value condition="Player.HasAudio + Integer.IsLess(MusicPlayer.Rating,1)">flagging/starrating/0.png</value>
+		<value condition="Player.HasAudio + Integer.IsLess(MusicPlayer.Rating,2)">flagging/starrating/1.png</value>
+		<value condition="Player.HasAudio + Integer.IsLess(MusicPlayer.Rating,3)">flagging/starrating/2.png</value>
+		<value condition="Player.HasAudio + Integer.IsLess(MusicPlayer.Rating,4)">flagging/starrating/3.png</value>
+		<value condition="Player.HasAudio + Integer.IsLess(MusicPlayer.Rating,5)">flagging/starrating/4.png</value>
+		<value condition="Player.HasAudio + Integer.IsLess(MusicPlayer.Rating,6)">flagging/starrating/5.png</value>
+		<value condition="Player.HasAudio + Integer.IsLess(MusicPlayer.Rating,7)">flagging/starrating/6.png</value>
+		<value condition="Player.HasAudio + Integer.IsLess(MusicPlayer.Rating,8)">flagging/starrating/7.png</value>
+		<value condition="Player.HasAudio + Integer.IsLess(MusicPlayer.Rating,9)">flagging/starrating/8.png</value>
+		<value condition="Player.HasAudio + Integer.IsLess(MusicPlayer.Rating,10)">flagging/starrating/9.png</value>
+		<value condition="Player.HasAudio">flagging/starrating/10.png</value>
 	</variable>
 </includes>
