@@ -40,14 +40,13 @@
 		<aspectratio>stretch</aspectratio>
 	</include>
 	<include name="WeatherButtonCommonValues">
-		<left>40</left>
 		<width>43</width>
 		<height>43</height>
 		<aligny>center</aligny>
 		<textoffsetx>70</textoffsetx>
 		<textwidth>300</textwidth>
 		<textcolor>white2</textcolor>
-		<focusedcolor>black</focusedcolor>
+		<focusedcolor>white</focusedcolor>
 		<shadowcolor />
 		<font>font30</font>
 		<pulseonselect>no</pulseonselect>
