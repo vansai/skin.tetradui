@@ -124,7 +124,11 @@ msgctxt "#31203"
 msgid "PLAYER OPTIONS"
 msgstr ""
 
-# empty strings from id 31204 to 31210
+# empty strings from id 31204 to 31209
+
+msgctxt "#31210"
+msgid "Contributors"
+msgstr ""
 
 msgctxt "#31211"
 msgid "Rendering speed"

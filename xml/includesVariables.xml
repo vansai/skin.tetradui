@@ -42,12 +42,38 @@
 		<value condition="Player.Seeking">$INFO[Player.SeekTime]</value>
 		<value>$INFO[VideoPlayer.Time]</value>
 	</variable>
-	<variable name="DialogVideoInfoTitleLabel">
-		<value condition="Container.Content(Movies)">$LOCALIZE[13346]</value>
-		<value condition="Container.Content(TVShows)">$LOCALIZE[20351]</value>
-		<value condition="Container.Content(Episodes)">$LOCALIZE[20352]</value>
-		<value condition="Container.Content(MusicVideos)">$LOCALIZE[20393]</value>
+	<variable name="DialogInfoTitleLabel">
+		<value condition="String.IsEqual(ListItem.DBTYPE,movie)">$LOCALIZE[13346]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow)">$LOCALIZE[20351]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,episode)">$LOCALIZE[20352]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,musicvideo)">$LOCALIZE[20393]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,album)">$LOCALIZE[13351]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,artist)">$LOCALIZE[21891]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,song)">$LOCALIZE[658]</value>
 		<value>$LOCALIZE[20159]</value>
+	</variable>
+	<variable name="DialogMusicInfoTitleValue">
+		<value condition="String.IsEqual(ListItem.DBTYPE,album)">$INFO[Listitem.Album]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,artist)">$INFO[Listitem.Artist]</value>
+		<value>$INFO[Listitem.Title]</value>
+	</variable>
+	<variable name="DialogMusicInfoButton9002Label1">
+		<value condition="String.IsEqual(ListItem.DBTYPE,artist)">$LOCALIZE[132]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,album) + !Integer.IsEqual(Container(50).NumItems,0)">$LOCALIZE[182]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,album)">$LOCALIZE[21821]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,song) + !Integer.IsEqual(Container(50).NumItems,0)">$LOCALIZE[31210]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,song)">$LOCALIZE[569]</value>
+	</variable>
+	<variable name="DialogMusicInfoButton9002Label2">
+		<value condition="String.IsEqual(ListItem.DBTYPE,artist)">$LOCALIZE[21887]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,album)">$LOCALIZE[21821]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,song)">$LOCALIZE[569]</value>
+	</variable>
+	<variable name="DialogMusicInfoTextbox">
+		<value condition="Container.Content(Artists) + !String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
+		<value condition="Container.Content(Albums) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
+		<value condition="Container.Content(Songs) + !String.IsEmpty(ListItem.Comment)">$INFO[ListItem.Comment]</value>
+		<value>$LOCALIZE[10005]</value>
 	</variable>
 	<variable name="ActiveVideoPlayerSubtitleLanguage">
 		<value condition="VideoPlayer.SubtitlesEnabled">[B]$INFO[VideoPlayer.SubtitlesLanguage][/B]</value>
