@@ -247,7 +247,7 @@
 					<font>font10</font>
 					<align>left</align>
 					<textcolor>grey</textcolor>
-					<label>$INFO[Container(6).ListItem.AddonSummary]</label>
+					<label>$INFO[Container(6).ListItem.Label2]</label>
 					<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 					<animation effect="slide" end="0,-30" condition="String.IsEmpty(ListItem.AddonVersion)">Conditional</animation>
 				</control>
