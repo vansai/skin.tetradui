@@ -42,6 +42,11 @@
 		<value condition="Player.Seeking">$INFO[Player.SeekTime]</value>
 		<value>$INFO[VideoPlayer.Time]</value>
 	</variable>
+	<variable name="VideoFullScreenLabel">
+		<value condition="VideoPlayer.Content(Movies)">$INFO[VideoPlayer.Studio]</value>
+		<value condition="VideoPlayer.Content(Episodes)">$INFO[VideoPlayer.TVShowTitle] ($INFO[VideoPlayer.Season]x$INFO[VideoPlayer.Episode])</value>
+		<value condition="VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Artist] $INFO[VideoPlayer.Album, - ]</value>
+	</variable>
 	<variable name="DialogInfoTitleLabel">
 		<value condition="String.IsEqual(ListItem.DBTYPE,movie)">$LOCALIZE[13346]</value>
 		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow)">$LOCALIZE[20351]</value>

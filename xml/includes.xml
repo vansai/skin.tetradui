@@ -1216,6 +1216,17 @@
 				<aligny>center</aligny>
 				<label>$INFO[Player.Duration(hh:mm:ss)]</label>
 			</control>
+			<control type="label">
+				<left>100</left>
+				<top>50</top>
+				<width>720</width>
+				<height>40</height>
+				<font>font13</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[Player.SeekNumeric(hh:mm:ss)]</label>
+				<visible>!String.IsEmpty(Player.SeekNumeric)</visible>
+			</control>
 		</control>
 	</include>
 </includes>
