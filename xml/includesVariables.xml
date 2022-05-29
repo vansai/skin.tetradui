@@ -124,4 +124,23 @@
 		<value condition="Control.IsVisible(3)">$LOCALIZE[31201] ($INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages])</value>
 		<value>$LOCALIZE[31201] ($INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages])</value>
 	</variable>
+	<variable name="DialogAddonInfoButton9001Label">
+		<value condition="String.IsEmpty(Skin.String(DialogAddonInfoButton9001)) + !String.IsEmpty(ListItem.AddonNews)">$LOCALIZE[29941]</value>
+		<value condition="!Integer.IsEqual(Container(50).NumItems,0) + [[String.IsEmpty(Skin.String(DialogAddonInfoButton9001)) + String.IsEmpty(ListItem.AddonNews)] | String.IsEqual(Skin.String(DialogAddonInfoButton9001),news)]">$LOCALIZE[20008]</value>
+		<value>$LOCALIZE[21821]</value>
+	</variable>
+	<variable name="DialogAddonInfoButton9001Onclick">
+		<value condition="String.IsEmpty(Skin.String(DialogAddonInfoButton9001)) + !String.IsEmpty(ListItem.AddonNews)">Skin.SetString(DialogAddonInfoButton9001,news)</value>
+		<value condition="!Integer.IsEqual(Container(50).NumItems,0) + [[String.IsEmpty(Skin.String(DialogAddonInfoButton9001)) + String.IsEmpty(ListItem.AddonNews)] | String.IsEqual(Skin.String(DialogAddonInfoButton9001),news)]">Skin.SetString(DialogAddonInfoButton9001,screenshots)</value>
+		<value>Skin.Reset(DialogAddonInfoButton9001)</value>
+	</variable>
+	<variable name="DialogAddonInfoDescriptionNewsToggle">
+		<value condition="String.IsEqual(Skin.String(DialogAddonInfoButton9001),news)">$INFO[ListItem.AddonNews]</value>
+		<value>$INFO[ListItem.AddonDescription]</value>
+	</variable>
+	<variable name="DialogAddonInfoContainerInfo">
+		<value condition="Control.IsVisible(400)">$LOCALIZE[31201] ($INFO[Container(400).CurrentPage]/$INFO[Container(400).NumPages])</value>
+		<value condition="Control.IsVisible(401)">$LOCALIZE[31201] ($INFO[Container(401).CurrentPage]/$INFO[Container(401).NumPages])</value>
+		<value condition="Control.IsVisible(50)">$LOCALIZE[31201] ($INFO[Container(50).CurrentPage]/$INFO[Container(50).NumPages])</value>
+	</variable>
 </includes>
