@@ -92,7 +92,7 @@
 		<font>font35</font>
 		<textcolor>white</textcolor>
 		<shadowcolor>black</shadowcolor>
-		<visible>!Window.IsVisible(VideoScan) + !Window.IsVisible(MusicScan)</visible>
+		<visible>!Window.IsVisible(extendedprogressdialog)</visible>
 		<include>VisibleFadeEffect</include>
 	</include>
 	<include name="DialogHeaderTextCommons">
