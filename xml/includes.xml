@@ -50,7 +50,6 @@
 		<shadowcolor />
 		<font>font30</font>
 		<pulseonselect>no</pulseonselect>
-		<onleft>noop</onleft>
 		<onright>1</onright>
 		<animation effect="slide" end="ButtonSlideBackDistance,0" time="ButtonSlideBackTime" reversible="false">focus</animation>
 	</include>
