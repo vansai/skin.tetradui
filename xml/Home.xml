@@ -329,6 +329,7 @@
 				<left>50r</left>
 				<top>190</top>
 				<font>font16</font>
+				<width>200</width>
 				<textcolor>black</textcolor>
 				<align>left</align>
 				<aligny>top</aligny>
