@@ -5,7 +5,6 @@
 		<colorkey>0</colorkey>
 	</default>
 	<default type="label">
-		<label />
 		<font>font13</font>
 		<textcolor>white</textcolor>
 		<selectedcolor>orange</selectedcolor>
@@ -107,7 +106,6 @@
 		<textureradiooffdisabled colordiffuse="60FFFFFF">check-boxNF.png</textureradiooffdisabled>
 		<texturefocus>button-focus.png</texturefocus>
 		<texturenofocus>button-nofocus.png</texturenofocus>
-		<label>215</label>
 		<font>font13</font>
 		<textcolor>white</textcolor>
 		<disabledcolor>disabled</disabledcolor>
@@ -120,7 +118,6 @@
 		<width>300</width>
 		<height>45</height>
 		<textoffsetx>15</textoffsetx>
-		<label />
 		<textcolor>white</textcolor>
 		<disabledcolor>disabled</disabledcolor>
 		<font>font12</font>
@@ -148,5 +145,9 @@
 	<default type="resize">
 		<texturefocus>button-focus.png</texturefocus>
 		<texturenofocus>button-nofocus.png</texturenofocus>
+	</default>
+	<default type="ranges">
+		<height>12</height>
+		<texturebg border="6,0,6,0">progress_back_2.png</texturebg>
 	</default>
 </includes>
