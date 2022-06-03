@@ -22,23 +22,9 @@
 			<animation type="WindowClose" condition="[Window.IsVisible(MovieInformation) | Window.IsVisible(MusicInformation)]">
 				<effect type="slide" start="0,0" end="-400,0" delay="DialogVisibleFadeAnimationSpeed" time="500" tween="quadratic" easing="in"/>
 			</animation>
-			<control type="image">
-				<left>130</left>
-				<top>-40</top>
-				<width>180</width>
-				<height>800</height>
-				<aspectratio>stretch</aspectratio>
-				<texture>blades-runner-right.png</texture>
+			<control type="group">
 				<animation effect="fade" start="90" end="90" time="0" condition="Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)">conditional</animation>
-			</control>
-			<control type="image">
-				<left>310</left>
-				<top>-40</top>
-				<width>970</width>
-				<height>800</height>
-				<aspectratio>stretch</aspectratio>
-				<texture>blades-runner-right-edge.png</texture>
-				<animation effect="fade" start="90" end="90" time="0" condition="Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)">conditional</animation>
+				<include>BladesRunnerRight</include>
 			</control>
 			<control type="label" id="411">
 				<description>Header label</description>

@@ -113,7 +113,7 @@
 			<description>Background Weather</description>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true" fallback="special://skin/backgrounds/weather.png">$INFO[Skin.String(Background_Weather)]</texture>
+			<texture background="true" fallback="backgrounds/weather.png">$INFO[Skin.String(Background_Weather)]</texture>
 			<animation effect="fade" start="100" end="60" time="200" condition="[!String.IsEmpty(ListItem.Art(fanart)) + !Skin.HasSetting(Back_Fanart)] | [Player.HasVideo + !Skin.HasSetting(Back_Video)] | [Player.HasAudio + !Skin.HasSetting(Back_Vis)]">Conditional</animation>
 		</control>
 		<include>RainDropAnimationBackground</include>
@@ -147,6 +147,16 @@
 			<animation effect="fade" start="100" end="60" time="200" condition="[!String.IsEmpty(ListItem.Art(fanart)) + !Skin.HasSetting(Back_Fanart)] | [Player.HasVideo + !Skin.HasSetting(Back_Video)] | [Player.HasAudio + !Skin.HasSetting(Back_Vis)]">Conditional</animation>
 		</control>
 		<include>RainDropAnimationBackground</include>
+	</include>
+	<include name="CommonMediaBackgrounds">
+		<include condition="!Skin.HasSetting(DontBlendBackground)">CommonVideoVizBackground</include>
+		<control type="group">
+			<include>CommonMediaBackground</include>
+		</control>
+		<include condition="Skin.HasSetting(DontBlendBackground)">CommonVideoVizBackground</include>
+		<control type="group">
+			<include>CommonMediaBlackwash</include>
+		</control>
 	</include>
 
 <!-- Blackwash Backgrounds -->
