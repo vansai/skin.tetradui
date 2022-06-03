@@ -50,7 +50,7 @@
 				<top>260r</top>
 				<width>300</width>
 				<height>230</height>
-				<info>VideoPlayer.Cover</info>
+				<texture>$INFO[VideoPlayer.Art(thumb)]</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
 				<bordersize>17,1,17,1</bordersize>
@@ -62,7 +62,7 @@
 				<top>370r</top>
 				<width>300</width>
 				<height>350</height>
-				<info>VideoPlayer.Cover</info>
+				<texture>$VAR[PosterImageOSD]</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
 				<bordersize>17,1,17,1</bordersize>
@@ -150,6 +150,17 @@
 					<info>Player.Progress</info>
 					<texturebg border="6,0,6,0">progress_back_2.png</texturebg>
 				</control>
+				<!--
+				<control type="ranges" id="1">
+					<description>Chapters</description>
+					<left>100</left>
+					<top>17</top>
+					<width>720</width>
+					<height>12</height>
+					<info>Player.Chapters</info>
+					<righttexture border="1,0,1,0">progress_chapter.png</righttexture>
+				</control>
+				-->
 				<control type="label" id="1">
 					<left>820</left>
 					<width>100</width>
