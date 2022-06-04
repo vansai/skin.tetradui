@@ -466,9 +466,51 @@
 			</focusedlayout>
 		</control>
 	</include>
+	<variable name="ThumbnailInfoViewLabel">
+		<value condition="Container.Content(Addons)">$INFO[ListItem.AddonName]</value>
+		<value condition="Container.Content(Albums)">$INFO[ListItem.Album]</value>
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Artist]</value>
+		<value>$INFO[ListItem.Label]</value>
+	</variable>
+	<variable name="ThumbnailInfoViewLabel2">
+		<value condition="Container.Content(Episodes)">$INFO[ListItem.TVShowTitle] [COLOR=grey]($INFO[ListItem.Season]x$INFO[ListItem.Episode])[/COLOR]</value>
+		<value>$INFO[ListItem.Label]</value>
+	</variable>
+	<variable name="ThumbnailInfoViewPlot">
+		<value condition="Container.Content(Addons)">$INFO[ListItem.AddonDescription]</value>
+		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Album_Description)]</value>
+		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Artist_Description)]</value>
+		<value>$INFO[ListItem.Plot]</value>
+	</variable>
+	<variable name="ThumbnailInfoViewTitle">
+		<value condition="Container.Content(Episodes)">$INFO[ListItem.Title]</value>
+		<value>$INFO[ListItem.Label2]</value>
+	</variable>
+	<include name="ThumbnailInfoViewPictureContent">
+		<control type="group">
+			<visible>!String.IsEmpty($PARAM[value])</visible>
+			<height>28</height>
+			<control type="label">
+				<width>140</width>
+				<font>font12</font>
+				<label>$PARAM[label]</label>
+				<textcolor>grey2</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<left>150</left>
+				<width>2900</width>
+				<font>font12</font>
+				<label>$INFO[$PARAM[value]]</label>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<scroll>true</scroll>
+			</control>
+		</control>
+	</include>
 	<include name="ThumbnailInfoView">
 		<control type="panel" id="55">
-			<visible>![Window.IsVisible(Videos) + Container.Content(TVShows)]</visible>
+			<visible>!Container.Content(TVShows)</visible>
 			<left>0</left>
 			<top>0</top>
 			<width>720</width>
@@ -641,7 +683,7 @@
 		<control type="group">
 			<left>730</left>
 			<top>10</top>
-			<visible>Control.IsVisible(55) + ![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(Albums) | Container.Content(Artists) | Container.Content(Addons) | Container.Content(LiveTV)]</visible>
+			<visible>Control.IsVisible(55) + ![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(LiveTV) | Window.IsActive(Pictures)]</visible>
 			<control type="fadelabel">
 				<width>350</width>
 				<height>20</height>
@@ -650,7 +692,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label]</label>
+				<label>$VAR[ThumbnailInfoViewLabel]</label>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 			</control>
@@ -660,7 +702,7 @@
 				<width>350</width>
 				<height>410</height>
 				<font>font12</font>
-				<label>$INFO[ListItem.Plot]</label>
+				<label>$VAR[ThumbnailInfoViewPlot]</label>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<align>justify</align>
@@ -697,7 +739,7 @@
 		<control type="group">
 			<left>730</left>
 			<top>10</top>
-			<visible>Control.IsVisible(55) + Container.Content(Episodes)</visible>
+			<visible>Control.IsVisible(55) + [Container.Content(Episodes) | Container.Content(LiveTV)]</visible>
 			<control type="fadelabel">
 				<width>350</width>
 				<height>20</height>
@@ -706,7 +748,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.TVShowTitle] [COLOR=grey]($INFO[ListItem.Season]x$INFO[ListItem.Episode])[/COLOR]</label>
+				<label>$VAR[ThumbnailInfoViewLabel2]</label>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 			</control>
@@ -719,7 +761,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Title]</label>
+				<label>$VAR[ThumbnailInfoViewTitle]</label>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 			</control>
@@ -738,96 +780,12 @@
 		<control type="group">
 			<left>730</left>
 			<top>10</top>
-			<visible>Control.IsVisible(55) + Container.Content(Addons)</visible>
+			<visible>Control.IsVisible(55) + Window.IsActive(Pictures)</visible>
 			<control type="fadelabel">
 				<width>350</width>
 				<height>20</height>
 				<font>font16</font>
 				<textcolor>orange</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.AddonName]</label>
-				<scrollout>false</scrollout>
-				<pauseatend>2000</pauseatend>
-			</control>
-			<control type="textbox" id="400">
-				<description>textarea</description>
-				<top>40</top>
-				<width>350</width>
-				<height>410</height>
-				<font>font12</font>
-				<label>$INFO[ListItem.AddonDescription]</label>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>justify</align>
-			</control>
-		</control>
-		<control type="group">
-			<left>730</left>
-			<top>10</top>
-			<visible>Control.IsVisible(55) + Container.Content(Albums)</visible>
-			<control type="fadelabel">
-				<width>350</width>
-				<height>20</height>
-				<font>font16</font>
-				<textcolor>orange</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Album]</label>
-				<scrollout>false</scrollout>
-				<pauseatend>2000</pauseatend>
-			</control>
-			<control type="textbox" id="400">
-				<description>textarea</description>
-				<top>40</top>
-				<width>350</width>
-				<height>410</height>
-				<font>font12</font>
-				<label>$INFO[ListItem.Property(Album_Description)]</label>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>justify</align>
-			</control>
-		</control>
-		<control type="group">
-			<left>730</left>
-			<top>10</top>
-			<visible>Control.IsVisible(55) + Container.Content(Artists)</visible>
-			<control type="fadelabel">
-				<width>350</width>
-				<height>20</height>
-				<font>font16</font>
-				<textcolor>orange</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Artist]</label>
-				<scrollout>false</scrollout>
-				<pauseatend>2000</pauseatend>
-			</control>
-			<control type="textbox" id="400">
-				<description>textarea</description>
-				<top>40</top>
-				<width>350</width>
-				<height>410</height>
-				<font>font12</font>
-				<label>$INFO[ListItem.Property(Artist_Description)]</label>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>justify</align>
-			</control>
-		</control>
-		<control type="group">
-			<left>730</left>
-			<top>10</top>
-			<visible>Control.IsVisible(55) + Container.Content(LiveTV)</visible>
-			<control type="fadelabel">
-				<width>350</width>
-				<height>20</height>
-				<font>font13</font>
-				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -835,26 +793,171 @@
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 			</control>
-			<control type="fadelabel">
-				<top>35</top>
-				<width>350</width>
-				<height>20</height>
-				<font>font16</font>
-				<textcolor>orange</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label2]</label>
-				<scrollout>false</scrollout>
-				<pauseatend>2000</pauseatend>
+			<control type="grouplist">
+				<top>40</top>
+				<height>410</height>
+				<itemgap>0</itemgap>
+				<orientation>vertical</orientation>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[169]:" />
+					<param name="value" value="ListItem.PictureResolution" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[552]:" />
+					<param name="value" value="ListItem.Date" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21802]:" />
+					<param name="value" value="ListItem.Size" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21826]:" />
+					<param name="value" value="ListItem.PictureAperture" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21822]:" />
+					<param name="value" value="ListItem.PictureCamMake" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21823]:" />
+					<param name="value" value="ListItem.PictureCamModel" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21863]:" />
+					<param name="value" value="ListItem.PictureAuthor" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21867]:" />
+					<param name="value" value="ListItem.PictureByline" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21868]:" />
+					<param name="value" value="ListItem.PictureBylineTitle" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21862]:" />
+					<param name="value" value="ListItem.PictureCaption" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21866]:" />
+					<param name="value" value="ListItem.PictureCategory" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21839]:" />
+					<param name="value" value="ListItem.PictureCCDWidth" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21873]:" />
+					<param name="value" value="ListItem.PictureCity" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21807]:" />
+					<param name="value" value="ListItem.PictureColour" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21839]:" />
+					<param name="value" value="ListItem.PictureComment" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21871]:" />
+					<param name="value" value="ListItem.PictureCopyrightNotice" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21875]:" />
+					<param name="value" value="ListItem.PictureCountry" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21879]:" />
+					<param name="value" value="ListItem.PictureCountryCode" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21869]:" />
+					<param name="value" value="ListItem.PictureCredit" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21821]:" />
+					<param name="value" value="ListItem.PictureDesc" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21838]:" />
+					<param name="value" value="ListItem.PictureDigitalZoom" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21832]:" />
+					<param name="value" value="ListItem.PictureExpMode" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21829]:" />
+					<param name="value" value="ListItem.PictureExposure" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21831]:" />
+					<param name="value" value="ListItem.PictureExposureBias" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21830]:" />
+					<param name="value" value="ListItem.PictureExpTime" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21833]:" />
+					<param name="value" value="ListItem.PictureFlashUsed" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21827]:" />
+					<param name="value" value="ListItem.PictureFocalLen" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21828]:" />
+					<param name="value" value="ListItem.PictureFocusDist" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21834]:" />
+					<param name="value" value="ListItem.PictureWhiteBalance" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21840]:" />
+					<param name="value" value="ListItem.PictureGPSLat" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21841]:" />
+					<param name="value" value="ListItem.PictureGPSLon" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21842]:" />
+					<param name="value" value="ListItem.PictureGPSAlt" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21864]:" />
+					<param name="value" value="ListItem.PictureHeadline" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21858]:" />
+					<param name="value" value="ListItem.PictureImageType" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21837]:" />
+					<param name="value" value="ListItem.PictureISO" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21861]:" />
+					<param name="value" value="ListItem.PictureKeywords" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21843]:" />
+					<param name="value" value="ListItem.PictureOrientation" />
+				</include>
+				<include content="ThumbnailInfoViewPictureContent">
+					<param name="label" value="$LOCALIZE[21808]:" />
+					<param name="value" value="ListItem.PictureProcess" />
+				</include>
 			</control>
 			<control type="textbox" id="400">
 				<description>textarea</description>
-				<top>70</top>
+				<top>40</top>
 				<width>350</width>
-				<height>380</height>
+				<height>410</height>
 				<font>font12</font>
-				<label>$INFO[ListItem.Plot]</label>
+				<label>$VAR[ThumbnailInfoViewPlot]</label>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<align>justify</align>

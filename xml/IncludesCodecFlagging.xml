@@ -182,13 +182,47 @@
 	</include>
 
 	<include name="PictureTypeHackFlaggingConditions">
-		<include content="CodecFlaggingImage">
-			<param name="visible" value="!String.IsEmpty(ListItem.Date)" />
-			<param name="info" value="$INFO[ListItem.Date]" />
-		</include>
-		<include content="CodecFlaggingImage">
-			<param name="visible" value="!String.IsEmpty(ListItem.PictureResolution)" />
-			<param name="info" value="$INFO[ListItem.PictureResolution]" />
-		</include>
+		<control type="group">
+			<visible>!String.IsEmpty(ListItem.Date)</visible>
+			<animation effect="fade" end="80" condition="true">Conditional</animation>
+			<width>100</width>
+			<control type="image">
+				<width>100</width>
+				<height>35</height>
+				<texture>flagging/blank.png</texture>
+			</control>
+			<control type="label">
+				<left>10</left>
+				<top>-1</top>
+				<width>80</width>
+				<height>35</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font6</font>
+				<textcolor>white</textcolor>
+				<label>$INFO[ListItem.Date]</label>
+			</control>
+		</control>
+		<control type="group">
+			<visible>!String.IsEmpty(ListItem.PictureResolution)</visible>
+			<animation effect="fade" end="80" condition="true">Conditional</animation>
+			<width>100</width>
+			<control type="image">
+				<width>100</width>
+				<height>35</height>
+				<texture>flagging/blank.png</texture>
+			</control>
+			<control type="label">
+				<left>10</left>
+				<top>-1</top>
+				<width>80</width>
+				<height>35</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font6</font>
+				<textcolor>white</textcolor>
+				<label>$INFO[ListItem.PictureResolution]</label>
+			</control>
+		</control>
 	</include>
 </includes>
