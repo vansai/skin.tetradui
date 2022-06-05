@@ -291,7 +291,7 @@ msgid "Set Button Icon"
 msgstr ""
 
 msgctxt "#31313"
-msgid "No Weather addon enabled go to Settings\Weather to enable weather forecast"
+msgid "No Weather add-on enabled go to Settings/Weather to enable weather forecast"
 msgstr ""
 
 # empty strings from id 31314 to 31389
