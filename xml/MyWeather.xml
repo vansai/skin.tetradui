@@ -250,13 +250,6 @@
 					<label>$INFO[Window.Property(Current.Condition)]</label>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
-				<control type="image">
-					<description>Divider</description>
-					<top>300</top>
-					<width>580</width>
-					<height>2</height>
-					<texture>divider.png</texture>
-				</control>
 				<control type="label">
 					<description>current feels like label</description>
 					<left>140</left>
@@ -405,13 +398,6 @@
 					<shadowcolor>black</shadowcolor>
 					<label>$INFO[Window.Property(Location)]</label>
 				</control>
-				<control type="image">
-					<description>Divider</description>
-					<top>-5</top>
-					<width>580</width>
-					<height>2</height>
-					<texture>divider.png</texture>
-				</control>
 				<control type="group">
 					<description>day 0</description>
 					<control type="label">
@@ -496,13 +482,6 @@
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
-				</control>
-				<control type="image">
-					<description>Divider</description>
-					<top>115</top>
-					<width>580</width>
-					<height>2</height>
-					<texture>divider.png</texture>
 				</control>
 				<control type="group">
 					<description>day 1</description>
@@ -590,13 +569,6 @@
 						<shadowcolor>black</shadowcolor>
 					</control>
 				</control>
-				<control type="image">
-					<description>Divider</description>
-					<top>235</top>
-					<width>580</width>
-					<height>2</height>
-					<texture>divider.png</texture>
-				</control>
 				<control type="group">
 					<description>day 2</description>
 					<top>240</top>
@@ -682,13 +654,6 @@
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
-				</control>
-				<control type="image">
-					<description>Divider</description>
-					<top>355</top>
-					<width>580</width>
-					<height>2</height>
-					<texture>divider.png</texture>
 				</control>
 				<control type="group">
 					<description>day 3</description>
