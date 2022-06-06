@@ -198,16 +198,16 @@
 			<animation effect="slide" start="0,0" end="-160,0" time="200" condition="Player.HasVideo + !VideoPlayer.Content(Movies)">Conditional</animation>
 			<control type="label">
 				<description>Page Count Label NoFocus</description>
-				<left>-10</left>
+				<left>-310</left>
 				<top>5</top>
-				<width>500</width>
+				<width>300</width>
 				<height>20</height>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>grey2</textcolor>
 				<scroll>false</scroll>
 				<align>right</align>
 				<aligny>center</aligny>
-				<label>($INFO[Container(2).NumItems]) $LOCALIZE[31200] - $LOCALIZE[31201] ($INFO[Container(2).CurrentPage]/$INFO[Container(2).NumPages])</label>
+				<label>$INFO[Container(2).NumItems] $LOCALIZE[31200] - $LOCALIZE[31201] $INFO[Container(2).CurrentPage]/$INFO[Container(2).NumPages]</label>
 				<visible>!Control.HasFocus(60)</visible>
 			</control>
 			<control type="label">
@@ -217,11 +217,12 @@
 				<width>300</width>
 				<height>20</height>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>orange</textcolor>
 				<scroll>false</scroll>
 				<align>right</align>
 				<aligny>center</aligny>
 				<label>$INFO[Container(2).NumItems] $LOCALIZE[31200] - $LOCALIZE[31201] $INFO[Container(2).CurrentPage]/$INFO[Container(2).NumPages]</label>
+				<visible>Control.HasFocus(60)</visible>
 			</control>
 			<control type="spincontrol" id="60">
 				<description>Next page button</description>
