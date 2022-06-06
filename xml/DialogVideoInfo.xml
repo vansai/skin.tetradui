@@ -56,7 +56,7 @@
 							<left>-15</left>
 							<width>300</width>
 							<height>435</height>
-							<texture background="true">$INFO[Listitem.Icon]</texture>
+							<texture background="true">$VAR[ListItemPosterVar]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
 							<bordersize>18,2,18,2</bordersize>
@@ -73,7 +73,6 @@
 							<scrolltime>200</scrolltime>
 							<itemlayout height="30" width="750">
 								<control type="label">
-									<left>160</left>
 									<width>160</width>
 									<height>30</height>
 									<font>font12</font>
@@ -101,7 +100,6 @@
 									<texture border="10">list-focus.png</texture>
 								</control>
 								<control type="label">
-									<left>160</left>
 									<width>160</width>
 									<height>30</height>
 									<font>font12</font>
@@ -183,7 +181,7 @@
 							<description>Cover image</description>
 							<width>1050</width>
 							<height>150</height>
-							<texture background="true">$INFO[Listitem.Icon]</texture>
+							<texture background="true">$VAR[ListItemBannerVar]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
 							<bordersize>18,2,18,2</bordersize>
@@ -200,7 +198,6 @@
 							<scrolltime>200</scrolltime>
 							<itemlayout height="30" width="940">
 								<control type="label">
-									<left>160</left>
 									<width>160</width>
 									<height>30</height>
 									<font>font12</font>
@@ -228,7 +225,6 @@
 									<texture border="10">list-focus.png</texture>
 								</control>
 								<control type="label">
-									<left>160</left>
 									<width>160</width>
 									<height>30</height>
 									<font>font12</font>
@@ -286,7 +282,7 @@
 							<left>-25</left>
 							<width>440</width>
 							<height>300</height>
-							<texture background="true">$INFO[Listitem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Thumb]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
 							<bordersize>18,2,18,2</bordersize>
@@ -303,7 +299,6 @@
 							<scrolltime>200</scrolltime>
 							<itemlayout height="30" width="650">
 								<control type="label">
-									<left>160</left>
 									<width>160</width>
 									<height>30</height>
 									<font>font12</font>
@@ -331,7 +326,6 @@
 									<texture border="10">list-focus.png</texture>
 								</control>
 								<control type="label">
-									<left>160</left>
 									<width>160</width>
 									<height>30</height>
 									<font>font12</font>
@@ -414,7 +408,7 @@
 							<left>-25</left>
 							<width>440</width>
 							<height>300</height>
-							<texture background="true">$INFO[Listitem.Icon]</texture>
+							<texture background="true">$VAR[ListItemPosterVar]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
 							<bordersize>18,2,18,2</bordersize>
@@ -431,7 +425,6 @@
 							<scrolltime>200</scrolltime>
 							<itemlayout height="30" width="650">
 								<control type="label">
-									<left>160</left>
 									<width>160</width>
 									<height>30</height>
 									<font>font12</font>
@@ -459,7 +452,6 @@
 									<texture border="10">list-focus.png</texture>
 								</control>
 								<control type="label">
-									<left>160</left>
 									<width>160</width>
 									<height>30</height>
 									<font>font12</font>
