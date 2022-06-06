@@ -267,7 +267,7 @@
 	</include>
 	<include name="WideIconView">
 		<control type="panel" id="53">
-			<visible>!Container.Content(Addons)</visible>
+			<visible>!Container.Content(Addons) + !Container.Content(Episodes)</visible>
 			<left>10</left>
 			<top>-20</top>
 			<width>1040</width>
@@ -293,14 +293,15 @@
 					<top>7</top>
 					<width>500</width>
 					<height>95</height>
-					<texture background="true">$VAR[ListItemPosterVar]</texture>
+					<texture background="true">$VAR[ListItemBannerVar]</texture>
 					<bordertexture>black-back.png</bordertexture>
 					<bordersize>1</bordersize>
+					<aspectratio>scale</aspectratio>
 				</control>
 				<control type="label">
 					<left>20</left>
-					<top>98</top>
-					<width>480</width>
+					<top>100</top>
+					<width>320</width>
 					<height>20</height>
 					<font>font10</font>
 					<textcolor>white</textcolor>
@@ -310,9 +311,9 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<left>500</left>
-					<top>98</top>
-					<width>480</width>
+					<left>340</left>
+					<top>100</top>
+					<width>160</width>
 					<height>20</height>
 					<font>font10</font>
 					<textcolor>white</textcolor>
@@ -343,14 +344,15 @@
 					<top>7</top>
 					<width>500</width>
 					<height>95</height>
-					<texture background="true">$VAR[ListItemPosterVar]</texture>
+					<texture background="true">$VAR[ListItemBannerVar]</texture>
 					<bordertexture>black-back.png</bordertexture>
 					<bordersize>1</bordersize>
+					<aspectratio>scale</aspectratio>
 				</control>
 				<control type="label">
 					<left>20</left>
-					<top>98</top>
-					<width>480</width>
+					<top>100</top>
+					<width>320</width>
 					<height>20</height>
 					<font>font10</font>
 					<textcolor>black</textcolor>
@@ -360,9 +362,9 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<left>500</left>
-					<top>98</top>
-					<width>480</width>
+					<left>340</left>
+					<top>100</top>
+					<width>160</width>
 					<height>20</height>
 					<font>font10</font>
 					<textcolor>black</textcolor>
@@ -424,7 +426,7 @@
 			<focusposition>1</focusposition>
 			<orientation>horizontal</orientation>
 			<preloaditems>4</preloaditems>
-			<itemlayout height="310" width="218">
+			<itemlayout height="310" width="218" condition="!Container.Content(Episodes)">
 				<control type="image">
 					<width>218</width>
 					<height>310</height>
@@ -442,7 +444,7 @@
 					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 			</itemlayout>
-			<focusedlayout height="310" width="218">
+			<focusedlayout height="310" width="218" condition="!Container.Content(Episodes)">
 				<control type="image">
 					<width>218</width>
 					<height>310</height>
@@ -462,6 +464,46 @@
 					<texture>$INFO[ListItem.Overlay]</texture>
 					<animation effect="slide" start="0,0" end="30,30" time="200">Focus</animation>
 					<animation effect="slide" end="0,0" start="30,30" time="200">UnFocus</animation>
+				</control>
+			</focusedlayout>
+			<itemlayout height="310" width="420" condition="Container.Content(Episodes)">
+				<control type="image">
+					<width>420</width>
+					<height>310</height>
+					<aspectratio aligny="top">scale</aspectratio>
+					<bordertexture border="10">thumb-nofocus.png</bordertexture>
+					<bordersize>10</bordersize>
+					<texture background="true">$VAR[ListItemPosterVar]</texture>
+				</control>
+				<control type="image">
+					<left>372</left>
+					<top>265</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Overlay]</texture>
+				</control>
+			</itemlayout>
+			<focusedlayout height="310" width="420" condition="Container.Content(Episodes)">
+				<control type="image">
+					<width>420</width>
+					<height>310</height>
+					<aspectratio aligny="top">scale</aspectratio>
+					<bordertexture border="10">thumb-focus.png</bordertexture>
+					<bordersize>10</bordersize>
+					<texture background="true">$VAR[ListItemPosterVar]</texture>
+					<animation center="auto" effect="zoom" start="100" end="115" time="200">Focus</animation>
+					<animation center="auto" effect="zoom" start="115" end="100" time="200">UnFocus</animation>
+				</control>
+				<control type="image">
+					<left>372</left>
+					<top>265</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<animation effect="slide" start="0,0" end="30,22" time="200">Focus</animation>
+					<animation effect="slide" end="0,0" start="30,22" time="200">UnFocus</animation>
 				</control>
 			</focusedlayout>
 		</control>
