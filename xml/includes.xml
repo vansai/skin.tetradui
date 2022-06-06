@@ -426,7 +426,7 @@
 		</control>
 	</include>
 
-	<include name="WeatherCard">
+	<include name="MediaInfoCard">
 		<control type="image">
 			<description>GamerCard Background</description>
 			<width>430</width>
@@ -447,7 +447,7 @@
 			</animation>
 		</control>
 		<control type="label">
-			<description>Weather label</description>
+			<description>Information Label</description>
 			<left>30</left>
 			<top>13</top>
 			<width>370</width>
@@ -456,71 +456,37 @@
 			<aligny>center</aligny>
 			<font>font13</font>
 			<textcolor>grey</textcolor>
-			<label>31020</label>
+			<label>$LOCALIZE[14116]</label>
 		</control>
-		<control type="textbox" id="400">
-			<description>No weather warning</description>
+		<control type="image">
+			<description>Icon</description>
 			<left>30</left>
 			<top>50</top>
-			<width>370</width>
+			<width>80</width>
 			<height>80</height>
-			<font>font10</font>
-			<label>$LOCALIZE[31313]</label>
-			<textcolor>grey</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<align>center</align>
-			<visible>String.IsEmpty(Weather.Plugin)</visible>
+			<aspectratio>keep</aspectratio>
+			<texture>$INFO[Container(9000).ListItem.Icon]</texture>
+			<fadetime>200</fadetime>
 		</control>
-		<control type="group">
-			<visible>!String.IsEmpty(Weather.Plugin)</visible>
-			<control type="image">
-				<description>Weather image</description>
-				<left>30</left>
-				<top>50</top>
-				<width>80</width>
-				<height>80</height>
-				<aspectratio>keep</aspectratio>
-				<texture>$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
-			</control>
-			<control type="label">
-				<description>Temp Label</description>
-				<left>120</left>
-				<top>50</top>
-				<height>30</height>
-				<width>150</width>
-				<label>$LOCALIZE[31021]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font12</font>
-				<textcolor>white2</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="label">
-				<description>Temp Value</description>
-				<left>270</left>
-				<top>55</top>
-				<height>30</height>
-				<width>110</width>
-				<label>$INFO[Weather.Temperature]</label>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font35</font>
-				<textcolor>white2</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="label">
-				<description>Conditions Label</description>
-				<left>120</left>
-				<top>85</top>
-				<height>30</height>
-				<width>290</width>
-				<label>$INFO[Window(Weather).Property(Current.Condition)]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font12</font>
-				<textcolor>white2</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
+		<control type="label">
+			<description>Label 1</description>
+			<left>125</left>
+			<top>58</top>
+			<width>290</width>
+			<label>$VAR[MediaInfoLabel1]</label>
+			<font>font12</font>
+			<textcolor>white2</textcolor>
+			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="label">
+			<description>Label 2</description>
+			<left>125</left>
+			<top>94</top>
+			<width>290</width>
+			<label>$VAR[MediaInfoLabel2]</label>
+			<font>font12</font>
+			<textcolor>white2</textcolor>
+			<shadowcolor>black</shadowcolor>
 		</control>
 	</include>
 	<include name="SystemCard">
@@ -751,7 +717,7 @@
 				<width>500</width>
 				<height>32</height>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>grey2</textcolor>
 				<scroll>false</scroll>
 				<align>right</align>
 				<aligny>center</aligny>

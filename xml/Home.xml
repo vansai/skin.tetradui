@@ -64,7 +64,7 @@
 			<control type="group">
 				<left>20</left>
 				<top>75</top>
-				<include>WeatherCard</include>
+				<include>MediaInfoCard</include>
 			</control>
 			<control type="group">
 				<top>225</top>
@@ -150,7 +150,7 @@
 					<content>
 						<item id="1">
 							<label>3</label>
-							<onclick>ActivateWindow(Videos)</onclick>
+							<onclick>ActivateWindow(Videos,return)</onclick>
 							<icon>button_icons/icon-videos.png</icon>
 							<visible>!Skin.HasSetting(MediaBlade_HideVideos)</visible>
 						</item>
@@ -158,14 +158,12 @@
 							<label>342</label>
 							<onclick>ActivateWindow(Videos,movietitles,return)</onclick>
 							<icon>button_icons/icon-movies.png</icon>
-							<visible>Library.HasContent(Movies)</visible>
 							<visible>Library.HasContent(Movies) + !Skin.HasSetting(MediaBlade_HideMovies)</visible>
 						</item>
 						<item id="3">
 							<label>20343</label>
 							<onclick>ActivateWindow(Videos,tvshowtitles,return)</onclick>
 							<icon>button_icons/icon-tv.png</icon>
-							<visible>Library.HasContent(TVShows)</visible>
 							<visible>Library.HasContent(TVShows) + !Skin.HasSetting(MediaBlade_HideTVShows)</visible>
 						</item>
 						<item id="4">
