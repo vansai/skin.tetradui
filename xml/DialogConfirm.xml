@@ -43,7 +43,7 @@
 			<top>200</top>
 			<width>560</width>
 			<height>12</height>
-			<visible>true</visible>
+			<info>System.Progressbar</info>
 		</control>
 		<control type="grouplist" id="9000">
 			<top>225</top>
