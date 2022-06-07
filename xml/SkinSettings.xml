@@ -660,13 +660,22 @@
 						<aspectratio align="center">keep</aspectratio>
 						<texture>tetradui_logo.png</texture>
 					</control>
+					<control type="label">
+						<width>790</width>
+						<height>30</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font10</font>
+						<textcolor>orange</textcolor>
+						<label>$INFO[System.AddonVersion(skin.tetradui)]</label>
+					</control>
 					<control type="image">
-						<height>25</height>
+						<height>20</height>
 						<texture />
 					</control>
 					<control type="label">
 						<width>790</width>
-						<height>65</height>
+						<height>130</height>
 						<align>center</align>
 						<font>font10</font>
 						<label>$LOCALIZE[31010]</label>
