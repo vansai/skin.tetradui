@@ -21,7 +21,7 @@
 			</control>
 			<control type="textbox">
 				<description>textarea</description>
-				<top>380</top>
+				<top>470</top>
 				<width>250</width>
 				<height>250</height>
 				<font>font10</font>
@@ -37,10 +37,8 @@
 				<width>250</width>
 				<height>350</height>
 				<itemgap>-2</itemgap>
-				<onleft>5</onleft>
-				<onright>5</onright>
-				<onup>3</onup>
-				<ondown>3</ondown>
+				<onleft condition="!Skin.String(SkinSettings,7)">5</onleft>
+				<onright condition="!Skin.String(SkinSettings,7)">5</onright>
 				<control type="button" id="10">
 					<description>General Category Button</description>
 					<height>50</height>
@@ -48,18 +46,8 @@
 					<textcolor>white</textcolor>
 					<texturefocus border="10">button-focus.png</texturefocus>
 					<texturenofocus border="10">button-nofocus.png</texturenofocus>
-					<label>31500</label>
+					<label>128</label>
 					<onfocus>Skin.SetString(SkinSettings,1)</onfocus>
-				</control>
-				<control type="button" id="11">
-					<description>Addon Category Button</description>
-					<height>50</height>
-					<width>250</width>
-					<textcolor>white</textcolor>
-					<texturefocus border="10">button-focus.png</texturefocus>
-					<texturenofocus border="10">button-nofocus.png</texturenofocus>
-					<label>24001</label>
-					<onfocus>Skin.SetString(SkinSettings,2)</onfocus>
 				</control>
 				<control type="button" id="12">
 					<description>Media Blade Category Button</description>
@@ -88,8 +76,38 @@
 					<textcolor>white</textcolor>
 					<texturefocus border="10">button-focus.png</texturefocus>
 					<texturenofocus border="10">button-nofocus.png</texturenofocus>
-					<label>31501</label>
+					<label>33069</label>
 					<onfocus>Skin.SetString(SkinSettings,5)</onfocus>
+				</control>
+				<control type="button" id="11">
+					<description>Addon Category Button</description>
+					<height>50</height>
+					<width>250</width>
+					<textcolor>white</textcolor>
+					<texturefocus border="10">button-focus.png</texturefocus>
+					<texturenofocus border="10">button-nofocus.png</texturenofocus>
+					<label>24001</label>
+					<onfocus>Skin.SetString(SkinSettings,2)</onfocus>
+				</control>
+				<control type="button" id="15">
+					<description>Supported Addons Category Button</description>
+					<height>50</height>
+					<width>250</width>
+					<textcolor>white</textcolor>
+					<texturefocus border="10">button-focus.png</texturefocus>
+					<texturenofocus border="10">button-nofocus.png</texturenofocus>
+					<label>31539</label>
+					<onfocus>Skin.SetString(SkinSettings,6)</onfocus>
+				</control>
+				<control type="button" id="16">
+					<description>About Category Button</description>
+					<height>50</height>
+					<width>250</width>
+					<textcolor>white</textcolor>
+					<texturefocus border="10">button-focus.png</texturefocus>
+					<texturenofocus border="10">button-nofocus.png</texturenofocus>
+					<label>31538</label>
+					<onfocus>Skin.SetString(SkinSettings,7)</onfocus>
 				</control>
 			</control>
 			<control type="group" id="5">
@@ -159,7 +177,7 @@
 					<ondown>200</ondown>
 					<control type="button" id="201">
 						<include>SkinSettingsButtonCommonValues</include>
-						<label>31540</label>
+						<label>$LOCALIZE[31540]$INFO[Skin.String(LyricScript_Path),: [COLOR grey2],[/COLOR]]</label>
 						<onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
 					</control>
 				</control>
@@ -314,7 +332,7 @@
 					</control>
 				</control>
 
-					<control type="group" id="500">
+				<control type="group" id="500">
 					<visible>Skin.String(SkinSettings,5)</visible>
 					<description>control area</description>
 					<left>290</left>
@@ -482,7 +500,7 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
-							<label>$LOCALIZE[31006]</label>
+							<label>$LOCALIZE[14211]</label>
 						</control>
 						<control type="image">
 							<left>10</left>
@@ -604,6 +622,60 @@
 							<onup>312</onup>
 							<ondown>312</ondown>
 						</control>
+					</control>
+				</control>
+				
+				<control type="grouplist" id="600">
+					<visible>Skin.String(SkinSettings,6)</visible>
+					<description>control area</description>
+					<left>270</left>
+					<top>115</top>
+					<width>790</width>
+					<height>500</height>
+					<itemgap>-2</itemgap>
+					<pagecontrol>90</pagecontrol>
+					<onleft>3</onleft>
+					<onright>90</onright>
+					<control type="button" id="601">
+						<include>SkinSettingsButtonCommonValues</include>
+						<label>CU LRC Lyrics</label>
+						<label2>$VAR[StatusCULRCLyricsVar]</label2>
+						<onclick condition="System.AddonIsEnabled(script.cu.lrclyrics)">Addon.OpenSettings(script.cu.lrclyrics)</onclick>
+						<onclick condition="!System.HasAddon(script.cu.lrclyrics)">InstallAddon(script.cu.lrclyrics)</onclick>
+						<onclick condition="System.HasAddon(script.cu.lrclyrics) + !System.AddonIsEnabled(script.cu.lrclyrics)">EnableAddon(script.cu.lrclyrics)</onclick>
+					</control>
+				</control>
+				
+				<control type="grouplist" id="700">
+					<visible>Skin.String(SkinSettings,7)</visible>
+					<description>control area</description>
+					<left>270</left>
+					<top>115</top>
+					<width>790</width>
+					<height>500</height>
+					<itemgap>-2</itemgap>
+					<control type="image">
+						<height>80</height>
+						<width>790</width>
+						<aspectratio align="center">keep</aspectratio>
+						<texture>tetradui_logo.png</texture>
+					</control>
+					<control type="image">
+						<height>25</height>
+						<texture />
+					</control>
+					<control type="label">
+						<width>790</width>
+						<height>65</height>
+						<align>center</align>
+						<font>font10</font>
+						<label>$LOCALIZE[31010]</label>
+					</control>
+					<control type="image">
+						<height>200</height>
+						<width>790</width>
+						<aspectratio align="center">keep</aspectratio>
+						<texture>qr.png</texture>
 					</control>
 				</control>
 			</control>

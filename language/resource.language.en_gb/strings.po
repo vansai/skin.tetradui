@@ -16,6 +16,14 @@ msgstr ""
 "Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "Addon Summary"
+msgid "TetradUI is a skin Addon for Kodi media center"
+msgstr ""
+
+msgctxt "Addon Description"
+msgid "TetradUI is a skin add-on for Kodi media center. TetradUI is based on JX720 by Jezz_X.[CR]This add-on was created by TeamUI."
+msgstr ""
+
 msgctxt "#31001"
 msgid "media"
 msgstr ""
@@ -36,33 +44,17 @@ msgctxt "#31005"
 msgid "Apps"
 msgstr ""
 
-msgctxt "#31006"
-msgid "Media"
-msgstr ""
-
-# empty strings from id 31007 to 31009
+# empty strings from id 31006 to 31009
 
 msgctxt "#31010"
-msgid "Media"
+msgid "If you like TetradUI and want to show your appreciation, please make a donation.[CR]Any donation is greatly appreciated!"
 msgstr ""
 
 msgctxt "#31011"
 msgid "Applications"
 msgstr ""
 
-msgctxt "#31012"
-msgid "System Settings"
-msgstr ""
-
-msgctxt "#31013"
-msgid "Weather Forecast"
-msgstr ""
-
-msgctxt "#31014"
-msgid "Video Bookmarks"
-msgstr ""
-
-# empty strings from id 31015 to 31019
+# empty strings from id 31012 to 31019
 
 msgctxt "#31020"
 msgid "Weather Conditions"
@@ -363,18 +355,16 @@ msgstr ""
 # empty strings from id 31461 to 31479
 
 msgctxt "#31480"
-msgid "[COLOR=orange][B]WARNING[/B] !![/COLOR][CR]Hiding all buttons will cause Navigation issues when switching between blades.  Having more than 6 buttons visible at once will also cause weird animation and scrolling effects"
+msgid "[COLOR=orange][B]WARNING[/B] !![/COLOR][CR]Hiding all buttons will cause Navigation issues when switching between blades."
 msgstr ""
 
-# empty strings from id 31481 to 31499
+# empty strings from id 31481 to 31498
 
-msgctxt "#31500"
-msgid "General"
+msgctxt "#31499"
+msgid "Not installed"
 msgstr ""
 
-msgctxt "#31501"
-msgid "Backgrounds"
-msgstr ""
+# empty strings from id 31500 to 31501
 
 msgctxt "#31502"
 msgid "Media Blade"
@@ -422,7 +412,15 @@ msgctxt "#31525"
 msgid "Select rating"
 msgstr ""
 
-# empty strings from id 31526 to 31539
+# empty strings from id 31526 to 31537
+
+msgctxt "#31538"
+msgid "About"
+msgstr ""
+
+msgctxt "#31539"
+msgid "Supported add-ons"
+msgstr ""
 
 msgctxt "#31540"
 msgid "Set Default Lyric fetching add-on for Music OSD"

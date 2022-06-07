@@ -55,7 +55,7 @@
 			<animation effect="fade" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>
 			<control type="label">
 				<description>Header label</description>
-				<label>31010</label>
+				<label>14211</label>
 				<include>HeaderTextCommons</include>
 			</control>
 			<include content="ClockTextCommons">

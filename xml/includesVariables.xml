@@ -183,4 +183,9 @@
 		<value condition="Skin.HasSetting(RatingTypeDefault)">$LOCALIZE[571]</value>
 		<value>$LOCALIZE[571]</value>
 	</variable>
+	<variable name="StatusCULRCLyricsVar">
+		<value condition="System.AddonIsEnabled(script.cu.lrclyrics)">$INFO[System.AddonVersion(script.cu.lrclyrics)] $LOCALIZE[39019]</value>
+		<value condition="System.HasAddon(script.cu.lrclyrics) + !System.AddonIsEnabled(script.cu.lrclyrics)">$LOCALIZE[24023]</value>
+		<value>$LOCALIZE[31499]</value>
+	</variable>
 </includes>
