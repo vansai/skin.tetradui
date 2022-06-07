@@ -133,8 +133,8 @@
 								</item>
 								<item>
 									<label>$LOCALIZE[563]:</label>
-									<label2>$INFO[ListItem.Rating]</label2>
-									<visible>!String.IsEmpty(ListItem.Rating)</visible>
+									<label2>$VAR[RatingType]</label2>
+									<visible>![String.IsEmpty(ListItem.Rating) + String.IsEmpty(ListItem.UserRating)]</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[175]:</label>
@@ -388,8 +388,8 @@
 								</item>
 								<item>
 									<label>$LOCALIZE[563]:</label>
-									<label2>$INFO[ListItem.Rating]</label2>
-									<visible>!String.IsEmpty(ListItem.Rating)</visible>
+									<label2>$VAR[RatingType]</label2>
+									<visible>![String.IsEmpty(ListItem.Rating) + String.IsEmpty(ListItem.UserRating)]</visible>
 								</item>
 							</content>
 						</control>
@@ -532,6 +532,17 @@
 					<onup>50</onup>
 					<textcolor>grey2</textcolor>
 					<showonepage>false</showonepage>
+				</control>
+				<control type="grouplist">
+					<description>Media Codec Flagging Images</description>
+					<visible>![Container.content(Albums) | container.content(Artists)]</visible>
+					<left>640r</left>
+					<top>20</top>
+					<width>620</width>
+					<itemgap>5</itemgap>
+					<align>right</align>
+					<orientation>horizontal</orientation>
+					<include>AudioTypeHackFlaggingConditions</include>
 				</control>
 				<control type="grouplist" id="9000">
 					<left>200</left>

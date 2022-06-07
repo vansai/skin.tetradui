@@ -88,6 +88,7 @@
 			<width>80</width>
 			<height>35</height>
 			<texture>$VAR[AudioCodecImage]</texture>
+			<visible>!String.IsEmpty(ListItem.Filename)</visible>
 		</control>
 		<control type="image">
 			<description>Audio Channels Image</description>
@@ -95,6 +96,7 @@
 			<height>35</height>
 			<aspectratio align="right">keep</aspectratio>
 			<texture>$INFO[ListItem.MusicChannels,flagging/audiochannel/,.png]</texture>
+			<visible>!String.IsEmpty(ListItem.MusicChannels)</visible>
 		</control>
 		<include content="CodecFlaggingImage">
 			<param name="visible" value="!String.IsEmpty(ListItem.Bitrate)" />
@@ -109,7 +111,7 @@
 			<param name="info" value="$INFO[ListItem.Year]" />
 		</include>
 		<include content="CodecFlaggingRating">
-			<param name="visible" value="!String.IsEmpty(ListItem.Rating)" />
+			<param name="visible" value="![String.IsEmpty(ListItem.Rating) + String.IsEmpty(ListItem.UserRating)]" />
 			<param name="info" value="$VAR[StarRating]" />
 		</include>
 	</include>

@@ -287,6 +287,21 @@
 		<texturefocus border="10">list-focus.png</texturefocus>
 		<texturenofocus />
 	</include>
+	<include name="SkinSettingsButtonCommonValues">
+		<height>45</height>
+		<width>790</width>
+		<font>font13</font>
+		<textcolor>white</textcolor>
+		<focusedcolor>black</focusedcolor>
+		<texturefocus border="10">list-focus.png</texturefocus>
+		<texturenofocus />
+		<textoffsetx>10</textoffsetx>
+		<pulseonselect>no</pulseonselect>
+	</include>
+	<include name="SkinSettingsRadioButtonCommonValues">
+		<radioposx>750</radioposx>
+		<include>SkinSettingsButtonCommonValues</include>
+	</include>
 	<include name="InfoDialogLabelTextCommons">
 		<left>0</left>
 		<width>140</width>

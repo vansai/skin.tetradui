@@ -418,7 +418,11 @@ msgctxt "#31524"
 msgid "Don't blend background with fanart,visualization,video"
 msgstr ""
 
-# empty strings from id 31525 to 31539
+msgctxt "#31525"
+msgid "Select rating"
+msgstr ""
+
+# empty strings from id 31526 to 31539
 
 msgctxt "#31540"
 msgid "Set Default Lyric fetching add-on for Music OSD"

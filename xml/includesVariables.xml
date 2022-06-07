@@ -94,7 +94,12 @@
 		<value condition="VideoPlayer.SubtitlesEnabled">[B]$INFO[VideoPlayer.SubtitlesLanguage][/B]</value>
 		<value>[B]$LOCALIZE[1223][/B]</value>
 	</variable>
+	<variable name="RatingType">
+		<value condition="Skin.HasSetting(RatingTypeUser) + ![ListItem.IsCollection + String.IsEmpty(ListItem.UserRating)]">$INFO[ListItem.UserRating]</value>
+		<value>$INFO[ListItem.Rating]</value>
+	</variable>
 	<variable name="StarRating">
+		<value condition="Skin.HasSetting(RatingTypeUser)">flagging/starrating/$INFO[ListItem.UserRating].png</value>
 		<value condition="Integer.IsLess(ListItem.Rating,1)">flagging/starrating/0.png</value>
 		<value condition="Integer.IsLess(ListItem.Rating,2)">flagging/starrating/1.png</value>
 		<value condition="Integer.IsLess(ListItem.Rating,3)">flagging/starrating/2.png</value>
@@ -108,6 +113,7 @@
 		<value>flagging/starrating/10.png</value>
 	</variable>
 	<variable name="PlayerStarRating">
+		<value condition="Player.HasVideo + Skin.HasSetting(RatingTypeUser)">flagging/starrating/$INFO[VideoPlayer.UserRating].png</value>
 		<value condition="Player.HasVideo + Integer.IsLess(VideoPlayer.Rating,1)">flagging/starrating/0.png</value>
 		<value condition="Player.HasVideo + Integer.IsLess(VideoPlayer.Rating,2)">flagging/starrating/1.png</value>
 		<value condition="Player.HasVideo + Integer.IsLess(VideoPlayer.Rating,3)">flagging/starrating/2.png</value>
@@ -119,6 +125,7 @@
 		<value condition="Player.HasVideo + Integer.IsLess(VideoPlayer.Rating,9)">flagging/starrating/8.png</value>
 		<value condition="Player.HasVideo + Integer.IsLess(VideoPlayer.Rating,10)">flagging/starrating/9.png</value>
 		<value condition="Player.HasVideo">flagging/starrating/10.png</value>
+		<value condition="Player.HasAudio + Skin.HasSetting(RatingTypeUser)">flagging/starrating/$INFO[MusicPlayer.UserRating].png</value>
 		<value condition="Player.HasAudio + Integer.IsLess(MusicPlayer.Rating,1)">flagging/starrating/0.png</value>
 		<value condition="Player.HasAudio + Integer.IsLess(MusicPlayer.Rating,2)">flagging/starrating/1.png</value>
 		<value condition="Player.HasAudio + Integer.IsLess(MusicPlayer.Rating,3)">flagging/starrating/2.png</value>
@@ -170,5 +177,10 @@
 		<value condition="Container(9000).HasFocus(2)">$INFO[Window(Home).Property(Movies.UnWatched),, $LOCALIZE[16101]]</value>
 		<value condition="Container(9000).HasFocus(3)">$INFO[Window(Home).Property(TVShows.UnWatched),, $LOCALIZE[16101]]</value>
 		<value condition="Container(9000).HasFocus(6)">$INFO[Window(Home).Property(Music.SongsCount),, $LOCALIZE[134]]</value>
+	</variable>
+	<variable name="RatingTypeLabel">
+		<value condition="Skin.HasSetting(RatingTypeUser)">$LOCALIZE[38018]</value>
+		<value condition="Skin.HasSetting(RatingTypeDefault)">$LOCALIZE[571]</value>
+		<value>$LOCALIZE[571]</value>
 	</variable>
 </includes>

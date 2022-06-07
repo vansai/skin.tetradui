@@ -152,8 +152,8 @@
 								</item>
 								<item>
 									<label>$LOCALIZE[563]:</label>
-									<label2>$INFO[ListItem.Rating]</label2>
-									<visible>!String.IsEmpty(ListItem.Rating)</visible>
+									<label2>$VAR[RatingType]</label2>
+									<visible>![String.IsEmpty(ListItem.Rating) + String.IsEmpty(ListItem.UserRating)]</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[202]:</label>
@@ -267,8 +267,8 @@
 								</item>
 								<item>
 									<label>$LOCALIZE[563]:</label>
-									<label2>$INFO[ListItem.Rating]</label2>
-									<visible>!String.IsEmpty(ListItem.Rating)</visible>
+									<label2>$VAR[RatingType]</label2>
+									<visible>![String.IsEmpty(ListItem.Rating) + String.IsEmpty(ListItem.UserRating)]</visible>
 								</item>
 							</content>
 						</control>
@@ -393,8 +393,8 @@
 								</item>
 								<item>
 									<label>$LOCALIZE[563]:</label>
-									<label2>$INFO[ListItem.Rating]</label2>
-									<visible>!String.IsEmpty(ListItem.Rating)</visible>
+									<label2>$VAR[RatingType]</label2>
+									<visible>![String.IsEmpty(ListItem.Rating) + String.IsEmpty(ListItem.UserRating)]</visible>
 								</item>
 							</content>
 						</control>
