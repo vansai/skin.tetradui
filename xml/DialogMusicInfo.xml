@@ -535,7 +535,7 @@
 				</control>
 				<control type="grouplist">
 					<description>Media Codec Flagging Images</description>
-					<visible>![Container.content(Albums) | container.content(Artists)]</visible>
+					<visible>![Container.Content(Albums) | Container.Content(Artists)]</visible>
 					<left>640r</left>
 					<top>20</top>
 					<width>620</width>
