@@ -5,6 +5,7 @@
 	<views>50,52,53,54,55</views>
 	<controls>
 		<include>CommonMediaBackgrounds</include>
+		<include>MovieSetContainer</include>
 		<control type="group">
 			<left>130</left>
 			<animation effect="fade" delay="500" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>

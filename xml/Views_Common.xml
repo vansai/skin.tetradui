@@ -394,10 +394,10 @@
 				<width>1060</width>
 				<height>20</height>
 				<font>font16</font>
-				<textcolor>grey</textcolor>
+				<textcolor>orange</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label]</label>
+				<label>$VAR[MovieSetLabel]</label>
 			</control>
 			<control type="textbox" id="400">
 				<description>textarea</description>
@@ -405,9 +405,10 @@
 				<width>1060</width>
 				<height>90</height>
 				<font>font12</font>
-				<label>$INFO[ListItem.Plot]</label>
-				<textcolor>grey</textcolor>
+				<label>$VAR[MoviePlot]</label>
+				<textcolor>white</textcolor>
 				<align>justify</align>
+				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 			</control>
 		</control>
 		<control type="fixedlist" id="54">
@@ -762,7 +763,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Title][COLOR=grey]$INFO[ListItem.Year, (,)][/COLOR]</label>
+				<label>$VAR[MovieSetLabel]</label>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 			</control>
@@ -772,10 +773,11 @@
 				<width>420</width>
 				<height>410</height>
 				<font>font12</font>
-				<label>$INFO[ListItem.Plot]</label>
+				<label>$VAR[MoviePlot]</label>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<align>justify</align>
+				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 			</control>
 		</control>
 		<control type="group">
