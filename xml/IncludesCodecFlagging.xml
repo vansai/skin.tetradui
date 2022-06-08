@@ -107,7 +107,7 @@
 			<param name="visible" value="!String.IsEmpty(ListItem.Bitrate)" />
 			<param name="info" value="$INFO[ListItem.Bitrate,, kbps]" />
 		</include>
-		<include content="CodecFlaggingImage">
+		<include content="CodecFlaggingSmallImage">
 			<param name="visible" value="!String.IsEmpty(ListItem.SampleRate)" />
 			<param name="info" value="$INFO[ListItem.SampleRate,, kHz]" />
 		</include>
@@ -205,12 +205,11 @@
 			</control>
 			<control type="label">
 				<left>10</left>
-				<top>-1</top>
 				<width>80</width>
 				<height>35</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font6</font>
+				<font>codecflagging</font>
 				<textcolor>white</textcolor>
 				<label>$INFO[ListItem.Date]</label>
 			</control>
@@ -226,12 +225,11 @@
 			</control>
 			<control type="label">
 				<left>10</left>
-				<top>-1</top>
 				<width>80</width>
 				<height>35</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font6</font>
+				<font>codecflagging</font>
 				<textcolor>white</textcolor>
 				<label>$INFO[ListItem.PictureResolution]</label>
 			</control>

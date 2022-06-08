@@ -342,8 +342,6 @@
 			<visible>Player.HasMedia</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="button" id="600">
-				<left>0</left>
-				<top>0</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>mediacontrol-skipback-focus.png</texturefocus>
@@ -357,7 +355,6 @@
 			</control>
 			<control type="button" id="601">
 				<left>34</left>
-				<top>0</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>mediacontrol-rewind-focus.png</texturefocus>
@@ -371,7 +368,6 @@
 			</control>
 			<control type="button" id="602">
 				<left>68</left>
-				<top>0</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>mediacontrol-stop-focus.png</texturefocus>
@@ -383,13 +379,15 @@
 				<onup>610</onup>
 				<ondown>606</ondown>
 			</control>
-			<control type="button" id="603">
+			<control type="togglebutton" id="603">
 				<left>102</left>
-				<top>0</top>
 				<width>20</width>
 				<height>20</height>
-				<texturefocus>mediacontrol-play-focus.png</texturefocus>
-				<texturenofocus>mediacontrol-play.png</texturenofocus>
+				<texturefocus>mediacontrol-pause-focus.png</texturefocus>
+				<texturenofocus>mediacontrol-pause.png</texturenofocus>
+				<alttexturefocus>mediacontrol-play-focus.png</alttexturefocus>
+				<alttexturenofocus>mediacontrol-play.png</alttexturenofocus>
+				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
 				<onclick>PlayerControl(Play)</onclick>
 				<label />
 				<onleft>602</onleft>
@@ -399,12 +397,11 @@
 			</control>
 			<control type="button" id="604">
 				<left>136</left>
-				<top>0</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>mediacontrol-fastforward-focus.png</texturefocus>
 				<texturenofocus>mediacontrol-fastforward.png</texturenofocus>
-				<onclick>PlayerControl(FastForward)</onclick>
+				<onclick>PlayerControl(Forward)</onclick>
 				<label />
 				<onleft>603</onleft>
 				<onright>605</onright>
@@ -413,7 +410,6 @@
 			</control>
 			<control type="button" id="605">
 				<left>170</left>
-				<top>0</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>mediacontrol-skipforward-focus.png</texturefocus>
@@ -1058,12 +1054,33 @@
 			</control>
 			<control type="label">
 				<left>10</left>
-				<top>-1</top>
 				<width>60</width>
 				<height>35</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font6</font>
+				<font>codecflagging</font>
+				<textcolor>white</textcolor>
+				<label>$PARAM[info]</label>
+			</control>
+		</control>
+	</include>
+	<include name="CodecFlaggingSmallImage">
+		<control type="group">
+			<visible>$PARAM[visible]</visible>
+			<animation effect="fade" end="80" condition="true">Conditional</animation>
+			<width>80</width>
+			<control type="image">
+				<width>80</width>
+				<height>35</height>
+				<texture>flagging/blank.png</texture>
+			</control>
+			<control type="label">
+				<left>10</left>
+				<width>60</width>
+				<height>35</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>codecflagging_small</font>
 				<textcolor>white</textcolor>
 				<label>$PARAM[info]</label>
 			</control>
@@ -1219,12 +1236,12 @@
 					<param name="info" value="$INFO[MusicPlayer.Bitrate,, kbps]" />
 				</include>
 				<include content="CodecFlaggingImage">
-					<param name="visible" value="!String.IsEmpty(MusicPlayer.SampleRate)" />
-					<param name="info" value="$INFO[MusicPlayer.SampleRate,, kHz]" />
-				</include>
-				<include content="CodecFlaggingImage">
 					<param name="visible" value="!String.IsEmpty(MusicPlayer.BitsPerSample)" />
 					<param name="info" value="$INFO[MusicPlayer.BitsPerSample,, bit]" />
+				</include>
+				<include content="CodecFlaggingSmallImage">
+					<param name="visible" value="!String.IsEmpty(MusicPlayer.SampleRate)" />
+					<param name="info" value="$INFO[MusicPlayer.SampleRate,, kHz]" />
 				</include>
 				<include content="CodecFlaggingRating">
 					<param name="visible" value="!String.IsEmpty(MusicPlayer.Rating)" />
