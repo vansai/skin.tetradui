@@ -91,6 +91,17 @@
 							<visible>System.CanPowerDown</visible>
 						</item>
 						<item>
+							<label>$LOCALIZE[20150]</label>
+							<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
+							<visible>!System.HasAlarm(shutdowntimer)</visible>
+							<visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[20151] $INFO[System.AlarmPos,(,)]</label>
+							<onclick>CancelAlarm(shutdowntimer)</onclick>
+							<visible>System.HasAlarm(shutdowntimer)</visible>
+						</item>
+						<item>
 							<label>13011</label>
 							<onclick>Suspend()</onclick>
 							<visible>System.CanSuspend</visible>
