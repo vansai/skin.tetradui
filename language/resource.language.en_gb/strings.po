@@ -236,7 +236,11 @@ msgctxt "#31251"
 msgid "Thumb Info"
 msgstr ""
 
-# empty strings from id 31252 to 31300
+# empty strings from id 31252 to 31299
+
+msgctxt "#31300"
+msgid "Please setup a music source!"
+msgstr ""
 
 msgctxt "#31301"
 msgid "Please setup[CR]movie and tv show sources!"

@@ -180,9 +180,10 @@
 						</item>
 						<item id="6">
 							<label>2</label>
-							<onclick>ActivateWindow(Music)</onclick>
+							<onclick condition="!Library.HasContent(Music)">ActivateWindow(Music,sources://music/,return)</onclick>
+							<onclick condition="Library.HasContent(Music)">ActivateWindow(Music,return)</onclick>
 							<icon>button_icons/icon-music.png</icon>
-							<visible>Library.HasContent(Music) + !Skin.HasSetting(MediaBlade_HideMusic)</visible>
+							<visible>!Skin.HasSetting(MediaBlade_HideMusic)</visible>
 						</item>
 						<item id="7">
 							<label>1</label>

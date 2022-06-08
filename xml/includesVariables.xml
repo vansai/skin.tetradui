@@ -170,13 +170,14 @@
 		<value condition="Container(9000).HasFocus(1)">$LOCALIZE[31301]</value>
 		<value condition="Container(9000).HasFocus(2)">$INFO[Window(Home).Property(Movies.Count),, $LOCALIZE[20342]]</value>
 		<value condition="Container(9000).HasFocus(3)">$INFO[Window(Home).Property(TVShows.Count),, $LOCALIZE[20343]]</value>
-		<value condition="Container(9000).HasFocus(6)">$INFO[Window(Home).Property(Music.AlbumsCount),, $LOCALIZE[132]]</value>
+		<value condition="Container(9000).HasFocus(6) + Library.HasContent(Music)">$INFO[Window(Home).Property(Music.AlbumsCount),, $LOCALIZE[132]]</value>
+		<value condition="Container(9000).HasFocus(6)">$LOCALIZE[31300]</value>
 	</variable>
 	<variable name="MediaInfoLabel2">
 		<value condition="Container(9000).HasFocus(1) + [Library.HasContent(Movies) | Library.HasContent(TVShows)]">$INFO[Window(Home).Property(TVShows.Count),, $LOCALIZE[20343]]</value>
 		<value condition="Container(9000).HasFocus(2)">$INFO[Window(Home).Property(Movies.UnWatched),, $LOCALIZE[16101]]</value>
 		<value condition="Container(9000).HasFocus(3)">$INFO[Window(Home).Property(TVShows.UnWatched),, $LOCALIZE[16101]]</value>
-		<value condition="Container(9000).HasFocus(6)">$INFO[Window(Home).Property(Music.SongsCount),, $LOCALIZE[134]]</value>
+		<value condition="Container(9000).HasFocus(6) + Library.HasContent(Music)">$INFO[Window(Home).Property(Music.SongsCount),, $LOCALIZE[134]]</value>
 	</variable>
 	<variable name="RatingTypeLabel">
 		<value condition="Skin.HasSetting(RatingTypeUser)">$LOCALIZE[38018]</value>
