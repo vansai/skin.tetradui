@@ -62,12 +62,7 @@
 				<param name="left" value="540" />
 			</include>
 			<control type="group">
-				<left>20</left>
-				<top>75</top>
-				<include>MediaInfoCard</include>
-			</control>
-			<control type="group">
-				<top>225</top>
+				<top>130</top>
 				<control type="list" id="9000">
 					<width>450</width>
 					<height>314</height>
@@ -81,6 +76,7 @@
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>200</scrolltime>
+					<animation effect="slide" end="0,-30" condition="Integer.IsGreater(Container(9000).NumItems,5)">Conditional</animation>
 					<itemlayout height="52" width="450">
 						<control type="image">
 							<description>Icon</description>
@@ -169,13 +165,13 @@
 						<item id="4">
 							<label>$INFO[Skin.String(MediaBlade_NameSmartPlaylist1)]</label>
 							<onclick>ActivateWindow(Videos,$INFO[Skin.String(MediaBlade_LinkSmartPlaylist1)],return)</onclick>
-							<icon>button_icons/icon-playlistvideo.png</icon>
+							<icon>button_icons/icon-videos.png</icon>
 							<visible>Skin.HasSetting(MediaBlade_ShowSmartPlaylist1)</visible>
 						</item>
 						<item id="5">
 							<label>$INFO[Skin.String(MediaBlade_NameSmartPlaylist2)]</label>
 							<onclick>ActivateWindow(Videos,$INFO[Skin.String(MediaBlade_LinkSmartPlaylist2)],return)</onclick>
-							<icon>button_icons/icon-playlistvideo.png</icon>
+							<icon>button_icons/icon-videos.png</icon>
 							<visible>Skin.HasSetting(MediaBlade_ShowSmartPlaylist2)</visible>
 						</item>
 						<item id="6">
@@ -193,9 +189,10 @@
 						</item>
 					</content>
 				</control>
+				<include>MediaInfoCard</include>
 				<include content="HomeWidget">
 					<param name="visible" value="Library.HasContent(Movies) + Container(9000).HasFocus(2)" />
-					<param name="left" value="460" />
+					<param name="left" value="40" />
 					<param name="label" value="20382" />
 					<param name="id" value="501" />
 					<param name="onleft" value="9000" />
@@ -205,13 +202,33 @@
 				</include>
 				<include content="HomeWidget">
 					<param name="visible" value="Library.HasContent(Movies) + Container(9000).HasFocus(2)" />
-					<param name="left" value="685" />
+					<param name="left" value="255" />
 					<param name="label" value="31542" />
 					<param name="id" value="502" />
 					<param name="onleft" value="501" />
 					<param name="onright" value="2" />
 					<param name="content" value="videodb://movies/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22inprogress%22%2c%22operator%22%3a%22true%22%2c%22value%22%3a%5b%5d%7d%5d%7d%2c%22type%22%3a%22movies%22%7d" />
 					<param name="sortby" value="lastplayed" />
+				</include>
+				<include content="HomeWidget">
+					<param name="visible" value="Library.HasContent(Movies) + Container(9000).HasFocus(2)" />
+					<param name="left" value="470" />
+					<param name="label" value="$VAR[MovieWidget3Label]" />
+					<param name="id" value="503" />
+					<param name="onleft" value="502" />
+					<param name="onright" value="2" />
+					<param name="content" value="$VAR[MovieWidget3Content]" />
+					<param name="sortby" value="$VAR[MovieWidgetSortby]" />
+				</include>
+				<include content="HomeWidget">
+					<param name="visible" value="Library.HasContent(Movies) + Container(9000).HasFocus(2)" />
+					<param name="left" value="685" />
+					<param name="label" value="$VAR[MovieWidget4Label]" />
+					<param name="id" value="504" />
+					<param name="onleft" value="503" />
+					<param name="onright" value="2" />
+					<param name="content" value="$VAR[MovieWidget4Content]" />
+					<param name="sortby" value="$VAR[MovieWidgetSortby]" />
 				</include>
 			</control>
 			<include condition="System.GetBool(LookAndFeel.EnableRSSFeeds)">CommonRSSFeed</include>

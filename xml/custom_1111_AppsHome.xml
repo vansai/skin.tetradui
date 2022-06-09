@@ -64,12 +64,7 @@
 				<param name="left" value="540" />
 			</include>
 			<control type="group">
-				<left>20</left>
-				<top>75</top>
-				<include>SystemCard</include>
-			</control>
-			<control type="group">
-				<top>225</top>
+				<top>130</top>
 				<control type="list" id="9000">
 					<left>0</left>
 					<top>0</top>
@@ -177,6 +172,7 @@
 						</item>
 					</content>
 				</control>
+				<include>SystemCard</include>
 			</control>
 			<include condition="System.GetBool(LookAndFeel.EnableRSSFeeds)">CommonRSSFeed</include>
 			<!--<include>TetradUILogo</include>-->

@@ -235,6 +235,7 @@
 						<onclick>Skin.ToggleSetting(MediaBlade_HidePictures)</onclick>
 						<selected>Skin.HasSetting(MediaBlade_HidePictures)</selected>
 					</control>
+					<!--
 					<control type="label" id="307">
 						<description>Heading label</description>
 						<width>790</width>
@@ -281,6 +282,7 @@
 						<label2>$INFO[Skin.String(MediaBlade_LinkSmartPlaylist2)]</label2>
 						<onclick>Skin.SetFile(MediaBlade_LinkSmartPlaylist2,,special://videoplaylists/)</onclick>
 					</control>
+					-->
 				</control>
 
 				<control type="grouplist" id="400">
@@ -637,6 +639,14 @@
 					<onleft>3</onleft>
 					<onright>90</onright>
 					<control type="button" id="601">
+						<include>SkinSettingsButtonCommonValues</include>
+						<label>TheMovieDb Helper</label>
+						<label2>$VAR[StatusTheMovieDbHelperVar]</label2>
+						<onclick condition="System.AddonIsEnabled(plugin.video.themoviedb.helper)">Addon.OpenSettings(plugin.video.themoviedb.helper)</onclick>
+						<onclick condition="!System.HasAddon(plugin.video.themoviedb.helper)">InstallAddon(plugin.video.themoviedb.helper)</onclick>
+						<onclick condition="System.HasAddon(plugin.video.themoviedb.helper) + !System.AddonIsEnabled(plugin.video.themoviedb.helper)">EnableAddon(plugin.video.themoviedb.helper)</onclick>
+					</control>
+					<control type="button" id="602">
 						<include>SkinSettingsButtonCommonValues</include>
 						<label>CU LRC Lyrics</label>
 						<label2>$VAR[StatusCULRCLyricsVar]</label2>

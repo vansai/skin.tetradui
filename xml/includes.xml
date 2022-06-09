@@ -438,183 +438,172 @@
 	</include>
 
 	<include name="MediaInfoCard">
-		<control type="image">
-			<description>GamerCard Background</description>
-			<width>430</width>
-			<height>160</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>gamecard_home-silver.png</texture>
-		</control>
-		<control type="image">
-			<description>Button shine animation</description>
-			<top>12</top>
-			<width>60</width>
-			<height>32</height>
-			<texture>shine-animation.png</texture>
-			<animation type="conditional" reversible="false" condition="true" loop="true">
-				<effect type="fade" delay="5000" start="0" end="100" time="700"/>
-				<effect type="fade" delay="5900" start="100" end="0" time="700"/>
-				<effect type="slide" delay="5000" start="0,0" end="350,0" time="1500"/>
-			</animation>
-		</control>
-		<control type="label">
-			<description>Information Label</description>
-			<left>30</left>
-			<top>13</top>
-			<width>370</width>
-			<height>30</height>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>font13</font>
-			<textcolor>grey</textcolor>
-			<label>$LOCALIZE[14116]</label>
-		</control>
-		<control type="image">
-			<description>Icon</description>
-			<left>30</left>
-			<top>50</top>
-			<width>80</width>
-			<height>80</height>
-			<aspectratio>keep</aspectratio>
-			<texture>$INFO[Container(9000).ListItem.Icon]</texture>
-			<fadetime>200</fadetime>
-		</control>
-		<control type="label">
-			<description>Label 1</description>
-			<left>125</left>
-			<top>58</top>
-			<width>290</width>
-			<label>$VAR[MediaInfoLabel1]</label>
-			<font>font12</font>
-			<textcolor>white2</textcolor>
-			<shadowcolor>black</shadowcolor>
-		</control>
-		<control type="label">
-			<description>Label 2</description>
-			<left>125</left>
-			<top>94</top>
-			<width>290</width>
-			<label>$VAR[MediaInfoLabel2]</label>
-			<font>font12</font>
-			<textcolor>white2</textcolor>
-			<shadowcolor>black</shadowcolor>
+		<control type="group">
+			<top>-12</top>
+			<left>490</left>
+			<animation effect="slide" end="0,-30" condition="Integer.IsGreater(Container(9000).NumItems,5)">Conditional</animation>
+			<include>VisibleFadeEffect</include>
+			<visible>![Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | Container(9000).HasFocus(7)]</visible>
+			<control type="image">
+				<description>GamerCard Background</description>
+				<width>430</width>
+				<height>160</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>gamecard_home-silver.png</texture>
+			</control>
+			<control type="image">
+				<description>Button shine animation</description>
+				<top>12</top>
+				<width>60</width>
+				<height>32</height>
+				<texture>shine-animation.png</texture>
+				<animation type="conditional" reversible="false" condition="true" loop="true">
+					<effect type="fade" delay="5000" start="0" end="100" time="700"/>
+					<effect type="fade" delay="5900" start="100" end="0" time="700"/>
+					<effect type="slide" delay="5000" start="0,0" end="350,0" time="1500"/>
+				</animation>
+			</control>
+			<control type="label">
+				<description>Information Label</description>
+				<left>30</left>
+				<top>13</top>
+				<width>370</width>
+				<height>30</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13</font>
+				<textcolor>grey</textcolor>
+				<label>$LOCALIZE[14116]</label>
+			</control>
+			<control type="image">
+				<description>Icon</description>
+				<left>30</left>
+				<top>50</top>
+				<width>80</width>
+				<height>80</height>
+				<aspectratio>keep</aspectratio>
+				<texture>$INFO[Container(9000).ListItem.Icon]</texture>
+				<fadetime>200</fadetime>
+			</control>
+			<control type="label">
+				<description>Label 1</description>
+				<left>125</left>
+				<top>58</top>
+				<width>290</width>
+				<label>$VAR[MediaInfoLabel1]</label>
+				<font>font12</font>
+				<textcolor>white2</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Label 2</description>
+				<left>125</left>
+				<top>94</top>
+				<width>290</width>
+				<label>$VAR[MediaInfoLabel2]</label>
+				<font>font12</font>
+				<textcolor>white2</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
 		</control>
 	</include>
 	<include name="SystemCard">
-		<control type="image">
-			<description>GamerCard Background</description>
-			<width>430</width>
-			<height>160</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>gamecard_home-silver.png</texture>
-		</control>
-		<control type="image">
-			<description>Button shine animation</description>
-			<top>12</top>
-			<width>60</width>
-			<height>32</height>
-			<texture>shine-animation.png</texture>
-			<animation type="conditional" reversible="false" condition="true" loop="true">
-				<effect type="fade" delay="5000" start="0" end="100" time="700"/>
-				<effect type="fade" delay="5900" start="100" end="0" time="700"/>
-				<effect type="slide" delay="5000" start="0,0" end="350,0" time="1500"/>
-			</animation>
-		</control>
-		<control type="label">
-			<description>System Info label</description>
-			<left>30</left>
-			<top>13</top>
-			<width>370</width>
-			<height>30</height>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>font13</font>
-			<textcolor>grey</textcolor>
-			<label>130</label>
-		</control>
-		<control type="image">
-			<description>Icon</description>
-			<left>30</left>
-			<top>50</top>
-			<width>80</width>
-			<height>80</height>
-			<aspectratio>keep</aspectratio>
-			<texture>Icon-SystemInfo.png</texture>
-		</control>
-		<control type="label">
-			<description>IP Address Label</description>
-			<left>120</left>
-			<top>50</top>
-			<height>30</height>
-			<width>290</width>
-			<label>$LOCALIZE[31308] $INFO[Network.IPAddress]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>font12</font>
-			<textcolor>white2</textcolor>
-			<shadowcolor>black</shadowcolor>
-		</control>
-		<control type="label">
-			<description>CPU Label</description>
-			<left>120</left>
-			<top>75</top>
-			<height>30</height>
-			<width>290</width>
-			<label>$LOCALIZE[158]: $INFO[System.FreeMemory]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>font12</font>
-			<textcolor>white2</textcolor>
-			<shadowcolor>black</shadowcolor>
-		</control>
-		<control type="label">
-			<description>CPU Label</description>
-			<left>120</left>
-			<top>100</top>
-			<height>30</height>
-			<width>290</width>
-			<label>Kodi: $INFO[System.BuildVersion]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>font10</font>
-			<textcolor>grey2</textcolor>
-			<shadowcolor>black</shadowcolor>
+		<control type="group">
+			<top>-12</top>
+			<left>490</left>
+			<control type="image">
+				<description>GamerCard Background</description>
+				<width>430</width>
+				<height>160</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>gamecard_home-silver.png</texture>
+			</control>
+			<control type="image">
+				<description>Button shine animation</description>
+				<top>12</top>
+				<width>60</width>
+				<height>32</height>
+				<texture>shine-animation.png</texture>
+				<animation type="conditional" reversible="false" condition="true" loop="true">
+					<effect type="fade" delay="5000" start="0" end="100" time="700"/>
+					<effect type="fade" delay="5900" start="100" end="0" time="700"/>
+					<effect type="slide" delay="5000" start="0,0" end="350,0" time="1500"/>
+				</animation>
+			</control>
+			<control type="label">
+				<description>System Info label</description>
+				<left>30</left>
+				<top>13</top>
+				<width>370</width>
+				<height>30</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13</font>
+				<textcolor>grey</textcolor>
+				<label>130</label>
+			</control>
+			<control type="image">
+				<description>Icon</description>
+				<left>30</left>
+				<top>50</top>
+				<width>80</width>
+				<height>80</height>
+				<aspectratio>keep</aspectratio>
+				<texture>Icon-SystemInfo.png</texture>
+			</control>
+			<control type="label">
+				<description>IP Address Label</description>
+				<left>120</left>
+				<top>50</top>
+				<height>30</height>
+				<width>290</width>
+				<label>$LOCALIZE[31308] $INFO[Network.IPAddress]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>white2</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>CPU Label</description>
+				<left>120</left>
+				<top>75</top>
+				<height>30</height>
+				<width>290</width>
+				<label>$LOCALIZE[158]: $INFO[System.FreeMemory]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>white2</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>CPU Label</description>
+				<left>120</left>
+				<top>100</top>
+				<height>30</height>
+				<width>290</width>
+				<label>Kodi: $INFO[System.BuildVersion]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font10</font>
+				<textcolor>grey2</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
 		</control>
 	</include>
 
 	<include name="CommonRSSFeed">
-		<control type="image">
-			<left>25</left>
-			<top>540</top>
-			<width>870</width>
-			<height>100</height>
-			<texture>rss_bar.png</texture>
-		</control>
-		<control type="button" id="15">
-			<description>Power button</description>
-			<left>24</left>
-			<top>562</top>
-			<width>56</width>
-			<height>56</height>
-			<label />
-			<texturenofocus>power_nofocus.png</texturenofocus>
-			<texturefocus>power_focus.png</texturefocus>
-			<onclick>ActivateWindow(ShutdownMenu)</onclick>
-			<onup>Control.SetFocus(9000,5)</onup>
-			<ondown>Control.SetFocus(9000,0)</ondown>
-			<onleft>1</onleft>
-			<onright>2</onright>
-		</control>
 		<control type="rss">
 			<description>rss feed</description>
-			<left>80</left>
-			<top>575</top>
-			<width>807</width>
-			<font>font13</font>
+			<left>-50</left>
+			<top>690</top>
+			<width>1020</width>
+			<font>font12</font>
 			<urlset>1</urlset>
 			<textcolor>grey</textcolor>
-			<titlecolor>grey</titlecolor>
-			<headlinecolor>white</headlinecolor>
+			<titlecolor>orange</titlecolor>
+			<headlinecolor>grey2</headlinecolor>
 			<shadowcolor>black</shadowcolor>
 		</control>
 	</include>
@@ -623,6 +612,7 @@
 		<control type="group">
 			<visible>$PARAM[visible]</visible>
 			<animation effect="fade" time="HomeVisibleFadeAnimationSpeed">VisibleChange</animation>
+			<top>290</top>
 			<left>$PARAM[left]</left>
 			<control type="label">
 				<description>Header</description>
@@ -637,10 +627,10 @@
 			</control>
 			<control type="image">
 				<left>5</left>
-				<top>41</top>
+				<top>33</top>
 				<width>202</width>
-				<height>254</height>
-				<aspectratio>scale</aspectratio>
+				<height>164</height>
+				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[Container($PARAM[id]).ListItem.Art(poster)]</texture>
 				<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
 				<bordersize>18,2,18,2</bordersize>
@@ -649,10 +639,10 @@
 			</control>
 			<control type="image">
 				<left>5</left>
-				<top>41</top>
+				<top>33</top>
 				<width>202</width>
-				<height>254</height>
-				<aspectratio>scale</aspectratio>
+				<height>164</height>
+				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[Container($PARAM[id]).ListItem.Art(poster)]</texture>
 				<bordertexture border="19,3,19,3">thumb-border-focus.png</bordertexture>
 				<bordersize>18,2,18,2</bordersize>
@@ -661,25 +651,21 @@
 			</control>
 			<control type="label">
 				<left>15</left>
-				<top>296</top>
+				<top>198</top>
 				<width>182</width>
-				<height>25</height>
 				<font>font10</font>
 				<textcolor>white</textcolor>
 				<align>center</align>
-				<aligny>center</aligny>
 				<label>$INFO[Container($PARAM[id]).ListItem.Label]</label>
 				<visible>!Control.HasFocus($PARAM[id])</visible>
 			</control>
 			<control type="label">
 				<left>15</left>
-				<top>296</top>
+				<top>198</top>
 				<width>182</width>
-				<height>25</height>
 				<font>font10</font>
 				<textcolor>orange</textcolor>
 				<align>center</align>
-				<aligny>center</aligny>
 				<label>$INFO[Container($PARAM[id]).ListItem.Label]</label>
 				<visible>Control.HasFocus($PARAM[id])</visible>
 			</control>
@@ -687,10 +673,7 @@
 				<left>2000</left>
 				<onleft>$PARAM[onleft]</onleft>
 				<onright>$PARAM[onright]</onright>
-				<onup condition="System.GetBool(LookAndFeel.EnableRSSFeeds)">15</onup>
-				<onup condition="!System.GetBool(LookAndFeel.EnableRSSFeeds)">$PARAM[id]</onup>
-				<ondown condition="System.GetBool(LookAndFeel.EnableRSSFeeds)">15</ondown>
-				<ondown condition="!System.GetBool(LookAndFeel.EnableRSSFeeds)">$PARAM[id]</ondown>
+				<onup>9000</onup>
 				<scrolltime>300</scrolltime>
 				<autoscroll time="5000" delay="5000" repeat="10000">true</autoscroll>
 				<visible>Integer.IsGreater(Container($PARAM[id]).NumItems,0) | Container($PARAM[id]).IsUpdating</visible>
@@ -774,8 +757,7 @@
 		<animation effect="fade" time="200">WindowClose</animation>
 	</include>
 	<include name="VisibleFadeEffect">
-		<animation effect="fade" time="200">Visible</animation>
-		<animation effect="fade" time="200">Hidden</animation>
+		<animation effect="fade" time="200">VisibleChange</animation>
 	</include>
 	<include name="Common_Now_Playing">
 		<control type="group">

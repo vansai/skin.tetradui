@@ -742,6 +742,7 @@
 					</control>
 				</control>
 			</control>
+			<include condition="System.GetBool(LookAndFeel.EnableRSSFeeds)">CommonRSSFeed</include>
 			<!--<include>TetradUILogo</include>-->
 		</control>
 

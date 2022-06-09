@@ -436,7 +436,23 @@ msgctxt "#31542"
 msgid "In progress"
 msgstr ""
 
-# empty strings from id 31543 to 31549
+msgctxt "#31543"
+msgid "In cinemas"
+msgstr ""
+
+msgctxt "#31544"
+msgid "Upcoming movies"
+msgstr ""
+
+msgctxt "#31545"
+msgid "Unwatched movies"
+msgstr ""
+
+msgctxt "#31546"
+msgid "Random movies"
+msgstr ""
+
+# empty strings from id 31547 to 31549
 
 msgctxt "#31550"
 msgid "Window default buttons"
