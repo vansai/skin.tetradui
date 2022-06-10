@@ -25,10 +25,10 @@
 				<width>250</width>
 				<height>250</height>
 				<font>font10</font>
-				<label>$LOCALIZE[31480]</label>
+				<label>$VAR[SkinSettingsHelpText]</label>
 				<align>right</align>
-				<visible>Control.IsVisible(300)</visible>
 				<include>VisibleFadeEffect</include>
+				<visible>Control.IsVisible(300) | Control.IsVisible(600)</visible>
 			</control>
 			<control type="grouplist" id="3">
 				<description>button area</description>
