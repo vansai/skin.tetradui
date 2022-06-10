@@ -142,6 +142,23 @@
 		<onright>50</onright>
 		<onup>2</onup>
 	</include>
+	<include name="WeatherLabelCommonValues">
+		<width>140</width>
+		<height>30</height>
+		<font>font13</font>
+		<align>right</align>
+		<aligny>center</aligny>
+		<textcolor>grey2</textcolor>
+		<shadowcolor>black</shadowcolor>
+	</include>
+	<include name="WeatherLabelValueCommonValues">
+		<width>420</width>
+		<height>30</height>
+		<font>font13</font>
+		<aligny>center</aligny>
+		<textcolor>white</textcolor>
+		<shadowcolor>black</shadowcolor>
+	</include>
 	<include name="WeatherButtonCommonValues">
 		<width>43</width>
 		<height>43</height>
@@ -162,6 +179,181 @@
 		<width>350</width>
 		<height>505</height>
 		<aspectratio>stretch</aspectratio>
+	</include>
+	<include name="WeatherForecastContent">
+		<control type="label">
+			<description>Day label</description>
+			<width>420</width>
+			<height>35</height>
+			<font>font16</font>
+			<info>Window(Weather).Property($PARAM[day].Title)</info>
+			<aligny>center</aligny>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="image">
+			<description>day icon</description>
+			<left>440</left>
+			<height>110</height>
+			<width>110</width>
+			<info>Window(Weather).Property($PARAM[day].OutlookIcon)</info>
+			<aspectratio align="right">keep</aspectratio>
+		</control>
+		<control type="label">
+			<description>high label</description>
+			<left>40</left>
+			<top>40</top>
+			<height>20</height>
+			<font>font16</font>
+			<aligny>center</aligny>
+			<label>$LOCALIZE[393]:</label>
+			<textcolor>grey2</textcolor>
+			<visible>Weather.IsFetched</visible>
+			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="label">
+			<description>high value</description>
+			<left>110</left>
+			<top>40</top>
+			<height>20</height>
+			<label>$INFO[Window(Weather).Property($PARAM[day].HighTemp)]$INFO[System.TemperatureUnits]</label>
+			<font>font16</font>
+			<aligny>center</aligny>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="label">
+			<description>low label</description>
+			<left>220</left>
+			<top>40</top>
+			<height>20</height>
+			<font>font16</font>
+			<aligny>center</aligny>
+			<label>$LOCALIZE[391]:</label>
+			<textcolor>grey2</textcolor>
+			<visible>Weather.IsFetched</visible>
+			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="label">
+			<description>low value</description>
+			<left>290</left>
+			<top>40</top>
+			<height>20</height>
+			<label>$INFO[Window(Weather).Property($PARAM[day].LowTemp)]$INFO[System.TemperatureUnits]</label>
+			<font>font16</font>
+			<aligny>center</aligny>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="label">
+			<description>conditions label</description>
+			<left>40</left>
+			<top>75</top>
+			<width>320</width>
+			<height>20</height>
+			<info>Window(Weather).Property($PARAM[day].Outlook)</info>
+			<font>font13</font>
+			<aligny>center</aligny>
+			<textcolor>grey2</textcolor>
+			<shadowcolor>black</shadowcolor>
+		</control>
+	</include>
+	<include name="WeatherHourlyContent">
+		<control type="label">
+			<description>Hour label</description>
+			<width>420</width>
+			<height>35</height>
+			<font>font16</font>
+			<info>Window(Weather).Property(Hourly.$PARAM[value].Time)</info>
+			<aligny>center</aligny>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="image">
+			<description>day icon</description>
+			<left>440</left>
+			<height>110</height>
+			<width>110</width>
+			<info>Window(Weather).Property(Hourly.$PARAM[value].OutlookIcon)</info>
+			<aspectratio align="right">keep</aspectratio>
+		</control>
+		<control type="label">
+			<description>temperature value</description>
+			<left>40</left>
+			<top>40</top>
+			<height>20</height>
+			<label>$INFO[Window(Weather).Property(Hourly.$PARAM[value].Temperature)]</label>
+			<font>font16</font>
+			<aligny>center</aligny>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="label">
+			<description>conditions label</description>
+			<left>40</left>
+			<top>75</top>
+			<width>320</width>
+			<height>20</height>
+			<info>Window(Weather).Property(Hourly.$PARAM[value].Outlook)</info>
+			<font>font13</font>
+			<aligny>center</aligny>
+			<textcolor>grey2</textcolor>
+			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="label">
+			<description>Precipitation label</description>
+			<left>230</left>
+			<top>40</top>
+			<height>20</height>
+			<width>150</width>
+			<font>font13</font>
+			<align>right</align>
+			<aligny>center</aligny>
+			<label>$LOCALIZE[33021]:</label>
+			<textcolor>grey2</textcolor>
+			<visible>Weather.IsFetched</visible>
+			<shadowcolor>black</shadowcolor>
+			<visible>!String.IsEmpty(Window(Weather).Property(Hourly.$PARAM[value].Precipitation))</visible>
+		</control>
+		<control type="label">
+			<description>Precipitation value</description>
+			<left>400</left>
+			<top>40</top>
+			<height>20</height>
+			<label>$INFO[Window(Weather).Property(Hourly.$PARAM[value].Precipitation)]</label>
+			<font>font13</font>
+			<aligny>center</aligny>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<visible>!String.IsEmpty(Window(Weather).Property(Hourly.$PARAM[value].Precipitation))</visible>
+		</control>
+		<control type="label">
+			<description>Wind label</description>
+			<left>230</left>
+			<top>75</top>
+			<height>20</height>
+			<width>150</width>
+			<font>font13</font>
+			<align>right</align>
+			<aligny>center</aligny>
+			<label>$LOCALIZE[404]:</label>
+			<textcolor>grey2</textcolor>
+			<visible>Weather.IsFetched</visible>
+			<shadowcolor>black</shadowcolor>
+			<visible>![String.IsEmpty(Window(Weather).Property(Hourly.$PARAM[value].WindSpeed)) + String.IsEmpty(Window(Weather).Property(Hourly.$PARAM[value].WindDirection))]</visible>
+		</control>
+		<control type="label">
+			<description>Wind value</description>
+			<left>400</left>
+			<top>75</top>
+			<height>20</height>
+			<label>$INFO[Window.Property(Hourly.$PARAM[value].WindSpeed)]$INFO[Window.Property(Hourly.$PARAM[value].WindDirection),  &#x2022;  ,]</label>
+			<font>font13</font>
+			<aligny>center</aligny>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<visible>![String.IsEmpty(Window(Weather).Property(Hourly.$PARAM[value].WindSpeed)) + String.IsEmpty(Window(Weather).Property(Hourly.$PARAM[value].WindDirection))]</visible>
+		</control>
 	</include>
 	<include name="SystemButtonCommonValues">
 		<left>50</left>
@@ -624,6 +816,19 @@
 				<font>font12</font>
 				<textcolor>grey</textcolor>
 				<label>$PARAM[label]</label>
+				<visible>!Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<control type="label">
+				<description>Header</description>
+				<left>5</left>
+				<width>202</width>
+				<height>30</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<label>$PARAM[label]</label>
+				<visible>Control.HasFocus($PARAM[id])</visible>
 			</control>
 			<control type="image">
 				<left>5</left>
