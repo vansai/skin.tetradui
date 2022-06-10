@@ -194,6 +194,19 @@
 		<value condition="System.HasAddon(script.cu.lrclyrics) + !System.AddonIsEnabled(script.cu.lrclyrics)">$LOCALIZE[24023]</value>
 		<value>$LOCALIZE[31499]</value>
 	</variable>
+	<variable name="StatusImageResourceSelectVar">
+		<value condition="System.AddonIsEnabled(script.image.resource.select)">$INFO[System.AddonVersion(script.image.resource.select)] $LOCALIZE[39019]</value>
+		<value condition="System.HasAddon(script.image.resource.select) + !System.AddonIsEnabled(script.image.resource.select)">$LOCALIZE[24023]</value>
+		<value>$LOCALIZE[31499]</value>
+	</variable>
+	<variable name="WeatherIconsAddonNameVar">
+        <value condition="!String.IsEmpty(Skin.String(WeatherIconsAddon.name))">$INFO[Skin.String(WeatherIconsAddon.name)]</value>
+        <value>$LOCALIZE[571]</value>
+    </variable>
+	<variable name="WeatherFanartAddonNameVar">
+        <value condition="!String.IsEmpty(Skin.String(WeatherFanartAddon.name))">$INFO[Skin.String(WeatherFanartAddon.name)]</value>
+        <value>$LOCALIZE[571]</value>
+    </variable>
 	<variable name="MovieSetLabel">
 		<value condition="!Integer.IsEqual(Container(3650).NumItems,0)">$INFO[ListItem.Label][COLOR=grey]$INFO[Container(3650).NumItems, (, $LOCALIZE[342])][/COLOR]</value>
 		<value>$INFO[ListItem.Label][COLOR=grey]$INFO[ListItem.Year, (,)][/COLOR]</value>

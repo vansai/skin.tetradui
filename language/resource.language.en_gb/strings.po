@@ -371,11 +371,11 @@ msgstr ""
 # empty strings from id 31500 to 31501
 
 msgctxt "#31502"
-msgid "Media Blade"
+msgid "Blades"
 msgstr ""
 
 msgctxt "#31503"
-msgid "Apps Blade"
+msgid "Image packs"
 msgstr ""
 
 msgctxt "#31504"
@@ -452,11 +452,7 @@ msgctxt "#31546"
 msgid "Random movies"
 msgstr ""
 
-# empty strings from id 31547 to 31549
-
-msgctxt "#31550"
-msgid "Window default buttons"
-msgstr ""
+# empty strings from id 31547 to 31550
 
 msgctxt "#31551"
 msgid "Window custom smart playlist shortcuts"
