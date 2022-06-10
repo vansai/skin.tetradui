@@ -184,6 +184,10 @@
 		<value condition="Skin.HasSetting(RatingTypeDefault)">$LOCALIZE[571]</value>
 		<value>$LOCALIZE[571]</value>
 	</variable>
+	<variable name="SkinSettingsHelpText">
+		<value condition="Control.IsVisible(300)">$LOCALIZE[31480]</value>
+		<value condition="Control.IsVisible(600)">$LOCALIZE[31481]</value>
+	</variable>
 	<variable name="StatusTheMovieDbHelperVar">
 		<value condition="System.AddonIsEnabled(plugin.video.themoviedb.helper)">$INFO[System.AddonVersion(plugin.video.themoviedb.helper)] $LOCALIZE[39019]</value>
 		<value condition="System.HasAddon(plugin.video.themoviedb.helper) + !System.AddonIsEnabled(plugin.video.themoviedb.helper)">$LOCALIZE[24023]</value>
