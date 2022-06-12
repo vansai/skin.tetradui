@@ -108,13 +108,28 @@
 			</control>
 		</control>
 	</include>
+	<variable name="WeatherFanartAddonVar">
+		<value condition="Skin.HasSetting(WeatherFanartAddon.multi)">$INFO[Skin.String(WeatherFanartAddon.path)]$INFO[Window(Weather).Property(Current.FanartCode)]</value>
+		<value condition="!Skin.HasSetting(WeatherFanartAddon.multi)">$INFO[Skin.String(WeatherFanartAddon.path)]$INFO[Window(Weather).Property(Current.FanartCode),,.jpg]</value>
+	</variable>
 	<include name="CommonWeatherBackground">
+		<control type="multiimage">
+			<description>Background Weather</description>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath>$VAR[WeatherFanartAddonVar]</imagepath>
+			<timeperimage>10000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>200</fadetime>
+			<visible>!String.IsEmpty(Skin.String(WeatherFanartAddon.path)) + !String.IsEmpty(Window(Weather).Property(Current.FanartCode))</visible>
+		</control>
 		<control type="image">
 			<description>Background Weather</description>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true" fallback="backgrounds/weather.png">$INFO[Skin.String(Background_Weather)]</texture>
 			<animation effect="fade" start="100" end="60" time="200" condition="[!String.IsEmpty(ListItem.Art(fanart)) + !Skin.HasSetting(Back_Fanart)] | [Player.HasVideo + !Skin.HasSetting(Back_Video)] | [Player.HasAudio + !Skin.HasSetting(Back_Vis)]">Conditional</animation>
+			<animation effect="fade" start="100" end="40" time="200" condition="!String.IsEmpty(Skin.String(WeatherFanartAddon.path)) + !String.IsEmpty(Window(Weather).Property(Current.FanartCode)) + !Skin.HasSetting(Back_Fanart)">Conditional</animation>
 		</control>
 		<include>RainDropAnimationBackground</include>
 	</include>

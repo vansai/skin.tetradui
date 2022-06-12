@@ -180,6 +180,32 @@
 		<height>505</height>
 		<aspectratio>stretch</aspectratio>
 	</include>
+	<include name="WeatherCurrentIcon">
+		<control type="image">
+			<left>20</left>
+			<top>40</top>
+			<height>230</height>
+			<width>230</width>
+			<texture>$VAR[WeatherIconsAddonPathVar]$INFO[Window(Weather).Property(Current.FanartCode),,.png]</texture>
+			<aspectratio>keep</aspectratio>
+		</control>
+	</include>
+	<include name="WeatherAnimIcon">
+		<aspectratio>keep</aspectratio>
+		<timeperimage>100</timeperimage>
+		<randomize>false</randomize>
+		<fadetime>1</fadetime>
+	</include>
+	<include name="WeatherAnimCurrentIcon">
+		<control type="multiimage">
+			<left>20</left>
+			<top>40</top>
+			<height>230</height>
+			<width>230</width>
+			<imagepath>$VAR[WeatherIconsAddonPathVar]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+			<include>WeatherAnimIcon</include>
+		</control>
+	</include>
 	<include name="WeatherForecastContent">
 		<control type="label">
 			<description>Day label</description>
@@ -192,12 +218,21 @@
 			<shadowcolor>black</shadowcolor>
 		</control>
 		<control type="image">
-			<description>day icon</description>
 			<left>440</left>
 			<height>110</height>
 			<width>110</width>
-			<info>Window(Weather).Property($PARAM[day].OutlookIcon)</info>
+			<texture>$VAR[WeatherIconsAddonPathVar]$INFO[Window(Weather).Property($PARAM[day].FanartCode),,.png]</texture>
 			<aspectratio align="right">keep</aspectratio>
+			<visible>!Skin.HasSetting(WeatherIconsAddon.multi)</visible>
+		</control>
+		<control type="multiimage">
+			<left>440</left>
+			<height>110</height>
+			<width>110</width>
+			<aspectratio align="right">keep</aspectratio>
+			<imagepath>$VAR[WeatherIconsAddonPathVar]$INFO[Window(Weather).Property($PARAM[day].FanartCode)]</imagepath>
+			<include>WeatherAnimIcon</include>
+			<visible>Skin.HasSetting(WeatherIconsAddon.multi)</visible>
 		</control>
 		<control type="label">
 			<description>high label</description>
@@ -270,12 +305,23 @@
 			<shadowcolor>black</shadowcolor>
 		</control>
 		<control type="image">
-			<description>day icon</description>
-			<left>440</left>
-			<height>110</height>
-			<width>110</width>
-			<info>Window(Weather).Property(Hourly.$PARAM[value].OutlookIcon)</info>
+			<top>20</top>
+			<left>205</left>
+			<height>90</height>
+			<width>90</width>
+			<texture>$VAR[WeatherIconsAddonPathVar]$INFO[Window(Weather).Property(Hourly.$PARAM[value].FanartCode),,.png]</texture>
 			<aspectratio align="right">keep</aspectratio>
+			<visible>!Skin.HasSetting(WeatherIconsAddon.multi)</visible>
+		</control>
+		<control type="multiimage">
+			<top>20</top>
+			<left>205</left>
+			<height>90</height>
+			<width>90</width>
+			<aspectratio align="right">keep</aspectratio>
+			<imagepath>$VAR[WeatherIconsAddonPathVar]$INFO[Window(Weather).Property(Hourly.$PARAM[value].FanartCode)]</imagepath>
+			<include>WeatherAnimIcon</include>
+			<visible>Skin.HasSetting(WeatherIconsAddon.multi)</visible>
 		</control>
 		<control type="label">
 			<description>temperature value</description>
@@ -302,11 +348,11 @@
 		</control>
 		<control type="label">
 			<description>Precipitation label</description>
-			<left>230</left>
+			<left>280</left>
 			<top>40</top>
 			<height>20</height>
 			<width>150</width>
-			<font>font13</font>
+			<font>font12</font>
 			<align>right</align>
 			<aligny>center</aligny>
 			<label>$LOCALIZE[33021]:</label>
@@ -317,11 +363,11 @@
 		</control>
 		<control type="label">
 			<description>Precipitation value</description>
-			<left>400</left>
+			<left>450</left>
 			<top>40</top>
 			<height>20</height>
 			<label>$INFO[Window(Weather).Property(Hourly.$PARAM[value].Precipitation)]</label>
-			<font>font13</font>
+			<font>font12</font>
 			<aligny>center</aligny>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
@@ -329,11 +375,11 @@
 		</control>
 		<control type="label">
 			<description>Wind label</description>
-			<left>230</left>
+			<left>280</left>
 			<top>75</top>
 			<height>20</height>
 			<width>150</width>
-			<font>font13</font>
+			<font>font12</font>
 			<align>right</align>
 			<aligny>center</aligny>
 			<label>$LOCALIZE[404]:</label>
@@ -344,11 +390,11 @@
 		</control>
 		<control type="label">
 			<description>Wind value</description>
-			<left>400</left>
+			<left>450</left>
 			<top>75</top>
 			<height>20</height>
-			<label>$INFO[Window.Property(Hourly.$PARAM[value].WindSpeed)]$INFO[Window.Property(Hourly.$PARAM[value].WindDirection),  &#x2022;  ,]</label>
-			<font>font13</font>
+			<label>$INFO[Window.Property(Hourly.$PARAM[value].WindSpeed)]$INFO[Window.Property(Hourly.$PARAM[value].WindDirection), ,]</label>
+			<font>font12</font>
 			<aligny>center</aligny>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>

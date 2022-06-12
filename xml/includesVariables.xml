@@ -209,7 +209,11 @@
     </variable>
 	<variable name="WeatherFanartAddonNameVar">
         <value condition="!String.IsEmpty(Skin.String(WeatherFanartAddon.name))">$INFO[Skin.String(WeatherFanartAddon.name)]</value>
-        <value>$LOCALIZE[571]</value>
+        <value>$LOCALIZE[231]</value>
+    </variable>
+	<variable name="WeatherIconsAddonPathVar">
+        <value condition="!String.IsEmpty(Skin.String(WeatherIconsAddon.path))">$INFO[Skin.String(WeatherIconsAddon.path)]</value>
+        <value>resource://resource.images.weathericons.default/</value>
     </variable>
 	<variable name="MovieSetLabel">
 		<value condition="!Integer.IsEqual(Container(3650).NumItems,0)">$INFO[ListItem.Label][COLOR=grey]$INFO[Container(3650).NumItems, (, $LOCALIZE[342])][/COLOR]</value>
