@@ -702,6 +702,22 @@
 						<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 						<onclick condition="System.HasAddon(script.image.resource.select) + !System.AddonIsEnabled(script.image.resource.select)">EnableAddon(script.image.resource.select)</onclick>
 					</control>
+					<control type="button" id="604">
+						<include>SkinSettingsButtonCommonValues</include>
+						<label>Global Search</label>
+						<label2>$VAR[StatusGlobalSearchVar]</label2>
+						<onclick condition="System.AddonIsEnabled(script.globalsearch)">Addon.OpenSettings(script.globalsearch)</onclick>
+						<onclick condition="!System.HasAddon(script.globalsearch)">InstallAddon(script.globalsearch)</onclick>
+						<onclick condition="System.HasAddon(script.globalsearch) + !System.AddonIsEnabled(script.globalsearch)">EnableAddon(script.globalsearch)</onclick>
+					</control>
+					<control type="button" id="605">
+						<include>SkinSettingsButtonCommonValues</include>
+						<label>YouTube</label>
+						<label2>$VAR[StatusYouTubeVar]</label2>
+						<onclick condition="System.AddonIsEnabled(plugin.video.youtube)">Addon.OpenSettings(plugin.video.youtube)</onclick>
+						<onclick condition="!System.HasAddon(plugin.video.youtube)">InstallAddon(plugin.video.youtube)</onclick>
+						<onclick condition="System.HasAddon(plugin.video.youtube) + !System.AddonIsEnabled(plugin.video.youtube)">EnableAddon(plugin.video.youtube)</onclick>
+					</control>
 				</control>
 				
 				<control type="grouplist" id="700">

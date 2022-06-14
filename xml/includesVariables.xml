@@ -203,6 +203,16 @@
 		<value condition="System.HasAddon(script.image.resource.select) + !System.AddonIsEnabled(script.image.resource.select)">$LOCALIZE[24023]</value>
 		<value>$LOCALIZE[31499]</value>
 	</variable>
+	<variable name="StatusGlobalSearchVar">
+		<value condition="System.AddonIsEnabled(script.globalsearch)">$INFO[System.AddonVersion(script.globalsearch)] $LOCALIZE[39019]</value>
+		<value condition="System.HasAddon(script.globalsearch) + !System.AddonIsEnabled(script.globalsearch)">$LOCALIZE[24023]</value>
+		<value>$LOCALIZE[31499]</value>
+	</variable>
+	<variable name="StatusYouTubeVar">
+		<value condition="System.AddonIsEnabled(plugin.video.youtube)">$INFO[System.AddonVersion(plugin.video.youtube)] $LOCALIZE[39019]</value>
+		<value condition="System.HasAddon(plugin.video.youtube) + !System.AddonIsEnabled(plugin.video.youtube)">$LOCALIZE[24023]</value>
+		<value>$LOCALIZE[31499]</value>
+	</variable>
 	<variable name="WeatherIconsAddonNameVar">
         <value condition="!String.IsEmpty(Skin.String(WeatherIconsAddon.name))">$INFO[Skin.String(WeatherIconsAddon.name)]</value>
         <value>$LOCALIZE[571]</value>
