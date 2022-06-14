@@ -76,7 +76,7 @@
 				<height>50</height>
 				<texture>button.png</texture>
 				<animation effect="slide" end="0,50" time="200" easing="out" condition="ControlGroup(9000).HasFocus(5)">Conditional</animation>
-				<animation effect="fade" start="100" end="70" time="200" condition="!ControlGroup(9000).HasFocus">Conditional</animation>
+				<animation effect="fade" start="100" end="25" time="200" condition="!ControlGroup(9000).HasFocus">Conditional</animation>
 			</control>
 			<control type="panel" id="2">
 				<left>340</left>
@@ -240,5 +240,6 @@
 			<include>SettingsToSubBlades</include>
 		</control>
 		<include>Common_Now_Playing</include>
+		<include>BackgroundDim</include>
 	</controls>
 </window>

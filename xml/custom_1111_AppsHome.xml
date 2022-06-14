@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1111">
-	<defaultcontrol always="true">9000</defaultcontrol>
+	<defaultcontrol always="true">9050</defaultcontrol>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(1)">WindowClose</animation>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(2)">WindowClose</animation>
 	<controls>
@@ -55,6 +55,7 @@
 			<left>180</left>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			<animation effect="fade" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>
+			<include>HomeLogoButton</include>
 			<control type="label">
 				<description>Header label</description>
 				<label>31011</label>
@@ -72,10 +73,7 @@
 					<height>314</height>
 					<onleft>1</onleft>
 					<onright>2</onright>
-					<onup condition="System.GetBool(LookAndFeel.EnableRSSFeeds)">15</onup>
-					<onup condition="!System.GetBool(LookAndFeel.EnableRSSFeeds)">9000</onup>
-					<ondown condition="System.GetBool(LookAndFeel.EnableRSSFeeds)">15</ondown>
-					<ondown condition="!System.GetBool(LookAndFeel.EnableRSSFeeds)">9000</ondown>
+					<onup>9050</onup>
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>200</scrolltime>
@@ -108,7 +106,7 @@
 							<texture>button.png</texture>
 							<animation effect="slide" start="0,-52" time="200" tween="sine" easing="out" condition="Container(9000).OnNext" reversible="false">Focus</animation>
 							<animation effect="slide" start="0,52" time="200" tween="sine" easing="out" condition="Container(9000).OnPrevious" reversible="false">Focus</animation>
-							<animation effect="fade" start="100" end="70" time="200" condition="!Control.HasFocus(9000)">Conditional</animation>
+							<animation effect="fade" start="100" end="25" time="200" condition="!Control.HasFocus(9000)">Conditional</animation>
 						</control>
 						<control type="image">
 							<description>Icon</description>
@@ -501,5 +499,6 @@
 			</control>
 		</control>
 		<include>Common_Now_Playing</include>
+		<include>BackgroundDim</include>
 	</controls>	
 </window>

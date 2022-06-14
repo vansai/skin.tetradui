@@ -314,5 +314,6 @@
 			<include>AppsToSubBlades</include>
 		</control>
 		<include>Common_Now_Playing</include>
+		<include>BackgroundDim</include>
 	</controls>
 </window>

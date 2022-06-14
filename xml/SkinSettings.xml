@@ -201,42 +201,58 @@
 						<height>30</height>
 						<align>center</align>
 						<font>font13</font>
-						<label>14211</label>
+						<label>128</label>
 						<textcolor>orange</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
 					<control type="radiobutton" id="302">
 						<include>SkinSettingsRadioButtonCommonValues</include>
+						<label>$LOCALIZE[31314]</label>
+						<onclick>Skin.ToggleSetting(Blades_HideWidgets)</onclick>
+						<selected>Skin.HasSetting(Blades_HideWidgets)</selected>
+					</control>
+					<control type="label" id="311">
+						<description>Heading label</description>
+						<width>790</width>
+						<height>30</height>
+						<align>center</align>
+						<font>font13</font>
+						<label>14211</label>
+						<textcolor>orange</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="radiobutton" id="312">
+						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$LOCALIZE[3]</label>
 						<onclick>Skin.ToggleSetting(MediaBlade_HideVideos)</onclick>
 						<selected>Skin.HasSetting(MediaBlade_HideVideos)</selected>
 					</control>
-					<control type="radiobutton" id="303">
+					<control type="radiobutton" id="313">
 						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$LOCALIZE[342]</label>
 						<onclick>Skin.ToggleSetting(MediaBlade_HideMovies)</onclick>
 						<selected>Skin.HasSetting(MediaBlade_HideMovies)</selected>
 					</control>
-					<control type="radiobutton" id="304">
+					<control type="radiobutton" id="314">
 						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$LOCALIZE[20343]</label>
 						<onclick>Skin.ToggleSetting(MediaBlade_HideTVShows)</onclick>
 						<selected>Skin.HasSetting(MediaBlade_HideTVShows)</selected>
 					</control>
-					<control type="radiobutton" id="305">
+					<control type="radiobutton" id="315">
 						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$LOCALIZE[2]</label>
 						<onclick>Skin.ToggleSetting(MediaBlade_HideMusic)</onclick>
 						<selected>Skin.HasSetting(MediaBlade_HideMusic)</selected>
 					</control>
-					<control type="radiobutton" id="306">
+					<control type="radiobutton" id="316">
 						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$LOCALIZE[1]</label>
 						<onclick>Skin.ToggleSetting(MediaBlade_HidePictures)</onclick>
 						<selected>Skin.HasSetting(MediaBlade_HidePictures)</selected>
 					</control>
 					<!--
-					<control type="label" id="307">
+					<control type="label" id="317">
 						<description>Heading label</description>
 						<width>790</width>
 						<height>30</height>
@@ -246,44 +262,44 @@
 						<textcolor>orange</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
-					<control type="radiobutton" id="308">
+					<control type="radiobutton" id="318">
 						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$INFO[Skin.String(MediaBlade_NameSmartPlaylist1)]</label>
 						<onclick>Skin.ToggleSetting(MediaBlade_ShowSmartPlaylist1)</onclick>
 						<selected>!Skin.HasSetting(MediaBlade_ShowSmartPlaylist1)</selected>
 					</control>
-					<control type="button" id="309">
+					<control type="button" id="319">
 						<include>SkinSettingsButtonCommonValues</include>
 						<label> - $LOCALIZE[31311]</label>
 						<label2>$INFO[Skin.String(MediaBlade_NameSmartPlaylist1)]</label2>
 						<onclick>Skin.SetString(MediaBlade_NameSmartPlaylist1)</onclick>
 					</control>
-					<control type="button" id="310">
+					<control type="button" id="320">
 						<include>SkinSettingsButtonCommonValues</include>
 						<label> - $LOCALIZE[31310]</label>
 						<label2>$INFO[Skin.String(MediaBlade_LinkSmartPlaylist1)]</label2>
 						<onclick>Skin.SetFile(MediaBlade_LinkSmartPlaylist1,,special://videoplaylists/)</onclick>
 					</control>
-					<control type="radiobutton" id="311">
+					<control type="radiobutton" id="321">
 						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$INFO[Skin.String(MediaBlade_NameSmartPlaylist2)]</label>
 						<onclick>Skin.ToggleSetting(MediaBlade_ShowSmartPlaylist2)</onclick>
 						<selected>!Skin.HasSetting(MediaBlade_ShowSmartPlaylist2)</selected>
 					</control>
-					<control type="button" id="312">
+					<control type="button" id="322">
 						<include>SkinSettingsButtonCommonValues</include>
 						<label> - $LOCALIZE[31311]</label>
 						<label2>$INFO[Skin.String(MediaBlade_NameSmartPlaylist2)]</label2>
 						<onclick>Skin.SetString(MediaBlade_NameSmartPlaylist2)</onclick>
 					</control>
-					<control type="button" id="313">
+					<control type="button" id="323">
 						<include>SkinSettingsButtonCommonValues</include>
 						<label> - $LOCALIZE[31310]</label>
 						<label2>$INFO[Skin.String(MediaBlade_LinkSmartPlaylist2)]</label2>
 						<onclick>Skin.SetFile(MediaBlade_LinkSmartPlaylist2,,special://videoplaylists/)</onclick>
 					</control>
 					-->
-					<control type="label" id="321">
+					<control type="label" id="331">
 						<description>Heading label</description>
 						<width>790</width>
 						<height>30</height>
@@ -293,25 +309,25 @@
 						<textcolor>orange</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
-					<control type="radiobutton" id="322">
+					<control type="radiobutton" id="332">
 						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$LOCALIZE[0]</label>
 						<onclick>Skin.ToggleSetting(AppsBlade_HidePrograms)</onclick>
 						<selected>Skin.HasSetting(AppsBlade_HidePrograms)</selected>
 					</control>
-					<control type="radiobutton" id="323">
+					<control type="radiobutton" id="333">
 						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$LOCALIZE[24001]</label>
 						<onclick>Skin.ToggleSetting(AppsBlade_HideAddons)</onclick>
 						<selected>Skin.HasSetting(AppsBlade_HideAddons)</selected>
 					</control>
-					<control type="radiobutton" id="324">
+					<control type="radiobutton" id="334">
 						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$LOCALIZE[7]</label>
 						<onclick>Skin.ToggleSetting(AppsBlade_HideFilemanager)</onclick>
 						<selected>Skin.HasSetting(AppsBlade_HideFilemanager)</selected>
 					</control>
-					<control type="radiobutton" id="325">
+					<control type="radiobutton" id="335">
 						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$LOCALIZE[1036]</label>
 						<onclick>Skin.ToggleSetting(AppsBlade_HideFavourites)</onclick>
@@ -751,5 +767,6 @@
 			<include>SettingsToSubBlades</include>
 		</control>
 		<include>Common_Now_Playing</include>
+		<include>BackgroundDim</include>
 	</controls>
 </window>

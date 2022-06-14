@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window>
+<window type="dialog" id="1103">
 	<defaultcontrol>2000</defaultcontrol>
 	<coordinates>
 		<system>1</system>
@@ -10,10 +10,18 @@
 		<control type="group">
 			<include>BladesRunnerRightAnimation1</include>
 			<include>BladesRunnerRight</include>
-			<control type="label" id="411">
+			<animation type="Conditional" condition="![Window.IsActive(Favourites) | Window.IsActive(ShutdownMenu)]">
+				<effect type="fade" start="0" end="100" time="100" />
+				<effect type="slide" start="550,0" end="0,0" delay="100" time="400" tween="quadratic" easing="out" />
+			</animation>
+			<animation type="Conditional" condition="Window.IsActive(Favourites) | Window.IsActive(ShutdownMenu)">
+				<effect type="slide" start="0,0" end="550,0" delay="DialogVisibleFadeAnimationSpeed" time="400" tween="quadratic" easing="in"/>
+				<effect type="fade" start="100" end="0" delay="600" time="100" />
+			</animation>
+			<control type="label">
 				<description>Header label</description>
 				<left>200</left>
-				<label>31102</label>
+				<label>33063</label>
 				<include>DialogHeaderTextCommons</include>
 			</control>
 			<control type="group">
@@ -25,7 +33,7 @@
 					<top>140</top>
 					<width>340</width>
 					<height>400</height>
-					<onleft>Dialog.Close(shutdownmenu)</onleft>
+					<onleft>Dialog.Close(1103)</onleft>
 					<onright>2000</onright>
 					<onup>2000</onup>
 					<ondown>2000</ondown>
@@ -80,67 +88,31 @@
 					</focusedlayout>
 					<content>
 						<item>
-							<label>31307</label>
-							<onclick>Quit()</onclick>
-							<visible>System.LoggedOn</visible>
-							<visible>System.ShowExitButton</visible>
+							<label>31507</label>
+							<onclick condition="System.AddonIsEnabled(script.globalsearch)">Dialog.Close(1103)</onclick>
+							<onclick condition="System.AddonIsEnabled(script.globalsearch)">RunScript(script.globalsearch)</onclick>
+							<onclick condition="!System.HasAddon(script.globalsearch)">InstallAddon(script.globalsearch)</onclick>
+							<onclick condition="System.HasAddon(script.globalsearch) + !System.AddonIsEnabled(script.globalsearch)">EnableAddon(script.globalsearch)</onclick>
 						</item>
 						<item>
-							<label>31306</label>
-							<onclick>Powerdown()</onclick>
-							<visible>System.CanPowerDown</visible>
+							<label>31508</label>
+							<onclick condition="System.AddonIsEnabled(plugin.video.youtube)">Dialog.Close(1107)</onclick>
+							<onclick condition="System.AddonIsEnabled(plugin.video.youtube)">ActivateWindow(videos,plugin://plugin.video.youtube/kodion/search/input/,return)</onclick>
+							<onclick condition="!System.HasAddon(plugin.video.youtube)">InstallAddon(plugin.video.youtube)</onclick>
+							<onclick condition="System.HasAddon(plugin.video.youtube) + !System.AddonIsEnabled(plugin.video.youtube)">EnableAddon(plugin.video.youtube)</onclick>
 						</item>
 						<item>
-							<label>$LOCALIZE[20150]</label>
-							<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
-							<visible>!System.HasAlarm(shutdowntimer)</visible>
-							<visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible>
+							<label>31509</label>
+							<onclick>Dialog.Close(1107)</onclick>
+							<onclick>ActivateWindow(addonbrowser,addons://search/,return)</onclick>
 						</item>
 						<item>
-							<label>$LOCALIZE[20151] $INFO[System.AlarmPos,(,)]</label>
-							<onclick>CancelAlarm(shutdowntimer)</onclick>
-							<visible>System.HasAlarm(shutdowntimer)</visible>
+							<label>1036</label>
+							<onclick>ActivateWindow(Favourites)</onclick>
 						</item>
 						<item>
-							<label>13011</label>
-							<onclick>Suspend()</onclick>
-							<visible>System.CanSuspend</visible>
-						</item>
-						<item>
-							<label>13010</label>
-							<onclick>Hibernate()</onclick>
-							<visible>System.CanHibernate</visible>
-						</item>
-						<item>
-							<label>13013</label>
-							<onclick>Reboot()</onclick>
-							<visible>System.CanReboot</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[20126]: $INFO[system.profilename]</label>
-							<onclick>Dialog.Close(shutdownmenu)</onclick>
-							<onclick>system.logoff</onclick>
-							<visible>[System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)] + System.Loggedon</visible>
-						</item>
-						<item>
-							<label>20045</label>
-							<onclick>MasterMode</onclick>
-							<visible>!System.IsMaster + System.LoggedOn + System.HasLocks</visible>
-						</item>
-						<item>
-							<label>20046</label>
-							<onclick>MasterMode</onclick>
-							<visible>System.IsMaster + System.LoggedOn + System.HasLocks</visible>
-						</item>
-						<item>
-							<label>13017</label>
-							<onclick>InhibitIdleShutdown(true)</onclick>
-							<visible>System.HasShutdown + !System.IsInhibit</visible>
-						</item>
-						<item>
-							<label>13018</label>
-							<onclick>InhibitIdleShutdown(false)</onclick>
-							<visible>System.HasShutdown + System.IsInhibit</visible>
+							<label>13005</label>
+							<onclick>ActivateWindow(ShutdownMenu)</onclick>
 						</item>
 					</content>
 				</control>

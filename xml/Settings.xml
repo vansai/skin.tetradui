@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol always="true">9000</defaultcontrol>
+	<defaultcontrol always="true">9050</defaultcontrol>
 	<previouswindow>Settings</previouswindow>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(1)">WindowClose</animation>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(2)">WindowClose</animation>
@@ -50,6 +50,7 @@
 			<left>280</left>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			<animation effect="fade" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>
+			<include>HomeLogoButton</include>
 			<control type="label">
 				<description>Header label</description>
 				<label>14209</label>
@@ -67,7 +68,7 @@
 					<height>452</height>
 					<onleft>1</onleft>
 					<onright>10</onright>
-					<onup>9000</onup>
+					<onup>9050</onup>
 					<ondown>9000</ondown>
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>60</pagecontrol>
@@ -103,7 +104,7 @@
 							<texture>button.png</texture>
 							<animation effect="slide" start="0,-45" time="200" tween="sine" easing="out" condition="Container(9000).OnNext" reversible="false">Focus</animation>
 							<animation effect="slide" start="0,45" time="200" tween="sine" easing="out" condition="Container(9000).OnPrevious" reversible="false">Focus</animation>
-							<animation effect="fade" start="100" end="70" time="200" condition="!Control.HasFocus(9000)">Conditional</animation>
+							<animation effect="fade" start="100" end="25" time="200" condition="!Control.HasFocus(9000)">Conditional</animation>
 						</control>
 						<control type="image">
 							<description>Icon</description>
@@ -498,5 +499,6 @@
 			</control>
 		</control>
 		<include>Common_Now_Playing</include>
+		<include>BackgroundDim</include>
 	</controls>	
 </window>

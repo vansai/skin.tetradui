@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol always="true">3</defaultcontrol>
+	<defaultcontrol always="true">9050</defaultcontrol>
 	<previouswindow>Weather</previouswindow>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(1)">WindowClose</animation>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(2)">WindowClose</animation>
@@ -49,6 +49,7 @@
 			<left>130</left>
 			<visible>!Control.HasFocus(1)</visible>
 			<animation effect="fade" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>
+			<include>HomeLogoButton</include>
 			<control type="label">
 				<description>Header label</description>
 				<label>10508</label>
@@ -61,6 +62,7 @@
 				<left>10</left>
 				<top>120</top>
 				<itemgap>7</itemgap>
+				<onleft>9050</onleft>
 				<orientation>vertical</orientation>
 				<control type="group" id="9001">
 					<height>49</height>
@@ -103,7 +105,7 @@
 						<left>230</left>
 						<top>10</top>
 						<font />
-						<onup>9004</onup>
+						<onup>9050</onup>
 						<ondown>9002</ondown>
 						<onright>1</onright>
 						<animation effect="slide" end="ButtonSlideBackDistance,0" time="ButtonSlideBackTime" reversible="false">focus</animation>
@@ -167,11 +169,12 @@
 				<width>320</width>
 				<height>50</height>
 				<texture>button.png</texture>
-				<animation effect="slide" end="0,52" time="200" easing="out" condition="Control.HasFocus(9002)">Conditional</animation>
-				<animation effect="slide" end="0,102" time="200" easing="out" condition="[String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + Control.HasFocus(2)] | [!String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + Control.HasFocus(9003)]">Conditional</animation>
-				<animation effect="slide" end="0,152" time="200" easing="out" condition="[String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + Control.HasFocus(4)] | [!String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + Control.HasFocus(2)]">Conditional</animation>
-				<animation effect="slide" end="0,202" time="200" easing="out" condition="[String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + Control.HasFocus(9004)] | [!String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + Control.HasFocus(4)]">Conditional</animation>
-				<animation effect="slide" end="0,252" time="200" easing="out" condition="!String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + Control.HasFocus(9004)">Conditional</animation>
+				<animation effect="slide" end="0,52" time="200" easing="out" condition="ControlGroup(9000).HasFocus(9002)">Conditional</animation>
+				<animation effect="slide" end="0,102" time="200" easing="out" condition="[String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + ControlGroup(9000).HasFocus(2)] | [!String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + ControlGroup(9000).HasFocus(9003)]">Conditional</animation>
+				<animation effect="slide" end="0,152" time="200" easing="out" condition="[String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + ControlGroup(9000).HasFocus(4)] | [!String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + ControlGroup(9000).HasFocus(2)]">Conditional</animation>
+				<animation effect="slide" end="0,202" time="200" easing="out" condition="[String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + ControlGroup(9000).HasFocus(9004)] | [!String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + ControlGroup(9000).HasFocus(4)]">Conditional</animation>
+				<animation effect="slide" end="0,252" time="200" easing="out" condition="!String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + ControlGroup(9000).HasFocus(9004)">Conditional</animation>
+				<animation effect="fade" start="100" end="25" time="200" condition="!ControlGroup(9000).HasFocus">Conditional</animation>
 			</control>
 			<control type="textbox" id="400">
 				<description>No weather warning</description>
@@ -678,5 +681,6 @@
 			</control>
 		</control>
 		<include>Common_Now_Playing</include>
+		<include>BackgroundDim</include>
 	</controls>
 </window>

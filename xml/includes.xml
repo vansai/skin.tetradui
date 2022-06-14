@@ -16,6 +16,22 @@
 	<constant name="IconCrossfadeTime">400</constant>
 	<constant name="SideMenuSlideOutTime">200</constant>
 
+	<include name="HomeLogoButton">
+		<control type="button" id="9050">
+			<left>-20</left>
+			<top>13</top>
+			<width>45</width>
+			<height>45</height>
+			<texturefocus>tetradui_logo_clean.png</texturefocus>
+			<texturenofocus>tetradui_logo_clean.png</texturenofocus>
+			<onleft condition="!Window.IsVisible(Weather)">1</onleft>
+			<onright condition="!Window.IsVisible(SettingsCategory.xml)">2</onright>
+			<ondown>9000</ondown>
+			<onclick>ActivateWindow(1103)</onclick>
+			<animation effect="zoom" start="100" end="115" time="100" center="auto">Focus</animation>
+			<animation effect="zoom" start="115" end="100" time="100" center="auto">UnFocus</animation>
+		</control>
+	</include>
 	<include name="HomeButtonCommonValues">
 		<left>50</left>
 		<width>43</width>
@@ -116,6 +132,15 @@
 			<shadowcolor>black</shadowcolor>
 			<align>left</align>
 			<aligny>center</aligny>
+		</control>
+	</include>
+	<include name="BackgroundDim">
+		<control type="image">
+			<width>1280</width>
+			<height>720</height>
+			<texture colordiffuse="77ffffff">black-back.png</texture>
+			<include>VisibleFadeEffect</include>
+			<visible>Window.IsActive(1103) | Window.IsActive(ShutdownMenu) | [!Window.IsVisible(Weather) + ControlGroup(9000).HasFocus] | Window.IsActive(DialogSelect.xml) | Window.IsActive(DialogAddonInfo.xml) | Window.IsActive(DialogAddonSettings.xml) | Window.IsActive(DialogBusy.xml) | Window.IsActive(DialogConfirm.xml) | Window.IsActive(DialogContextMenu.xml) | Window.IsActive(DialogFavourites.xml) | Window.IsActive(DialogKeyboard.xml) | Window.IsActive(DialogMediaSource.xml) | Window.IsActive(DialogMusicInfo.xml) | Window.IsActive(DialogNotification.xml) | Window.IsActive(DialogNumeric.xml) | Window.IsActive(DialogPictureInfo.xml) | Window.IsActive(DialogSettings.xml) | Window.IsActive(DialogTextViewer.xml) | Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(FileBrowser.xml)</visible>
 		</control>
 	</include>
 	<include name="SortbyButton">
@@ -425,7 +450,7 @@
 		<aspectratio>stretch</aspectratio>
 	</include>
 	<include name="HeaderTextCommons">
-		<top>40</top>
+		<top>25</top>
 		<width>800</width>
 		<height>20</height>
 		<align>left</align>
@@ -433,8 +458,9 @@
 		<font>font35</font>
 		<textcolor>white</textcolor>
 		<shadowcolor>black</shadowcolor>
-		<visible>!Window.IsVisible(extendedprogressdialog)</visible>
 		<include>VisibleFadeEffect</include>
+		<animation effect="slide" end="50,0" condition="Control.IsVisible(9050)">Conditional</animation>
+		<visible>!Window.IsVisible(extendedprogressdialog)</visible>
 	</include>
 	<include name="DialogHeaderTextCommons">
 		<top>20</top>

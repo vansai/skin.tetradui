@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol always="true">9000</defaultcontrol>
+	<defaultcontrol always="true">9050</defaultcontrol>
 	<previouswindow>home</previouswindow>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(1)">WindowClose</animation>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(2)">WindowClose</animation>
@@ -53,6 +53,7 @@
 			<left>230</left>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			<animation effect="fade" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>
+			<include>HomeLogoButton</include>
 			<control type="label">
 				<description>Header label</description>
 				<label>14211</label>
@@ -66,13 +67,12 @@
 				<control type="list" id="9000">
 					<width>450</width>
 					<height>314</height>
-					<onleft>1</onleft>
-					<onright condition="Control.IsVisible(501)">501</onright>
-					<onright condition="!Control.IsVisible(501)">2</onright>
-					<onup condition="System.GetBool(LookAndFeel.EnableRSSFeeds)">15</onup>
-					<onup condition="!System.GetBool(LookAndFeel.EnableRSSFeeds)">9000</onup>
-					<ondown condition="System.GetBool(LookAndFeel.EnableRSSFeeds)">15</ondown>
-					<ondown condition="!System.GetBool(LookAndFeel.EnableRSSFeeds)">9000</ondown>
+					<onleft condition="!Skin.HasSetting(Blades_HideWidgets) + Container(9000).HasFocus(2)">501</onleft>
+					<onleft condition="!kin.HasSetting(Blades_HideWidgets) | !Container(9000).HasFocus(2)">1</onleft>
+					<onright condition="!Skin.HasSetting(Blades_HideWidgets) + Container(9000).HasFocus(2)">501</onright>
+					<onright condition="Skin.HasSetting(Blades_HideWidgets) | !Container(9000).HasFocus(2)">2</onright>
+					<onup>9050</onup>
+					<ondown>9050</ondown>
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>200</scrolltime>
@@ -106,7 +106,7 @@
 							<texture>button.png</texture>
 							<animation effect="slide" start="0,-52" time="200" tween="sine" easing="out" condition="Container(9000).OnNext" reversible="false">Focus</animation>
 							<animation effect="slide" start="0,52" time="200" tween="sine" easing="out" condition="Container(9000).OnPrevious" reversible="false">Focus</animation>
-							<animation effect="fade" start="100" end="70" time="200" condition="!Control.HasFocus(9000)">Conditional</animation>
+							<animation effect="fade" start="100" end="25" time="200" condition="!Control.HasFocus(9000)">Conditional</animation>
 						</control>
 						<control type="image">
 							<description>Icon</description>
@@ -190,7 +190,7 @@
 					</content>
 				</control>
 				<include>MediaInfoCard</include>
-				<include content="HomeWidget">
+				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
 					<param name="visible" value="Library.HasContent(Movies) + Container(9000).HasFocus(2)" />
 					<param name="left" value="40" />
 					<param name="label" value="20382" />
@@ -200,33 +200,33 @@
 					<param name="content" value="videodb://movies/titles/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22playcount%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%220%22%7D%5D%7D%2C%22type%22%3A%22movies%22%7D" />
 					<param name="sortby" value="dateadded" />
 				</include>
-				<include content="HomeWidget">
+				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
 					<param name="visible" value="Library.HasContent(Movies) + Container(9000).HasFocus(2)" />
 					<param name="left" value="255" />
 					<param name="label" value="31542" />
 					<param name="id" value="502" />
 					<param name="onleft" value="501" />
-					<param name="onright" value="2" />
+					<param name="onright" value="503" />
 					<param name="content" value="videodb://movies/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22inprogress%22%2c%22operator%22%3a%22true%22%2c%22value%22%3a%5b%5d%7d%5d%7d%2c%22type%22%3a%22movies%22%7d" />
 					<param name="sortby" value="lastplayed" />
 				</include>
-				<include content="HomeWidget">
+				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
 					<param name="visible" value="Library.HasContent(Movies) + Container(9000).HasFocus(2)" />
 					<param name="left" value="470" />
 					<param name="label" value="$VAR[MovieWidget3Label]" />
 					<param name="id" value="503" />
 					<param name="onleft" value="502" />
-					<param name="onright" value="2" />
+					<param name="onright" value="504" />
 					<param name="content" value="$VAR[MovieWidget3Content]" />
 					<param name="sortby" value="$VAR[MovieWidgetSortby]" />
 				</include>
-				<include content="HomeWidget">
+				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
 					<param name="visible" value="Library.HasContent(Movies) + Container(9000).HasFocus(2)" />
 					<param name="left" value="685" />
 					<param name="label" value="$VAR[MovieWidget4Label]" />
 					<param name="id" value="504" />
 					<param name="onleft" value="503" />
-					<param name="onright" value="2" />
+					<param name="onright" value="9000" />
 					<param name="content" value="$VAR[MovieWidget4Content]" />
 					<param name="sortby" value="$VAR[MovieWidgetSortby]" />
 				</include>
@@ -557,5 +557,6 @@
 			</control>
 		</control>
 		<include>Common_Now_Playing</include>
+		<include>BackgroundDim</include>
 	</controls>	
 </window>

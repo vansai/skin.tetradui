@@ -294,7 +294,11 @@ msgctxt "#31313"
 msgid "No Weather add-on enabled go to Settings/Weather to enable weather forecast"
 msgstr ""
 
-# empty strings from id 31314 to 31389
+msgctxt "#31314"
+msgid "Hide widgets"
+msgstr ""
+
+# empty strings from id 31315 to 31389
 
 msgctxt "#31390"
 msgid "Skin default"
@@ -394,7 +398,19 @@ msgctxt "#31506"
 msgid "Local subtitle available"
 msgstr ""
 
-# empty strings from id 31507 to 31519
+msgctxt "#31507"
+msgid "Search local library"
+msgstr ""
+
+msgctxt "#31508"
+msgid "Search YouTube"
+msgstr ""
+
+msgctxt "#31509"
+msgid "Search add-ons"
+msgstr ""
+
+# empty strings from id 31510 to 31519
 
 msgctxt "#31520"
 msgid "Show now playing video in the background"
