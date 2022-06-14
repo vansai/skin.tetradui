@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1103">
-	<defaultcontrol>2000</defaultcontrol>
+	<defaultcontrol>610</defaultcontrol>
 	<coordinates>
 		<system>1</system>
 		<left>730</left>
@@ -28,15 +28,14 @@
 				<left>180</left>
 				<animation effect="fade" delay="500" time="DialogVisibleFadeAnimationSpeed">WindowOpen</animation>
 				<animation effect="fade" delay="100" time="DialogVisibleFadeAnimationSpeed">WindowClose</animation>
-				<control type="list" id="2000">
+				<control type="list" id="610">
 					<left>0</left>
 					<top>140</top>
 					<width>340</width>
 					<height>400</height>
 					<onleft>Dialog.Close(1103)</onleft>
-					<onright>2000</onright>
-					<onup>2000</onup>
-					<ondown>2000</ondown>
+					<ondown condition="Control.IsVisible(603)">603</ondown>
+					<ondown condition="!Control.IsVisible(603)">610</ondown>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout height="50">
@@ -57,9 +56,9 @@
 							<width>340</width>
 							<height>50</height>
 							<texture>button.png</texture>
-							<animation effect="slide" start="0,-52" time="200" tween="sine" easing="out" condition="Container(2000).OnNext" reversible="false">Focus</animation>
-							<animation effect="slide" start="0,52" time="200" tween="sine" easing="out" condition="Container(2000).OnPrevious" reversible="false">Focus</animation>
-							<animation effect="fade" start="100" end="25" time="200" condition="!Control.HasFocus(2000)">Conditional</animation>
+							<animation effect="slide" start="0,-52" time="200" tween="sine" easing="out" condition="Container(610).OnNext" reversible="false">Focus</animation>
+							<animation effect="slide" start="0,52" time="200" tween="sine" easing="out" condition="Container(610).OnPrevious" reversible="false">Focus</animation>
+							<animation effect="fade" start="100" end="25" time="200" condition="!Control.HasFocus(610)">Conditional</animation>
 						</control>
 						<control type="label">
 							<left>25</left>
@@ -78,7 +77,7 @@
 							<width>70</width>
 							<height>46</height>
 							<texture>shine-animation.png</texture>
-							<visible>System.IdleTime(5) + Control.HasFocus(2000)</visible>
+							<visible>System.IdleTime(5) + Control.HasFocus(610)</visible>
 							<animation type="visible" reversible="false">
 								<effect type="fade" start="0" end="100" time="200"/>
 								<effect type="fade" start="100" end="0" delay="800" time="200"/>
@@ -115,6 +114,11 @@
 							<onclick>ActivateWindow(ShutdownMenu)</onclick>
 						</item>
 					</content>
+				</control>
+				<control type="group">
+					<left>20</left>
+					<top>140</top>
+					<include>CommonPlayerControls</include>
 				</control>
 			</control>
 		</control>
