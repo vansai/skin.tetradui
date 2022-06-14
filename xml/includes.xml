@@ -140,7 +140,7 @@
 			<height>720</height>
 			<texture colordiffuse="77ffffff">black-back.png</texture>
 			<include>VisibleFadeEffect</include>
-			<visible>Window.IsActive(1103) | Window.IsActive(ShutdownMenu) | [!Window.IsVisible(Weather) + ControlGroup(9000).HasFocus] | Window.IsActive(DialogSelect.xml) | Window.IsActive(DialogAddonInfo.xml) | Window.IsActive(DialogAddonSettings.xml) | Window.IsActive(DialogBusy.xml) | Window.IsActive(DialogConfirm.xml) | Window.IsActive(DialogContextMenu.xml) | Window.IsActive(DialogFavourites.xml) | Window.IsActive(DialogKeyboard.xml) | Window.IsActive(DialogMediaSource.xml) | Window.IsActive(DialogMusicInfo.xml) | Window.IsActive(DialogNotification.xml) | Window.IsActive(DialogNumeric.xml) | Window.IsActive(DialogPictureInfo.xml) | Window.IsActive(DialogSettings.xml) | Window.IsActive(DialogTextViewer.xml) | Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(FileBrowser.xml)</visible>
+			<visible>Window.IsActive(1103) | Window.IsActive(ShutdownMenu) | [!Window.IsVisible(Weather) + ControlGroup(9000).HasFocus] | Window.IsActive(DialogSelect.xml) | Window.IsActive(DialogAddonInfo.xml) | Window.IsActive(DialogAddonSettings.xml) | Window.IsActive(DialogBusy.xml) | Window.IsActive(DialogConfirm.xml) | Window.IsActive(DialogContextMenu.xml) | Window.IsActive(DialogFavourites.xml) | Window.IsActive(DialogKeyboard.xml) | Window.IsActive(DialogMediaSource.xml) | Window.IsActive(DialogMusicInfo.xml) | Window.IsActive(DialogNumeric.xml) | Window.IsActive(DialogPictureInfo.xml) | Window.IsActive(DialogSettings.xml) | Window.IsActive(DialogTextViewer.xml) | Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(FileBrowser.xml)</visible>
 		</control>
 	</include>
 	<include name="SortbyButton">
