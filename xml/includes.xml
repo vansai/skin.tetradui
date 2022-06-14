@@ -25,8 +25,10 @@
 			<texturefocus>tetradui_logo_clean.png</texturefocus>
 			<texturenofocus>tetradui_logo_clean.png</texturenofocus>
 			<onleft condition="!Window.IsVisible(Weather)">1</onleft>
-			<onright condition="!Window.IsVisible(SettingsCategory.xml)">2</onright>
-			<ondown>9000</ondown>
+			<onright condition="Window.IsVisible(Weather)">1</onright>
+			<onright condition="!Window.IsVisible(Settings.xml)">2</onright>
+			<ondown condition="!Window.IsVisible(Weather)">9000</ondown>
+			<ondown condition="Window.IsVisible(Weather)">3</ondown>
 			<onclick>ActivateWindow(1103)</onclick>
 			<animation effect="zoom" start="100" end="115" time="100" center="auto">Focus</animation>
 			<animation effect="zoom" start="115" end="100" time="100" center="auto">UnFocus</animation>
