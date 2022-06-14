@@ -175,6 +175,8 @@
 				<animation effect="slide" end="0,202" time="200" easing="out" condition="[String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + ControlGroup(9000).HasFocus(9004)] | [!String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + ControlGroup(9000).HasFocus(4)]">Conditional</animation>
 				<animation effect="slide" end="0,252" time="200" easing="out" condition="!String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + ControlGroup(9000).HasFocus(9004)">Conditional</animation>
 				<animation effect="fade" start="100" end="25" time="200" condition="!ControlGroup(9000).HasFocus">Conditional</animation>
+				<include>VisibleFadeEffect</include>
+				<visible>!Control.HasFocus(9050)</visible>
 			</control>
 			<control type="textbox" id="400">
 				<description>No weather warning</description>

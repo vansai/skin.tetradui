@@ -105,6 +105,8 @@
 							<animation effect="slide" start="0,-45" time="200" tween="sine" easing="out" condition="Container(9000).OnNext" reversible="false">Focus</animation>
 							<animation effect="slide" start="0,45" time="200" tween="sine" easing="out" condition="Container(9000).OnPrevious" reversible="false">Focus</animation>
 							<animation effect="fade" start="100" end="25" time="200" condition="!Control.HasFocus(9000)">Conditional</animation>
+							<include>VisibleFadeEffect</include>
+							<visible>!Control.HasFocus(9050)</visible>
 						</control>
 						<control type="image">
 							<description>Icon</description>
