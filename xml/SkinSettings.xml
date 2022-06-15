@@ -311,12 +311,6 @@
 					</control>
 					<control type="radiobutton" id="332">
 						<include>SkinSettingsRadioButtonCommonValues</include>
-						<label>$LOCALIZE[31309]$LOCALIZE[0]</label>
-						<onclick>Skin.ToggleSetting(AppsBlade_HidePrograms)</onclick>
-						<selected>Skin.HasSetting(AppsBlade_HidePrograms)</selected>
-					</control>
-					<control type="radiobutton" id="333">
-						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$LOCALIZE[24001]</label>
 						<onclick>Skin.ToggleSetting(AppsBlade_HideAddons)</onclick>
 						<selected>Skin.HasSetting(AppsBlade_HideAddons)</selected>

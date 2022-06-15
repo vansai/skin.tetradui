@@ -705,68 +705,21 @@
 
 	<include name="MediaInfoCard">
 		<control type="group">
-			<top>-12</top>
-			<left>490</left>
+			<top>221</top>
+			<left>515</left>
 			<animation effect="slide" end="0,-30" condition="Integer.IsGreater(Container(9000).NumItems,5)">Conditional</animation>
 			<include>VisibleFadeEffect</include>
 			<visible>![Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | Container(9000).HasFocus(7)]</visible>
 			<control type="image">
-				<description>GamerCard Background</description>
-				<width>430</width>
-				<height>160</height>
-				<aspectratio>stretch</aspectratio>
-				<texture>gamecard_home-silver.png</texture>
-			</control>
-			<control type="image">
-				<description>Button shine animation</description>
-				<top>12</top>
-				<width>60</width>
-				<height>32</height>
-				<texture>shine-animation.png</texture>
-				<animation type="conditional" reversible="false" condition="true" loop="true">
-					<effect type="fade" delay="5000" start="0" end="100" time="700"/>
-					<effect type="fade" delay="5900" start="100" end="0" time="700"/>
-					<effect type="slide" delay="5000" start="0,0" end="350,0" time="1500"/>
-				</animation>
+				<width>34</width>
+				<height>34</height>
+				<texture>DefaultAddonInfoProvider.png</texture>
 			</control>
 			<control type="label">
-				<description>Information Label</description>
-				<left>30</left>
-				<top>13</top>
-				<width>370</width>
-				<height>30</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font13</font>
-				<textcolor>grey</textcolor>
-				<label>$LOCALIZE[14116]</label>
-			</control>
-			<control type="image">
-				<description>Icon</description>
-				<left>30</left>
-				<top>50</top>
-				<width>80</width>
-				<height>80</height>
-				<aspectratio>keep</aspectratio>
-				<texture>$INFO[Container(9000).ListItem.Icon]</texture>
-				<fadetime>200</fadetime>
-			</control>
-			<control type="label">
-				<description>Label 1</description>
-				<left>125</left>
-				<top>58</top>
-				<width>290</width>
-				<label>$VAR[MediaInfoLabel1]</label>
-				<font>font12</font>
-				<textcolor>white2</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="label">
-				<description>Label 2</description>
-				<left>125</left>
-				<top>94</top>
-				<width>290</width>
-				<label>$VAR[MediaInfoLabel2]</label>
+				<top>4</top>
+				<left>58</left>
+				<width>342</width>
+				<label>$VAR[MediaInfoLabel]</label>
 				<font>font12</font>
 				<textcolor>white2</textcolor>
 				<shadowcolor>black</shadowcolor>
@@ -775,54 +728,22 @@
 	</include>
 	<include name="SystemCard">
 		<control type="group">
-			<top>-12</top>
-			<left>490</left>
-			<control type="image">
-				<description>GamerCard Background</description>
-				<width>430</width>
-				<height>160</height>
-				<aspectratio>stretch</aspectratio>
-				<texture>gamecard_home-silver.png</texture>
-			</control>
-			<control type="image">
-				<description>Button shine animation</description>
-				<top>12</top>
-				<width>60</width>
-				<height>32</height>
-				<texture>shine-animation.png</texture>
-				<animation type="conditional" reversible="false" condition="true" loop="true">
-					<effect type="fade" delay="5000" start="0" end="100" time="700"/>
-					<effect type="fade" delay="5900" start="100" end="0" time="700"/>
-					<effect type="slide" delay="5000" start="0,0" end="350,0" time="1500"/>
-				</animation>
-			</control>
-			<control type="label">
-				<description>System Info label</description>
-				<left>30</left>
-				<top>13</top>
-				<width>370</width>
-				<height>30</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font13</font>
-				<textcolor>grey</textcolor>
-				<label>130</label>
-			</control>
+			<top>300</top>
+			<left>38</left>
 			<control type="image">
 				<description>Icon</description>
-				<left>30</left>
 				<top>50</top>
 				<width>80</width>
 				<height>80</height>
 				<aspectratio>keep</aspectratio>
-				<texture>Icon-SystemInfo.png</texture>
+				<texture>DefaultAddonInfoProvider.png</texture>
 			</control>
 			<control type="label">
 				<description>IP Address Label</description>
-				<left>120</left>
-				<top>50</top>
+				<left>90</left>
+				<top>45</top>
 				<height>30</height>
-				<width>290</width>
+				<width>400</width>
 				<label>$LOCALIZE[31308] $INFO[Network.IPAddress]</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -832,10 +753,10 @@
 			</control>
 			<control type="label">
 				<description>CPU Label</description>
-				<left>120</left>
+				<left>90</left>
 				<top>75</top>
 				<height>30</height>
-				<width>290</width>
+				<width>400</width>
 				<label>$LOCALIZE[158]: $INFO[System.FreeMemory]</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -845,10 +766,10 @@
 			</control>
 			<control type="label">
 				<description>CPU Label</description>
-				<left>120</left>
-				<top>100</top>
+				<left>90</left>
+				<top>105</top>
 				<height>30</height>
-				<width>290</width>
+				<width>450</width>
 				<label>Kodi: $INFO[System.BuildVersion]</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -962,19 +883,6 @@
 			</control>
 		</control>
 	</include>
-	
-	<!--
-	<include name="TetradUILogo">
-		<control type="image">
-			<description>Logo</description>
-			<top>657</top>
-			<width>870</width>
-			<height>55</height>
-			<aspectratio align="center">keep</aspectratio>
-			<texture>tetradui_logo.png</texture>
-		</control>
-	</include>
-	-->
 
 	<include name="AllViewCommonPageControls">
 		<control type="grouplist">
