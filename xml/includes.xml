@@ -791,7 +791,6 @@
 			<textcolor>grey</textcolor>
 			<titlecolor>orange</titlecolor>
 			<headlinecolor>grey2</headlinecolor>
-			<shadowcolor>black</shadowcolor>
 		</control>
 	</include>
 	
@@ -799,7 +798,7 @@
 		<control type="group">
 			<visible>$PARAM[visible]</visible>
 			<animation effect="fade" time="HomeVisibleFadeAnimationSpeed">VisibleChange</animation>
-			<top>290</top>
+			<top>285</top>
 			<left>$PARAM[left]</left>
 			<control type="label">
 				<description>Header</description>
@@ -1048,12 +1047,13 @@
 				</control>
 				<control type="group">
 					<left>620</left>
-					<top>72r</top>
+					<top>76r</top>
 					<control type="image">
 						<description>Background Image for Menu</description>
+						<top>-13</top>
 						<width>440</width>
-						<height>70</height>
-						<texture border="35,0,35,0">top_menu_back2.png</texture>
+						<height>79</height>
+						<texture border="20,20,20,30">Dialog2.png</texture>
 					</control>
 					<control type="image">
 						<description>Background Image for Menu</description>
@@ -1123,17 +1123,18 @@
 				</control>
 				<control type="group">
 					<left>680</left>
-					<top>72r</top>
-					<animation effect="slide" start="0,0" end="-50,0" time="0" condition="Window.IsVisible(Weather)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-50,0" time="HomeBladeAnimationSpeed" condition="Window.IsVisible(1111) + Control.HasFocus(1)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="50,0" time="HomeBladeAnimationSpeed" condition="Window.IsVisible(Weather) + Control.HasFocus(1)">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="0,0" time="SubBladeFadeInDelay" condition="!Window.IsVisible(1111) + Window.Previous(Weather)">WindowOpen</animation>
-					<animation effect="slide" start="0,0" end="-50,0" time="SubBladeFadeInDelay" condition="!Window.IsVisible(1111) + Window.Next(Weather)">WindowClose</animation>
+					<top>76r</top>
+					<animation effect="slide" start="0,0" end="-30,0" time="0" condition="Window.IsVisible(Weather)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-30,0" time="HomeBladeAnimationSpeed" condition="Window.IsVisible(1111) + Control.HasFocus(1)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="30,0" time="HomeBladeAnimationSpeed" condition="Window.IsVisible(Weather) + Control.HasFocus(1)">Conditional</animation>
+					<animation effect="slide" start="-30,0" end="0,0" time="SubBladeFadeInDelay" condition="!Window.IsVisible(1111) + Window.Previous(Weather)">WindowOpen</animation>
+					<animation effect="slide" start="0,0" end="-30,0" time="SubBladeFadeInDelay" condition="!Window.IsVisible(1111) + Window.Next(Weather)">WindowClose</animation>
 					<control type="image">
 						<description>Background Image for Menu</description>
+						<top>-13</top>
 						<width>440</width>
-						<height>70</height>
-						<texture border="35,0,35,0">top_menu_back2.png</texture>
+						<height>79</height>
+						<texture border="20,20,20,30">Dialog2.png</texture>
 					</control>
 					<control type="image">
 						<description>Background Image for Menu</description>

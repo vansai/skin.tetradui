@@ -154,11 +154,11 @@
 				<control type="ranges" id="1">
 					<description>Chapters</description>
 					<left>100</left>
-					<top>17</top>
+					<top>18</top>
 					<width>720</width>
-					<height>12</height>
+					<height>10</height>
 					<info>Player.Chapters</info>
-					<righttexture border="1,0,1,0">progress_chapter.png</righttexture>
+					<righttexture border="1,0,1,0" colordiffuse="55ffffff">progress_chapter.png</righttexture>
 				</control>
 				-->
 				<control type="label" id="1">

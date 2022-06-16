@@ -3,29 +3,29 @@
 	<defaultcontrol always="true">52</defaultcontrol>
 	<controls>
 		<include>CommonMediaBackground</include>
-		<control type="image">
-			<description>Background</description>
-			<left>25</left>
-			<width>50</width>
-			<height>720</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>background-overlay-blackwash-left-ws.png</texture>
-		</control>
-		<control type="image">
-			<description>Background</description>
-			<left>65r</left>
-			<width>50</width>
-			<height>720</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>background-overlay-blackwash-right-ws.png</texture>
-		</control>
-		<control type="image">
-			<description>Background</description>
-			<left>75</left>
-			<width>1140</width>
-			<height>720</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>background-overlay-blackwash-centertile-ws.png</texture>
+		<control type="group">
+			<top>-95</top>
+			<control type="image">
+				<description>Background</description>
+				<left>11</left>
+				<width>68</width>
+				<height>910</height>
+				<texture>background-overlay-blackwash-left-ws.png</texture>
+			</control>
+			<control type="image">
+				<description>Background</description>
+				<left>65r</left>
+				<width>68</width>
+				<height>910</height>
+				<texture>background-overlay-blackwash-right-ws.png</texture>
+			</control>
+			<control type="image">
+				<description>Background</description>
+				<left>79</left>
+				<width>1136</width>
+				<height>910</height>
+				<texture>background-overlay-blackwash-centertile-ws.png</texture>
+			</control>
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>

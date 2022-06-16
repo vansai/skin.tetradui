@@ -20,28 +20,26 @@
 <!-- Blackwash Background -->
 		<control type="group">
 			<animation effect="slide" end="-50,0" time="0" condition="Control.HasFocus(1)">Conditional</animation>
+			<top>-95</top>
 			<control type="image">
 				<description>Background</description>
-				<left>205</left>
-				<width>50</width>
-				<height>720</height>
-				<aspectratio>stretch</aspectratio>
+				<left>191</left>
+				<width>68</width>
+				<height>910</height>
 				<texture>background-overlay-blackwash-left-ws.png</texture>
 			</control>
 			<control type="image">
 				<description>Background</description>
 				<left>55r</left>
-				<width>50</width>
-				<height>720</height>
-				<aspectratio>stretch</aspectratio>
+				<width>68</width>
+				<height>910</height>
 				<texture>background-overlay-blackwash-right-ws.png</texture>
 			</control>
 			<control type="image">
 				<description>Background</description>
-				<left>255</left>
-				<width>970</width>
-				<height>720</height>
-				<aspectratio>stretch</aspectratio>
+				<left>259</left>
+				<width>966</width>
+				<height>910</height>
 				<texture>background-overlay-blackwash-centertile-ws.png</texture>
 			</control>
 		</control>
