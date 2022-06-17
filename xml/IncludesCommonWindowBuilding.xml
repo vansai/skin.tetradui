@@ -313,13 +313,13 @@
 		<control type="label">
 			<description>Weather Label</description>
 			<label>31004</label>
-			<left>90</left>
+			<left>88</left>
 			<top>170</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
 			<aligny>top</aligny>
-			<angle>270</angle>
+			<angle>273</angle>
 		</control>
 		<!-- Right side -->
 		<control type="image">
@@ -355,7 +355,7 @@
 			<textcolor>black</textcolor>
 			<align>left</align>
 			<aligny>top</aligny>
-			<angle>270</angle>
+			<angle>273</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Weather)">
 				<effect type="slide" start="-150,0" end="-160,0" time="100" />
 				<effect type="slide" start="0,0" end="160,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -390,7 +390,7 @@
 			<textcolor>black</textcolor>
 			<align>left</align>
 			<aligny>top</aligny>
-			<angle>270</angle>
+			<angle>273</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Weather)">
 				<effect type="slide" start="-150,0" end="-160,0" time="100" />
 				<effect type="slide" start="0,0" end="160,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -425,7 +425,7 @@
 			<textcolor>black</textcolor>
 			<align>left</align>
 			<aligny>top</aligny>
-			<angle>270</angle>
+			<angle>273</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Weather)">
 				<effect type="slide" start="-150,0" end="-160,0" time="100" />
 				<effect type="slide" start="0,0" end="160,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -481,7 +481,7 @@
 			<textcolor>black</textcolor>
 			<align>left</align>
 			<aligny>top</aligny>
-			<angle>270</angle>
+			<angle>273</angle>
 			<animation type="WindowOpen" condition="Window.Previous(1111)">
 				<effect type="slide" start="50,0" end="60,0" time="100" />
 				<effect type="slide" start="0,0" end="-60,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -524,7 +524,7 @@
 			<textcolor>black</textcolor>
 			<align>left</align>
 			<aligny>top</aligny>
-			<angle>270</angle>
+			<angle>273</angle>
 			<animation type="WindowOpen" condition="Window.Previous(1111)">
 				<effect type="slide" start="50,0" end="60,0" time="100" />
 				<effect type="slide" start="0,0" end="-60,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -568,7 +568,7 @@
 			<textcolor>black</textcolor>
 			<align>left</align>
 			<aligny>top</aligny>
-			<angle>270</angle>
+			<angle>273</angle>
 			<animation type="WindowOpen" condition="Window.Previous(1111)">
 				<effect type="slide" start="-100,0" end="-110,0" time="100" />
 				<effect type="slide" start="0,0" end="100,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -603,7 +603,7 @@
 			<textcolor>black</textcolor>
 			<align>left</align>
 			<aligny>top</aligny>
-			<angle>270</angle>
+			<angle>273</angle>
 			<animation type="WindowOpen" condition="Window.Previous(1111)">
 				<effect type="slide" start="-100,0" end="-110,0" time="100" />
 				<effect type="slide" start="0,0" end="110,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -659,7 +659,7 @@
 			<textcolor>black</textcolor>
 			<align>left</align>
 			<aligny>top</aligny>
-			<angle>270</angle>
+			<angle>273</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Home)">
 				<effect type="slide" start="100,0" end="110,0" time="100" />
 				<effect type="slide" start="0,0" end="-110,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -694,7 +694,7 @@
 			<textcolor>black</textcolor>
 			<align>left</align>
 			<aligny>top</aligny>
-			<angle>270</angle>
+			<angle>273</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Home)">
 				<effect type="slide" start="100,0" end="110,0" time="100" />
 				<effect type="slide" start="0,0" end="-110,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -731,13 +731,13 @@
 		<control type="label">
 			<description>Media Label</description>
 			<label>31001</label>
-			<left>90</left>
+			<left>88</left>
 			<top>170</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
 			<aligny>top</aligny>
-			<angle>270</angle>
+			<angle>273</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Home)">
 				<effect type="slide" start="100,0" end="110,0" time="100" />
 				<effect type="slide" start="0,0" end="-110,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -781,7 +781,7 @@
 			<textcolor>black</textcolor>
 			<align>left</align>
 			<aligny>top</aligny>
-			<angle>270</angle>
+			<angle>273</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Home)">
 				<effect type="slide" start="-50,0" end="-60,0" time="100" />
 				<effect type="slide" start="0,0" end="60,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -838,7 +838,7 @@
 			<textcolor>black</textcolor>
 			<align>left</align>
 			<aligny>top</aligny>
-			<angle>270</angle>
+			<angle>273</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Settings)">
 				<effect type="slide" start="150,0" end="160,0" time="100" />
 				<effect type="slide" start="0,0" end="-160,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -873,7 +873,7 @@
 			<textcolor>black</textcolor>
 			<align>left</align>
 			<aligny>top</aligny>
-			<angle>270</angle>
+			<angle>273</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Settings)">
 				<effect type="slide" start="150,0" end="160,0" time="100" />
 				<effect type="slide" start="0,0" end="-160,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -908,7 +908,7 @@
 			<textcolor>black</textcolor>
 			<align>left</align>
 			<aligny>top</aligny>
-			<angle>270</angle>
+			<angle>273</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Settings)">
 				<effect type="slide" start="150,0" end="160,0" time="100" />
 				<effect type="slide" start="0,0" end="-160,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -945,13 +945,13 @@
 		<control type="label">
 			<description>System Label</description>
 			<label>31003</label>
-			<left>90</left>
+			<left>88</left>
 			<top>170</top>
 			<font>font16</font>
 			<textcolor>black</textcolor>
 			<align>left</align>
 			<aligny>top</aligny>
-			<angle>270</angle>
+			<angle>273</angle>
 			<animation type="WindowOpen" condition="Window.Previous(Settings)">
 				<effect type="slide" start="150,0" end="160,0" time="100" />
 				<effect type="slide" start="0,0" end="-160,0" delay="100" time="HomeBladeAnimationSpeed" />
