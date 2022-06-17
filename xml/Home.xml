@@ -2,6 +2,7 @@
 <window>
 	<defaultcontrol always="true">9050</defaultcontrol>
 	<previouswindow>home</previouswindow>
+	<onload>SetProperty(RefreshList,1,Home)</onload>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(1)">WindowClose</animation>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(2)">WindowClose</animation>
 	<controls>
@@ -69,7 +70,9 @@
 					<width>450</width>
 					<height>314</height>
 					<onleft condition="!Skin.HasSetting(Blades_HideWidgets) + Container(9000).HasFocus(2)">501</onleft>
-					<onleft condition="!kin.HasSetting(Blades_HideWidgets) | !Container(9000).HasFocus(2)">1</onleft>
+					<onleft condition="!Skin.HasSetting(Blades_HideWidgets) + Container(9000).HasFocus(3)">505</onleft>
+					<onleft condition="!Skin.HasSetting(Blades_HideWidgets) + Container(9000).HasFocus(6)">509</onleft>
+					<onleft condition="!Skin.HasSetting(Blades_HideWidgets) | ![Container(9000).HasFocus(2) + Container(9000).HasFocus(3) + Container(9000).HasFocus(6)]">1</onleft>
 					<onright>9100</onright>
 					<onup>9050</onup>
 					<ondown>9050</ondown>
@@ -413,8 +416,10 @@
 					<param name="left" value="40" />
 					<param name="label" value="20382" />
 					<param name="id" value="501" />
+					<param name="thumb" value="$INFO[Container(501).ListItem.Art(poster)]" />
 					<param name="onleft" value="9000" />
 					<param name="onright" value="502" />
+					<param name="target" value="video" />
 					<param name="content" value="videodb://movies/titles/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22playcount%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%220%22%7D%5D%7D%2C%22type%22%3A%22movies%22%7D" />
 					<param name="sortby" value="dateadded" />
 				</include>
@@ -423,8 +428,10 @@
 					<param name="left" value="255" />
 					<param name="label" value="31542" />
 					<param name="id" value="502" />
+					<param name="thumb" value="$INFO[Container(502).ListItem.Art(poster)]" />
 					<param name="onleft" value="501" />
 					<param name="onright" value="503" />
+					<param name="target" value="video" />
 					<param name="content" value="videodb://movies/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22inprogress%22%2c%22operator%22%3a%22true%22%2c%22value%22%3a%5b%5d%7d%5d%7d%2c%22type%22%3a%22movies%22%7d" />
 					<param name="sortby" value="lastplayed" />
 				</include>
@@ -433,8 +440,10 @@
 					<param name="left" value="470" />
 					<param name="label" value="$VAR[MovieWidget3Label]" />
 					<param name="id" value="503" />
+					<param name="thumb" value="$INFO[Container(503).ListItem.Art(poster)]" />
 					<param name="onleft" value="502" />
 					<param name="onright" value="504" />
+					<param name="target" value="video" />
 					<param name="content" value="$VAR[MovieWidget3Content]" />
 					<param name="sortby" value="$VAR[MovieWidgetSortby]" />
 				</include>
@@ -443,10 +452,72 @@
 					<param name="left" value="685" />
 					<param name="label" value="$VAR[MovieWidget4Label]" />
 					<param name="id" value="504" />
+					<param name="thumb" value="$INFO[Container(504).ListItem.Art(poster)]" />
 					<param name="onleft" value="503" />
 					<param name="onright" value="9000" />
+					<param name="target" value="video" />
 					<param name="content" value="$VAR[MovieWidget4Content]" />
 					<param name="sortby" value="$VAR[MovieWidgetSortby]" />
+				</include>
+				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
+					<param name="visible" value="Library.HasContent(TVShows) + Container(9000).HasFocus(3)" />
+					<param name="left" value="245" />
+					<param name="label" value="20382" />
+					<param name="id" value="505" />
+					<param name="thumb" value="$INFO[Container(505).ListItem.Art(thumb)]" />
+					<param name="onleft" value="9000" />
+					<param name="onright" value="506" />
+					<param name="target" value="video" />
+					<param name="content" value="videodb://tvshows/titles/-1/-1/-1/-1/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22playcount%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%220%22%7D%5D%7D%2C%22type%22%3A%22episodes%22%7D" />
+					<param name="sortby" value="dateadded" />
+				</include>
+				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
+					<param name="visible" value="Library.HasContent(TVShows) + Container(9000).HasFocus(3)" />
+					<param name="left" value="490" />
+					<param name="label" value="31542" />
+					<param name="id" value="506" />
+					<param name="thumb" value="$INFO[Container(506).ListItem.Art(thumb)]" />
+					<param name="onleft" value="505" />
+					<param name="onright" value="9000" />
+					<param name="target" value="video" />
+					<param name="content" value="plugin://script.embuary.helper/?info=getnextup" />
+					<param name="sortby" value="dateadded" />
+				</include>
+				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
+					<param name="visible" value="Library.HasContent(Music) + Container(9000).HasFocus(6)" />
+					<param name="left" value="117" />
+					<param name="label" value="359" />
+					<param name="id" value="509" />
+					<param name="thumb" value="$INFO[Container(509).ListItem.Art(thumb)]" />
+					<param name="onleft" value="9000" />
+					<param name="onright" value="510" />
+					<param name="target" value="music" />
+					<param name="content" value="musicdb://albums/" />
+					<param name="sortby" value="dateadded" />
+				</include>
+				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
+					<param name="visible" value="Library.HasContent(Music) + Container(9000).HasFocus(6)" />
+					<param name="left" value="362.5" />
+					<param name="label" value="517" />
+					<param name="id" value="510" />
+					<param name="thumb" value="$INFO[Container(510).ListItem.Art(thumb)]" />
+					<param name="onleft" value="509" />
+					<param name="onright" value="511" />
+					<param name="target" value="music" />
+					<param name="content" value="musicdb://albums/titles/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22playcount%22%2C%22operator%22%3A%22greaterthan%22%2C%22value%22%3A%220%22%7D%5D%7D%2C%22type%22%3A%22albums%22%7D" />
+					<param name="sortby" value="playcount" />
+				</include>
+				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
+					<param name="visible" value="Library.HasContent(Music) + Container(9000).HasFocus(6)" />
+					<param name="left" value="608" />
+					<param name="label" value="31501" />
+					<param name="id" value="511" />
+					<param name="thumb" value="$INFO[Container(511).ListItem.Art(thumb)]" />
+					<param name="onleft" value="510" />
+					<param name="onright" value="9000" />
+					<param name="target" value="music" />
+					<param name="content" value="$VAR[HomeRandomAlbums]" />
+					<param name="sortby" value="random" />
 				</include>
 			</control>
 			<include condition="System.GetBool(LookAndFeel.EnableRSSFeeds)">CommonRSSFeed</include>

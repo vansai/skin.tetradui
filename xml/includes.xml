@@ -867,8 +867,7 @@
 			<left>$PARAM[left]</left>
 			<control type="label">
 				<description>Header</description>
-				<left>5</left>
-				<width>202</width>
+				<width>212</width>
 				<height>30</height>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -879,8 +878,7 @@
 			</control>
 			<control type="label">
 				<description>Header</description>
-				<left>5</left>
-				<width>202</width>
+				<width>212</width>
 				<height>30</height>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -895,7 +893,7 @@
 				<width>202</width>
 				<height>164</height>
 				<aspectratio>keep</aspectratio>
-				<texture background="true">$INFO[Container($PARAM[id]).ListItem.Art(poster)]</texture>
+				<texture background="true">$PARAM[thumb]</texture>
 				<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
 				<bordersize>18,2,18,2</bordersize>
 				<fadetime>200</fadetime>
@@ -907,7 +905,7 @@
 				<width>202</width>
 				<height>164</height>
 				<aspectratio>keep</aspectratio>
-				<texture background="true">$INFO[Container($PARAM[id]).ListItem.Art(poster)]</texture>
+				<texture background="true">$PARAM[thumb]</texture>
 				<bordertexture border="19,3,19,3">thumb-border-focus.png</bordertexture>
 				<bordersize>18,2,18,2</bordersize>
 				<fadetime>200</fadetime>
@@ -930,6 +928,7 @@
 				<font>font10</font>
 				<textcolor>orange</textcolor>
 				<align>center</align>
+				<scroll>true</scroll>
 				<label>$INFO[Container($PARAM[id]).ListItem.Label]</label>
 				<visible>Control.HasFocus($PARAM[id])</visible>
 			</control>
@@ -940,10 +939,11 @@
 				<onup>9000</onup>
 				<scrolltime>300</scrolltime>
 				<autoscroll time="5000" delay="5000" repeat="10000">true</autoscroll>
+				<onclick condition="Container(9000).HasFocus(6)">PlayMedia($INFO[ListItem.FolderPath],isdir)</onclick>
 				<visible>Integer.IsGreater(Container($PARAM[id]).NumItems,0) | Container($PARAM[id]).IsUpdating</visible>
 				<itemlayout />
 				<focusedlayout />
-				<content target="video" sortby="$PARAM[sortby]" limit="20" sortorder="descending">$PARAM[content]</content>
+				<content target="$PARAM[target]" sortby="$PARAM[sortby]" limit="20" sortorder="descending">$PARAM[content]</content>
 			</control>
 		</control>
 	</include>

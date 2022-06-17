@@ -380,7 +380,11 @@ msgctxt "#31499"
 msgid "Not installed"
 msgstr ""
 
-# empty strings from id 31500 to 31501
+# empty string with id 31500
+
+msgctxt "#31501"
+msgid "Featured"
+msgstr ""
 
 msgctxt "#31502"
 msgid "Blades"
