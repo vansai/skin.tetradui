@@ -194,13 +194,13 @@
 						</item>
 						<item>
 							<label>$LOCALIZE[10050]</label>
-							<label2>31405</label2>
+							<label2>31402</label2>
 							<onclick>ActivateWindow(Eventlog)</onclick>
 							<icon>button_icons/icon-eventlog.png</icon>
 						</item>
 						<item>
 							<label>$LOCALIZE[138]</label>
-							<label2>31405</label2>
+							<label2>31410</label2>
 							<onclick>ActivateWindow(systeminfo)</onclick>
 							<icon>button_icons/icon-systeminfo.png</icon>
 						</item>
@@ -209,13 +209,6 @@
 							<label2>31406</label2>
 							<onclick>ActivateWindow(SkinSettings)</onclick>
 							<icon>button_icons/icon-skin.png</icon>
-						</item>
-						<item>
-							<label>13005</label>
-							<label2>31407</label2>
-							<onclick>ActivateWindow(ShutdownMenu)</onclick>
-							<icon>button_icons/icon-power.png</icon>
-							<visible>false</visible>
 						</item>
 					</content>
 				</control>
