@@ -182,6 +182,11 @@
 		<value condition="Control.IsVisible(300)">$LOCALIZE[31480]</value>
 		<value condition="Control.IsVisible(600)">$LOCALIZE[31481]</value>
 	</variable>
+	<variable name="StatusEmbuaryHelperVar">
+		<value condition="System.AddonIsEnabled(script.embuary.helper)">$INFO[System.AddonVersion(script.embuary.helper)] $LOCALIZE[39019]</value>
+		<value condition="System.HasAddon(script.embuary.helper) + !System.AddonIsEnabled(script.embuary.helper)">$LOCALIZE[24023]</value>
+		<value>$LOCALIZE[31499]</value>
+	</variable>
 	<variable name="StatusTheMovieDbHelperVar">
 		<value condition="System.AddonIsEnabled(plugin.video.themoviedb.helper)">$INFO[System.AddonVersion(plugin.video.themoviedb.helper)] $LOCALIZE[39019]</value>
 		<value condition="System.HasAddon(plugin.video.themoviedb.helper) + !System.AddonIsEnabled(plugin.video.themoviedb.helper)">$LOCALIZE[24023]</value>
@@ -250,5 +255,8 @@
 	<variable name="MovieWidget4Content">
 		<value condition="System.AddonIsEnabled(plugin.video.themoviedb.helper)">plugin://plugin.video.themoviedb.helper?info=upcoming&amp;type=movie&amp;nextpage=False</value>
 		<value>videodb://movies/titles/</value>
+	</variable>
+	<variable name="HomeRandomAlbums">
+		<value condition="!Window.IsVisible(1104)">musicdb://albums/</value>
 	</variable>
 </includes>

@@ -674,13 +674,21 @@
 					<onright>90</onright>
 					<control type="button" id="601">
 						<include>SkinSettingsButtonCommonValues</include>
+						<label>Embuary Helper</label>
+						<label2>$VAR[StatusEmbuaryHelperVar]</label2>
+						<onclick condition="System.AddonIsEnabled(script.embuary.helper)">Addon.OpenSettings(script.embuary.helper)</onclick>
+						<onclick condition="!System.HasAddon(script.embuary.helper)">InstallAddon(script.embuary.helper)</onclick>
+						<onclick condition="System.HasAddon(script.embuary.helper) + !System.AddonIsEnabled(script.embuary.helper)">EnableAddon(script.embuary.helper)</onclick>
+					</control>
+					<control type="button" id="602">
+						<include>SkinSettingsButtonCommonValues</include>
 						<label>TheMovieDb Helper</label>
 						<label2>$VAR[StatusTheMovieDbHelperVar]</label2>
 						<onclick condition="System.AddonIsEnabled(plugin.video.themoviedb.helper)">Addon.OpenSettings(plugin.video.themoviedb.helper)</onclick>
 						<onclick condition="!System.HasAddon(plugin.video.themoviedb.helper)">InstallAddon(plugin.video.themoviedb.helper)</onclick>
 						<onclick condition="System.HasAddon(plugin.video.themoviedb.helper) + !System.AddonIsEnabled(plugin.video.themoviedb.helper)">EnableAddon(plugin.video.themoviedb.helper)</onclick>
 					</control>
-					<control type="button" id="602">
+					<control type="button" id="603">
 						<include>SkinSettingsButtonCommonValues</include>
 						<label>CU LRC Lyrics</label>
 						<label2>$VAR[StatusCULRCLyricsVar]</label2>
@@ -688,7 +696,7 @@
 						<onclick condition="!System.HasAddon(script.cu.lrclyrics)">InstallAddon(script.cu.lrclyrics)</onclick>
 						<onclick condition="System.HasAddon(script.cu.lrclyrics) + !System.AddonIsEnabled(script.cu.lrclyrics)">EnableAddon(script.cu.lrclyrics)</onclick>
 					</control>
-					<control type="button" id="603">
+					<control type="button" id="604">
 						<include>SkinSettingsButtonCommonValues</include>
 						<label>Image Resource Select Add-on</label>
 						<label2>$VAR[StatusImageResourceSelectVar]</label2>
@@ -696,7 +704,7 @@
 						<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 						<onclick condition="System.HasAddon(script.image.resource.select) + !System.AddonIsEnabled(script.image.resource.select)">EnableAddon(script.image.resource.select)</onclick>
 					</control>
-					<control type="button" id="604">
+					<control type="button" id="605">
 						<include>SkinSettingsButtonCommonValues</include>
 						<label>Global Search</label>
 						<label2>$VAR[StatusGlobalSearchVar]</label2>
@@ -704,7 +712,7 @@
 						<onclick condition="!System.HasAddon(script.globalsearch)">InstallAddon(script.globalsearch)</onclick>
 						<onclick condition="System.HasAddon(script.globalsearch) + !System.AddonIsEnabled(script.globalsearch)">EnableAddon(script.globalsearch)</onclick>
 					</control>
-					<control type="button" id="605">
+					<control type="button" id="606">
 						<include>SkinSettingsButtonCommonValues</include>
 						<label>YouTube</label>
 						<label2>$VAR[StatusYouTubeVar]</label2>
