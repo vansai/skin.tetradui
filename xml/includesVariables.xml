@@ -259,4 +259,16 @@
 	<variable name="HomeRandomAlbums">
 		<value condition="!Window.IsVisible(1104)">musicdb://albums/</value>
 	</variable>
+	<variable name="BreadcrumbsVideoVar">
+		<value condition="Container.Content(movies) | String.StartsWith(container.folderpath,library://video/movies/) | String.StartsWith(container.folderpath,videodb://movies) | videodb://recentlyaddedmovies/">$LOCALIZE[20342]</value>
+		<value condition="Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos) | String.StartsWith(container.folderpath,videodb://recentlyaddedmusicvideos/)">$LOCALIZE[20389]</value>
+		<value condition="Container.Content(tvshows) | String.StartsWith(container.folderpath,library://video/tvshows/) | String.StartsWith(container.folderpath,videodb://tvshows) | String.StartsWith(container.folderpath,videodb://recentlyaddedepisodes/) | String.StartsWith(container.folderpath,videodb://inprogresstvshows)">$LOCALIZE[20343]</value>
+		<value condition="Container.Content(seasons)">$LOCALIZE[20343]</value>
+		<value condition="Container.Content(episodes)">$LOCALIZE[20343]</value>
+		<value>$LOCALIZE[3]</value>
+	</variable>
+	<variable name="BreadcrumbsPlaylistsVar">
+		<value condition="Window.IsActive(videoplaylist)">$LOCALIZE[31510]</value>
+		<value condition="Window.IsActive(musicplaylist)">$LOCALIZE[10500]</value>
+	</variable>
 </includes>

@@ -12,7 +12,7 @@
 			<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
 			<control type="label">
 				<description>Header label</description>
-				<label>$LOCALIZE[20314]</label>
+				<label>$VAR[BreadcrumbsVideoVar]</label>
 				<include>HeaderTextCommons</include>
 			</control>
 			<control type="group">
