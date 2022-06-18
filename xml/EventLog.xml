@@ -136,6 +136,7 @@
 				</focusedlayout>
 			</control>
 		</control>
+		<include>BackgroundDim</include>
 		<control type="group" id="9000">
 			<include>Container9000BladesRunner</include>
 			<control type="group">
@@ -216,6 +217,5 @@
 			<include>SettingsToSubBlades</include>
 		</control>
 		<include>Common_Now_Playing</include>
-		<include>BackgroundDim</include>
 	</controls>
 </window>
