@@ -16,7 +16,7 @@
 			<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
 			<control type="label">
 				<description>Header label</description>
-				<label>$LOCALIZE[7]</label>
+				<label>$LOCALIZE[7][COLOR=grey2]$VAR[SortLetterNotificationVar2][/COLOR]</label>
 				<include>HeaderTextCommons</include>
 			</control>
 			<control type="group">

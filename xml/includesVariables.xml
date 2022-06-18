@@ -271,4 +271,16 @@
 		<value condition="Window.IsActive(videoplaylist)">$LOCALIZE[31510]</value>
 		<value condition="Window.IsActive(musicplaylist)">$LOCALIZE[10500]</value>
 	</variable>
+	<variable name="BreadcrumbsAddonbrowserVar">
+		<value condition="![String.IsEmpty(Container.Property(RepoName)) + String.IsEmpty(Container.Property(AddonCategory))]">$INFO[Container.Property(RepoName)]$INFO[Container.Property(AddonCategory), - ][COLOR=grey2]$VAR[SortLetterNotificationVar][/COLOR]</value>
+		<value>$LOCALIZE[24001][COLOR=grey2]$VAR[SortLetterNotificationVar][/COLOR]</value>
+	</variable>
+	<variable name="SortLetterNotificationVar">
+		<value condition="Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[515]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[572]) | String.IsEqual(Container.SortMethod,$LOCALIZE[574]) | String.IsEqual(Container.SortMethod,$LOCALIZE[578])] + !String.IsEmpty(Container.ListItem.SortLetter)">$INFO[Container.ListItem.SortLetter, - ,]</value>
+		<value condition="Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[515]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[572]) | String.IsEqual(Container.SortMethod,$LOCALIZE[574]) | String.IsEqual(Container.SortMethod,$LOCALIZE[578])] + !String.IsEmpty(ListItem.SortLetter)">$INFO[ListItem.SortLetter, - ,]</value>
+	</variable>
+	<variable name="SortLetterNotificationVar2">
+		<value condition="Container.Scrolling + !String.IsEmpty(Container.ListItem.SortLetter)">$INFO[Container.ListItem.SortLetter, - ,]</value>
+		<value condition="Container.Scrolling + !String.IsEmpty(ListItem.SortLetter)">$INFO[ListItem.SortLetter, - ,]</value>
+	</variable>
 </includes>

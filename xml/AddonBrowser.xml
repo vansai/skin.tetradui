@@ -30,7 +30,7 @@
 			<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
 			<control type="label">
 				<description>Header label</description>
-				<label fallback="24001">$INFO[Container.Property(RepoName)]$INFO[Container.Property(AddonCategory), - ]</label>
+				<label>$VAR[BreadcrumbsAddonbrowserVar]</label>
 				<include>HeaderTextCommons</include>
 			</control>
 			<control type="group">
