@@ -272,7 +272,8 @@
 		<value condition="Window.IsActive(musicplaylist)">$LOCALIZE[10500]</value>
 	</variable>
 	<variable name="BreadcrumbsAddonbrowserVar">
-		<value condition="![String.IsEmpty(Container.Property(RepoName)) + String.IsEmpty(Container.Property(AddonCategory))]">$INFO[Container.Property(RepoName)]$INFO[Container.Property(AddonCategory), - ][COLOR=grey2]$VAR[SortLetterNotificationVar][/COLOR]</value>
+		<value condition="String.IsEmpty(Container.Property(RepoName)) + !String.IsEmpty(Container.Property(AddonCategory))">$LOCALIZE[24001]$INFO[Container.Property(AddonCategory), - ][COLOR=grey2]$VAR[SortLetterNotificationVar][/COLOR]</value>
+		<value condition="!String.IsEmpty(Container.Property(RepoName)) + !String.IsEmpty(Container.Property(AddonCategory))">$INFO[Container.Property(RepoName)]$INFO[Container.Property(AddonCategory), - ][COLOR=grey2]$VAR[SortLetterNotificationVar][/COLOR]</value>
 		<value>$LOCALIZE[24001][COLOR=grey2]$VAR[SortLetterNotificationVar][/COLOR]</value>
 	</variable>
 	<variable name="SortLetterNotificationVar">
