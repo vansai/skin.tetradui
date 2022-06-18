@@ -315,11 +315,7 @@
 			<label>31004</label>
 			<left>88</left>
 			<top>170</top>
-			<font>font16</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-			<aligny>top</aligny>
-			<angle>273</angle>
+			<include>BladesLabelLeft</include>
 		</control>
 		<!-- Right side -->
 		<control type="image">
@@ -351,11 +347,7 @@
 			<label>31003</label>
 			<left>-100r</left>
 			<top>210</top>
-			<font>font16</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-			<aligny>top</aligny>
-			<angle>273</angle>
+			<include>BladesLabelRight</include>
 			<animation type="WindowOpen" condition="Window.Previous(Weather)">
 				<effect type="slide" start="-150,0" end="-160,0" time="100" />
 				<effect type="slide" start="0,0" end="160,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -386,11 +378,7 @@
 			<label>31001</label>
 			<left>-50r</left>
 			<top>200</top>
-			<font>font16</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-			<aligny>top</aligny>
-			<angle>273</angle>
+			<include>BladesLabelRight</include>
 			<animation type="WindowOpen" condition="Window.Previous(Weather)">
 				<effect type="slide" start="-150,0" end="-160,0" time="100" />
 				<effect type="slide" start="0,0" end="160,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -421,11 +409,7 @@
 			<label>31002</label>
 			<left>0r</left>
 			<top>190</top>
-			<font>font16</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-			<aligny>top</aligny>
-			<angle>273</angle>
+			<include>BladesLabelRight</include>
 			<animation type="WindowOpen" condition="Window.Previous(Weather)">
 				<effect type="slide" start="-150,0" end="-160,0" time="100" />
 				<effect type="slide" start="0,0" end="160,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -477,11 +461,7 @@
 			<label>31004</label>
 			<left>40</left>
 			<top>190</top>
-			<font>font16</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-			<aligny>top</aligny>
-			<angle>273</angle>
+			<include>BladesLabelLeft</include>
 			<animation type="WindowOpen" condition="Window.Previous(1111)">
 				<effect type="slide" start="50,0" end="60,0" time="100" />
 				<effect type="slide" start="0,0" end="-60,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -520,11 +500,7 @@
 			<label>31002</label>
 			<left>90</left>
 			<top>170</top>
-			<font>font16</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-			<aligny>top</aligny>
-			<angle>273</angle>
+			<include>BladesLabelLeft</include>
 			<animation type="WindowOpen" condition="Window.Previous(1111)">
 				<effect type="slide" start="50,0" end="60,0" time="100" />
 				<effect type="slide" start="0,0" end="-60,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -564,11 +540,7 @@
 			<label>31003</label>
 			<left>-50r</left>
 			<top>200</top>
-			<font>font16</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-			<aligny>top</aligny>
-			<angle>273</angle>
+			<include>BladesLabelRight</include>
 			<animation type="WindowOpen" condition="Window.Previous(1111)">
 				<effect type="slide" start="-100,0" end="-110,0" time="100" />
 				<effect type="slide" start="0,0" end="100,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -599,11 +571,7 @@
 			<label>31001</label>
 			<left>0r</left>
 			<top>190</top>
-			<font>font16</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-			<aligny>top</aligny>
-			<angle>273</angle>
+			<include>BladesLabelRight</include>
 			<animation type="WindowOpen" condition="Window.Previous(1111)">
 				<effect type="slide" start="-100,0" end="-110,0" time="100" />
 				<effect type="slide" start="0,0" end="110,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -655,11 +623,7 @@
 			<label>31004</label>
 			<left>-10</left>
 			<top>200</top>
-			<font>font16</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-			<aligny>top</aligny>
-			<angle>273</angle>
+			<include>BladesLabelLeft</include>
 			<animation type="WindowOpen" condition="Window.Previous(Home)">
 				<effect type="slide" start="100,0" end="110,0" time="100" />
 				<effect type="slide" start="0,0" end="-110,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -690,11 +654,7 @@
 			<label>31002</label>
 			<left>40</left>
 			<top>190</top>
-			<font>font16</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-			<aligny>top</aligny>
-			<angle>273</angle>
+			<include>BladesLabelLeft</include>
 			<animation type="WindowOpen" condition="Window.Previous(Home)">
 				<effect type="slide" start="100,0" end="110,0" time="100" />
 				<effect type="slide" start="0,0" end="-110,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -733,11 +693,7 @@
 			<label>31001</label>
 			<left>88</left>
 			<top>170</top>
-			<font>font16</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-			<aligny>top</aligny>
-			<angle>273</angle>
+			<include>BladesLabelLeft</include>
 			<animation type="WindowOpen" condition="Window.Previous(Home)">
 				<effect type="slide" start="100,0" end="110,0" time="100" />
 				<effect type="slide" start="0,0" end="-110,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -777,11 +733,7 @@
 			<label>31003</label>
 			<left>0r</left>
 			<top>190</top>
-			<font>font16</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-			<aligny>top</aligny>
-			<angle>273</angle>
+			<include>BladesLabelRight</include>
 			<animation type="WindowOpen" condition="Window.Previous(Home)">
 				<effect type="slide" start="-50,0" end="-60,0" time="100" />
 				<effect type="slide" start="0,0" end="60,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -834,11 +786,7 @@
 			<label>31004</label>
 			<left>-60</left>
 			<top>210</top>
-			<font>font16</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-			<aligny>top</aligny>
-			<angle>273</angle>
+			<include>BladesLabelLeft</include>
 			<animation type="WindowOpen" condition="Window.Previous(Settings)">
 				<effect type="slide" start="150,0" end="160,0" time="100" />
 				<effect type="slide" start="0,0" end="-160,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -869,11 +817,7 @@
 			<label>31002</label>
 			<left>-10</left>
 			<top>200</top>
-			<font>font16</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-			<aligny>top</aligny>
-			<angle>273</angle>
+			<include>BladesLabelLeft</include>
 			<animation type="WindowOpen" condition="Window.Previous(Settings)">
 				<effect type="slide" start="150,0" end="160,0" time="100" />
 				<effect type="slide" start="0,0" end="-160,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -904,11 +848,7 @@
 			<label>31001</label>
 			<left>40</left>
 			<top>190</top>
-			<font>font16</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-			<aligny>top</aligny>
-			<angle>273</angle>
+			<include>BladesLabelLeft</include>
 			<animation type="WindowOpen" condition="Window.Previous(Settings)">
 				<effect type="slide" start="150,0" end="160,0" time="100" />
 				<effect type="slide" start="0,0" end="-160,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -947,11 +887,7 @@
 			<label>31003</label>
 			<left>88</left>
 			<top>170</top>
-			<font>font16</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-			<aligny>top</aligny>
-			<angle>273</angle>
+			<include>BladesLabelLeft</include>
 			<animation type="WindowOpen" condition="Window.Previous(Settings)">
 				<effect type="slide" start="150,0" end="160,0" time="100" />
 				<effect type="slide" start="0,0" end="-160,0" delay="100" time="HomeBladeAnimationSpeed" />
@@ -1000,5 +936,4 @@
 			<texture>blades-runner-right.png</texture>
 		</control>
 	</include>
-
 </includes>
