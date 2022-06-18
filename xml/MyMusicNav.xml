@@ -57,7 +57,7 @@
 				<control type="edit" id="8">
 					<description>Search</description>
 					<left>6</left>
-					<top>120</top>
+					<top>80</top>
 					<label>137</label>
 					<include>ButtonCommonValues</include>
 					<onleft>50</onleft>
@@ -69,7 +69,7 @@
 				<control type="radiobutton" id="19">
 					<description>Filter</description>
 					<left>8</left>
-					<top>160</top>
+					<top>120</top>
 					<label>587</label>
 					<include>ButtonCommonValues</include>
 					<onleft>50</onleft>
@@ -82,7 +82,7 @@
 				<control type="radiobutton" id="20">
 					<description>Filter Advanced</description>
 					<left>8</left>
-					<top>160</top>
+					<top>120</top>
 					<label>587</label>
 					<include>ButtonCommonValues</include>
 					<onleft>50</onleft>
@@ -95,8 +95,8 @@
 				</control>
 				<control type="radiobutton" id="16">
 					<description>Partymode</description>
-					<left>10</left>
-					<top>200</top>
+					<left>8</left>
+					<top>160</top>
 					<label>589</label>
 					<include>ButtonCommonValues</include>
 					<onleft>50</onleft>
