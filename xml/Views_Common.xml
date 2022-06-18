@@ -555,7 +555,6 @@
 	</include>
 	<include name="ThumbnailInfoView">
 		<control type="panel" id="55">
-			<visible>!Container.Content(TVShows)</visible>
 			<left>0</left>
 			<top>0</top>
 			<width>720</width>
@@ -568,7 +567,7 @@
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
-			<itemlayout condition="!Container.Content(Movies) + !Container.Content(Seasons)" height="160" width="180">
+			<itemlayout condition="!Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons)" height="160" width="180">
 				<control type="image">
 					<left>1</left>
 					<top>1</top>
@@ -606,7 +605,7 @@
 					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 			</itemlayout>
-			<focusedlayout condition="!Container.Content(Movies) + !Container.Content(Seasons)" height="160" width="180">
+			<focusedlayout condition="!Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons)" height="160" width="180">
 				<control type="image">
 					<left>1</left>
 					<top>1</top>
@@ -644,7 +643,7 @@
 					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 			</focusedlayout>
-			<itemlayout condition="Container.Content(Movies) | Container.Content(Seasons)" height="240" width="154">
+			<itemlayout condition="Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons)" height="240" width="154">
 				<control type="image">
 					<left>1</left>
 					<top>1</top>
@@ -684,7 +683,7 @@
 					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 			</itemlayout>
-			<focusedlayout  condition="Container.Content(Movies) | Container.Content(Seasons)" height="240" width="154">
+			<focusedlayout  condition="Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons)" height="240" width="154">
 				<control type="image">
 					<left>1</left>
 					<top>1</top>
@@ -728,7 +727,7 @@
 		<control type="group">
 			<left>730</left>
 			<top>10</top>
-			<visible>Control.IsVisible(55) + ![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(LiveTV) | Window.IsActive(Pictures)]</visible>
+			<visible>Control.IsVisible(55) + ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(LiveTV) | Window.IsActive(Pictures)]</visible>
 			<control type="fadelabel">
 				<width>350</width>
 				<height>20</height>
@@ -756,7 +755,7 @@
 		<control type="group">
 			<left>645</left>
 			<top>10</top>
-			<visible>Control.IsVisible(55) + Container.Content(Movies)</visible>
+			<visible>Control.IsVisible(55) + [Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons)]</visible>
 			<control type="fadelabel">
 				<width>420</width>
 				<height>20</height>
