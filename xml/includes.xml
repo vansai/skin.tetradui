@@ -17,21 +17,24 @@
 	<constant name="SideMenuSlideOutTime">200</constant>
 
 	<include name="HomeLogoButton">
-		<control type="button" id="9050">
-			<left>-20</left>
-			<top>13</top>
-			<width>45</width>
-			<height>45</height>
-			<texturefocus>tetradui_logo_clean.png</texturefocus>
-			<texturenofocus>tetradui_logo_clean.png</texturenofocus>
-			<onleft condition="!Window.IsVisible(Weather)">1</onleft>
-			<onright condition="Window.IsVisible(Weather)">1</onright>
-			<onright condition="!Window.IsVisible(Settings.xml)">2</onright>
-			<ondown condition="!Window.IsVisible(Weather)">9000</ondown>
-			<ondown condition="Window.IsVisible(Weather)">3</ondown>
-			<onclick>ActivateWindow(1103)</onclick>
-			<animation effect="zoom" start="100" end="115" time="100" center="auto">Focus</animation>
-			<animation effect="zoom" start="115" end="100" time="100" center="auto">UnFocus</animation>
+		<control type="group">
+			<animation effect="slide" end="445.5,0" condition="Skin.HasSetting(Blades_CenterLogoButton)">Conditional</animation>
+			<control type="button" id="9050">
+				<left>-8</left>
+				<top>13</top>
+				<width>45</width>
+				<height>45</height>
+				<texturefocus>tetradui_logo_clean.png</texturefocus>
+				<texturenofocus>tetradui_logo_clean.png</texturenofocus>
+				<onleft condition="!Window.IsVisible(Weather)">1</onleft>
+				<onright condition="Window.IsVisible(Weather)">1</onright>
+				<onright condition="!Window.IsVisible(Settings.xml)">2</onright>
+				<ondown condition="!Window.IsVisible(Weather)">9000</ondown>
+				<ondown condition="Window.IsVisible(Weather)">3</ondown>
+				<onclick>ActivateWindow(1103)</onclick>
+				<animation effect="zoom" start="100" end="115" time="100" center="auto">Focus</animation>
+				<animation effect="zoom" start="115" end="100" time="100" center="auto">UnFocus</animation>
+			</control>
 		</control>
 	</include>
 	<include name="HomeButtonCommonValues">
@@ -526,7 +529,7 @@
 		<textcolor>white</textcolor>
 		<shadowcolor>black</shadowcolor>
 		<include>VisibleFadeEffect</include>
-		<animation effect="slide" end="50,0" condition="Control.IsVisible(9050)">Conditional</animation>
+		<animation effect="slide" end="70,0" condition="Control.IsVisible(9050) + !Skin.HasSetting(Blades_CenterLogoButton)">Conditional</animation>
 		<visible>!Window.IsVisible(extendedprogressdialog)</visible>
 	</include>
 	<include name="DialogHeaderTextCommons">

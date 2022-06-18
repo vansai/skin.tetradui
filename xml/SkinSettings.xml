@@ -207,6 +207,12 @@
 					</control>
 					<control type="radiobutton" id="302">
 						<include>SkinSettingsRadioButtonCommonValues</include>
+						<label>$LOCALIZE[31317]</label>
+						<onclick>Skin.ToggleSetting(Blades_CenterLogoButton)</onclick>
+						<selected>Skin.HasSetting(Blades_CenterLogoButton)</selected>
+					</control>
+					<control type="radiobutton" id="303">
+						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31314]</label>
 						<onclick>Skin.ToggleSetting(Blades_HideWidgets)</onclick>
 						<selected>Skin.HasSetting(Blades_HideWidgets)</selected>
