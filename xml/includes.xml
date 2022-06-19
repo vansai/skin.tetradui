@@ -1039,7 +1039,7 @@
 				</control>
 				<control type="group">
 					<left>680</left>
-					<top>72r</top>
+					<top>76r</top>
 					<animation effect="slide" start="0,0" end="-50,0" time="0" condition="Window.IsVisible(Weather)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-50,0" time="HomeBladeAnimationSpeed" condition="Window.IsVisible(1111) + Control.HasFocus(1)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="50,0" time="HomeBladeAnimationSpeed" condition="Window.IsVisible(Weather) + Control.HasFocus(1)">Conditional</animation>
@@ -1047,9 +1047,10 @@
 					<animation effect="slide" start="0,0" end="-50,0" time="SubBladeFadeInDelay" condition="!Window.IsVisible(1111) + Window.Next(Weather)">WindowClose</animation>
 					<control type="image">
 						<description>Background Image for Menu</description>
+						<top>-13</top>
 						<width>440</width>
-						<height>70</height>
-						<texture border="35,0,35,0">top_menu_back2.png</texture>
+						<height>79</height>
+						<texture border="20,20,20,30">Dialog2.png</texture>
 					</control>
 					<control type="image">
 						<description>Background Image for Menu</description>
@@ -1353,7 +1354,7 @@
 			<top>-150</top>
 			<width>1280</width>
 			<height>256</height>
-			<texture flipy="true">FullscreenNowPlayingBack.png</texture>
+			<texture flipy="true" border="5">FullscreenNowPlayingBack.png</texture>
 		</control>
 		<control type="label">
 			<description>Partymode Header label</description>
@@ -1385,11 +1386,10 @@
 		</control>
 		<control type="label">
 			<description>Clock label</description>
-			<left>1250</left>
-			<top>5</top>
-			<width>800</width>
+			<left>30</left>
+			<top>35</top>
+			<width>600</width>
 			<height>25</height>
-			<align>right</align>
 			<aligny>center</aligny>
 			<font>font13</font>
 			<textcolor>white</textcolor>
@@ -1400,7 +1400,7 @@
 			<top>230r</top>
 			<width>1280</width>
 			<height>230</height>
-			<texture>FullscreenNowPlayingBack.png</texture>
+			<texture border="5">FullscreenNowPlayingBack.png</texture>
 		</control>
 		<control type="image">
 			<description>cover image</description>
