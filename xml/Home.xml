@@ -199,10 +199,14 @@
 					<height>204</height>
 					<onleft>9000</onleft>
 					<onright condition="!Skin.HasSetting(Blades_HideWidgets) + Container(9000).HasFocus(2)">501</onright>
-					<onright condition="Skin.HasSetting(Blades_HideWidgets) | !Container(9000).HasFocus(2)">2</onright>
+					<onright condition="!Skin.HasSetting(Blades_HideWidgets) + Container(9000).HasFocus(3)">505</onright>
+					<onright condition="!Skin.HasSetting(Blades_HideWidgets) + Container(9000).HasFocus(6)">509</onright>
+					<onright condition="Skin.HasSetting(Blades_HideWidgets) | ![Container(9000).HasFocus(2) + Container(9000).HasFocus(3) + Container(9000).HasFocus(6)]">2</onright>
 					<onup>9050</onup>
 					<ondown condition="!Skin.HasSetting(Blades_HideWidgets) + Container(9000).HasFocus(2)">501</ondown>
-					<ondown condition="Skin.HasSetting(Blades_HideWidgets) | !Container(9000).HasFocus(2)">9100</ondown>
+					<ondown condition="!Skin.HasSetting(Blades_HideWidgets) + Container(9000).HasFocus(3)">505</ondown>
+					<ondown condition="!Skin.HasSetting(Blades_HideWidgets) + Container(9000).HasFocus(6)">509</ondown>
+					<ondown condition="Skin.HasSetting(Blades_HideWidgets) | ![Container(9000).HasFocus(2) + Container(9000).HasFocus(3) + Container(9000).HasFocus(6)]">9100</ondown>
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>200</scrolltime>
