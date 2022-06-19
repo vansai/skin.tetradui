@@ -9,7 +9,7 @@
 				<top>-150</top>
 				<width>1280</width>
 				<height>256</height>
-				<texture flipy="true">FullscreenNowPlayingBack.png</texture>
+				<texture flipy="true" border="5">FullscreenNowPlayingBack.png</texture>
 			</control>
 			<control type="label" id="1">
 				<description>Chapter Count Header label</description>
@@ -27,11 +27,10 @@
 			</control>
 			<control type="label" id="1">
 				<description>Clock label</description>
-				<left>1250</left>
-				<top>5</top>
-				<width>800</width>
+				<left>30</left>
+				<top>35</top>
+				<width>600</width>
 				<height>25</height>
-				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
 				<textcolor>white</textcolor>
@@ -42,7 +41,7 @@
 				<top>230r</top>
 				<width>1280</width>
 				<height>230</height>
-				<texture>FullscreenNowPlayingBack.png</texture>
+				<texture border="5">FullscreenNowPlayingBack.png</texture>
 			</control>
 			<control type="image" id="1">
 				<description>cover image</description>
