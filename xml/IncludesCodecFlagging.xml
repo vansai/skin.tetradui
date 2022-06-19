@@ -59,7 +59,7 @@
 	<variable name="VideoCodecImage">
 		<value condition="String.Contains(ListItem.FilenameAndPath,bluray) | String.Contains(ListItem.FilenameAndPath,bdrip) | String.Contains(ListItem.FilenameAndPath,brrip)">flagging/videocodec/bluray.png</value>
 		<value condition="String.Contains(ListItem.FilenameAndPath,hddvd)">flagging/videocodec/hddvd.png</value>
-		<value condition="String.Contains(ListItem.FilenameAndPath,dvd) + ![String.Contains(ListItem.FilenameAndPath,hddvd) | String.Contains(ListItem.FilenameAndPath,bluray) | String.Contains(ListItem.FilenameAndPath,bdrip)]">flagging/videocodec/dvd.png</value>
+		<value condition="String.Contains(ListItem.FilenameAndPath,dvd) | String.Contains(ListItem.FileExtension,img) | String.Contains(ListItem.FileExtension,ifo) | String.Contains(ListItem.FileExtension,vob)">flagging/videocodec/dvd.png</value>
 		<value condition="String.Contains(ListItem.FilenameAndPath,pdtv) | String.Contains(ListItem.FilenameAndPath,hdtv) | String.Contains(ListItem.FilenameAndPath,dsr)">flagging/videocodec/tv.png</value>
 		<value condition="String.Contains(ListItem.FilenameAndPath,vhs)">flagging/videocodec/vhs.png</value>
 	</variable>
@@ -172,7 +172,7 @@
 	<variable name="VideoPlayerCodecImage">
 		<value condition="String.Contains(Player.FilenameAndPath,bluray) | String.Contains(Player.FilenameAndPath,bdrip) | String.Contains(Player.FilenameAndPath,brrip)">flagging/videocodec/bluray.png</value>
 		<value condition="String.Contains(Player.FilenameAndPath,hddvd)">flagging/videocodec/hddvd.png</value>
-		<value condition="String.Contains(Player.FilenameAndPath,dvd) + ![String.Contains(Player.FilenameAndPath,hddvd) | String.Contains(Player.FilenameAndPath,bluray) | String.Contains(Player.FilenameAndPath,bdrip)]">flagging/videocodec/dvd.png</value>
+		<value condition="String.Contains(Player.FilenameAndPath,dvd) | String.EndsWith(Player.FilenameAndPath,.img) | String.EndsWith(Player.FilenameAndPath,.ifo) | String.EndsWith(Player.FilenameAndPath,.vob)">flagging/videocodec/dvd.png</value>
 		<value condition="String.Contains(Player.FilenameAndPath,pdtv) | String.Contains(Player.FilenameAndPath,hdtv) | String.Contains(Player.FilenameAndPath,dsr)">flagging/videocodec/tv.png</value>
 		<value condition="String.Contains(Player.FilenameAndPath,vhs)">flagging/videocodec/vhs.png</value>
 	</variable>
