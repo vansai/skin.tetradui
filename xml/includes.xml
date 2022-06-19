@@ -210,7 +210,7 @@
 			<height>720</height>
 			<texture colordiffuse="77ffffff">black-back.png</texture>
 			<include>VisibleFadeEffect</include>
-			<visible>Window.IsActive(1103) | Window.IsActive(ShutdownMenu) | [!Window.IsVisible(Weather) + ControlGroup(9000).HasFocus] | Window.IsActive(DialogSelect.xml) | Window.IsActive(DialogAddonInfo.xml) | Window.IsActive(DialogAddonSettings.xml) | Window.IsActive(DialogBusy.xml) | Window.IsActive(DialogConfirm.xml) | Window.IsActive(DialogContextMenu.xml) | Window.IsActive(DialogFavourites.xml) | Window.IsActive(DialogKeyboard.xml) | Window.IsActive(DialogMediaSource.xml) | Window.IsActive(DialogMusicInfo.xml) | Window.IsActive(DialogNumeric.xml) | Window.IsActive(DialogPictureInfo.xml) | Window.IsActive(DialogSettings.xml) | Window.IsActive(DialogTextViewer.xml) | Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(FileBrowser.xml)</visible>
+			<visible>Window.IsActive(1103) | Window.IsActive(ShutdownMenu) | [!Window.IsVisible(Weather) + ControlGroup(9000).HasFocus] | Window.IsActive(DialogSelect.xml) | Window.IsActive(DialogAddonInfo.xml) | Window.IsActive(DialogAddonSettings.xml) | Window.IsActive(DialogConfirm.xml) | Window.IsActive(DialogContextMenu.xml) | Window.IsActive(DialogFavourites.xml) | Window.IsActive(DialogKeyboard.xml) | Window.IsActive(DialogMediaSource.xml) | Window.IsActive(DialogMusicInfo.xml) | Window.IsActive(DialogNumeric.xml) | Window.IsActive(DialogPictureInfo.xml) | Window.IsActive(DialogSettings.xml) | Window.IsActive(DialogTextViewer.xml) | Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(FileBrowser.xml)</visible>
 		</control>
 	</include>
 	<include name="SortbyButton">
@@ -1040,11 +1040,6 @@
 				<control type="group">
 					<left>680</left>
 					<top>76r</top>
-					<animation effect="slide" start="0,0" end="-50,0" time="0" condition="Window.IsVisible(Weather)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-50,0" time="HomeBladeAnimationSpeed" condition="Window.IsVisible(1111) + Control.HasFocus(1)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="50,0" time="HomeBladeAnimationSpeed" condition="Window.IsVisible(Weather) + Control.HasFocus(1)">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="0,0" time="SubBladeFadeInDelay" condition="!Window.IsVisible(1111) + Window.Previous(Weather)">WindowOpen</animation>
-					<animation effect="slide" start="0,0" end="-50,0" time="SubBladeFadeInDelay" condition="!Window.IsVisible(1111) + Window.Next(Weather)">WindowClose</animation>
 					<control type="image">
 						<description>Background Image for Menu</description>
 						<top>-13</top>
@@ -1193,11 +1188,6 @@
 				<control type="group">
 					<left>680</left>
 					<top>76r</top>
-					<animation effect="slide" start="0,0" end="-30,0" time="0" condition="Window.IsVisible(Weather)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-30,0" time="HomeBladeAnimationSpeed" condition="Window.IsVisible(1111) + Control.HasFocus(1)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="30,0" time="HomeBladeAnimationSpeed" condition="Window.IsVisible(Weather) + Control.HasFocus(1)">Conditional</animation>
-					<animation effect="slide" start="-30,0" end="0,0" time="SubBladeFadeInDelay" condition="!Window.IsVisible(1111) + Window.Previous(Weather)">WindowOpen</animation>
-					<animation effect="slide" start="0,0" end="-30,0" time="SubBladeFadeInDelay" condition="!Window.IsVisible(1111) + Window.Next(Weather)">WindowClose</animation>
 					<control type="image">
 						<description>Background Image for Menu</description>
 						<top>-13</top>
