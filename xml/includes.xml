@@ -147,6 +147,20 @@
 	</include>
 	<include name="BladesRunnerRight">
 		<control type="image">
+			<left>80</left>
+			<top>-40</top>
+			<width>115</width>
+			<height>800</height>
+			<texture>blades-size3-right-NF.png</texture>
+		</control>
+		<control type="image">
+			<left>102</left>
+			<top>316</top>
+			<width>30</width>
+			<height>30</height>
+			<texture>tetradui_logo_clean.png</texture>
+		</control>
+		<control type="image">
 			<left>130</left>
 			<top>-40</top>
 			<width>180</width>
