@@ -64,7 +64,7 @@
 					<onright>50</onright>
 					<onup>3</onup>
 					<ondown condition="Control.IsVisible(19)">19</ondown>
-					<ondown condition="!Control.IsVisible(19)">20</ondown>
+					<ondown condition="!Control.IsVisible(19)">9001</ondown>
 				</control>
 				<control type="radiobutton" id="19">
 					<description>Filter</description>
@@ -75,11 +75,11 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>8</onup>
-					<ondown>16</ondown>
+					<ondown>20</ondown>
 					<selected>Container.Filtered</selected>
 					<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
 				</control>
-				<control type="radiobutton" id="20">
+				<control type="radiobutton" id="9001">
 					<description>Filter Advanced</description>
 					<left>8</left>
 					<top>120</top>
@@ -88,21 +88,36 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>8</onup>
-					<ondown>16</ondown>
+					<ondown>20</ondown>
 					<onclick>Filter</onclick>
 					<selected>Container.Filtered</selected>
 					<visible>Container.CanFilterAdvanced</visible>
 				</control>
+				<control type="togglebutton" id="20">
+					<description>Update library</description>
+					<left>8</left>
+					<top>160</top>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[653]</label>
+					<altlabel>$LOCALIZE[13353]</altlabel>
+					<alttexturefocus border="4,6,4,8">button-focus.png</alttexturefocus>
+					<alttexturenofocus border="4,6,4,8">button-nofocus.png</alttexturenofocus>
+					<usealttexture>library.isscanningmmusic</usealttexture>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup condition="Control.IsVisible(19)">19</onup>
+					<onup condition="!Control.IsVisible(19)">9001</onup>
+					<ondown>16</ondown>
+				</control>
 				<control type="radiobutton" id="16">
 					<description>Partymode</description>
 					<left>8</left>
-					<top>160</top>
+					<top>200</top>
 					<label>589</label>
 					<include>ButtonCommonValues</include>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup condition="Control.IsVisible(19)">19</onup>
-					<onup condition="!Control.IsVisible(19)">20</onup>
+					<onup>20</onup>
 					<ondown>610</ondown>
 				</control>
 				<control type="button" id="610">
