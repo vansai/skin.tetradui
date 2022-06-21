@@ -22,7 +22,6 @@
 					<aligny>center</aligny>
 					<selectedcolor>orange</selectedcolor>
 					<shadowcolor>black</shadowcolor>
-					<align>left</align>
 					<info>ListItem.Label</info>
 				</control>
 				<control type="label">
@@ -32,7 +31,6 @@
 					<font>font13</font>
 					<aligny>center</aligny>
 					<selectedcolor>orange</selectedcolor>
-					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<align>right</align>
 					<info>ListItem.Label2</info>
@@ -50,9 +48,7 @@
 					<height>36</height>
 					<font>font13</font>
 					<aligny>center</aligny>
-					<textcolor>black</textcolor>
 					<selectedcolor>orange</selectedcolor>
-					<align>left</align>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
@@ -61,7 +57,6 @@
 					<height>36</height>
 					<font>font13</font>
 					<aligny>center</aligny>
-					<textcolor>black</textcolor>
 					<selectedcolor>orange</selectedcolor>
 					<align>right</align>
 					<label>$INFO[ListItem.Label2]</label>
@@ -109,11 +104,10 @@
 			<preloaditems>2</preloaditems>
 			<itemlayout condition="!Container.Content(Movies) + !Container.Content(Seasons)" height="160" width="180">
 				<control type="image">
-					<left>1</left>
-					<top>1</top>
-					<width>178</width>
-					<height>158</height>
-					<texture border="10">thumb-nofocus.png</texture>
+					<left>2</left>
+					<width>176</width>
+					<height>160</height>
+					<texture border="10">list-nofocus.png</texture>
 				</control>
 				<control type="image">
 					<left>6</left>
@@ -148,11 +142,10 @@
 			</itemlayout>
 			<focusedlayout condition="!Container.Content(Movies) + !Container.Content(Seasons)" height="160" width="180">
 				<control type="image">
-					<left>1</left>
-					<top>1</top>
-					<width>178</width>
-					<height>158</height>
-					<texture border="10">thumb-focus.png</texture>
+					<left>2</left>
+					<width>176</width>
+					<height>160</height>
+					<texture border="10">list-focus.png</texture>
 				</control>
 				<control type="image">
 					<left>6</left>
@@ -170,7 +163,6 @@
 					<width>164</width>
 					<height>25</height>
 					<font>font10</font>
-					<textcolor>black</textcolor>
 					<selectedcolor>orange</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -187,12 +179,11 @@
 			</focusedlayout>
 			<itemlayout condition="Container.Content(Movies) | Container.Content(Seasons)" height="240" width="154">
 				<control type="image">
-					<left>1</left>
-					<top>1</top>
-					<width>152</width>
-					<height>238</height>
+					<left>2</left>
+					<width>148</width>
+					<height>240</height>
 					<aspectratio>stretch</aspectratio>
-					<texture border="10">thumb-nofocus.png</texture>
+					<texture border="10">list-nofocus.png</texture>
 				</control>
 				<control type="image">
 					<left>6</left>
@@ -217,7 +208,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<left>125</left>
+					<left>120</left>
 					<top>180</top>
 					<width>25</width>
 					<height>25</height>
@@ -227,12 +218,10 @@
 			</itemlayout>
 			<focusedlayout  condition="Container.Content(Movies) | Container.Content(Seasons)" height="240" width="154">
 				<control type="image">
-					<left>1</left>
-					<top>1</top>
-					<width>152</width>
-					<height>238</height>
-					<aspectratio>stretch</aspectratio>
-					<texture border="10">thumb-focus.png</texture>
+					<left>2</left>
+					<width>148</width>
+					<height>240</height>
+					<texture border="10">list-focus.png</texture>
 				</control>
 				<control type="image">
 					<left>6</left>
@@ -250,14 +239,13 @@
 					<width>138</width>
 					<height>25</height>
 					<font>font10</font>
-					<textcolor>black</textcolor>
 					<selectedcolor>orange</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<left>125</left>
+					<left>120</left>
 					<top>180</top>
 					<width>25</width>
 					<height>25</height>
@@ -272,7 +260,7 @@
 			<visible>!Container.Content(Addons) + !Container.Content(Episodes)</visible>
 			<left>10</left>
 			<top>-20</top>
-			<width>1040</width>
+			<width>1054</width>
 			<height>508</height>
 			<onleft>9000</onleft>
 			<onright>60</onright>
@@ -282,19 +270,18 @@
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
-			<itemlayout height="127" width="520">
+			<itemlayout height="127" width="527">
 				<control type="image">
-					<left>1</left>
-					<top>1</top>
-					<width>518</width>
-					<height>125</height>
-					<texture border="10">wide-thumb-nofocus.png</texture>
+					<left>2</left>
+					<width>521</width>
+					<height>126</height>
+					<texture border="10">list-nofocus.png</texture>
 				</control>
 				<control type="image">
-					<left>10</left>
+					<left>9</left>
 					<top>7</top>
-					<width>500</width>
-					<height>95</height>
+					<width>508</width>
+					<height>94</height>
 					<texture background="true">$VAR[ListItemBannerVar]</texture>
 					<bordertexture>black-back.png</bordertexture>
 					<bordersize>1</bordersize>
@@ -302,8 +289,8 @@
 				</control>
 				<control type="label">
 					<left>20</left>
-					<top>100</top>
-					<width>320</width>
+					<top>99</top>
+					<width>327</width>
 					<height>20</height>
 					<font>font10</font>
 					<textcolor>white</textcolor>
@@ -314,8 +301,8 @@
 				</control>
 				<control type="label">
 					<left>340</left>
-					<top>100</top>
-					<width>160</width>
+					<top>99</top>
+					<width>167</width>
 					<height>20</height>
 					<font>font10</font>
 					<textcolor>white</textcolor>
@@ -325,8 +312,8 @@
 					<label>$INFO[ListItem.Label2]</label>
 				</control>
 				<control type="image">
-					<left>485</left>
-					<top>75</top>
+					<left>490</left>
+					<top>74</top>
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>
@@ -335,17 +322,17 @@
 			</itemlayout>
 			<focusedlayout height="140" width="520">
 				<control type="image">
-					<left>1</left>
+					<left>3</left>
 					<top>1</top>
-					<width>518</width>
-					<height>125</height>
-					<texture border="10">wide-thumb-focus.png</texture>
+					<width>519</width>
+					<height>124</height>
+					<texture border="10">list-focus.png</texture>
 				</control>
 				<control type="image">
-					<left>10</left>
+					<left>9</left>
 					<top>7</top>
-					<width>500</width>
-					<height>95</height>
+					<width>508</width>
+					<height>94</height>
 					<texture background="true">$VAR[ListItemBannerVar]</texture>
 					<bordertexture>black-back.png</bordertexture>
 					<bordersize>1</bordersize>
@@ -353,31 +340,28 @@
 				</control>
 				<control type="label">
 					<left>20</left>
-					<top>100</top>
-					<width>320</width>
+					<top>99</top>
+					<width>327</width>
 					<height>20</height>
 					<font>font10</font>
-					<textcolor>black</textcolor>
 					<selectedcolor>orange</selectedcolor>
-					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
 					<left>340</left>
-					<top>100</top>
-					<width>160</width>
+					<top>99</top>
+					<width>167</width>
 					<height>20</height>
 					<font>font10</font>
-					<textcolor>black</textcolor>
 					<selectedcolor>orange</selectedcolor>
 					<align>right</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label2]</label>
 				</control>
 				<control type="image">
-					<left>485</left>
-					<top>75</top>
+					<left>490</left>
+					<top>74</top>
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>
@@ -431,10 +415,12 @@
 			<preloaditems>4</preloaditems>
 			<itemlayout height="310" width="218" condition="!Container.Content(Episodes)">
 				<control type="image">
-					<width>218</width>
-					<height>310</height>
+					<top>2</top>
+					<left>2</left>
+					<width>214</width>
+					<height>306</height>
 					<aspectratio>stretch</aspectratio>
-					<bordertexture border="10">thumb-nofocus.png</bordertexture>
+					<bordertexture border="10">list-nofocus.png</bordertexture>
 					<bordersize>10</bordersize>
 					<texture background="true">$VAR[ListItemPosterVar]</texture>
 				</control>
@@ -471,10 +457,12 @@
 			</focusedlayout>
 			<itemlayout height="310" width="420" condition="Container.Content(Episodes)">
 				<control type="image">
-					<width>420</width>
-					<height>310</height>
+					<top>2</top>
+					<left>2</left>
+					<width>416</width>
+					<height>306</height>
 					<aspectratio aligny="top">scale</aspectratio>
-					<bordertexture border="10">thumb-nofocus.png</bordertexture>
+					<bordertexture border="10">list-nofocus.png</bordertexture>
 					<bordersize>10</bordersize>
 					<texture background="true">$VAR[ListItemPosterVar]</texture>
 				</control>
@@ -569,25 +557,24 @@
 			<preloaditems>2</preloaditems>
 			<itemlayout condition="!Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons)" height="160" width="180">
 				<control type="image">
-					<left>1</left>
 					<top>1</top>
-					<width>178</width>
+					<width>175</width>
 					<height>158</height>
-					<texture border="10">thumb-nofocus.png</texture>
+					<texture border="10">list-nofocus.png</texture>
 				</control>
 				<control type="image">
-					<left>6</left>
+					<left>5</left>
 					<top>6</top>
-					<width>168</width>
+					<width>165</width>
 					<height>128</height>
 					<texture background="true">$VAR[ListItemPosterVar]</texture>
 					<bordertexture>black-back.png</bordertexture>
 					<bordersize>1</bordersize>
 				</control>
 				<control type="label">
-					<left>8</left>
+					<left>7</left>
 					<top>130</top>
-					<width>164</width>
+					<width>161</width>
 					<height>25</height>
 					<font>font10</font>
 					<textcolor>grey2</textcolor>
@@ -597,8 +584,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<left>150</left>
-					<top>100</top>
+					<left>142</left>
+					<top>106</top>
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>
@@ -607,36 +594,34 @@
 			</itemlayout>
 			<focusedlayout condition="!Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons)" height="160" width="180">
 				<control type="image">
-					<left>1</left>
 					<top>1</top>
-					<width>178</width>
+					<width>175</width>
 					<height>158</height>
-					<texture border="10">thumb-focus.png</texture>
+					<texture border="10">list-focus.png</texture>
 				</control>
 				<control type="image">
-					<left>6</left>
+					<left>5</left>
 					<top>6</top>
-					<width>168</width>
+					<width>165</width>
 					<height>128</height>
 					<texture background="true">$VAR[ListItemPosterVar]</texture>
 					<bordertexture>black-back.png</bordertexture>
 					<bordersize>1</bordersize>
 				</control>
 				<control type="label">
-					<left>8</left>
+					<left>7</left>
 					<top>130</top>
-					<width>164</width>
+					<width>161</width>
 					<height>25</height>
 					<font>font10</font>
-					<textcolor>black</textcolor>
 					<selectedcolor>orange</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<left>150</left>
-					<top>100</top>
+					<left>142</left>
+					<top>106</top>
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>
@@ -645,16 +630,15 @@
 			</focusedlayout>
 			<itemlayout condition="Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons)" height="240" width="154">
 				<control type="image">
-					<left>1</left>
-					<top>1</top>
-					<width>152</width>
+					<left>3</left>
+					<top>3</top>
+					<width>148</width>
 					<height>238</height>
-					<aspectratio>stretch</aspectratio>
-					<texture border="10">thumb-nofocus.png</texture>
+					<texture border="10">list-nofocus.png</texture>
 				</control>
 				<control type="image">
 					<left>6</left>
-					<top>6</top>
+					<top>10</top>
 					<width>142</width>
 					<height>200</height>
 					<aspectratio>keep</aspectratio>
@@ -664,7 +648,7 @@
 				</control>
 				<control type="label">
 					<left>8</left>
-					<top>206</top>
+					<top>210</top>
 					<width>138</width>
 					<height>25</height>
 					<font>font10</font>
@@ -675,8 +659,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<left>125</left>
-					<top>180</top>
+					<left>119</left>
+					<top>182</top>
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>
@@ -685,16 +669,15 @@
 			</itemlayout>
 			<focusedlayout  condition="Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons)" height="240" width="154">
 				<control type="image">
-					<left>1</left>
-					<top>1</top>
-					<width>152</width>
+					<left>3</left>
+					<top>3</top>
+					<width>148</width>
 					<height>238</height>
-					<aspectratio>stretch</aspectratio>
-					<texture border="10">thumb-focus.png</texture>
+					<texture border="10">list-focus.png</texture>
 				</control>
 				<control type="image">
 					<left>6</left>
-					<top>6</top>
+					<top>10</top>
 					<width>142</width>
 					<height>200</height>
 					<aspectratio>keep</aspectratio>
@@ -704,19 +687,18 @@
 				</control>
 				<control type="label">
 					<left>8</left>
-					<top>206</top>
+					<top>210</top>
 					<width>138</width>
 					<height>25</height>
 					<font>font10</font>
-					<textcolor>black</textcolor>
 					<selectedcolor>orange</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<left>125</left>
-					<top>180</top>
+					<left>119</left>
+					<top>182</top>
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>

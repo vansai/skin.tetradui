@@ -87,7 +87,6 @@
 									<width>565</width>
 									<height>30</height>
 									<font>font12</font>
-									<align>left</align>
 									<aligny>center</aligny>
 									<scroll>true</scroll>
 									<info>ListItem.Label2</info>
@@ -106,7 +105,7 @@
 									<font>font12</font>
 									<align>right</align>
 									<aligny>center</aligny>
-									<textcolor>black</textcolor>
+									<textcolor>grey2</textcolor>
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
@@ -114,9 +113,7 @@
 									<width>565</width>
 									<height>30</height>
 									<font>font12</font>
-									<align>left</align>
 									<aligny>center</aligny>
-									<textcolor>black</textcolor>
 									<info>ListItem.Label2</info>
 								</control>
 							</focusedlayout>
@@ -217,7 +214,6 @@
 									<width>565</width>
 									<height>30</height>
 									<font>font12</font>
-									<align>left</align>
 									<aligny>center</aligny>
 									<scroll>true</scroll>
 									<info>ListItem.Label2</info>
@@ -236,7 +232,7 @@
 									<font>font12</font>
 									<align>right</align>
 									<aligny>center</aligny>
-									<textcolor>black</textcolor>
+									<textcolor>grey2</textcolor>
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
@@ -244,9 +240,7 @@
 									<width>565</width>
 									<height>30</height>
 									<font>font12</font>
-									<align>left</align>
 									<aligny>center</aligny>
-									<textcolor>black</textcolor>
 									<info>ListItem.Label2</info>
 								</control>
 							</focusedlayout>
@@ -318,7 +312,6 @@
 									<width>465</width>
 									<height>30</height>
 									<font>font12</font>
-									<align>left</align>
 									<aligny>center</aligny>
 									<scroll>true</scroll>
 									<info>ListItem.Label2</info>
@@ -337,7 +330,7 @@
 									<font>font12</font>
 									<align>right</align>
 									<aligny>center</aligny>
-									<textcolor>black</textcolor>
+									<textcolor>grey2</textcolor>
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
@@ -345,9 +338,7 @@
 									<width>465</width>
 									<height>30</height>
 									<font>font12</font>
-									<align>left</align>
 									<aligny>center</aligny>
-									<textcolor>black</textcolor>
 									<info>ListItem.Label2</info>
 								</control>
 							</focusedlayout>
@@ -444,7 +435,6 @@
 									<width>465</width>
 									<height>30</height>
 									<font>font12</font>
-									<align>left</align>
 									<aligny>center</aligny>
 									<scroll>true</scroll>
 									<info>ListItem.Label2</info>
@@ -463,7 +453,7 @@
 									<font>font12</font>
 									<align>right</align>
 									<aligny>center</aligny>
-									<textcolor>black</textcolor>
+									<textcolor>grey2</textcolor>
 									<info>ListItem.Label</info>
 								</control>
 								<control type="label">
@@ -471,9 +461,7 @@
 									<width>465</width>
 									<height>30</height>
 									<font>font12</font>
-									<align>left</align>
 									<aligny>center</aligny>
-									<textcolor>black</textcolor>
 									<info>ListItem.Label2</info>
 								</control>
 							</focusedlayout>
@@ -571,53 +559,52 @@
 						<orientation>vertical</orientation>
 						<itemlayout height="100" width="500">
 							<control type="image">
-								<width>500</width>
-								<height>95</height>
-								<texture>wide-thumb-nofocus.png</texture>
+								<width>495</width>
+								<height>98</height>
+								<texture border="8">button-dialog-nofocus.png</texture>
 							</control>
 							<control type="image">
-								<top>5</top>
-								<width>100</width>
-								<height>85</height>
+								<top>10</top>
+								<left>-2</left>
+								<width>101</width>
+								<height>77</height>
 								<texture fallback="DefaultActor.png">$VAR[ListItemPosterVar]</texture>
-								<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
-								<bordersize>17,1,17,1</bordersize>
+								<bordertexture border="14,0,14,0">thumb-border.png</bordertexture>
+								<bordersize>12,0,12,0</bordersize>
 								<aspectratio aligny="top">scale</aspectratio>
 							</control>
 							<control type="textbox">
-								<left>110</left>
-								<top>16</top>
-								<width>380</width>
+								<left>97</left>
+								<top>18</top>
+								<width>393</width>
 								<height>75</height>
 								<font>font13</font>
-								<align>left</align>
 								<label>$INFO[ListItem.Label][CR][COLOR=grey]$INFO[ListItem.Label2][/COLOR]</label>
 							</control>
 						</itemlayout>
 						<focusedlayout height="100" width="500">
 							<control type="image">
-								<width>500</width>
-								<height>95</height>
-								<texture>wide-thumb-focus.png</texture>
+								<width>495</width>
+								<height>98</height>
+								<texture border="8">button-dialog-focus.png</texture>
 							</control>
 							<control type="image">
-								<top>5</top>
-								<width>100</width>
-								<height>85</height>
+								<top>10</top>
+								<left>-2</left>
+								<width>101</width>
+								<height>77</height>
 								<texture fallback="DefaultActor.png">$VAR[ListItemPosterVar]</texture>
-								<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
-								<bordersize>17,1,17,1</bordersize>
+								<bordertexture border="14,0,14,0">thumb-border.png</bordertexture>
+								<bordersize>12,0,12,0</bordersize>
 								<aspectratio aligny="top">scale</aspectratio>
 							</control>
 							<control type="textbox">
-								<left>110</left>
-								<top>16</top>
-								<width>380</width>
+								<left>97</left>
+								<top>18</top>
+								<width>393</width>
 								<height>75</height>
 								<font>font13</font>
-								<align>left</align>
-								<textcolor>black</textcolor>
-								<label>$INFO[ListItem.Label][CR][COLOR=black2]$INFO[ListItem.Label2][/COLOR]</label>
+								<label>$INFO[ListItem.Label][CR][COLOR=white2]$INFO[ListItem.Label2][/COLOR]</label>
 							</control>
 						</focusedlayout>
 					</control>
@@ -651,13 +638,13 @@
 				<control type="grouplist" id="9000">
 					<left>200</left>
 					<top>70r</top>
-					<width>1040</width>
+					<width>1050</width>
 					<height>50</height>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>61</onup>
 					<ondown>61</ondown>
-					<itemgap>-2</itemgap>
+					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 					<align>center</align>
 					<control type="button" id="8">

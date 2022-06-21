@@ -61,7 +61,6 @@
 						<width>530</width>
 						<height>45</height>
 						<font>font12</font>
-						<align>left</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
 					</control>
@@ -84,22 +83,9 @@
 						<width>530</width>
 						<height>45</height>
 						<font>font12</font>
-						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>black</textcolor>
 						<info>ListItem.Label</info>
 						<visible>Control.HasFocus(3)</visible>
-					</control>
-					<control type="label">
-						<left>10</left>
-						<width>530</width>
-						<height>45</height>
-						<font>font12</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>white</textcolor>
-						<info>ListItem.Label</info>
-						<visible>!Control.HasFocus(3)</visible>
 					</control>
 				</focusedlayout>
 			</control>
@@ -132,7 +118,6 @@
 						<width>490</width>
 						<height>45</height>
 						<font>font12</font>
-						<align>left</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
 					</control>
@@ -162,22 +147,8 @@
 						<width>490</width>
 						<height>45</height>
 						<font>font12</font>
-						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>black</textcolor>
 						<info>ListItem.Label</info>
-						<visible>Control.HasFocus(6)</visible>
-					</control>
-					<control type="label">
-						<left>50</left>
-						<width>490</width>
-						<height>45</height>
-						<font>font12</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>white</textcolor>
-						<info>ListItem.Label</info>
-						<visible>!Control.HasFocus(6)</visible>
 					</control>
 				</focusedlayout>
 			</control>
@@ -275,21 +246,18 @@
 					<description>Optional button</description>
 					<label />
 					<textcolor>grey2</textcolor>
-					<focusedcolor>white</focusedcolor>
 					<include>DialogButton2CommonValues</include>
 				</control>
 				<control type="button" id="5">
 					<description>Manual button</description>
 					<label />
 					<textcolor>grey2</textcolor>
-					<focusedcolor>white</focusedcolor>
 					<include>DialogButton2CommonValues</include>
 				</control>
 				<control type="button" id="7">
 					<description>Cancel button</description>
 					<label />
 					<textcolor>grey2</textcolor>
-					<focusedcolor>white</focusedcolor>
 					<include>DialogButton2CommonValues</include>
 				</control>
 			</control>

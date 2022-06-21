@@ -84,11 +84,11 @@
 					</control>
 				</control>
 				<control type="image">
-					<left>230</left>
-					<top>460</top>
-					<width>420</width>
-					<height>200</height>
-					<texture border="10">thumb-nofocus.png</texture>
+					<left>231</left>
+					<top>461</top>
+					<width>415</width>
+					<height>198</height>
+					<texture border="10">list-nofocus.png</texture>
 				</control>
 				<control type="image">
 					<left>240</left>
@@ -127,7 +127,6 @@
 							<width>580</width>
 							<height>45</height>
 							<font>font13</font>
-							<align>left</align>
 							<aligny>center</aligny>
 							<info>ListItem.Label</info>
 						</control>
@@ -150,9 +149,7 @@
 							<width>580</width>
 							<height>45</height>
 							<font>font13</font>
-							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>black</textcolor>
 							<info>ListItem.Label</info>
 						</control>
 					</focusedlayout>
@@ -186,7 +183,6 @@
 							<width>580</width>
 							<height>45</height>
 							<font>font13</font>
-							<align>left</align>
 							<aligny>center</aligny>
 							<info>ListItem.Label</info>
 						</control>
@@ -209,9 +205,7 @@
 							<width>580</width>
 							<height>45</height>
 							<font>font13</font>
-							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>black</textcolor>
 							<info>ListItem.Label</info>
 						</control>
 					</focusedlayout>

@@ -59,7 +59,6 @@
 					<width>325</width>
 					<height>45</height>
 					<font>font12</font>
-					<align>left</align>
 					<aligny>center</aligny>
 					<info>ListItem.Label2</info>
 				</control>
@@ -84,29 +83,15 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<textcolor>black</textcolor>
+					<textcolor>grey2</textcolor>
 					<info>ListItem.Label</info>
-					<visible>Control.HasFocus(5)</visible>
-				</control>
-				<control type="label">
-					<left>10</left>
-					<width>200</width>
-					<height>45</height>
-					<font>font12</font>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-					<info>ListItem.Label</info>
-					<visible>!Control.HasFocus(5)</visible>
 				</control>
 				<control type="label">
 					<left>215</left>
 					<width>325</width>
 					<height>45</height>
 					<font>font12</font>
-					<align>left</align>
 					<aligny>center</aligny>
-					<textcolor>black</textcolor>
 					<info>ListItem.Label2</info>
 				</control>
 			</focusedlayout>
@@ -151,7 +136,6 @@
 			<left>610</left>
 			<bottom>125</bottom>
 			<textcolor>grey2</textcolor>
-			<focusedcolor>white</focusedcolor>
 			<label>$LOCALIZE[15067]</label>
 			<width>250</width>
 			<include>DialogButton2CommonValues</include>

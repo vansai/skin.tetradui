@@ -413,43 +413,33 @@
 							<bordersize>18,2,18,2</bordersize>
 							<fadetime>IconCrossfadeTime</fadetime>
 						</control>
-						<control type="button" id="301">
+						<control type="button" id="501">
 							<left>10</left>
 							<top>225</top>
-							<height>45</height>
-							<width>175</width>
-							<font>font13</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>black</focusedcolor>
+							<width>173</width>
 							<align>center</align>
 							<aligny>center</aligny>
-							<texturefocus border="10">list-focus.png</texturefocus>
-							<texturenofocus border="10">list-nofocus.png</texturenofocus>
+							<include>DialogButtonCommonValues</include>
 							<label>1024</label>
 							<onclick>Skin.SetImage(Background_Weather)</onclick>
 							<onleft>3</onleft>
-							<onright>302</onright>
-							<onup>321</onup>
-							<ondown>321</ondown>
+							<onright>502</onright>
+							<onup>521</onup>
+							<ondown>521</ondown>
 						</control>
-						<control type="button" id="302">
-							<left>185</left>
+						<control type="button" id="502">
+							<left>189</left>
 							<top>225</top>
-							<height>45</height>
-							<width>175</width>
-							<font>font13</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>black</focusedcolor>
+							<width>173</width>
 							<align>center</align>
 							<aligny>center</aligny>
-							<texturefocus border="10">list-focus.png</texturefocus>
-							<texturenofocus border="10">list-nofocus.png</texturenofocus>
+							<include>DialogButtonCommonValues</include>
 							<label>31305</label>
 							<onclick>Skin.Reset(Background_Weather)</onclick>
-							<onleft>301</onleft>
-							<onright>311</onright>
-							<onup>322</onup>
-							<ondown>322</ondown>
+							<onleft>501</onleft>
+							<onright>511</onright>
+							<onup>522</onup>
+							<ondown>522</ondown>
 						</control>
 					</control>
 					<control type="group">
@@ -484,43 +474,33 @@
 							<bordersize>18,2,18,2</bordersize>
 							<fadetime>IconCrossfadeTime</fadetime>
 						</control>
-						<control type="button" id="311">
+						<control type="button" id="511">
 							<left>10</left>
 							<top>225</top>
-							<height>45</height>
-							<width>175</width>
-							<font>font13</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>black</focusedcolor>
+							<width>173</width>
 							<align>center</align>
 							<aligny>center</aligny>
-							<texturefocus border="10">list-focus.png</texturefocus>
-							<texturenofocus border="10">list-nofocus.png</texturenofocus>
+							<include>DialogButtonCommonValues</include>
 							<label>1024</label>
 							<onclick>Skin.SetImage(Background_Apps)</onclick>
-							<onleft>302</onleft>
-							<onright>312</onright>
-							<onup>331</onup>
-							<ondown>331</ondown>
+							<onleft>502</onleft>
+							<onright>512</onright>
+							<onup>531</onup>
+							<ondown>531</ondown>
 						</control>
-						<control type="button" id="312">
-							<left>185</left>
+						<control type="button" id="512">
+							<left>189</left>
 							<top>225</top>
-							<height>45</height>
-							<width>175</width>
-							<font>font13</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>black</focusedcolor>
+							<width>173</width>
 							<align>center</align>
 							<aligny>center</aligny>
-							<texturefocus border="10">list-focus.png</texturefocus>
-							<texturenofocus border="10">list-nofocus.png</texturenofocus>
+							<include>DialogButtonCommonValues</include>
 							<label>31305</label>
 							<onclick>Skin.Reset(Background_Apps)</onclick>
-							<onleft>311</onleft>
+							<onleft>511</onleft>
 							<onright>3</onright>
-							<onup>332</onup>
-							<ondown>332</ondown>
+							<onup>532</onup>
+							<ondown>532</ondown>
 						</control>
 					</control>
 					<control type="group">
@@ -555,43 +535,33 @@
 							<bordersize>18,2,18,2</bordersize>
 							<fadetime>IconCrossfadeTime</fadetime>
 						</control>
-						<control type="button" id="321">
+						<control type="button" id="521">
 							<left>10</left>
 							<top>225</top>
-							<height>45</height>
-							<width>175</width>
-							<font>font13</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>black</focusedcolor>
+							<width>173</width>
 							<align>center</align>
 							<aligny>center</aligny>
-							<texturefocus border="10">list-focus.png</texturefocus>
-							<texturenofocus border="10">list-nofocus.png</texturenofocus>
+							<include>DialogButtonCommonValues</include>
 							<label>1024</label>
 							<onclick>Skin.SetImage(Background_Media)</onclick>
 							<onleft>3</onleft>
-							<onright>322</onright>
-							<onup>301</onup>
-							<ondown>301</ondown>
+							<onright>522</onright>
+							<onup>501</onup>
+							<ondown>501</ondown>
 						</control>
-						<control type="button" id="322">
-							<left>185</left>
+						<control type="button" id="522">
+							<left>189</left>
 							<top>225</top>
-							<height>45</height>
-							<width>175</width>
-							<font>font13</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>black</focusedcolor>
+							<width>173</width>
 							<align>center</align>
 							<aligny>center</aligny>
-							<texturefocus border="10">list-focus.png</texturefocus>
-							<texturenofocus border="10">list-nofocus.png</texturenofocus>
+							<include>DialogButtonCommonValues</include>
 							<label>31305</label>
 							<onclick>Skin.Reset(Background_Media)</onclick>
-							<onleft>321</onleft>
-							<onright>331</onright>
-							<onup>302</onup>
-							<ondown>302</ondown>
+							<onleft>521</onleft>
+							<onright>531</onright>
+							<onup>502</onup>
+							<ondown>502</ondown>
 						</control>
 					</control>
 					<control type="group">
@@ -626,43 +596,33 @@
 							<bordersize>18,2,18,2</bordersize>
 							<fadetime>IconCrossfadeTime</fadetime>
 						</control>
-						<control type="button" id="331">
+						<control type="button" id="531">
 							<left>10</left>
 							<top>225</top>
-							<height>45</height>
-							<width>175</width>
-							<font>font13</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>black</focusedcolor>
+							<width>173</width>
 							<align>center</align>
 							<aligny>center</aligny>
-							<texturefocus border="10">list-focus.png</texturefocus>
-							<texturenofocus border="10">list-nofocus.png</texturenofocus>
+							<include>DialogButtonCommonValues</include>
 							<label>1024</label>
 							<onclick>Skin.SetImage(Background_System)</onclick>
-							<onleft>322</onleft>
-							<onright>332</onright>
-							<onup>311</onup>
-							<ondown>311</ondown>
+							<onleft>522</onleft>
+							<onright>532</onright>
+							<onup>511</onup>
+							<ondown>511</ondown>
 						</control>
-						<control type="button" id="332">
-							<left>185</left>
+						<control type="button" id="532">
+							<left>189</left>
 							<top>225</top>
-							<height>45</height>
-							<width>175</width>
-							<font>font13</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>black</focusedcolor>
+							<width>173</width>
 							<align>center</align>
 							<aligny>center</aligny>
-							<texturefocus border="10">list-focus.png</texturefocus>
-							<texturenofocus border="10">list-nofocus.png</texturenofocus>
+							<include>DialogButtonCommonValues</include>
 							<label>31305</label>
 							<onclick>Skin.Reset(Background_System)</onclick>
-							<onleft>331</onleft>
+							<onleft>531</onleft>
 							<onright>3</onright>
-							<onup>312</onup>
-							<ondown>312</ondown>
+							<onup>512</onup>
+							<ondown>512</ondown>
 						</control>
 					</control>
 				</control>

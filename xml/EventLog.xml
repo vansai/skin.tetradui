@@ -65,7 +65,6 @@
 						<textcolor>grey2</textcolor>
 						<selectedcolor>orange</selectedcolor>
 						<shadowcolor>black</shadowcolor>
-						<align>left</align>
 						<label>$INFO[ListItem.Property(Event.Description)]</label>
 					</control>
 					<control type="label">
@@ -78,7 +77,6 @@
 						<selectedcolor>orange</selectedcolor>
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<align>right</align>
 						<info>ListItem.Label2</info>
 					</control>
 				</itemlayout>
@@ -104,9 +102,7 @@
 						<height>36</height>
 						<font>font13</font>
 						<aligny>center</aligny>
-						<textcolor>black</textcolor>
 						<selectedcolor>orange</selectedcolor>
-						<align>left</align>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -116,9 +112,7 @@
 						<height>36</height>
 						<font>font13</font>
 						<aligny>center</aligny>
-						<textcolor>white2</textcolor>
 						<selectedcolor>orange</selectedcolor>
-						<align>left</align>
 						<label>$INFO[ListItem.Property(Event.Description)]</label>
 					</control>
 					<control type="label">
@@ -145,7 +139,7 @@
 					<description>Order by button</description>
 					<include>ButtonCommonValues</include>
 					<alttexturefocus border="4,6,4,8">button-focus.png</alttexturefocus>
-					<alttexturenofocus border="4,6,4,8">button-focus.png</alttexturenofocus>
+					<alttexturenofocus border="4,6,4,8">button-nofocus.png</alttexturenofocus>
 					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
 					<label>$LOCALIZE[31228]: $LOCALIZE[584]</label>
 					<altlabel>$LOCALIZE[31228]: $LOCALIZE[585]</altlabel>

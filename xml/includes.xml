@@ -29,8 +29,9 @@
 				<onleft condition="!Window.IsVisible(Weather)">1</onleft>
 				<onright condition="Window.IsVisible(Weather)">1</onright>
 				<onright condition="!Window.IsVisible(Settings.xml)">2</onright>
-				<ondown condition="!Window.IsVisible(Weather)">9000</ondown>
+				<ondown condition="!Window.IsVisible(Weather) + !Window.IsVisible(loginscreen)">9000</ondown>
 				<ondown condition="Window.IsVisible(Weather)">3</ondown>
+				<ondown condition="Window.IsVisible(loginscreen)">52</ondown>
 				<onclick>ActivateWindow(1103)</onclick>
 				<animation effect="zoom" start="100" end="115" time="100" center="auto">Focus</animation>
 				<animation effect="zoom" start="115" end="100" time="100" center="auto">UnFocus</animation>
@@ -224,7 +225,7 @@
 			<height>720</height>
 			<texture colordiffuse="77ffffff">black-back.png</texture>
 			<include>VisibleFadeEffect</include>
-			<visible>Window.IsActive(1103) | Window.IsActive(ShutdownMenu) | [!Window.IsVisible(Weather) + ControlGroup(9000).HasFocus] | Window.IsActive(DialogSelect.xml) | Window.IsActive(DialogAddonInfo.xml) | Window.IsActive(DialogAddonSettings.xml) | Window.IsActive(DialogConfirm.xml) | Window.IsActive(DialogContextMenu.xml) | Window.IsActive(DialogFavourites.xml) | Window.IsActive(DialogKeyboard.xml) | Window.IsActive(DialogMediaSource.xml) | Window.IsActive(DialogMusicInfo.xml) | Window.IsActive(DialogNumeric.xml) | Window.IsActive(DialogPictureInfo.xml) | Window.IsActive(DialogSettings.xml) | Window.IsActive(DialogTextViewer.xml) | Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(FileBrowser.xml)</visible>
+			<visible>Window.IsActive(1103) | Window.IsActive(ShutdownMenu) | [!Window.IsVisible(Weather) + ControlGroup(9000).HasFocus] | Window.IsActive(DialogSelect.xml) | Window.IsActive(DialogAddonInfo.xml) | Window.IsActive(DialogAddonSettings.xml) | Window.IsActive(DialogConfirm.xml) | Window.IsActive(DialogContextMenu.xml) | Window.IsActive(DialogFavourites.xml) | Window.IsActive(DialogKeyboard.xml) | Window.IsActive(DialogMediaSource.xml) | Window.IsActive(DialogMusicInfo.xml) | Window.IsActive(DialogNumeric.xml) | Window.IsActive(DialogPictureInfo.xml) | Window.IsActive(DialogSettings.xml) | Window.IsActive(DialogTextViewer.xml) | Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(FileBrowser.xml) | Window.IsActive(SmartPlaylistEditor.xml) | Window.IsActive(SmartPlaylistRule.xml) | Window.IsActive(script-RSS_Editor.xml)</visible>
 		</control>
 	</include>
 	<include name="SortbyButton">
@@ -275,7 +276,6 @@
 		<textoffsetx>70</textoffsetx>
 		<textwidth>300</textwidth>
 		<textcolor>white2</textcolor>
-		<focusedcolor>white</focusedcolor>
 		<shadowcolor />
 		<font>font30</font>
 		<pulseonselect>no</pulseonselect>
@@ -586,12 +586,11 @@
 		</control>
 	</include>
 	<include name="ButtonCommonValues">
-		<height>40</height>
+		<height>45</height>
 		<width>210</width>
 		<aligny>center</aligny>
 		<font>font12</font>
 		<textoffsetx>10</textoffsetx>
-		<focusedcolor>white</focusedcolor>
 		<textcolor>white</textcolor>
 		<shadowcolor>black</shadowcolor>
 		<texturefocus border="4,6,4,8">button-focus.png</texturefocus>
@@ -604,16 +603,13 @@
 		<aligny>center</aligny>
 		<font>font12</font>
 		<textwidth>145</textwidth>
-		<focusedcolor>white</focusedcolor>
-		<textcolor>white</textcolor>
 		<shadowcolor>black</shadowcolor>
-		<texturefocus border="4,6,4,8">button-focus.png</texturefocus>
-		<texturenofocus border="4,6,4,8">button-nofocus.png</texturenofocus>
+		<texturefocus border="4,6,4,8">button-dialog-focus.png</texturefocus>
+		<texturenofocus border="4,6,4,8">button-dialog-nofocus.png</texturenofocus>
 	</include>
 	<include name="DialogButtonCommonValues">
 		<height>45</height>
 		<font>font12</font>
-		<focusedcolor>black</focusedcolor>
 		<texturefocus border="10">list-focus.png</texturefocus>
 		<texturenofocus border="10">list-nofocus.png</texturenofocus>
 	</include>
@@ -623,14 +619,13 @@
 		<font>font12</font>
 		<align>center</align>
 		<aligny>center</aligny>
-		<texturefocus border="10">button-focus.png</texturefocus>
-		<texturenofocus border="10">button-nofocus.png</texturenofocus>
+		<texturefocus border="10">button-dialog-focus.png</texturefocus>
+		<texturenofocus border="10">button-dialog-nofocus.png</texturenofocus>
 		<label />
 	</include>
 	<include name="SettingsButtonCommonValues">
 		<height>45</height>
 		<font>font13</font>
-		<focusedcolor>black</focusedcolor>
 		<textoffsetx>10</textoffsetx>
 		<texturefocus border="10">list-focus.png</texturefocus>
 		<texturenofocus />
@@ -639,8 +634,6 @@
 		<height>45</height>
 		<width>790</width>
 		<font>font13</font>
-		<textcolor>white</textcolor>
-		<focusedcolor>black</focusedcolor>
 		<texturefocus border="10">list-focus.png</texturefocus>
 		<texturenofocus />
 		<textoffsetx>10</textoffsetx>
@@ -1260,7 +1253,6 @@
 		<align>center</align>
 		<aligny>center</aligny>
 		<font>font12</font>
-		<focusedcolor>black</focusedcolor>
 	</include>
 	<include name="KeyboardButtonBig">
 		<width>60</width>
@@ -1270,7 +1262,6 @@
 		<align>center</align>
 		<aligny>center</aligny>
 		<font>font12</font>
-		<focusedcolor>black</focusedcolor>
 	</include>
 	
 	<include name="DialogPlayerProcessInfoLabel">
