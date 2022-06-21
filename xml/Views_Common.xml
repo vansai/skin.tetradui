@@ -564,16 +564,17 @@
 				</control>
 				<control type="image">
 					<left>5</left>
-					<top>6</top>
+					<top>8</top>
 					<width>165</width>
 					<height>128</height>
 					<texture background="true">$VAR[ListItemPosterVar]</texture>
 					<bordertexture>black-back.png</bordertexture>
 					<bordersize>1</bordersize>
+					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
 					<left>7</left>
-					<top>130</top>
+					<top>132</top>
 					<width>161</width>
 					<height>25</height>
 					<font>font10</font>
@@ -585,7 +586,7 @@
 				</control>
 				<control type="image">
 					<left>142</left>
-					<top>106</top>
+					<top>108</top>
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>
@@ -601,16 +602,17 @@
 				</control>
 				<control type="image">
 					<left>5</left>
-					<top>6</top>
+					<top>8</top>
 					<width>165</width>
 					<height>128</height>
 					<texture background="true">$VAR[ListItemPosterVar]</texture>
 					<bordertexture>black-back.png</bordertexture>
 					<bordersize>1</bordersize>
+					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
 					<left>7</left>
-					<top>130</top>
+					<top>132</top>
 					<width>161</width>
 					<height>25</height>
 					<font>font10</font>
@@ -621,7 +623,7 @@
 				</control>
 				<control type="image">
 					<left>142</left>
-					<top>106</top>
+					<top>108</top>
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>
@@ -645,6 +647,7 @@
 					<texture background="true">$VAR[ListItemPosterVar]</texture>
 					<bordertexture>black-back.png</bordertexture>
 					<bordersize>1</bordersize>
+					<aspectratio>scale</aspectratio>
 				</control>
 				<control type="label">
 					<left>8</left>
@@ -684,6 +687,7 @@
 					<texture background="true">$VAR[ListItemPosterVar]</texture>
 					<bordertexture>black-back.png</bordertexture>
 					<bordersize>1</bordersize>
+					<aspectratio>scale</aspectratio>
 				</control>
 				<control type="label">
 					<left>8</left>
