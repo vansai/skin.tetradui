@@ -202,13 +202,19 @@
 	</include>
 	<include name="Container9000Header">
 		<left>100</left>
-		<top>140</top>
+		<top>100</top>
+		<orientation>vertical</orientation>
+		<itemgap>-5</itemgap>
+		<onleft>50</onleft>
+		<onright>50</onright>
+		<onup>611</onup>
+		<ondown>610</ondown>
+		<usecontrolcoords>true</usecontrolcoords>
 		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus</visible>
 		<animation effect="fade" start="0" end="100" delay="SideMenuSlideOutTime" time="200">Visible</animation>
 		<animation effect="fade" start="100" end="0" delay="0" time="SideMenuSlideOutTime">Hidden</animation>
 		<control type="label">
 			<description>Header Label</description>
-			<top>-40</top>
 			<width>220</width>
 			<height>20</height>
 			<font>font12</font>
@@ -217,6 +223,10 @@
 			<shadowcolor>black</shadowcolor>
 			<align>left</align>
 			<aligny>center</aligny>
+		</control>
+		<control type="image">
+			<height>30</height>
+			<texture />
 		</control>
 	</include>
 	<include name="BackgroundDim">
@@ -228,29 +238,13 @@
 			<visible>Window.IsActive(1103) | Window.IsActive(ShutdownMenu) | [!Window.IsVisible(Weather) + ControlGroup(9000).HasFocus] | Window.IsActive(DialogSelect.xml) | Window.IsActive(DialogAddonInfo.xml) | Window.IsActive(DialogAddonSettings.xml) | Window.IsActive(DialogConfirm.xml) | Window.IsActive(DialogContextMenu.xml) | Window.IsActive(DialogFavourites.xml) | Window.IsActive(DialogKeyboard.xml) | Window.IsActive(DialogMediaSource.xml) | Window.IsActive(DialogMusicInfo.xml) | Window.IsActive(DialogNumeric.xml) | Window.IsActive(DialogPictureInfo.xml) | Window.IsActive(DialogSettings.xml) | Window.IsActive(DialogTextViewer.xml) | Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(FileBrowser.xml) | Window.IsActive(SmartPlaylistEditor.xml) | Window.IsActive(SmartPlaylistRule.xml) | Window.IsActive(script-RSS_Editor.xml)</visible>
 		</control>
 	</include>
-	<include name="SortbyButton">
-		<left>2</left>
-		<top>40</top>
-		<alttexturefocus border="4,6,4,8">button-focus.png</alttexturefocus>
-		<alttexturenofocus border="4,6,4,8">button-focus.png</alttexturenofocus>
-		<usealttexture>Control.HasFocus(4)</usealttexture>
-		<label>103</label>
-		<onleft>50</onleft>
-		<onright>4</onright>
-		<onup>2</onup>
-	</include>
 	<include name="SortAscendingButton">
-		<left>171</left>
-		<top>40</top>
-		<width>40</width>
-		<height>40</height>
-		<texturefocus>sortup2-focus.png</texturefocus>
-		<texturenofocus>sortup2-nofocus.png</texturenofocus>
-		<alttexturefocus>sortdown2-focus.png</alttexturefocus>
-		<alttexturenofocus>sortdown2-nofocus.png</alttexturenofocus>
-		<onleft>3</onleft>
-		<onright>50</onright>
-		<onup>2</onup>
+		<left>5</left>
+		<label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
+		<altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
+		<alttexturefocus border="4,6,4,8">button-focus.png</alttexturefocus>
+		<alttexturenofocus border="4,6,4,8">button-nofocus.png</alttexturenofocus>
+		<include>ButtonCommonValues</include>
 	</include>
 	<include name="WeatherLabelCommonValues">
 		<width>140</width>
@@ -678,13 +672,13 @@
 			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="group" id="">
-			<left>8</left>
-			<top>405</top>
+			<left>-4</left>
+			<top>395</top>
 			<visible>Player.HasMedia</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="button" id="600">
-				<width>20</width>
-				<height>20</height>
+				<width>40</width>
+				<height>40</height>
 				<texturefocus>mediacontrol-skipback-focus.png</texturefocus>
 				<texturenofocus>mediacontrol-skipback.png</texturenofocus>
 				<onclick>PlayerControl(Previous)</onclick>
@@ -696,8 +690,8 @@
 			</control>
 			<control type="button" id="601">
 				<left>34</left>
-				<width>20</width>
-				<height>20</height>
+				<width>40</width>
+				<height>40</height>
 				<texturefocus>mediacontrol-rewind-focus.png</texturefocus>
 				<texturenofocus>mediacontrol-rewind.png</texturenofocus>
 				<onclick>PlayerControl(Rewind)</onclick>
@@ -709,8 +703,8 @@
 			</control>
 			<control type="button" id="602">
 				<left>68</left>
-				<width>20</width>
-				<height>20</height>
+				<width>40</width>
+				<height>40</height>
 				<texturefocus>mediacontrol-stop-focus.png</texturefocus>
 				<texturenofocus>mediacontrol-stop.png</texturenofocus>
 				<onclick>PlayerControl(Stop)</onclick>
@@ -722,8 +716,8 @@
 			</control>
 			<control type="togglebutton" id="603">
 				<left>102</left>
-				<width>20</width>
-				<height>20</height>
+				<width>40</width>
+				<height>40</height>
 				<texturefocus>mediacontrol-pause-focus.png</texturefocus>
 				<texturenofocus>mediacontrol-pause.png</texturenofocus>
 				<alttexturefocus>mediacontrol-play-focus.png</alttexturefocus>
@@ -738,8 +732,8 @@
 			</control>
 			<control type="button" id="604">
 				<left>136</left>
-				<width>20</width>
-				<height>20</height>
+				<width>40</width>
+				<height>40</height>
 				<texturefocus>mediacontrol-fastforward-focus.png</texturefocus>
 				<texturenofocus>mediacontrol-fastforward.png</texturenofocus>
 				<onclick>PlayerControl(Forward)</onclick>
@@ -751,8 +745,8 @@
 			</control>
 			<control type="button" id="605">
 				<left>170</left>
-				<width>20</width>
-				<height>20</height>
+				<width>40</width>
+				<height>40</height>
 				<texturefocus>mediacontrol-skipforward-focus.png</texturefocus>
 				<texturenofocus>mediacontrol-skipforward.png</texturenofocus>
 				<onclick>PlayerControl(Next)</onclick>
@@ -764,8 +758,8 @@
 			</control>
 			<control type="radiobutton" id="606">
 				<description>Random</description>
-				<left>-14</left>
-				<top>25</top>
+				<left>-3</left>
+				<top>36</top>
 				<include>ButtonCommonValues</include>
 				<label>590</label>
 				<onclick>PlayerControl(Random)</onclick>

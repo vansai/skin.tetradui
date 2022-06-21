@@ -133,63 +133,35 @@
 		<include>BackgroundDim</include>
 		<control type="group" id="9000">
 			<include>Container9000BladesRunner</include>
-			<control type="group">
+			<control type="grouplist">
 				<include>Container9000Header</include>
 				<control type="togglebutton" id="4">
 					<description>Order by button</description>
-					<include>ButtonCommonValues</include>
-					<alttexturefocus border="4,6,4,8">button-focus.png</alttexturefocus>
-					<alttexturenofocus border="4,6,4,8">button-nofocus.png</alttexturenofocus>
-					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
-					<label>$LOCALIZE[31228]: $LOCALIZE[584]</label>
-					<altlabel>$LOCALIZE[31228]: $LOCALIZE[585]</altlabel>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>611</onup>
-					<ondown>21</ondown>
+					<left>0</left>
+					<include>SortAscendingButton</include>
 				</control>
 				<control type="button" id="21">
 					<description>Level button</description>
 					<left>2</left>
-					<top>40</top>
 					<include>ButtonCommonValues</include>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>4</onup>
-					<ondown>22</ondown>
 				</control>
 				<control type="radiobutton" id="22">
 					<description>Only show current level</description>
-					<left>4</left>
-					<top>80</top>
+					<left>5</left>
 					<include>ButtonCommonValues</include>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>21</onup>
-					<ondown>20</ondown>
 				</control>
 				<control type="button" id="20">
 					<description>Clear</description>
-					<left>6</left>
-					<top>120</top>
+					<left>7</left>
 					<include>ButtonCommonValues</include>
 					<label>$LOCALIZE[192]</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>22</onup>
-					<ondown>612</ondown>
 				</control>
 				<control type="button" id="612">
 					<description>Settings</description>
-					<left>8</left>
-					<top>160</top>
+					<left>9</left>
 					<include>ButtonCommonValues</include>
 					<label>$LOCALIZE[5]</label>
 					<onclick>ActivateWindow(systemsettings,logging)</onclick>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>20</onup>
-					<ondown>610</ondown>
 				</control>
 				<control type="button" id="610">
 					<description>Fake Button to fix Player Controls Navigation</description>

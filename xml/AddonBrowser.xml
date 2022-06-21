@@ -44,81 +44,51 @@
 		<include>BackgroundDim</include>
 		<control type="group" id="9000">
 			<include>Container9000BladesRunner</include>
-			<control type="group">
+			<control type="grouplist">
 				<include>Container9000Header</include>
 				<control type="button" id="2">
 					<description>View As button</description>
 					<include>ButtonCommonValues</include>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>611</onup>
-					<ondown>3</ondown>
 				</control>
-				<control type="togglebutton" id="3">
+				<control type="button" id="3">
 					<description>Sort by button</description>
-					<include>SortbyButton</include>
+					<left>2</left>
+					<label>103</label>
 					<include>ButtonCommonValues</include>
-					<ondown>9</ondown>
 				</control>
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
 					<include>SortAscendingButton</include>
-					<ondown>9</ondown>
 				</control>
 				<control type="button" id="9">
 					<description>Check for Updates Button</description>
-					<left>4</left>
-					<top>80</top>
+					<left>7</left>
 					<include>ButtonCommonValues</include>
 					<label>24034</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>3</onup>
-					<ondown>6</ondown>
 				</control>
 				<control type="radiobutton" id="6">
 					<description>No notifications</description>
-					<left>6</left>
-					<top>120</top>
+					<left>9</left>
 					<include>ButtonCommonValues</include>
 					<label>25000</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>9</onup>
-					<ondown>7</ondown>
 				</control>
 				<control type="radiobutton" id="7">
 					<description>Hide foreign</description>
-					<left>7</left>
-					<top>160</top>
+					<left>8</left>
 					<include>ButtonCommonValues</include>
 					<label>25001</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>6</onup>
-					<ondown>8</ondown>
 				</control>
 				<control type="radiobutton" id="8">
 					<description>Show / hide broken add-ons</description>
-					<left>6</left>
-					<top>200</top>
+					<left>7</left>
 					<include>ButtonCommonValues</include>
 					<label>24999</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>7</onup>
-					<ondown>5</ondown>
 				</control>
 				<control type="button" id="5">
 					<description>Settings Button</description>
-					<left>4</left>
-					<top>240</top>
+					<left>6</left>
 					<include>ButtonCommonValues</include>
 					<label>10004</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>8</onup>
-					<ondown>610</ondown>
 				</control>
 				<control type="button" id="610">
 					<description>Fake Button to fix Player Controls Navigation</description>
