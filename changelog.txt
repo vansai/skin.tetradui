@@ -4,6 +4,7 @@
 - Add completely new buttons images
 - Rewrite some views
 - Add README.md
+- Add screenshots
 
 [B]Version 1.0.1[/B]
 - Improvements for busy dialog

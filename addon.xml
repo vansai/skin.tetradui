@@ -28,7 +28,7 @@
       <screenshot>resources/screenshot-09.jpg</screenshot>
       <screenshot>resources/screenshot-10.jpg</screenshot>
     </assets>
-    <news>[B]1.1.0[/B][CR]- Add update library / toggle watched buttons in media windows[CR]- Fix filter button in media windows[CR]- Add completely new buttons images[CR]- Rewrite some views[CR]- Add README.md</news>
+    <news>[B]1.1.0[/B][CR]- Add update library / toggle watched buttons in media windows[CR]- Fix filter button in media windows[CR]- Add completely new buttons images[CR]- Rewrite some views[CR]- Add README.md[CR] Add screenshots</news>
     <description lang="en_GB">TetradUI is a skin add-on for Kodi media center. The aim with TetradUI is to create a fresh modern homage of the classic blades-style UI found in the original Xbox360 dashboard. Also seen in the works of Team Blackbolt and Jezz_X with projects MC360 and JX720 respectively. TetradUI is based on JX720 by Jezz_X.[CR]This add-on was created by Jezz_X and TeamUI.</description>
     <summary lang="en_GB">TetradUI is a skin add-on for Kodi media center</summary>
   </extension>
