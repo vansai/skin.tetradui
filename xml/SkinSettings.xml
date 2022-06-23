@@ -238,18 +238,21 @@
 						<label>$LOCALIZE[31309]$LOCALIZE[342]</label>
 						<onclick>Skin.ToggleSetting(MediaBlade_HideMovies)</onclick>
 						<selected>Skin.HasSetting(MediaBlade_HideMovies)</selected>
+						<enabled>Library.HasContent(Movies)</enabled>
 					</control>
 					<control type="radiobutton" id="314">
 						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$LOCALIZE[20343]</label>
 						<onclick>Skin.ToggleSetting(MediaBlade_HideTVShows)</onclick>
 						<selected>Skin.HasSetting(MediaBlade_HideTVShows)</selected>
+						<enabled>Library.HasContent(TVShows)</enabled>
 					</control>
 					<control type="radiobutton" id="315">
 						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$LOCALIZE[2]</label>
 						<onclick>Skin.ToggleSetting(MediaBlade_HideMusic)</onclick>
 						<selected>Skin.HasSetting(MediaBlade_HideMusic)</selected>
+						<enabled>Library.HasContent(Music)</enabled>
 					</control>
 					<control type="radiobutton" id="316">
 						<include>SkinSettingsRadioButtonCommonValues</include>
