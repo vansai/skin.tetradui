@@ -224,7 +224,19 @@ msgctxt "#31236"
 msgid "End Time:"
 msgstr ""
 
-# empty strings from id 31237 to 31249
+msgctxt "#31237"
+msgid "Welcome to TetradUI"
+msgstr ""
+
+msgctxt "#31238"
+msgid "Navigation is done using the top logo button.[CR]Using the skin setting it can either be placed top left or center.[CR][CR][B]Top logo button[/B][CR]Navigating between the blades is done using [I]left[/I] and [I]right[/I].[CR]Clicking the logo button will open a shortcuts sideblade.[CR][CR][B]Menu lists[/B][CR]If no widgets or submenus are present, you can navigate between the blades using [I]left[/I] and [I]right[/I] from the menu lists.[CR][CR][B]Widgets[/B][CR]If widgets are present, [I]left[/I] from the menu lists will take you to the widgets.[CR][I]Left[/I] or [I]right[/I] will take you back to the menu lists.[CR][CR][B]Submenu lists[/B][CR]If submenus are present, [I]right[/I] from the menu lists will take you there.[CR][I]Left[/I] from the submenus will take you back to the menu and [I]right[/I] will take you to the widgets.[CR]If no widgets are present, [I]right[/I] will switch blade."
+msgstr ""
+
+msgctxt "#31239"
+msgid "Never show again"
+msgstr ""
+
+# empty strings from id 31240 to 31249
 
 msgctxt "#31250"
 msgid "Poster Big"
